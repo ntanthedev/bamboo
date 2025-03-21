@@ -44,9 +44,12 @@ def import_from_csv(request):
                         except ValueError:
                             messages.warning(request, f'Bỏ qua dòng với điểm không hợp lệ: {line[1]} - {score_str}')
                             continue
+                        
+                        # Chuẩn hóa số báo danh bằng cách loại bỏ khoảng trắng
+                        clean_sbd = line[0].strip()
                             
                         Candidate.objects.create(
-                            sbd = line[0],
+                            sbd = clean_sbd,
                             name = line[1],
                             birth = line[2],
                             place = line[3],
@@ -59,7 +62,6 @@ def import_from_csv(request):
                             prize = line[10],
                             exam_type = exam_type,  # Thêm trường để phân biệt loại kỳ thi
                         )
-                        print(line[0],line[1],line[2],line[3],line[4],line[5],line[6],line[7],line[8],line[9],line[10])
                         count += 1
                 total_count += count
                 messages.success(request, f'Đã nhập {count} thí sinh từ dữ liệu {csv_file} vào database')
@@ -73,7 +75,7 @@ def ScoreRanking(request):
     if request.method == 'GET':
         return render(request, 'tra-diem.html')
     elif request.method == 'POST':
-        sbd = request.POST.get('sbd')
+        sbd = request.POST.get('sbd', '').strip()  # Loại bỏ khoảng trắng ở đầu và cuối
         exam_type = request.POST.get('exam_type', 'data1')  # Mặc định là kỳ thi lớp 11 nếu không chọn
         
         # Kiểm tra xem database có dữ liệu chưa, nếu chưa thì tải từ CSV
@@ -102,8 +104,11 @@ def ScoreRanking(request):
                             except ValueError:
                                 continue  # Bỏ qua dòng với điểm không hợp lệ
                                 
+                            # Chuẩn hóa số báo danh bằng cách loại bỏ khoảng trắng
+                            clean_sbd = line[0].strip()
+                            
                             Candidate.objects.create(
-                                sbd = line[0],
+                                sbd = clean_sbd,
                                 name = line[1],
                                 birth = line[2],
                                 place = line[3],
@@ -121,7 +126,15 @@ def ScoreRanking(request):
             
         # Tìm thí sinh theo số báo danh và loại kỳ thi
         try:
+            # Tìm kiếm chính xác trước
             candidate = Candidate.objects.filter(sbd=sbd, exam_type=exam_type).first()
+            
+            # Nếu không tìm thấy, thử tìm kiếm có chứa số báo danh
+            if not candidate:
+                candidates = Candidate.objects.filter(sbd__icontains=sbd, exam_type=exam_type)
+                if candidates.exists():
+                    candidate = candidates.first()
+            
             if not candidate:
                 return render(request, 'tra-diem.html', {'error': f'Không tìm thấy thí sinh với số báo danh {sbd} trong kỳ thi được chọn'})
                 
