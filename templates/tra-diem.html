@@ -160,8 +160,8 @@
                                 <tr>
                                     <th>Môn thi</th>
                                     <th>Điểm</th>
-                                    <th>Xếp loại</th>
-                                    <th>Top % trong môn</th>
+                                    <th>Giải</th>
+                                    <th>Xếp hạng</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -180,11 +180,13 @@
                                     </td>
                                 </tr>
                                 <tr class="total-row">
-                                    <td>Tổng điểm</td>
-                                    <td id="scoreTotal">{{ score|default:"--" }}</td>
+                                    <td id="scoreTotal">-</td>
+                                    <td id="scoreTotal1">-</td>
+                                    <td id="scoreTotal1">-</td>
+                                    
                                     <td colspan="2">
                                         {% if prize %}
-                                            <span class="grade-excellent">{{ prize }} - (Hạng {{ rank_position|default:"1" }}) toàn khóa</span>
+                                            <span class="grade-excellent">Giải {{ prize }} (Hạng {{ rank_position|default:"1" }}) toàn khóa</span>
                                         {% else %}
                                             <span>--</span>
                                         {% endif %}
