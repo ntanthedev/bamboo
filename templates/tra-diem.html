@@ -150,21 +150,7 @@
                                     <td>{{ subject|default:"Toán" }}</td>
                                     <td id="scoreMath">{{ score|default:"--" }}</td>
                                     <td>
-                                        {% if score %}
-                                            {% if score >= 9.0 %}
-                                                <span class="grade-excellent">Xuất sắc</span>
-                                            {% elif score >= 8.0 %}
-                                                <span class="grade-excellent">Giỏi</span>
-                                            {% elif score >= 7.0 %}
-                                                <span class="grade-good">Khá</span>
-                                            {% elif score >= 5.0 %}
-                                                <span class="grade-average">Trung bình</span>
-                                            {% else %}
-                                                <span class="grade-poor">Yếu</span>
-                                            {% endif %}
-                                        {% else %}
-                                            <span>--</span>
-                                        {% endif %}
+                                        <span class="grade-excellent">{{ prize }}</span>
                                     </td>
                                     <td>
                                         {% if rank %}
