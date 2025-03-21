@@ -1,10 +1,51 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 import csv
 import os
 from django.conf import settings
 from .models import Candidate
 from django.db.models import Avg
+from django.contrib import messages
 # Create your views here.
+
+def import_from_csv(request):
+    # Xóa dữ liệu cũ (nếu cần) trước khi tải dữ liệu mới
+    Candidate.objects.all().delete()
+    
+    # Đường dẫn đầy đủ đến file CSV
+    csv_file_path = os.path.join(settings.BASE_DIR, 'data', 'data.csv')
+    
+    # Kiểm tra sự tồn tại của file CSV
+    if not os.path.exists(csv_file_path):
+        messages.error(request, 'Không tìm thấy dữ liệu điểm thi')
+        return redirect('score-ranking')
+    
+    # Đọc dữ liệu từ file CSV
+    try:
+        with open(csv_file_path, 'r', encoding='utf-8') as file:
+            reader = csv.reader(file)
+            next(reader, None)  # Bỏ qua header nếu có
+            count = 0
+            for line in reader:
+                if len(line) >= 11:  # Đảm bảo đủ cột dữ liệu
+                    Candidate.objects.create(
+                        sbd = line[0],
+                        name = line[1],
+                        birth = line[2],
+                        place = line[3],
+                        sex = line[4],
+                        class_name = line[5],
+                        school = line[6],
+                        subject = line[7],
+                        score = line[8],
+                        rank = line[9],
+                        prize = line[10],
+                    )
+                    count += 1
+        messages.success(request, f'Đã nhập {count} thí sinh từ dữ liệu CSV vào database')
+    except Exception as e:
+        messages.error(request, f'Lỗi đọc dữ liệu: {str(e)}')
+    
+    return redirect('score-ranking')
 
 def ScoreRanking(request):
     if request.method == 'GET':
@@ -12,39 +53,38 @@ def ScoreRanking(request):
     elif request.method == 'POST':
         sbd = request.POST.get('sbd')
         
-        # Xóa dữ liệu cũ (nếu cần) trước khi tải dữ liệu mới
-        Candidate.objects.all().delete()
-        
-        # Đường dẫn đầy đủ đến file CSV
-        csv_file_path = os.path.join(settings.BASE_DIR, 'data', 'data.csv')
-        
-        # Kiểm tra sự tồn tại của file CSV
-        if not os.path.exists(csv_file_path):
-            return render(request, 'tra-diem.html', {'error': 'Không tìm thấy dữ liệu điểm thi'})
-        
-        # Đọc dữ liệu từ file CSV
-        try:
-            with open(csv_file_path, 'r', encoding='utf-8') as file:
-                reader = csv.reader(file)
-                next(reader, None)  # Bỏ qua header nếu có
-                
-                for line in reader:
-                    if len(line) >= 11:  # Đảm bảo đủ cột dữ liệu
-                        Candidate.objects.create(
-                            sbd = line[0],
-                            name = line[1],
-                            birth = line[2],
-                            place = line[3],
-                            sex = line[4],
-                            class_name = line[5],
-                            school = line[6],
-                            subject = line[7],
-                            score = line[8],
-                            rank = line[9],
-                            prize = line[10],
-                        )
-        except Exception as e:
-            return render(request, 'tra-diem.html', {'error': f'Lỗi đọc dữ liệu: {str(e)}'})
+        # Kiểm tra xem database có dữ liệu chưa, nếu chưa thì tải từ CSV
+        if Candidate.objects.count() == 0:
+            # Đường dẫn đầy đủ đến file CSV
+            csv_file_path = os.path.join(settings.BASE_DIR, 'data', 'data.csv')
+            
+            # Kiểm tra sự tồn tại của file CSV
+            if not os.path.exists(csv_file_path):
+                return render(request, 'tra-diem.html', {'error': 'Không tìm thấy dữ liệu điểm thi'})
+            
+            # Đọc dữ liệu từ file CSV
+            try:
+                with open(csv_file_path, 'r', encoding='utf-8') as file:
+                    reader = csv.reader(file)
+                    next(reader, None)  # Bỏ qua header nếu có
+                    
+                    for line in reader:
+                        if len(line) >= 11:  # Đảm bảo đủ cột dữ liệu
+                            Candidate.objects.create(
+                                sbd = line[0],
+                                name = line[1],
+                                birth = line[2],
+                                place = line[3],
+                                sex = line[4],
+                                class_name = line[5],
+                                school = line[6],
+                                subject = line[7],
+                                score = line[8],
+                                rank = line[9],
+                                prize = line[10],
+                            )
+            except Exception as e:
+                return render(request, 'tra-diem.html', {'error': f'Lỗi đọc dữ liệu: {str(e)}'})
             
         # Tìm thí sinh theo số báo danh
         try:
@@ -106,9 +146,6 @@ def ScoreRanking(request):
             
         except Exception as e:
             return render(request, 'tra-diem.html', {'error': f'Lỗi xử lý dữ liệu: {str(e)}'})
-        
-#cho toàn bộ url khác chuyển hướng về /ScoreRanking
-from django.shortcuts import redirect
 
 def redirect_to_score_ranking(request):
     return redirect('score-ranking')

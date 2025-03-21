@@ -7,6 +7,48 @@
     <link rel="stylesheet" href="../static/css/tra-diem.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        .admin-buttons {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 10px;
+            z-index: 1000;
+        }
+        .admin-button {
+            padding: 8px 15px;
+            border-radius: 5px;
+            border: none;
+            background-color: #4e7a33;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .admin-button:hover {
+            background-color: #3c5e27;
+        }
+        .message-container {
+            margin-bottom: 15px;
+        }
+        .success-message {
+            background-color: #d4edda;
+            color: #155724;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .error-message {
+            background-color: #f8d7da;
+            color: #721c24;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
     <!-- Main Content -->
@@ -16,6 +58,17 @@
                 <h1>Công cụ tra cứu điểm thi thuộc CLB Lập trình trường THPT Chuyên Hà Tĩnh</h1>
                 <p>Nhập số báo danh để tra cứu kết quả thi và thứ hạng của bạn</p>
             </div>
+
+            {% if messages %}
+            <div class="message-container">
+                {% for message in messages %}
+                    <div class="{% if message.tags == 'success' %}success-message{% else %}error-message{% endif %}">
+                        <i class="{% if message.tags == 'success' %}fas fa-check-circle{% else %}fas fa-exclamation-circle{% endif %}"></i>
+                        <span>{{ message }}</span>
+                    </div>
+                {% endfor %}
+            </div>
+            {% endif %}
 
             {% if error %}
             <div class="error-message">

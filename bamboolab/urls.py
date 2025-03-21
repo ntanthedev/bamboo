@@ -17,13 +17,14 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path, re_path
-from core.views import ScoreRanking, redirect_to_score_ranking
+from core.views import ScoreRanking, redirect_to_score_ranking, import_from_csv
 
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("score-ranking/", ScoreRanking, name="score-ranking"),
+    path("import-csv/", import_from_csv, name="import-csv"),
     #cho toàn bộ url khác admin và score-ranking chuyển hướng về /ScoreRanking
     path("", redirect_to_score_ranking, name="redirect_to_score_ranking"),
     # Bất kỳ URL nào khác ngoài admin và score-ranking đều chuyển hướng về score-ranking
-    re_path(r'^(?!admin/|score-ranking/).*$', redirect_to_score_ranking, name="catch_all"),
+    re_path(r'^(?!admin/|score-ranking/|import-csv/).*$', redirect_to_score_ranking, name="catch_all"),
 ]
