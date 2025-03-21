@@ -59,6 +59,7 @@ def import_from_csv(request):
                             prize = line[10],
                             exam_type = exam_type,  # Thêm trường để phân biệt loại kỳ thi
                         )
+                        print(line[0],line[1],line[2],line[3],line[4],line[5],line[6],line[7],line[8],line[9],line[10])
                         count += 1
                 total_count += count
                 messages.success(request, f'Đã nhập {count} thí sinh từ dữ liệu {csv_file} vào database')
