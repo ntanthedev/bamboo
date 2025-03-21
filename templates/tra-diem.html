@@ -104,8 +104,9 @@
                 </div>
                 <div class="input-group">
                     <i class="fas fa-graduation-cap input-icon"></i>
-                    <select id="examType">
-                        <option value="thpt">Kỳ thi chọn HSG tỉnh lớp 11 tỉnh Hà Tĩnh</option>
+                    <select id="examType" name="exam_type">
+                        <option value="data1">Kỳ thi chọn HSG tỉnh lớp 11 tỉnh Hà Tĩnh</option>
+                        <option value="data2">Kỳ thi chọn HSG tỉnh lớp 10 tỉnh Hà Tĩnh</option>
                     </select>
                 </div>
                 <div class="input-group">
@@ -151,7 +152,7 @@
                     <div class="score-header">
                         <h3>Kết quả điểm thi</h3>
                         <div class="rank-badge">
-                            Môn thi <span id="rankPercentage">{{ subject }}</span>
+                            {{ exam_display_name|default:"Kỳ thi chọn HSG tỉnh lớp 11 tỉnh Hà Tĩnh" }}
                         </div>
                     </div>
                     <div class="score-table">
@@ -175,7 +176,7 @@
                                         {% if rank %}
                                             <span class="comparison-positive">Top {{ subject_rank }}% (Hạng {{ subject_rank_position }}) trong môn {{ subject }}</span>
                                         {% else %}
-                                            <span>--</span>
+                                            <span>-</span>
                                         {% endif %}
                                     </td>
                                 </tr>

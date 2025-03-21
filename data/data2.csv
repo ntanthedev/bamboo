@@ -1,0 +1,1425 @@
+SBD,Tên,Ngày sinh,Nơi sinh,Giới tínhh,Lớp,Trường,Môn thi,Điểm,Kết quả,Xếp giải
+1 ,NGUYỄN HOÀNG MAI ANH ,14/09/2009,Đức Thọ - Hà Tĩnh ,Nữ ,10 Toán 2 ,THPT Chuyên Hà Tĩnh ,Toán 10 ,"17,25 ",Đạt ,Nhất 
+2 ,BÙI HỒ BẢO ANH ,12/03/2009,Thành phố Hà Tĩnh ,Nữ ,10 Văn ,THPT Chuyên Hà Tĩnh ,Ngữ văn 10 ,"12,5 ",Đạt ,Ba 
+3 ,NGUYỄN KIM ANH ,02/05/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A3 ,THPT Kỳ Lâm ,Lịch sử 10 ,"11,25 ",Đạt ,Khuyến khích 
+4 ,TRẦN LÊ NAM ANH ,19/08/2009,Thành phố Hà Tĩnh ,Nam ,10 Toán 1 ,THPT Chuyên Hà Tĩnh ,Toán 10 ,"9,5 ",Đạt ,Khuyến khích 
+5 ,TRẦN BẢO ANH ,12/11/2009,Lộc Hà - Hà Tĩnh ,Nữ ,10 Văn ,THPT Chuyên Hà Tĩnh ,Ngữ văn 10 ,"12,25 ",Đạt ,Ba 
+6 ,NGUYỄN THỊ PHƯƠNG ANH ,27/03/2009,Thành phố Hà Tĩnh ,Nữ ,10 Sử ,THPT Chuyên Hà Tĩnh ,Lịch sử 10 ,"11,5 ",Đạt ,Khuyến khích 
+7 ,NGUYỄN PHẠM NHẬT ANH ,03/08/2009,Đức Thọ - Hà Tĩnh ,Nam ,10A1 ,THPT Cẩm Bình ,Toán 10 ,"14,75 ",Đạt ,Nhì 
+8 ,TRẦN THỊ LAN ANH ,06/09/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A4 ,THPT Nguyễn Thị Bích Châu ,Ngữ văn 10 ,11 ,Hỏng ,
+9 ,BÙI THỊ TRANG ANH ,18/12/2009,Thành phố Hà Tĩnh ,Nữ ,10 Sử ,THPT Chuyên Hà Tĩnh ,Lịch sử 10 ,"12,25 ",Đạt ,Khuyến khích 
+10 ,ĐẬU QUỐC ANH ,13/06/2009,"Trạm Y tế xã Cẩm Hưng, huyện Cẩm Xuyên - ",Nam ,10A1 ,THPT Cẩm Xuyên ,Toán 10 ,13 ,Đạt ,Ba 
+11 ,NGUYỄN THỊ MINH ANH ,07/11/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10 Văn ,THPT Chuyên Hà Tĩnh ,Ngữ văn 10 ,"11,5 ",Hỏng ,
+12 ,NGUYỄN THỊ TƯỜNG AN ,10/07/2009,TP Hà Tĩnh-Hà Tĩnh ,Nữ ,10D1 ,THPT Phan Đình Phùng ,Lịch sử 10 ,"11,1 ",Đạt ,Khuyến khích 
+13 ,DƯƠNG TUẤN ANH ,26/06/2009,Kỳ Anh - Hà Tĩnh ,Nam ,10A1 ,THPT Kỳ Lâm ,Toán 10 ,"6,25 ",Hỏng ,
+14 ,HOÀNG QUỲNH ANH ,01/09/2009,Huyện Than Uyên - tỉnh Lai Châu ,Nữ ,10A13 ,THPT Cẩm Xuyên ,Ngữ văn 10 ,13 ,Đạt ,Ba 
+15 ,ĐẶNG THỊ NGỌC ÁNH ,02/03/2009,Bệnh viện đa khoa Hà Tĩnh ,Nữ ,10D1 ,THPT Lê Quý Đôn ,Lịch sử 10 ,"11,75 ",Đạt ,Khuyến khích 
+16 ,NGUYỄN PHAN VIỆT ANH ,01/03/2009,Thị xã Hồng Lĩnh - Hà Tĩnh ,Nam ,10 Toán 2 ,THPT Chuyên Hà Tĩnh ,Toán 10 ,"16,25 ",Đạt ,Nhất 
+17 ,HỒ QUỲNH ANH ,27/10/2009,Thành phố Hà Tĩnh ,Nữ ,10 Văn ,THPT Chuyên Hà Tĩnh ,Ngữ văn 10 ,12 ,Đạt ,Khuyến khích 
+18 ,NGUYỄN THỊ NGỌC ÁNH ,06/01/2009,Bệnh viện Đa khoa Hà Tĩnh ,Nữ ,10A13 ,THPT Cẩm Bình ,Lịch sử 10 ,11 ,Hỏng ,
+19 ,NGUYỄN XUÂN AN ,20/11/2009,Cẩm Xuyên - Hà Tĩnh ,Nam ,10A1 ,THPT Hà Huy Tập ,Toán 10 ,13 ,Đạt ,Ba 
+20 ,NGUYỄN QUỲNH ANH ,02/01/2009,Bệnh viện đa khoa huyện Thạch Hà ,Nữ ,10A4 ,THPT Lê Quý Đôn ,Ngữ văn 10 ,12 ,Đạt ,Khuyến khích 
+21 ,LÊ THỊ BẢO CHI ,11/05/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A7 ,THPT Nguyễn Huệ ,Lịch sử 10 ,"9,5 ",Hỏng ,
+22 ,DƯƠNG GIA BẢO ,21/07/2009,Thạch Hà - Hà Tĩnh ,Nam ,10 Toán 1 ,THPT Chuyên Hà Tĩnh ,Toán 10 ,"5,5 ",Hỏng ,
+23 ,MAI VÂN ANH ,01/01/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A9 ,THPT Lê Quảng Chí ,Ngữ văn 10 ,"11,5 ",Hỏng ,
+24 ,NGUYỄN THỊ HÀ CHI ,14/09/2009,Thành phố Hà Tĩnh ,Nữ ,10 Sử ,THPT Chuyên Hà Tĩnh ,Lịch sử 10 ,"15,25 ",Đạt ,Nhì 
+25 ,DƯƠNG GIA BẢO ,01/08/2009,Thị xã Hồng Lĩnh - Hà Tĩnh ,Nam ,10 Toán 1 ,THPT Chuyên Hà Tĩnh ,Toán 10 ,"9,25 ",Đạt ,Khuyến khích 
+26 ,NGUYỄN THỊ VÂN ANH ,12/07/2009,TP Hà Tĩnh-Hà Tĩnh ,Nữ ,10D6 ,THPT Phan Đình Phùng ,Ngữ văn 10 ,"14,25 ",Đạt ,Nhất 
+27 ,NGUYỄN THẢO CHI ,28/10/2009,Thành phố Hà Tĩnh ,Nữ ,10 Sử ,THPT Chuyên Hà Tĩnh ,Lịch sử 10 ,"9,5 ",Hỏng ,
+28 ,NGUYỄN QUANG GIA BẢO ,01/05/2009,TP Hà Tĩnh - Hà Tĩnh ,Nam ,10A1 ,THPT Cẩm Bình ,Toán 10 ,"7,5 ",Hỏng ,
+29 ,PHAN VÂN ANH ,16/09/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10A7 ,THPT Hà Huy Tập ,Ngữ văn 10 ,10 ,Hỏng ,
+30 ,NGUYỄN PHƯƠNG DIỆU ,14/08/2009,Thành phố Hà Tĩnh ,Nữ ,10 Sử ,THPT Chuyên Hà Tĩnh ,Lịch sử 10 ,15 ,Đạt ,Nhì 
+31 ,PHAN GIA BẢO ,16/03/2009,Thành phố Hà Tĩnh ,Nam ,10 Toán 2 ,THPT Chuyên Hà Tĩnh ,Toán 10 ,"12,25 ",Đạt ,Ba 
+32 ,VÕ HỒNG ÁNH ,08/01/2009,Vũ Quang - Hà Tĩnh ,Nữ ,10 Văn ,THPT Chuyên Hà Tĩnh ,Ngữ văn 10 ,"13,25 ",Đạt ,Nhì 
+33 ,NGUYỄN PHƯƠNG DUNG ,14/03/2009,Thành phố Hà Tĩnh ,Nữ ,10 Sử ,THPT Chuyên Hà Tĩnh ,Lịch sử 10 ,"10,5 ",Hỏng ,
+34 ,PHẠM NGUYỄN GIA BẢO ,15/08/2009,Thành phố Hà Tĩnh ,Nam ,10 Toán 2 ,THPT Chuyên Hà Tĩnh ,Toán 10 ,"10,25 ",Đạt ,Khuyến khích 
+35 ,NGUYỄN THỊ PHƯƠNG ÁNH ,13/04/2009,Thành phố Vũng Tàu ,Nữ ,10A8 ,THPT Thành Sen ,Ngữ văn 10 ,"11,5 ",Hỏng ,
+36 ,NGUYỄN THỊ THÙY DUNG ,28/08/2009,Thành phố Hà Tĩnh ,Nữ ,10 Sử ,THPT Chuyên Hà Tĩnh ,Lịch sử 10 ,15 ,Đạt ,Nhì 
+37 ,HỒ THẾ BẢO ,01/01/2009,Thị xã Hồng Lĩnh - Hà Tĩnh ,Nam ,10 Toán 2 ,THPT Chuyên Hà Tĩnh ,Toán 10 ,"9,25 ",Đạt ,Khuyến khích 
+38 ,NGÔ BẢO CHÂU ,17/12/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10A11 ,THPT Kỳ Anh ,Ngữ văn 10 ,"14,25 ",Đạt ,Nhất 
+39 ,ĐẶNG THỊ MỸ DUYÊN ,02/08/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10 Sử ,THPT Chuyên Hà Tĩnh ,Lịch sử 10 ,12 ,Đạt ,Khuyến khích 
+40 ,NGÔ SỸ BÌNH ,20/11/2009,Bệnh viện Đa khoa tỉnh Hà Tĩnh ,Nam ,10A1 ,THPT Cẩm Xuyên ,Toán 10 ,6 ,Hỏng ,
+41 ,TRẦN THỊ CẨM CHI ,06/10/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A11 ,THPT Kỳ Anh ,Ngữ văn 10 ,"12,5 ",Đạt ,Ba 
+42 ,VÕ TÁ HOÀNG DŨNG ,19/11/2009,Thành phố Hà Tĩnh ,Nam ,10 Sử ,THPT Chuyên Hà Tĩnh ,Lịch sử 10 ,"14,75 ",Đạt ,Nhì 
+43 ,NGUYỄN TRÍ CƯỜNG ,15/07/2009,Thành phố Hà Tĩnh ,Nam ,10 Toán 2 ,THPT Chuyên Hà Tĩnh ,Toán 10 ,13 ,Đạt ,Ba 
+44 ,PHẠM THỊ LINH CHI ,03/05/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A3 ,THPT Kỳ Lâm ,Ngữ văn 10 ,12 ,Đạt ,Khuyến khích 
+45 ,NGUYỄN ĐOÀN THỊ THÙY DƯƠNG ,26/06/2009,Bệnh viện Lê Lợi - Bà Rịa Vũng Tàu ,Nữ ,10D1 ,THPT Lê Quý Đôn ,Lịch sử 10 ,13 ,Đạt ,Ba 
+46 ,NGUYỄN TÙNG DUY ,31/10/2009,TP Hà Tĩnh - Hà Tĩnh ,Nam ,10 Toán 1 ,THPT Chuyên Hà Tĩnh ,Toán 10 ,12 ,Đạt ,Ba 
+47 ,LÊ THỊ PHƯƠNG CHI ,19/10/2009,Thành phố Hà Tĩnh ,Nữ ,10 Văn ,THPT Chuyên Hà Tĩnh ,Ngữ văn 10 ,13 ,Đạt ,Ba 
+48 ,LÊ THỊ ANH ĐAN ,02/03/2009,TP. Hà Tĩnh - Hà Tĩnh ,Nữ ,10A4 ,"TH, THCS và THPT ĐH Hà Tĩnh ",Lịch sử 10 ,"10,75 ",Hỏng ,
+49 ,NGUYỄN ANH DŨNG ,10/05/2009,Can Lộc - Hà Tĩnh ,Nam ,10 Toán 1 ,THPT Chuyên Hà Tĩnh ,Toán 10 ,"13,5 ",Đạt ,Nhì 
+50 ,ĐẶNG QUỲNH CHI ,23/07/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10 Văn ,THPT Chuyên Hà Tĩnh ,Ngữ văn 10 ,"12,75 ",Đạt ,Ba 
+51 ,ĐẶNG THỊ THẢO ĐAN ,08/08/2009,TP Hà Tĩnh-Hà Tĩnh ,Nữ ,10A6 ,THPT Nguyễn Trung Thiên ,Lịch sử 10 ,12 ,Đạt ,Khuyến khích 
+52 ,PHAN TUẤN DŨNG ,19/04/2009,Hương Khê - Hà Tĩnh ,Nam ,10 Toán 1 ,THPT Chuyên Hà Tĩnh ,Toán 10 ,"9,75 ",Đạt ,Khuyến khích 
+53 ,TRẦN THẢO CHI ,15/04/2009,Thị xã Hồng Lĩnh - Hà Tĩnh ,Nữ ,10 Văn ,THPT Chuyên Hà Tĩnh ,Ngữ văn 10 ,13 ,Đạt ,Ba 
+54 ,NGUYỄN LÊ HỒNG HẠNH ,13/06/2009,Thạch Hà - Hà Tĩnh ,Nữ ,10 Sử ,THPT Chuyên Hà Tĩnh ,Lịch sử 10 ,"16,5 ",Đạt ,Nhất 
+55 ,LÊ TRẦN KHÁNH ĐẠT ,02/11/2009,Kỳ Anh - Hà Tĩnh ,Nam ,10A1 ,THPT Kỳ Anh ,Toán 10 ,"9,75 ",Đạt ,Khuyến khích 
+56 ,NGUYỄN THỊ HUYỀN DIỆU ,02/02/2009,Bệnh viện đa khoa Hà Tĩnh ,Nữ ,10D1 ,THPT Lê Quý Đôn ,Ngữ văn 10 ,"12,5 ",Đạt ,Ba 
+57 ,PHẠM MINH HẰNG ,09/07/2009,Thành phố Hà Tĩnh ,Nữ ,10 Sử ,THPT Chuyên Hà Tĩnh ,Lịch sử 10 ,"15,5 ",Đạt ,Nhất 
+58 ,ĐẶNG TIẾN ĐẠT ,03/03/2009,Thị xã Hồng Lĩnh - Hà Tĩnh ,Nam ,10 Toán 2 ,THPT Chuyên Hà Tĩnh ,Toán 10 ,"15,25 ",Đạt ,Nhì 
+59 ,DƯƠNG THỊ DIỆU ,16/02/2009,TP Hà Tĩnh-Hà Tĩnh ,Nữ ,10A7 ,THPT Nguyễn Trung Thiên ,Ngữ văn 10 ,"11,5 ",Hỏng ,
+60 ,HÀ THU HIỀN ,26/06/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A12 ,THPT Kỳ Anh ,Lịch sử 10 ,"8,5 ",Hỏng ,
+61 ,PHAN HẢI ĐĂNG ,18/04/2009,Thành phố Hà Tĩnh ,Nam ,10 Toán 2 ,THPT Chuyên Hà Tĩnh ,Toán 10 ,15 ,Đạt ,Nhì 
+62 ,NGUYỄN LÊ ĐAN ,18/01/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10A13 ,THPT Cẩm Xuyên ,Ngữ văn 10 ,"11,5 ",Hỏng ,
+63 ,TRẦN THU HIỀN ,29/07/2009,TP Hà Tĩnh-Hà Tĩnh ,Nữ ,10D6 ,THPT Phan Đình Phùng ,Lịch sử 10 ,"12,5 ",Đạt ,Khuyến khích 
+64 ,NGUYỄN ANH ĐỨC ,10/01/2009,Kỳ Anh - Hà Tĩnh ,Nam ,10A1 ,THPT Kỳ Lâm ,Toán 10 ,4 ,Hỏng ,
+65 ,NGUYỄN HOÀNG LINH GIANG ,28/08/2009,Can Lộc - Hà Tĩnh ,Nữ ,10 Văn ,THPT Chuyên Hà Tĩnh ,Ngữ văn 10 ,"10,75 ",Hỏng ,
+66 ,PHẠM TRUNG HIẾU ,20/03/2009,Thành phố Hà Tĩnh ,Nam ,10A6 ,THPT Thành Sen ,Lịch sử 10 ,"9,5 ",Hỏng ,
+67 ,NGUYỄN TRỌNG MINH ĐỨC ,25/09/2009,Thành phố Hà Tĩnh ,Nam ,10 Toán 2 ,THPT Chuyên Hà Tĩnh ,Toán 10 ,"9,25 ",Đạt ,Khuyến khích 
+68 ,PHAN THỊ GIANG ,10/10/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A10 ,THPT Nguyễn Huệ ,Ngữ văn 10 ,12 ,Đạt ,Khuyến khích 
+69 ,TRẦN THỊ HOÀI ,12/10/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10A5 ,THPT Nguyễn Đình Liễn ,Lịch sử 10 ,"11,75 ",Đạt ,Khuyến khích 
+70 ,TRỊNH MINH ĐỨC ,07/04/2009,Cẩm Xuyên - Hà Tĩnh ,Nam ,10A1 ,THPT Nguyễn Đình Liễn ,Toán 10 ,8 ,Hỏng ,
+71 ,LÊ THỊ TRÀ GIANG ,17/04/2009,Thành phố Hà Tĩnh ,Nữ ,10 Văn ,THPT Chuyên Hà Tĩnh ,Ngữ văn 10 ,12 ,Đạt ,Khuyến khích 
+72 ,NGUYỄN THỊ THU HOÀI ,28/08/2009,Thành phố Hà Tĩnh ,Nữ ,10 Sử ,THPT Chuyên Hà Tĩnh ,Lịch sử 10 ,15 ,Đạt ,Nhì 
+73 ,NGUYỄN BÙI TRÀ GIANG ,20/10/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10A1 ,THPT Hà Huy Tập ,Toán 10 ,"14,5 ",Đạt ,Nhì 
+74 ,TRẦN THỊ TRÀ GIANG ,27/03/2009,Thành phố Hà Tĩnh ,Nữ ,10 Văn ,THPT Chuyên Hà Tĩnh ,Ngữ văn 10 ,"13,5 ",Đạt ,Nhì 
+75 ,LÝ NGUYỄN KIM HỒNG ,24/03/2009,BV Từ Dũ - TP Hồ Chí Minh ,Nữ ,10A3 ,THPT Nguyễn Thị Bích Châu ,Lịch sử 10 ,"9,6 ",Hỏng ,
+76 ,NGUYỄN TRƯỜNG GIANG ,24/08/2009,Kỳ Anh - Hà Tĩnh ,Nam ,10A1 ,THPT Nguyễn Thị Bích Châu ,Toán 10 ,"5,5 ",Hỏng ,
+77 ,NGUYỄN THỊ NGÂN HÀ ,15/06/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A4 ,THPT Nguyễn Thị Bích Châu ,Ngữ văn 10 ,11 ,Hỏng ,
+78 ,PHAN NGỌC HỒNG ,19/06/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A3 ,THPT Kỳ Lâm ,Lịch sử 10 ,11 ,Hỏng ,
+79 ,CAO THỊ QUỲNH GIAO ,07/02/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A1 ,THPT Nguyễn Huệ ,Toán 10 ,13 ,Đạt ,Ba 
+80 ,NGUYỄN THỊ NGÂN HÀ ,10/12/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10A14 ,THPT Cẩm Bình ,Ngữ văn 10 ,"12,5 ",Đạt ,Ba 
+81 ,NGUYỄN THỊ KHÁNH HUYỀN ,19/08/2009,Thạch Hà - Hà Tĩnh ,Nữ ,10 Sử ,THPT Chuyên Hà Tĩnh ,Lịch sử 10 ,"13,5 ",Đạt ,Ba 
+82 ,TRẦN KHẮC HÀO ,08/01/2009,Kỳ Anh-Hà Tĩnh ,Nam ,10A7 ,THPT Phan Đình Phùng ,Toán 10 ,"12,25 ",Đạt ,Ba 
+83 ,ĐẶNG THỊ THU HÀ ,26/03/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10A7 ,THPT Hà Huy Tập ,Ngữ văn 10 ,12 ,Đạt ,Khuyến khích 
+84 ,NGUYỄN THỊ KHÁNH HUYỀN ,27/08/2009,Ky Anh - Hà Tĩnh ,Nữ ,10A11 ,THPT Kỳ Anh ,Lịch sử 10 ,"11,5 ",Đạt ,Khuyến khích 
+85 ,NGUYỄN XUÂN HÀO ,09/09/2009,Xã Hà Linh - Huyện Hương Khê ,Nam ,10A4 ,THPT Lê Quý Đôn ,Toán 10 ,7 ,Hỏng ,
+86 ,PHAN THỊ HẠNH ,29/10/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10A13 ,THPT Cẩm Xuyên ,Ngữ văn 10 ,12 ,Đạt ,Khuyến khích 
+87 ,TRẦN THỊ KHÁNH HUYỀN ,13/04/2009,Đức Thọ - Hà Tĩnh ,Nữ ,10 Sử ,THPT Chuyên Hà Tĩnh ,Lịch sử 10 ,17 ,Đạt ,Nhất 
+88 ,NGUYỄN TUẤN HÀ ,26/09/2009,TP Hà Tĩnh-Hà Tĩnh ,Nam ,10A8 ,THPT Phan Đình Phùng ,Toán 10 ,"12,25 ",Đạt ,Ba 
+89 ,NGUYỄN THỤC HIỀN ,03/01/2009,Thành phố Hà Tĩnh ,Nữ ,10 Văn ,THPT Chuyên Hà Tĩnh ,Ngữ văn 10 ,"13,5 ",Đạt ,Nhì 
+90 ,NGUYỄN MẬU ANH HUỲNH ,29/11/2009,Thành phố Hà Tĩnh ,Nam ,10 Sử ,THPT Chuyên Hà Tĩnh ,Lịch sử 10 ,15 ,Đạt ,Nhì 
+91 ,NGUYỄN TRUNG HẢI ,19/02/2009,Đắk Nông ,Nam ,10 Toán 1 ,THPT Chuyên Hà Tĩnh ,Toán 10 ,"14,5 ",Đạt ,Nhì 
+92 ,NGUYỄN KHÁNH HUYỀN ,15/09/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A9 ,THPT Lê Quảng Chí ,Ngữ văn 10 ,"11,5 ",Hỏng ,
+93 ,NGUYỄN GIA HƯNG ,14/05/2009,TP. Hà Tĩnh - Hà Tĩnh ,Nam ,10A4 ,"TH, THCS và THPT ĐH Hà Tĩnh ",Lịch sử 10 ,11 ,Hỏng ,
+94 ,NGUYỄN THỊ HẢO ,24/03/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10A1 ,THPT Cẩm Bình ,Toán 10 ,"10,5 ",Đạt ,Khuyến khích 
+95 ,NGUYỄN ĐÌNH KHIÊM ,16/05/2009,Bệnh viện Đa khoa Hà Tĩnh ,Nam ,10A14 ,THPT Cẩm Bình ,Ngữ văn 10 ,12 ,Đạt ,Khuyến khích 
+96 ,BÙI LÊ KHANH ,25/09/2008,Thành phố Hà Tĩnh ,Nữ ,10 Sử ,THPT Chuyên Hà Tĩnh ,Lịch sử 10 ,"14,5 ",Đạt ,Nhì 
+97 ,PHAN LƯU KHÁNH HOÀ ,22/02/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A3 ,THPT Kỳ Anh ,Toán 10 ,11 ,Đạt ,Khuyến khích 
+98 ,VÕ ĐAN LÊ ,03/12/2009,Nghệ An ,Nữ ,10 Văn ,THPT Chuyên Hà Tĩnh ,Ngữ văn 10 ,13 ,Đạt ,Ba 
+99 ,NGUYỄN THỊ VÂN KHÁNH ,25/01/2009,Xã Thạch Hương - Thạch Hà ,Nữ ,10C1 ,THPT Lê Quý Đôn ,Lịch sử 10 ,12 ,Đạt ,Khuyến khích 
+100 ,TÔ THỊ MỸ HÒA ,07/01/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A1 ,THPT Nguyễn Thị Bích Châu ,Toán 10 ,"4,75 ",Hỏng ,
+101 ,PHẠM HOÀNG LÊ ,14/03/2009,Thạch Hà-Hà Tĩnh ,Nữ ,10A6 ,THPT Nguyễn Trung Thiên ,Ngữ văn 10 ,12 ,Đạt ,Khuyến khích 
+102 ,HỒ THỊ PHƯƠNG KHUÊ ,24/09/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A3 ,THPT Nguyễn Thị Bích Châu ,Lịch sử 10 ,"10,75 ",Hỏng ,
+103 ,NGUYỄN VIỆT HÒA ,08/12/2009,Can Lộc - Hà Tĩnh ,Nữ ,10 Toán 2 ,THPT Chuyên Hà Tĩnh ,Toán 10 ,"15,5 ",Đạt ,Nhất 
+104 ,PHẠM THỊ ÁI LINH ,14/02/2009,Thành phố Hà Tĩnh ,Nữ ,10 Văn ,THPT Chuyên Hà Tĩnh ,Ngữ văn 10 ,13 ,Đạt ,Ba 
+105 ,NGUYỄN THỊ LÂM ,27/02/2009,Thạch Hà-Hà Tĩnh ,Nữ ,10A6 ,THPT Nguyễn Trung Thiên ,Lịch sử 10 ,"13,5 ",Đạt ,Ba 
+106 ,PHAN VIẾT LÊ HUY ,10/05/2009,Thành phố Hà Tĩnh ,Nam ,10 Toán 2 ,THPT Chuyên Hà Tĩnh ,Toán 10 ,"15,5 ",Đạt ,Nhất 
+107 ,LÊ NGUYỄN HÀ LINH ,24/06/2009,Thành phố Hà Tĩnh ,Nữ ,10 Văn ,THPT Chuyên Hà Tĩnh ,Ngữ văn 10 ,"11,25 ",Hỏng ,
+108 ,TRẦN THỊ LIỄU ,23/05/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A3 ,THPT Nguyễn Thị Bích Châu ,Lịch sử 10 ,"11,6 ",Đạt ,Khuyến khích 
+109 ,NGUYỄN NHẬT HUY ,26/11/2009,TP Hà Tĩnh-Hà Tĩnh ,Nam ,10A8 ,THPT Phan Đình Phùng ,Toán 10 ,"13,5 ",Đạt ,Nhì 
+110 ,TRẦN LÊ KHÁNH LINH ,28/06/2009,Thành phố Hà Tĩnh ,Nữ ,10 Văn ,THPT Chuyên Hà Tĩnh ,Ngữ văn 10 ,"11,5 ",Hỏng ,
+111 ,CAO HÀ CẨM LINH ,25/05/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A10 ,THPT Nguyễn Huệ ,Lịch sử 10 ,"10,5 ",Hỏng ,
+112 ,TRẦN GIA HƯNG ,18/02/2009,Hồng Lĩnh - Hà Tĩnh ,Nam ,10A1 ,THPT Kỳ Anh ,Toán 10 ,11 ,Đạt ,Khuyến khích 
+113 ,TRẦN KHÁNH LINH ,17/07/2009,Thị xã Hồng Lĩnh - Hà Tĩnh ,Nữ ,10 Văn ,THPT Chuyên Hà Tĩnh ,Ngữ văn 10 ,12 ,Đạt ,Khuyến khích 
+114 ,CHU THỊ HÀ LINH ,11/08/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10A7 ,THPT Cẩm Xuyên ,Lịch sử 10 ,"13,75 ",Đạt ,Ba 
+115 ,LÊ DUY KHÁNH ,21/04/2009,Lộc Hà - Hà Tĩnh ,Nam ,10 Toán 2 ,THPT Chuyên Hà Tĩnh ,Toán 10 ,"15,25 ",Đạt ,Nhì 
+116 ,NGUYỄN THỊ MAI LINH ,10/01/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A7 ,THPT Kỳ Anh ,Ngữ văn 10 ,"12,5 ",Đạt ,Ba 
+117 ,ĐỒNG KHÁNH LINH ,07/07/2009,Thành phố Hà Tĩnh ,Nữ ,10 Sử ,THPT Chuyên Hà Tĩnh ,Lịch sử 10 ,12 ,Đạt ,Khuyến khích 
+118 ,TRẦN HẬU NAM KHÁNH ,21/05/2009,Thành phố Hà Tĩnh ,Nam ,10 Toán 1 ,THPT Chuyên Hà Tĩnh ,Toán 10 ,"17,5 ",Đạt ,Nhất 
+119 ,NGUYỄN THỊ MAI LINH ,10/05/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A4 ,THPT Nguyễn Thị Bích Châu ,Ngữ văn 10 ,"11,5 ",Hỏng ,
+120 ,HOÀNG THỊ MAI LINH ,22/07/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10A6 ,THPT Hà Huy Tập ,Lịch sử 10 ,"10,5 ",Hỏng ,
+121 ,VÕ TRỌNG KHÁNH ,18/02/2009,Thành phố Hà Tĩnh ,Nam ,10 Toán 2 ,THPT Chuyên Hà Tĩnh ,Toán 10 ,"13,5 ",Đạt ,Nhì 
+122 ,NGUYỄN MỸ LINH ,25/03/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10A7 ,THPT Hà Huy Tập ,Ngữ văn 10 ,13 ,Đạt ,Ba 
+123 ,HỒ PHƯƠNG LINH ,11/04/2009,Hương Sơn - Hà Tĩnh ,Nữ ,10 Sử ,THPT Chuyên Hà Tĩnh ,Lịch sử 10 ,16 ,Đạt ,Nhất 
+124 ,NGUYỄN VŨ KHÁNH ,11/02/2009,Thành phố Hà Tĩnh ,Nam ,10 Toán 2 ,THPT Chuyên Hà Tĩnh ,Toán 10 ,"13,75 ",Đạt ,Nhì 
+125 ,TRẦN LÊ NGỌC LINH ,25/03/2009,TP Hà Tĩnh-Hà Tĩnh ,Nữ ,10D2 ,THPT Phan Đình Phùng ,Ngữ văn 10 ,"11,75 ",Đạt ,Khuyến khích 
+126 ,TRẦN THỊ PHƯƠNG LINH ,06/04/2009,Thành phố Hà Tĩnh ,Nữ ,10 Sử ,THPT Chuyên Hà Tĩnh ,Lịch sử 10 ,"13,75 ",Đạt ,Ba 
+127 ,NGÔ BÙI ANH KHOA ,10/08/2009,Cẩm Xuyên - Hà Tĩnh ,Nam ,10 Toán 1 ,THPT Chuyên Hà Tĩnh ,Toán 10 ,"12,75 ",Đạt ,Ba 
+128 ,ĐẶNG PHƯƠNG LINH ,28/12/2009,Đức Thọ - Hà Tĩnh ,Nữ ,10A7 ,THPT Nguyễn Huệ ,Ngữ văn 10 ,11 ,Hỏng ,
+129 ,NGUYỄN DOÃN THUỲ LINH ,21/04/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A12 ,THPT Kỳ Anh ,Lịch sử 10 ,"9,5 ",Hỏng ,
+130 ,NGUYỄN ANH KIÊN ,10/08/2009,Thạch Hà - Hà Tĩnh ,Nam ,10 Toán 2 ,THPT Chuyên Hà Tĩnh ,Toán 10 ,"11,5 ",Đạt ,Ba 
+131 ,NGUYỄN THỊ PHƯƠNG LINH ,25/01/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A7 ,THPT Nguyễn Huệ ,Ngữ văn 10 ,13 ,Đạt ,Ba 
+132 ,HỒ PHẠM HUYỀN LY ,25/06/2009,TP Hà Tĩnh-Hà Tĩnh ,Nữ ,10A6 ,THPT Nguyễn Trung Thiên ,Lịch sử 10 ,"13,5 ",Đạt ,Ba 
+133 ,TỪ HỮU TRUNG KIÊN ,21/08/2009,Thạch Hà - Hà Tĩnh ,Nam ,10 Toán 1 ,THPT Chuyên Hà Tĩnh ,Toán 10 ,-1 ,Vắng thi ,
+134 ,HOÀNG CAO LỢI ,25/01/2008,Kỳ Anh - Hà Tĩnh ,Nam ,10A9 ,THPT Lê Quảng Chí ,Ngữ văn 10 ,"11,5 ",Hỏng ,
+135 ,NGUYỄN THỊ NGỌC MAI ,16/04/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10A6 ,THPT Hà Huy Tập ,Lịch sử 10 ,"8,5 ",Hỏng ,
+136 ,BÙI TÙNG LÂM ,26/09/2009,Thành phố Hà Tĩnh ,Nam ,10 Toán 1 ,THPT Chuyên Hà Tĩnh ,Toán 10 ,"12,25 ",Đạt ,Ba 
+137 ,LÊ THỊ CẨM MY ,12/08/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A3 ,THPT Kỳ Lâm ,Ngữ văn 10 ,"10,5 ",Hỏng ,
+138 ,NGUYỄN HÀ MY ,16/10/2009,TP. Hà Tĩnh - Hà Tĩnh ,Nữ ,10A4 ,"TH, THCS và THPT ĐH Hà Tĩnh ",Lịch sử 10 ,"14,25 ",Đạt ,Nhì 
+139 ,NGUYỄN KHÁNH LINH ,14/01/2009,TP Hà Tĩnh-Hà Tĩnh ,Nữ ,10A3 ,THPT Phan Đình Phùng ,Toán 10 ,"13,5 ",Đạt ,Nhì 
+140 ,TRẦN NGUYỄN HUYỀN MY ,22/12/2009,TP Hà Tĩnh- Hà Tĩnh ,Nữ ,10A1 ,"TH,THCS và THPT Albert Einstein ",Ngữ văn 10 ,"14,5 ",Đạt ,Nhất 
+141 ,NGUYỄN THỊ THẢO MY ,02/11/2009,Thành phố Hà Tĩnh ,Nữ ,10 Sử ,THPT Chuyên Hà Tĩnh ,Lịch sử 10 ,13 ,Đạt ,Ba 
+142 ,TRẦN THỊ KHÁNH LINH ,22/09/2009,Thạch Hà-Hà Tĩnh ,Nữ ,10A1 ,THPT Nguyễn Trung Thiên ,Toán 10 ,11 ,Đạt ,Khuyến khích 
+143 ,NGUYỄN THẢO MY ,06/12/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A7 ,THPT Kỳ Anh ,Ngữ văn 10 ,"12,5 ",Đạt ,Ba 
+144 ,NGUYỄN BẢO NGÂN ,01/11/2009,Thành phố Hà Tĩnh ,Nữ ,10 Sử ,THPT Chuyên Hà Tĩnh ,Lịch sử 10 ,11 ,Hỏng ,
+145 ,NGUYỄN CÁT TƯỜNG LINH ,18/09/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10A1 ,THPT Cẩm Xuyên ,Toán 10 ,"9,75 ",Đạt ,Khuyến khích 
+146 ,NGUYỄN TRÀ MY ,17/01/2009,Thạch Hà - Hà Tĩnh ,Nữ ,10 Văn ,THPT Chuyên Hà Tĩnh ,Ngữ văn 10 ,"11,5 ",Hỏng ,
+147 ,PHAN THỊ KHÁNH NGÂN ,27/12/2009,Thành phố Hà Tĩnh ,Nữ ,10 Sử ,THPT Chuyên Hà Tĩnh ,Lịch sử 10 ,"12,75 ",Đạt ,Ba 
+148 ,NGUYỄN THỪA LONG ,22/12/2009,Thành phố Hà Tĩnh ,Nam ,10 Toán 2 ,THPT Chuyên Hà Tĩnh ,Toán 10 ,11 ,Đạt ,Khuyến khích 
+149 ,TRẦN THỊ LINH NA ,21/10/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10A4 ,THPT Nguyễn Đình Liễn ,Ngữ văn 10 ,12 ,Đạt ,Khuyến khích 
+150 ,VÕ THỊ THANH NGÂN ,12/12/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A3 ,THPT Nguyễn Thị Bích Châu ,Lịch sử 10 ,"9,5 ",Hỏng ,
+151 ,TRẦN VIẾT LONG ,16/02/2009,Thành phố Hà Tĩnh ,Nam ,10 Toán 2 ,THPT Chuyên Hà Tĩnh ,Toán 10 ,"16,75 ",Đạt ,Nhất 
+152 ,HOÀNG THỊ NA ,20/04/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10A7 ,THPT Hà Huy Tập ,Ngữ văn 10 ,"11,5 ",Hỏng ,
+153 ,NGUYỄN THỊ THẢO NGÂN ,08/02/2009,Thành phố Hà Tĩnh ,Nữ ,10 Sử ,THPT Chuyên Hà Tĩnh ,Lịch sử 10 ,"13,5 ",Đạt ,Ba 
+154 ,TRẦN MINH LỢI ,26/04/2009,Thành phố Hà Tĩnh ,Nam ,10 Toán 2 ,THPT Chuyên Hà Tĩnh ,Toán 10 ,"4,5 ",Hỏng ,
+155 ,NGUYỄN PHAN BẢO NGỌC ,10/01/2009,Thị xã Kỳ Anh - Hà Tĩnh ,Nữ ,10 Văn ,THPT Chuyên Hà Tĩnh ,Ngữ văn 10 ,12 ,Đạt ,Khuyến khích 
+156 ,HOÀNG NGUYỄN BẢO NGỌC ,20/02/2009,Trạm y tế xã Cẩm Nam - Cẩm Xuyên ,Nữ ,10C1 ,THPT Lê Quý Đôn ,Lịch sử 10 ,"10,5 ",Hỏng ,
+157 ,LÊ MINH MẠNH ,17/01/2009,Thành phố Hà Tĩnh ,Nam ,10 Toán 1 ,THPT Chuyên Hà Tĩnh ,Toán 10 ,9 ,Đạt ,Khuyến khích 
+158 ,NGUYỄN TRẦN BẢO NGỌC ,07/10/2009,Thạch Hà - Hà Tĩnh ,Nữ ,10 Văn ,THPT Chuyên Hà Tĩnh ,Ngữ văn 10 ,12 ,Đạt ,Khuyến khích 
+159 ,NGUYỄN BÙI BẢO NGỌC ,10/07/2009,Thạch Hà-Hà Tĩnh ,Nữ ,10D2 ,THPT Phan Đình Phùng ,Lịch sử 10 ,"12,25 ",Đạt ,Khuyến khích 
+160 ,ĐẶNG VĂN MẠNH ,03/10/2009,Bệnh viện đa khoa Thạch Hà ,Nam ,10A1 ,THPT Lê Quý Đôn ,Toán 10 ,9 ,Đạt ,Khuyến khích 
+161 ,ĐOÀN THỊ HẠNH NGUYÊN ,23/11/2009,Bệnh viện đa khoa Thạch Hà ,Nữ ,10D1 ,THPT Lê Quý Đôn ,Ngữ văn 10 ,12 ,Đạt ,Khuyến khích 
+162 ,PHAN BÙI BẢO NGỌC ,07/10/2009,Đắk Lắk ,Nữ ,10 Sử ,THPT Chuyên Hà Tĩnh ,Lịch sử 10 ,13 ,Đạt ,Ba 
+163 ,NGUYỄN HOÀNG MINH ,07/12/2009,TP Hà Tĩnh-Hà Tĩnh ,Nam ,10A8 ,THPT Phan Đình Phùng ,Toán 10 ,"10,25 ",Đạt ,Khuyến khích 
+164 ,NGUYỄN PHƯƠNG NGUYÊN ,09/09/2009,Thành phố Hà Tĩnh ,Nữ ,10 Văn ,THPT Chuyên Hà Tĩnh ,Ngữ văn 10 ,13 ,Đạt ,Ba 
+165 ,NGUYỄN THỊ KHÁNH NGỌC ,26/09/2009,Long Thành - Đồng Nai ,Nữ ,10A10 ,THPT Cẩm Bình ,Lịch sử 10 ,10 ,Hỏng ,
+166 ,NGUYỄN HỒNG QUANG MINH ,13/11/2009,Thành phố Hà Tĩnh ,Nam ,10 Toán 1 ,THPT Chuyên Hà Tĩnh ,Toán 10 ,"6,5 ",Hỏng ,
+167 ,NGUYỄN THỊ KHÁNH NHI ,19/03/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10A6 ,THPT Nguyễn Đình Liễn ,Ngữ văn 10 ,"12,5 ",Đạt ,Ba 
+168 ,NGUYỄN THỊ ÁNH NGUYỆT ,10/03/2009,Thạch Hà-Hà Tĩnh ,Nữ ,10A6 ,THPT Nguyễn Trung Thiên ,Lịch sử 10 ,11 ,Hỏng ,
+169 ,NGUYỄN BẢO NAM ,03/05/2009,Nghi Xuân - Hà Tĩnh ,Nam ,10 Toán 2 ,THPT Chuyên Hà Tĩnh ,Toán 10 ,"13,75 ",Đạt ,Nhì 
+170 ,BÙI TUYẾT NHI ,28/08/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A7 ,THPT Nguyễn Huệ ,Ngữ văn 10 ,11 ,Hỏng ,
+171 ,PHAN MINH NHẬT ,26/11/2009,Thành phố Hà Tĩnh ,Nam ,10 Sử ,THPT Chuyên Hà Tĩnh ,Lịch sử 10 ,15 ,Đạt ,Nhì 
+172 ,VŨ TRỌNG NAM ,14/02/2009,Nghệ An ,Nam ,10 Toán 2 ,THPT Chuyên Hà Tĩnh ,Toán 10 ,11 ,Đạt ,Khuyến khích 
+173 ,NGUYỄN GIA NHƯ ,01/03/2009,Nghệ An ,Nữ ,10 Văn ,THPT Chuyên Hà Tĩnh ,Ngữ văn 10 ,"11,5 ",Hỏng ,
+174 ,NGUYỄN THỊ NGUYỆT NHI ,26/12/2009,Chư Pah - Gia Lai ,Nữ ,10A9 ,THPT Lê Quảng Chí ,Lịch sử 10 ,9 ,Hỏng ,
+175 ,THÂN NGUYỄN KHÁNH NGÂN ,12/03/2009,Can Lộc - Hà Tĩnh ,Nữ ,10 Toán 2 ,THPT Chuyên Hà Tĩnh ,Toán 10 ,"13,75 ",Đạt ,Nhì 
+176 ,TĂNG GIA NHƯ ,15/09/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10 Văn ,THPT Chuyên Hà Tĩnh ,Ngữ văn 10 ,"13,5 ",Đạt ,Nhì 
+177 ,NGUYỄN YẾN NHI ,19/04/2009,Thành phố Hà Tĩnh ,Nữ ,10 Sử ,THPT Chuyên Hà Tĩnh ,Lịch sử 10 ,17 ,Đạt ,Nhất 
+178 ,THẾ BẢO NGỌC ,17/12/2009,Thành phố Hà Tĩnh ,Nữ ,10 Toán 1 ,THPT Chuyên Hà Tĩnh ,Toán 10 ,"14,75 ",Đạt ,Nhì 
+179 ,TRẦN GIA NHƯ ,05/06/2009,Thành phố Hà Tĩnh ,Nữ ,10 Văn ,THPT Chuyên Hà Tĩnh ,Ngữ văn 10 ,"12,5 ",Đạt ,Ba 
+180 ,ĐOÀN THỊ HỒNG NHUNG ,12/07/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10A11 ,THPT Cẩm Bình ,Lịch sử 10 ,13 ,Đạt ,Ba 
+181 ,VÕ THỊ BẢO NGỌC ,18/01/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10A1 ,THPT Nguyễn Đình Liễn ,Toán 10 ,"7,75 ",Hỏng ,
+182 ,NGUYỄN THỊ QUỲNH NHƯ ,15/09/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A3 ,THPT Kỳ Lâm ,Ngữ văn 10 ,12 ,Đạt ,Khuyến khích 
+183 ,BÙI GIA NHƯ ,13/05/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A7 ,THPT Nguyễn Huệ ,Lịch sử 10 ,"9,25 ",Hỏng ,
+184 ,TRẦN LÊ KHÔI NGUYÊN ,23/12/2009,Cẩm Xuyên - Hà Tĩnh ,Nam ,10 Toán 2 ,THPT Chuyên Hà Tĩnh ,Toán 10 ,"10,25 ",Đạt ,Khuyến khích 
+185 ,VŨ TÂM NHƯ ,12/12/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A4 ,THPT Kỳ Lâm ,Ngữ văn 10 ,11 ,Hỏng ,
+186 ,TRẦN GIA NHƯ ,28/02/2009,Thạch Hà - Hà Tĩnh ,Nữ ,10 Sử ,THPT Chuyên Hà Tĩnh ,Lịch sử 10 ,"16,25 ",Đạt ,Nhất 
+187 ,TRƯƠNG ĐĂNG VŨ NGUYÊN ,14/08/2009,Kỳ Anh - Hà Tĩnh ,Nam ,10A1 ,THPT Nguyễn Huệ ,Toán 10 ,11 ,Đạt ,Khuyến khích 
+188 ,PHAN THỊ DIỆU OANH ,08/01/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10 Văn ,THPT Chuyên Hà Tĩnh ,Ngữ văn 10 ,"11,5 ",Hỏng ,
+189 ,NGUYỄN THỊ OANH ,25/02/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10A6 ,THPT Hà Huy Tập ,Lịch sử 10 ,9 ,Hỏng ,
+190 ,NGUYỄN ĐẶNG THIỆN NHÂN ,01/01/2009,Can Lộc - Hà Tĩnh ,Nam ,10 Toán 2 ,THPT Chuyên Hà Tĩnh ,Toán 10 ,13 ,Đạt ,Ba 
+191 ,NGUYỄN THỊ KIM OANH ,21/04/2009,Thạch Hà-Hà Tĩnh ,Nữ ,10A7 ,THPT Nguyễn Trung Thiên ,Ngữ văn 10 ,11 ,Hỏng ,
+192 ,NGUYỄN MAI PHƯƠNG ,14/03/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10 Sử ,THPT Chuyên Hà Tĩnh ,Lịch sử 10 ,"14,5 ",Đạt ,Nhì 
+193 ,TRẦN ĐỨC NHẬT ,27/05/2009,Thành phố Hà Tĩnh ,Nam ,10 Toán 1 ,THPT Chuyên Hà Tĩnh ,Toán 10 ,"11,25 ",Đạt ,Ba 
+194 ,NGUYỄN LÊ NAM PHƯƠNG ,23/09/2009,Đức Thọ - Hà Tĩnh ,Nữ ,10 Văn ,THPT Chuyên Hà Tĩnh ,Ngữ văn 10 ,13 ,Đạt ,Ba 
+195 ,DƯƠNG TRẦN THU PHƯƠNG ,15/03/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10A13 ,THPT Cẩm Xuyên ,Lịch sử 10 ,"11,5 ",Đạt ,Khuyến khích 
+196 ,LÊ NHẬT ,01/11/2009,Thành phố Hà Tĩnh ,Nam ,10 Toán 1 ,THPT Chuyên Hà Tĩnh ,Toán 10 ,12 ,Đạt ,Ba 
+197 ,LÊ THỊ THANH PHƯỢNG ,02/01/2009,TP Hà Tĩnh-Hà Tĩnh ,Nữ ,10D2 ,THPT Phan Đình Phùng ,Ngữ văn 10 ,12 ,Đạt ,Khuyến khích 
+198 ,NGUYỄN THỊ DIỄM QUỲNH ,12/07/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10A14 ,THPT Cẩm Bình ,Lịch sử 10 ,"9,5 ",Hỏng ,
+199 ,HOÀNG LONG NHẬT ,14/06/2009,Kỳ Anh - Hà Tĩnh ,Nam ,10A1 ,THPT Lê Quảng Chí ,Toán 10 ,11 ,Đạt ,Khuyến khích 
+200 ,LÊ TRẦN MAI QUYÊN ,29/07/2009,Thành phố Hà Tĩnh ,Nữ ,10 Văn ,THPT Chuyên Hà Tĩnh ,Ngữ văn 10 ,"13,25 ",Đạt ,Nhì 
+201 ,ĐẶNG THỊ NHƯ QUỲNH ,25/11/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10A13 ,THPT Cẩm Xuyên ,Lịch sử 10 ,"11,5 ",Đạt ,Khuyến khích 
+202 ,HOÀNG MINH NHẬT ,01/04/2009,Thành phố Hà Tĩnh ,Nam ,10 Toán 1 ,THPT Chuyên Hà Tĩnh ,Toán 10 ,"10,25 ",Đạt ,Khuyến khích 
+203 ,LÊ THỊ NHƯ QUỲNH ,10/03/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10 Văn ,THPT Chuyên Hà Tĩnh ,Ngữ văn 10 ,12 ,Đạt ,Khuyến khích 
+204 ,NGUYỄN NHƯ QUỲNH ,02/01/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A4 ,THPT Kỳ Lâm ,Lịch sử 10 ,"9,6 ",Hỏng ,
+205 ,NGUYỄN MINH NHẬT ,02/01/2009,Thành phố Hà Tĩnh ,Nam ,10 Toán 2 ,THPT Chuyên Hà Tĩnh ,Toán 10 ,15 ,Đạt ,Nhì 
+206 ,ĐƯỜNG NGUYỄN NGỌC THẢO ,17/10/2009,Can Lộc - Hà Tĩnh ,Nữ ,10 Văn ,THPT Chuyên Hà Tĩnh ,Ngữ văn 10 ,11 ,Hỏng ,
+207 ,VÕ THỊ DIỆU THẢO ,12/07/2009,Thành phố Hà Tĩnh ,Nữ ,10 Sử ,THPT Chuyên Hà Tĩnh ,Lịch sử 10 ,"15,25 ",Đạt ,Nhì 
+208 ,NGUYỄN VÕ MINH NHẬT ,20/06/2009,Thành phố Hà Tĩnh ,Nam ,10 Toán 2 ,THPT Chuyên Hà Tĩnh ,Toán 10 ,"12,25 ",Đạt ,Ba 
+209 ,ĐẶNG PHƯƠNG THẢO ,18/08/2009,Thành phố Hà Tĩnh ,Nữ ,10 Văn ,THPT Chuyên Hà Tĩnh ,Ngữ văn 10 ,"13,25 ",Đạt ,Nhì 
+210 ,LÊ THỊ ANH THƠ ,17/01/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A4 ,THPT Kỳ Lâm ,Lịch sử 10 ,"10,75 ",Hỏng ,
+211 ,TRẦN QUỐC NHẬT ,23/02/2009,Hồng Lĩnh - Hà Tĩnh ,Nam ,10 Toán 1 ,THPT Chuyên Hà Tĩnh ,Toán 10 ,11 ,Đạt ,Khuyến khích 
+212 ,TRẦN ANH THƠ ,04/01/2009,TP Hà Tĩnh-Hà Tĩnh ,Nữ ,10A7 ,THPT Nguyễn Trung Thiên ,Ngữ văn 10 ,"11,5 ",Hỏng ,
+213 ,CAO THỊ THANH THÚY ,16/07/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10A6 ,THPT Hà Huy Tập ,Lịch sử 10 ,"10,5 ",Hỏng ,
+214 ,TRẦN THỊ LINH NHƯ ,19/04/2009,Can Lộc - Hà Tĩnh ,Nữ ,10 Toán 2 ,THPT Chuyên Hà Tĩnh ,Toán 10 ,"13,25 ",Đạt ,Nhì 
+215 ,TRẦN THỊ MINH THU ,30/03/2009,Thành phố Hà Tĩnh ,Nữ ,10 Văn ,THPT Chuyên Hà Tĩnh ,Ngữ văn 10 ,"11,5 ",Hỏng ,
+216 ,NGUYỄN THỊ ANH THƯ ,13/12/2009,Thành phố Hà Tĩnh ,Nữ ,10 Sử ,THPT Chuyên Hà Tĩnh ,Lịch sử 10 ,"12,75 ",Đạt ,Ba 
+217 ,NGUYỄN THỊ QUỲNH NHƯ ,20/10/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10A1 ,THPT Cẩm Xuyên ,Toán 10 ,"14,5 ",Đạt ,Nhì 
+218 ,NGUYỄN THỊ ANH THƯ ,08/12/2009,Đồng Nai ,Nữ ,10A11 ,THPT Kỳ Anh ,Ngữ văn 10 ,13 ,Đạt ,Ba 
+219 ,NGÔ MINH THƯ ,22/01/2009,Thành phố Hà Tĩnh ,Nữ ,10 Sử ,THPT Chuyên Hà Tĩnh ,Lịch sử 10 ,"12,5 ",Đạt ,Khuyến khích 
+220 ,HOÀNG BÁ BẢO PHÚC ,31/10/2009,Cẩm Xuyên - Hà Tĩnh ,Nam ,10 Toán 1 ,THPT Chuyên Hà Tĩnh ,Toán 10 ,"10,5 ",Đạt ,Khuyến khích 
+221 ,TRẦN MINH TRANG ,08/01/2009,TP Hà Tĩnh-Hà Tĩnh ,Nữ ,10D6 ,THPT Phan Đình Phùng ,Ngữ văn 10 ,"12,5 ",Đạt ,Ba 
+222 ,NGUYỄN THỊ MINH THƯ ,08/06/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A11 ,THPT Kỳ Anh ,Lịch sử 10 ,"10,25 ",Hỏng ,
+223 ,NGUYỄN HỮU PHÚC ,16/10/2009,Thành phố Hà Tĩnh ,Nam ,10 Toán 1 ,THPT Chuyên Hà Tĩnh ,Toán 10 ,13 ,Đạt ,Ba 
+224 ,TRẦN THỊ QUỲNH TRANG ,21/05/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10A5 ,THPT Nguyễn Đình Liễn ,Ngữ văn 10 ,11 ,Hỏng ,
+225 ,LÊ HUYỀN TRANG ,04/04/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10A13 ,THPT Cẩm Xuyên ,Lịch sử 10 ,"12,25 ",Đạt ,Khuyến khích 
+226 ,LÊ TIỂU PHÚC ,28/10/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A1 ,THPT Nguyễn Huệ ,Toán 10 ,"7,75 ",Hỏng ,
+227 ,NGUYỄN ANH TUẤN ,04/06/2009,Kỳ Anh - Hà Tĩnh ,Nam ,10A9 ,THPT Lê Quảng Chí ,Ngữ văn 10 ,"10,75 ",Hỏng ,
+228 ,NGUYỄN THỊ MAI TRANG ,31/08/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A10 ,THPT Lê Quảng Chí ,Lịch sử 10 ,"10,25 ",Hỏng ,
+229 ,PHẠM TRƯỜNG PHÚ ,02/12/2009,Thành phố Hà Tĩnh ,Nam ,10 Toán 2 ,THPT Chuyên Hà Tĩnh ,Toán 10 ,13 ,Đạt ,Ba 
+230 ,NGUYỄN LÊ MAI UYÊN ,17/05/2009,Thành phố Hà Tĩnh ,Nữ ,10 Văn ,THPT Chuyên Hà Tĩnh ,Ngữ văn 10 ,"12,5 ",Đạt ,Ba 
+231 ,NGUYỄN THỊ THÙY TRANG ,02/02/2009,Thành phố Hà Tĩnh ,Nữ ,10 Sử ,THPT Chuyên Hà Tĩnh ,Lịch sử 10 ,"13,5 ",Đạt ,Ba 
+232 ,ĐOÀN VINH PHÚ ,15/02/2009,Cẩm Xuyên - Hà Tĩnh ,Nam ,10A1 ,THPT Nguyễn Đình Liễn ,Toán 10 ,11 ,Đạt ,Khuyến khích 
+233 ,NGUYỄN THỊ THU UYÊN ,20/10/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10A14 ,THPT Cẩm Bình ,Ngữ văn 10 ,"11,5 ",Hỏng ,
+234 ,PHAN ĐẶNG THÙY TRANG ,28/10/2009,Biên Hòa - Đồng Nai ,Nữ ,10A4 ,THPT Nguyễn Đình Liễn ,Lịch sử 10 ,11 ,Hỏng ,
+235 ,LÊ NGUYỄN HÀ PHƯƠNG ,08/03/2009,Bình Dương ,Nữ ,10A1 ,THPT Lê Quý Đôn ,Toán 10 ,14 ,Đạt ,Nhì 
+236 ,NGUYỄN THỊ TƯỜNG VÂN ,16/08/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10A13 ,THPT Cẩm Xuyên ,Ngữ văn 10 ,12 ,Đạt ,Khuyến khích 
+237 ,NGUYỄN THỊ ANH TRÂM ,03/03/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10A4 ,THPT Nguyễn Đình Liễn ,Lịch sử 10 ,"11,25 ",Đạt ,Khuyến khích 
+238 ,NGUYỄN NHẬT QUANG ,28/09/2009,Nghệ An ,Nam ,10 Toán 2 ,THPT Chuyên Hà Tĩnh ,Toán 10 ,5 ,Hỏng ,
+239 ,BÙI HÀ VY ,14/05/2009,Thành phố Hà Tĩnh ,Nữ ,10 Văn ,THPT Chuyên Hà Tĩnh ,Ngữ văn 10 ,12 ,Đạt ,Khuyến khích 
+240 ,NGUYỄN HỮU TUẤN ,12/10/2009,Thành phố Hà Tĩnh ,Nam ,10 Sử ,THPT Chuyên Hà Tĩnh ,Lịch sử 10 ,"11,25 ",Đạt ,Khuyến khích 
+241 ,LÊ TIẾN QUANG ,09/11/2009,Bệnh viện đa khoa tỉnh Hà Tĩnh ,Nam ,10A1 ,THPT Lê Quý Đôn ,Toán 10 ,"11,75 ",Đạt ,Ba 
+242 ,VƯƠNG THỊ HUYỀN VY ,20/04/2009,Can Lộc - Hà Tĩnh ,Nữ ,10 Văn ,THPT Chuyên Hà Tĩnh ,Ngữ văn 10 ,13 ,Đạt ,Ba 
+243 ,TRẦN LÊ PHƯƠNG UYÊN ,29/06/2009,Thành phố Hà Tĩnh ,Nữ ,10 Sử ,THPT Chuyên Hà Tĩnh ,Lịch sử 10 ,"13,75 ",Đạt ,Ba 
+244 ,NGUYỄN THỊ DIỄM QUỲNH ,03/04/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A3 ,THPT Kỳ Anh ,Toán 10 ,"9,25 ",Đạt ,Khuyến khích 
+245 ,VÕ THỊ THẢO VY ,04/08/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10A14 ,THPT Cẩm Bình ,Ngữ văn 10 ,"10,5 ",Hỏng ,
+246 ,PHẠM THỊ HỒNG VÂN ,10/10/2009,Thành phố Hà Tĩnh ,Nữ ,10 Sử ,THPT Chuyên Hà Tĩnh ,Lịch sử 10 ,"13,75 ",Đạt ,Ba 
+247 ,NGUYỄN HOÀNG SANG ,21/09/2009,Can Lộc - Hà Tĩnh ,Nam ,10 Toán 2 ,THPT Chuyên Hà Tĩnh ,Toán 10 ,"12,25 ",Đạt ,Ba 
+248 ,NGUYỄN TƯỜNG VY ,22/03/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A4 ,THPT Nguyễn Thị Bích Châu ,Ngữ văn 10 ,"11,5 ",Hỏng ,
+249 ,TRẦN THỊ THẢO VÂN ,19/05/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A8 ,THPT Nguyễn Huệ ,Lịch sử 10 ,10 ,Hỏng ,
+250 ,BÙI SỸ SANG ,26/02/2009,Thành phố Hà Tĩnh ,Nam ,10 Toán 1 ,THPT Chuyên Hà Tĩnh ,Toán 10 ,"11,25 ",Đạt ,Ba 
+251 ,ĐIỆN XUÂN VŨ ,11/01/2009,Thành phố Hà Tĩnh ,Nam ,10A6 ,THPT Thành Sen ,Lịch sử 10 ,"9,25 ",Hỏng ,
+252 ,NGUYỄN TRƯỜNG SÁNG ,29/12/2009,Thạch Hà - Hà Tĩnh ,Nam ,10 Toán 1 ,THPT Chuyên Hà Tĩnh ,Toán 10 ,"13,5 ",Đạt ,Nhì 
+253 ,TRẦN THỊ THẢO VY ,09/02/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A8 ,THPT Nguyễn Huệ ,Lịch sử 10 ,"9,5 ",Hỏng ,
+254 ,NGUYỄN HỒNG SÂM ,30/01/2009,Cẩm Xuyên - Hà Tĩnh ,Nam ,10A1 ,THPT Nguyễn Đình Liễn ,Toán 10 ,10 ,Đạt ,Khuyến khích 
+255 ,DƯƠNG TƯỜNG VY ,06/09/2009,TP Hà Tĩnh-Hà Tĩnh ,Nữ ,10D3 ,THPT Phan Đình Phùng ,Lịch sử 10 ,"12,75 ",Đạt ,Ba 
+256 ,NGUYỄN THANH SƠN ,20/08/2009,Can Lộc - Hà Tĩnh ,Nam ,10 Toán 2 ,THPT Chuyên Hà Tĩnh ,Toán 10 ,"10,5 ",Đạt ,Khuyến khích 
+257 ,CAO THÁI SƠN ,12/09/2009,Cẩm Xuyên - Hà Tĩnh ,Nam ,10A1 ,THPT Hà Huy Tập ,Toán 10 ,"11,75 ",Đạt ,Ba 
+258 ,NGUYỄN VIẾT THẾ TÀI ,18/05/2009,Thành phố Hà Tĩnh ,Nam ,10 Toán 1 ,THPT Chuyên Hà Tĩnh ,Toán 10 ,14 ,Đạt ,Nhì 
+259 ,LƯƠNG CHÍ THÀNH ,14/10/2009,Thành phố Hà Tĩnh ,Nam ,10 Toán 1 ,THPT Chuyên Hà Tĩnh ,Toán 10 ,"10,75 ",Đạt ,Khuyến khích 
+260 ,NGUYỄN MẬU THÁI ,19/10/2009,Thạch Hà-Hà Tĩnh ,Nam ,10A1 ,THPT Phan Đình Phùng ,Toán 10 ,"13,75 ",Đạt ,Nhì 
+261 ,TRƯƠNG THỊ PHƯƠNG THẢO ,24/04/2009,TP Hà Tĩnh-Hà Tĩnh ,Nữ ,10A1 ,THPT Nguyễn Trung Thiên ,Toán 10 ,13 ,Đạt ,Ba 
+262 ,PHAN LÊ BẢO THẠCH ,15/06/2009,Can Lộc - Hà Tĩnh ,Nam ,10 Toán 2 ,THPT Chuyên Hà Tĩnh ,Toán 10 ,15 ,Đạt ,Nhì 
+263 ,NGUYỄN THỊ BẢO THI ,29/08/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10A1 ,THPT Cẩm Bình ,Toán 10 ,"5,25 ",Hỏng ,
+264 ,HOÀNG HỮU THIÊN ,01/10/2009,TP Hà Tĩnh- Hà Tĩnh ,Nam ,10A1 ,"TH,THCS và THPT Albert Einstein ",Toán 10 ,6 ,Hỏng ,
+265 ,HỖ SĨ XUÂN THIỀU ,03/09/2009,"Hương Sơn, Hà Tĩnh ",Nam ,10A8 ,THPT Thành Sen ,Toán 10 ,3 ,Hỏng ,
+266 ,PHAN VÂN THUÝ ,07/01/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10 Toán 1 ,THPT Chuyên Hà Tĩnh ,Toán 10 ,"10,25 ",Đạt ,Khuyến khích 
+267 ,BÙI THỊ MINH THƯ ,12/03/2009,Thành phố Hà Tĩnh ,Nữ ,10 Toán 2 ,THPT Chuyên Hà Tĩnh ,Toán 10 ,13 ,Đạt ,Ba 
+268 ,TRẦN THỊ THU TRANG ,18/12/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A1 ,THPT Lê Quảng Chí ,Toán 10 ,"7,75 ",Hỏng ,
+269 ,NGUYỄN TRẦN MINH TRÂM ,01/02/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A1 ,THPT Nguyễn Huệ ,Toán 10 ,"8,75 ",Hỏng ,
+270 ,TRẦN HỮU BẢO TRUNG ,22/11/2009,Thành phố Hà Tĩnh ,Nam ,10 Toán 2 ,THPT Chuyên Hà Tĩnh ,Toán 10 ,"9,25 ",Đạt ,Khuyến khích 
+271 ,NGUYỄN VĂN TRUNG ,04/11/2009,Thành phố Hà Tĩnh ,Nam ,10 Toán 2 ,THPT Chuyên Hà Tĩnh ,Toán 10 ,"8,75 ",Hỏng ,
+272 ,NGUYỄN QUANG TRƯỜNG ,30/12/2009,Cẩm Xuyên - Hà Tĩnh ,Nam ,10A1 ,THPT Hà Huy Tập ,Toán 10 ,"9,5 ",Đạt ,Khuyến khích 
+273 ,HOÀNG NGUYỄN ANH TUẤN ,19/01/2009,Cẩm Xuyên - Hà Tĩnh ,Nam ,10A1 ,THPT Cẩm Bình ,Toán 10 ,"6,5 ",Hỏng ,
+274 ,PHẠM HỮU TÙNG ,17/04/2009,Kỳ Anh - Hà Tĩnh ,Nam ,10A1 ,THPT Kỳ Anh ,Toán 10 ,8 ,Hỏng ,
+275 ,BÙI VĂN TƯỜNG ,20/02/2009,Kỳ Anh - Hà Tĩnh ,Nam ,10A1 ,THPT Lê Quảng Chí ,Toán 10 ,"12,75 ",Đạt ,Ba 
+276 ,HOÀNG NGUYỄN ĐỨC VINH ,20/08/2009,Thạch Hà-Hà Tĩnh ,Nam ,10A1 ,THPT Nguyễn Trung Thiên ,Toán 10 ,"9,25 ",Đạt ,Khuyến khích 
+277 ,CAO TRỌNG LONG VŨ ,20/01/2009,Thành phố Hà Tĩnh ,Nam ,10 Toán 1 ,THPT Chuyên Hà Tĩnh ,Toán 10 ,"15,75 ",Đạt ,Nhất 
+278 ,DƯƠNG THỊ YẾN VY ,26/11/2009,TP Hà Tĩnh-Hà Tĩnh ,Nữ ,10A7 ,THPT Nguyễn Trung Thiên ,Toán 10 ,"6,5 ",Hỏng ,
+279 ,NGUYỄN HOÀNG ANH ,09/09/2009,Cẩm Xuyên - Hà Tĩnh ,Nam ,10A2 ,THPT Hà Huy Tập ,Vật lý 10 ,"11,25 ",Đạt ,Ba 
+280 ,LÊ THỊ ĐỨC AN ,02/01/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A1 ,THPT Kỳ Anh ,Hoá học 10 ,"12,25 ",Đạt ,Nhì 
+281 ,TRẦN GIA AN ,05/11/2009,TP Hà Tĩnh-Hà Tĩnh ,Nữ ,10A6 ,THPT Phan Đình Phùng ,Sinh học 10 ,"7,25 ",Hỏng ,
+282 ,NGUYỄN THỊ HÀ ANH ,10/10/2009,Thành phố Hà Tĩnh ,Nữ ,10 Địa ,THPT Chuyên Hà Tĩnh ,Địa lý 10 ,"11,25 ",Đạt ,Khuyến khích 
+283 ,NGUYỄN HỒ HOÀNG AN ,29/09/2009,Đức Thọ - Hà Tĩnh ,Nam ,10 Lý ,THPT Chuyên Hà Tĩnh ,Vật lý 10 ,"12,75 ",Đạt ,Nhì 
+284 ,NGUYỄN LÊ HÀ AN ,05/01/2009,Can Lộc-Hà Tĩnh ,Nữ ,10A8 ,THPT Phan Đình Phùng ,Hoá học 10 ,"11,7 ",Đạt ,Ba 
+285 ,LÊ THỊ NGỌC ANH ,22/07/2009,Lộc Hà - Hà Tĩnh ,Nữ ,10 Sinh ,THPT Chuyên Hà Tĩnh ,Sinh học 10 ,"10,5 ",Đạt ,Khuyến khích 
+286 ,NGUYỄN HOÀI ANH ,15/01/2009,Thạch Hà - Hà Tĩnh ,Nữ ,10 Địa ,THPT Chuyên Hà Tĩnh ,Địa lý 10 ,14 ,Đạt ,Nhì 
+287 ,ĐẶNG HỮU PHÚC ANH ,11/04/2009,TP Hà Tĩnh-Hà Tĩnh ,Nam ,10A3 ,THPT Phan Đình Phùng ,Vật lý 10 ,"6,75 ",Hỏng ,
+288 ,NGUYỄN HOÀNG GIA ANH ,30/10/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A3 ,THPT Kỳ Anh ,Hoá học 10 ,9 ,Đạt ,Khuyến khích 
+289 ,LÊ THỊ NGỌC ANH ,07/10/2009,Thạch Hà - Hà Tĩnh ,Nữ ,10 Sinh ,THPT Chuyên Hà Tĩnh ,Sinh học 10 ,12 ,Đạt ,Ba 
+290 ,VÕ HOÀNG LÂM ANH ,10/07/2009,TP Hà Tĩnh-Hà Tĩnh ,Nữ ,10D6 ,THPT Phan Đình Phùng ,Địa lý 10 ,11 ,Đạt ,Khuyến khích 
+291 ,TRƯƠNG QUANG ANH ,09/09/2009,Kỳ Anh - Hà Tĩnh ,Nam ,10A1 ,THPT Kỳ Lâm ,Vật lý 10 ,"5,75 ",Hỏng ,
+292 ,PHAN HOÀNG HẢI ANH ,28/09/2009,Lộc Hà - Hà Tĩnh ,Nam ,10A1 ,THPT Cẩm Xuyên ,Hoá học 10 ,"12,9 ",Đạt ,Nhì 
+293 ,NGUYỄN THỊ PHƯƠNG ANH ,28/05/2009,Thạch Hà-Hà Tĩnh ,Nữ ,10A4 ,THPT Nguyễn Trung Thiên ,Sinh học 10 ,"11,5 ",Đạt ,Ba 
+294 ,TRẦN THỊ MINH ANH ,18/05/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10A4 ,THPT Nguyễn Đình Liễn ,Địa lý 10 ,"11,25 ",Đạt ,Khuyến khích 
+295 ,NGUYỄN HUY MẠNH AN ,05/05/2009,TP Vinh-Nghệ An ,Nam ,10A1 ,THPT Phan Đình Phùng ,Vật lý 10 ,"12,25 ",Đạt ,Nhì 
+296 ,NGUYỄN TRÍ HOÀNG ANH ,09/12/2009,Nghệ An ,Nam ,10 Hóa ,THPT Chuyên Hà Tĩnh ,Hoá học 10 ,"14,4 ",Đạt ,Nhất 
+297 ,NGUYỄN ĐÌNH CHÍ BẢO ,30/10/2009,Cẩm Xuyên  -  Hà Tĩnh ,Nam ,10 Sinh ,THPT Chuyên Hà Tĩnh ,Sinh học 10 ,12 ,Đạt ,Ba 
+298 ,NGUYỄN HOÀI AN ,17/02/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10A13 ,THPT Cẩm Xuyên ,Địa lý 10 ,"9,25 ",Hỏng ,
+299 ,NGUYỄN THỊ NGỌC ÁNH ,30/01/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A3 ,THPT Kỳ Anh ,Vật lý 10 ,"10,25 ",Đạt ,Ba 
+300 ,PHAN THỊ HOÀI AN ,24/10/2009,Thành phố Hà Tĩnh ,Nữ ,10 Hóa ,THPT Chuyên Hà Tĩnh ,Hoá học 10 ,"14,75 ",Đạt ,Nhất 
+301 ,LÊ THÁI GIA BẢO ,27/01/2009,Thành phố Vinh - Nghệ An ,Nam ,10 Sinh ,THPT Chuyên Hà Tĩnh ,Sinh học 10 ,"11,5 ",Đạt ,Ba 
+302 ,NGUYỄN THỊ VÂN ANH ,09/10/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A13 ,THPT Kỳ Anh ,Địa lý 10 ,"7,25 ",Hỏng ,
+303 ,NGUYỄN NGỌC ÁNH ,06/05/2009,Nghi Xuân - Hà Tĩnh ,Nữ ,10 Lý ,THPT Chuyên Hà Tĩnh ,Vật lý 10 ,"5,75 ",Hỏng ,
+304 ,NGUYỄN PHI HOÀNG AN ,09/05/2009,Thành phố Hà Tĩnh ,Nam ,10 Hóa ,THPT Chuyên Hà Tĩnh ,Hoá học 10 ,"9,75 ",Đạt ,Khuyến khích 
+305 ,PHẠM GIA BẢO ,02/03/2009,Hương Sơn - Hà Tĩnh ,Nam ,10A1 ,THPT Lê Quảng Chí ,Sinh học 10 ,"6,75 ",Hỏng ,
+306 ,PHAN KHÁNH AN ,30/04/2009,Thành phố Hà Tĩnh ,Nữ ,10 Địa ,THPT Chuyên Hà Tĩnh ,Địa lý 10 ,"10,25 ",Hỏng ,
+307 ,UÔNG LÂM BÁCH ,07/05/2009,Hương Sơn - Hà Tĩnh ,Nam ,10 Toán 1 ,THPT Chuyên Hà Tĩnh ,Vật lý 10 ,"12,5 ",Đạt ,Nhì 
+308 ,BÙI PHƯƠNG ANH ,22/03/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10A1 ,THPT Cẩm Xuyên ,Hoá học 10 ,"7,25 ",Hỏng ,
+309 ,TRẦN XUÂN GIA BẢO ,23/04/2009,TP Hà Tĩnh-Hà Tĩnh ,Nam ,10A6 ,THPT Phan Đình Phùng ,Sinh học 10 ,"9,25 ",Đạt ,Khuyến khích 
+310 ,LÊ THỊ THÙY AN ,16/01/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10A4 ,THPT Nguyễn Đình Liễn ,Địa lý 10 ,13 ,Đạt ,Ba 
+311 ,HỒ VĂN GIA BẢO ,28/02/2009,Thạch Hà-Hà Tĩnh ,Nam ,10A1 ,THPT Nguyễn Trung Thiên ,Vật lý 10 ,"6,5 ",Hỏng ,
+312 ,LÊ BÙI PHƯƠNG ANH ,11/09/2009,Bệnh viện đa khoa Hà Tĩnh ,Nữ ,10A1 ,THPT Lê Quý Đôn ,Hoá học 10 ,6 ,Hỏng ,
+313 ,BÙI THỊ THÁI BẢO ,20/03/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10A2 ,THPT Nguyễn Đình Liễn ,Sinh học 10 ,10 ,Đạt ,Khuyến khích 
+314 ,BÙI THỊ NHƯ BÌNH ,26/11/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10A12 ,THPT Cẩm Xuyên ,Địa lý 10 ,"11,5 ",Đạt ,Khuyến khích 
+315 ,PHAN ANH GIA BẢO ,17/04/2009,Thành phố Hà Tĩnh ,Nam ,10 Lý ,THPT Chuyên Hà Tĩnh ,Vật lý 10 ,10 ,Đạt ,Ba 
+316 ,LÊ NGỌC PHƯƠNG ANH ,25/09/2009,Can Lộc - Hà Tĩnh ,Nữ ,10 Hóa ,THPT Chuyên Hà Tĩnh ,Hoá học 10 ,10 ,Đạt ,Ba 
+317 ,PHẠM HỒ NGỌC BÍCH ,03/08/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10 Sinh ,THPT Chuyên Hà Tĩnh ,Sinh học 10 ,"12,75 ",Đạt ,Nhì 
+318 ,LÊ NGUYỄN KHÁNH CHI ,22/07/2009,Thành phố Hà Tĩnh ,Nữ ,10 Địa ,THPT Chuyên Hà Tĩnh ,Địa lý 10 ,16 ,Đạt ,Nhất 
+319 ,THIỀU ĐĂNG GIA BẢO ,18/09/2009,Cẩm Xuyên - Hà Tĩnh ,Nam ,10A1 ,THPT Hà Huy Tập ,Vật lý 10 ,"8,75 ",Đạt ,Khuyến khích 
+320 ,LÊ TUẤN ANH ,18/03/2009,Trạm y tế xã Nam Hương ,Nam ,10A1 ,THPT Lê Quý Đôn ,Hoá học 10 ,"10,5 ",Đạt ,Ba 
+321 ,NGUYỄN ĐỖ CHÁNH ,05/07/2009,Bệnh viện Đa khoa Hà Tĩnh ,Nam ,10A1 ,THPT Cẩm Bình ,Sinh học 10 ,"10,88 ",Đạt ,Ba 
+322 ,LÊ THỊ KIM CHI ,23/09/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A3 ,THPT Kỳ Lâm ,Địa lý 10 ,"8,75 ",Hỏng ,
+323 ,ĐẶNG BẢO CHÂU ,27/12/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A1 ,THPT Kỳ Anh ,Vật lý 10 ,"9,25 ",Đạt ,Khuyến khích 
+324 ,NGUYỄN NHƯ TUẤN ANH ,15/05/2009,Thành phố Hà Tĩnh ,Nam ,10 Hóa ,THPT Chuyên Hà Tĩnh ,Hoá học 10 ,11 ,Đạt ,Ba 
+325 ,HOÀNG THỊ KIM CHI ,22/03/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10A2 ,THPT Hà Huy Tập ,Sinh học 10 ,10 ,Đạt ,Khuyến khích 
+326 ,TRẦN MAI CHI ,22/01/2009,Can Lộc - Hà Tĩnh ,Nữ ,10 Địa ,THPT Chuyên Hà Tĩnh ,Địa lý 10 ,"11,25 ",Đạt ,Khuyến khích 
+327 ,NGUYỄN BẠCH KHÁNH CHI ,04/05/2009,Thạch Hà - Hà Tĩnh ,Nữ ,10 Lý ,THPT Chuyên Hà Tĩnh ,Vật lý 10 ,"15,25 ",Đạt ,Nhì 
+328 ,MAI LỘC AN ,23/03/2009,Kỳ Anh-Hà Tĩnh ,Nam ,10A8 ,THPT Phan Đình Phùng ,Hoá học 10 ,13 ,Đạt ,Nhì 
+329 ,ĐINH LINH CHI ,01/07/2009,Xã Hương Lâm - Hương Khê ,Nữ ,10B1 ,THPT Lê Quý Đôn ,Sinh học 10 ,"7,75 ",Hỏng ,
+330 ,NGUYỄN THỊ HUYỀN DIỆU ,26/06/2009,Trạm y tế xã Thạch Điền ,Nữ ,10D1 ,THPT Lê Quý Đôn ,Địa lý 10 ,14 ,Đạt ,Nhì 
+331 ,NGUYỄN PHAN KHÁNH CHI ,24/10/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10A1 ,THPT Cẩm Xuyên ,Vật lý 10 ,"6,5 ",Hỏng ,
+332 ,NGUYỄN VĂN GIA BẢO ,15/10/2009,Thành phố Hà Tĩnh ,Nam ,10 Hóa ,THPT Chuyên Hà Tĩnh ,Hoá học 10 ,7 ,Hỏng ,
+333 ,NGUYỄN TRƯỜNG CHINH ,28/08/2009,Thành phố Hà Tĩnh ,Nam ,10 Sinh ,THPT Chuyên Hà Tĩnh ,Sinh học 10 ,14 ,Đạt ,Nhì 
+334 ,THÁI THỊ HẠNH DUNG ,24/05/2009,Thành phố Hà Tĩnh ,Nữ ,10 Địa ,THPT Chuyên Hà Tĩnh ,Địa lý 10 ,"13,5 ",Đạt ,Nhì 
+335 ,NGUYỄN KIM CHI ,02/11/2009,TP Hà Tĩnh-Hà Tĩnh ,Nữ ,10A3 ,THPT Phan Đình Phùng ,Vật lý 10 ,"12,75 ",Đạt ,Nhì 
+336 ,HOÀNG XUÂN BẢO ,14/10/2009,Cẩm Xuyên - Hà Tĩnh ,Nam ,10A1 ,THPT Hà Huy Tập ,Hoá học 10 ,"10,75 ",Đạt ,Ba 
+337 ,NGUYỄN QUỲNH CHI ,01/07/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A2 ,THPT Kỳ Lâm ,Sinh học 10 ,"6,75 ",Hỏng ,
+338 ,PHẠM THÙY DUNG ,18/04/2009,Ea Kar - Đăk Lăk ,Nữ ,10D3 ,THPT Phan Đình Phùng ,Địa lý 10 ,13 ,Đạt ,Ba 
+339 ,ĐẶNG QUỐC CƯỜNG ,22/01/2009,Cẩm Xuyên - Hà Tĩnh ,Nam ,10A1 ,THPT Cẩm Xuyên ,Vật lý 10 ,11 ,Đạt ,Ba 
+340 ,NGUYỄN TRỌNG BẰNG ,10/04/2009,Cẩm Xuyên - Hà Tĩnh ,Nam ,10A1 ,THPT Hà Huy Tập ,Hoá học 10 ,"8,13 ",Hỏng ,
+341 ,BÙI VIỆT CƯỜNG ,15/12/2009,Can Lộc - Hà Tĩnh ,Nam ,10 Sinh ,THPT Chuyên Hà Tĩnh ,Sinh học 10 ,"11,5 ",Đạt ,Ba 
+342 ,NGUYỄN TRẦN LINH ĐAN ,03/01/2009,Hương Khê - Hà Tĩnh ,Nữ ,10 Địa ,THPT Chuyên Hà Tĩnh ,Địa lý 10 ,"12,75 ",Đạt ,Ba 
+343 ,TRẦN CÔNG DŨNG ,10/11/2009,Can Lộc - Hà Tĩnh ,Nam ,10 Lý ,THPT Chuyên Hà Tĩnh ,Vật lý 10 ,14 ,Đạt ,Nhì 
+344 ,NGUYỄN HOÀNG KHÁNH CHI ,16/07/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10 Hóa ,THPT Chuyên Hà Tĩnh ,Hoá học 10 ,"10,68 ",Đạt ,Ba 
+345 ,LÊ THỊ THUỲ DUNG ,07/04/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A1 ,THPT Kỳ Anh ,Sinh học 10 ,11 ,Đạt ,Ba 
+346 ,NGUYỄN TRẦN HẢI ĐĂNG ,08/03/2009,Kỳ Anh - Hà Tĩnh ,Nam ,10A3 ,THPT Kỳ Lâm ,Địa lý 10 ,"8,5 ",Hỏng ,
+347 ,HỒ TRỊNH VIỆT DŨNG ,23/01/2009,Thành phố Hà Tĩnh ,Nam ,10 Lý ,THPT Chuyên Hà Tĩnh ,Vật lý 10 ,"8,25 ",Đạt ,Khuyến khích 
+348 ,VÕ CÔNG DUY ,23/04/2009,Kỳ Anh - Hà Tĩnh ,Nam ,10A1 ,THPT Nguyễn Huệ ,Hoá học 10 ,"11,75 ",Đạt ,Ba 
+349 ,NGUYỄN THỊ THÙY DUNG ,08/08/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A2 ,THPT Kỳ Lâm ,Sinh học 10 ,"6,75 ",Hỏng ,
+350 ,PHAN THỊ KHÁNH HÀ ,27/12/2009,Thành phố Hà Tĩnh ,Nữ ,10 Địa ,THPT Chuyên Hà Tĩnh ,Địa lý 10 ,"9,5 ",Hỏng ,
+351 ,CHU CHÍ ĐẠT ,02/01/2009,Cẩm Xuyên - Hà Tĩnh ,Nam ,10 Lý ,THPT Chuyên Hà Tĩnh ,Vật lý 10 ,"12,75 ",Đạt ,Nhì 
+352 ,NGUYỄN TIẾN DŨNG ,26/10/2009,Thành phố Hà Tĩnh ,Nam ,10 Hóa ,THPT Chuyên Hà Tĩnh ,Hoá học 10 ,14 ,Đạt ,Nhất 
+353 ,HOÀNG DƯƠNG ,02/01/2009,Thành phố Hà Tĩnh ,Nam ,10 Sinh ,THPT Chuyên Hà Tĩnh ,Sinh học 10 ,"9,75 ",Đạt ,Khuyến khích 
+354 ,LƯU THỊ NGÂN HÀ ,07/03/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A3 ,THPT Nguyễn Thị Bích Châu ,Địa lý 10 ,"13,5 ",Đạt ,Nhì 
+355 ,LÊ DANH ĐẠT ,31/10/2009,Hà Nội ,Nam ,10 Lý ,THPT Chuyên Hà Tĩnh ,Vật lý 10 ,"10,25 ",Đạt ,Ba 
+356 ,TRẦN TRUNG DŨNG ,27/09/2009,Kỳ Anh - Hà Tĩnh ,Nam ,10A1 ,THPT Kỳ Anh ,Hoá học 10 ,"12,5 ",Đạt ,Nhì 
+357 ,PHAN TIẾN ĐẠT ,08/01/2009,Kỳ Anh - Hà Tĩnh ,Nam ,10A1 ,THPT Kỳ Anh ,Sinh học 10 ,"12,25 ",Đạt ,Nhì 
+358 ,NGUYỄN THỊ THANH HÀ ,07/10/2009,Thành phố Hà Tĩnh ,Nữ ,10 Địa ,THPT Chuyên Hà Tĩnh ,Địa lý 10 ,12 ,Đạt ,Khuyến khích 
+359 ,NGUYỄN VĂN HẢI ĐĂNG ,20/10/2009,Thành phố Hà Tĩnh ,Nam ,10 Lý ,THPT Chuyên Hà Tĩnh ,Vật lý 10 ,"9,5 ",Đạt ,Khuyến khích 
+360 ,TRẦN DANH THÀNH ĐẠT ,03/07/2009,Thạch Hà - Hà Tĩnh ,Nam ,10A1 ,THPT Cẩm Bình ,Hoá học 10 ,"7,5 ",Hỏng ,
+361 ,HOÀNG LÊ HẢI ĐỨC ,17/09/2009,Kỳ Anh - hà Tĩnh ,Nam ,10A1 ,THPT Kỳ Anh ,Sinh học 10 ,"12,75 ",Đạt ,Nhì 
+362 ,TRƯƠNG HỒNG HẠNH ,23/11/2009,Thành phố Hà Tĩnh ,Nữ ,10 Địa ,THPT Chuyên Hà Tĩnh ,Địa lý 10 ,"14,75 ",Đạt ,Nhất 
+363 ,NGUYỄN VĂN ANH ĐÔ ,10/11/2009,Cẩm Xuyên - Hà Tĩnh ,Nam ,10A1 ,THPT Cẩm Xuyên ,Vật lý 10 ,"13,5 ",Đạt ,Nhì 
+364 ,TRẦN VĂN ĐẠT ,30/07/2009,Kỳ Anh - Hà Tĩnh ,Nam ,10A1 ,THPT Lê Quảng Chí ,Hoá học 10 ,8 ,Hỏng ,
+365 ,NGUYỄN THỊ HÀ GIANG ,29/10/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A1 ,THPT Nguyễn Thị Bích Châu ,Sinh học 10 ,"6,75 ",Hỏng ,
+366 ,HỒ THỊ HOA ,01/02/2009,Trạm y tế xã Bắc Sơn ,Nữ ,10C1 ,THPT Lê Quý Đôn ,Địa lý 10 ,"14,75 ",Đạt ,Nhất 
+367 ,PHẠM CÔNG ĐỨC ,04/01/2009,Thạch Hà-Hà Tĩnh ,Nam ,10A1 ,THPT Nguyễn Trung Thiên ,Vật lý 10 ,"6,5 ",Hỏng ,
+368 ,NGUYỄN HẢI ĐĂNG ,12/02/2009,Nghi Xuân - Hà Tĩnh ,Nam ,10 Hóa ,THPT Chuyên Hà Tĩnh ,Hoá học 10 ,10 ,Đạt ,Ba 
+369 ,NGUYỄN TRẦN MINH HẢI ,05/03/2009,Thành phố Hà Tĩnh ,Nữ ,10 Sinh ,THPT Chuyên Hà Tĩnh ,Sinh học 10 ,12 ,Đạt ,Ba 
+370 ,NGUYỄN THỊ KHÁNH HUYỀN ,31/07/2009,Thành phố Hà Tĩnh ,Nữ ,10 Địa ,THPT Chuyên Hà Tĩnh ,Địa lý 10 ,"11,5 ",Đạt ,Khuyến khích 
+371 ,CAO THỊ LINH GIANG ,05/01/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A1 ,THPT Nguyễn Huệ ,Vật lý 10 ,"5,5 ",Hỏng ,
+372 ,NGUYỄN ĐÌNH ĐÔN ,02/01/2009,Kỳ Anh - Hà Tĩnh ,Nam ,10A1 ,THPT Nguyễn Thị Bích Châu ,Hoá học 10 ,5 ,Hỏng ,
+373 ,NGUYỄN ĐÌNH NAM HẢI ,09/08/2009,Bệnh viện Đa khoa tỉnh Hà Tĩnh ,Nữ ,10A1 ,THPT Cẩm Xuyên ,Sinh học 10 ,"12,63 ",Đạt ,Nhì 
+374 ,NGUYỄN NGỌC HUYỀN ,06/10/2009,TP Hà Tĩnh-Hà Tĩnh ,Nữ ,10A7 ,THPT Nguyễn Trung Thiên ,Địa lý 10 ,"10,25 ",Hỏng ,
+375 ,ĐÀO XUÂN GIAO ,19/03/2009,Can Lộc - Hà Tĩnh ,Nữ ,10 Lý ,THPT Chuyên Hà Tĩnh ,Vật lý 10 ,"9,5 ",Đạt ,Khuyến khích 
+376 ,TRẦN NGUYỄN ANH ĐỨC ,01/03/2009,Thành phố Hà Tĩnh ,Nam ,10 Hóa ,THPT Chuyên Hà Tĩnh ,Hoá học 10 ,"9,88 ",Đạt ,Khuyến khích 
+377 ,NGUYỄN NHẬT HẠ ,03/10/2009,Thạch Hà - Hà Tĩnh ,Nữ ,10 Sinh ,THPT Chuyên Hà Tĩnh ,Sinh học 10 ,"9,5 ",Đạt ,Khuyến khích 
+378 ,NGUYỄN THỊ TƯỜNG LAM ,06/10/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A7 ,THPT Kỳ Anh ,Địa lý 10 ,"11,5 ",Đạt ,Khuyến khích 
+379 ,NGUYỄN LÊ KHÁNH HÀ ,16/08/2009,Thạch Hà - Hà Tĩnh ,Nữ ,10 Lý ,THPT Chuyên Hà Tĩnh ,Vật lý 10 ,"8,5 ",Đạt ,Khuyến khích 
+380 ,NGUYỄN MINH ĐỨC ,01/04/2009,Hương Khê - Hà Tĩnh ,Nam ,10 Hóa ,THPT Chuyên Hà Tĩnh ,Hoá học 10 ,"15,5 ",Đạt ,Nhất 
+381 ,NGUYỄN KHÁNH HIỀN ,18/09/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10 Sinh ,THPT Chuyên Hà Tĩnh ,Sinh học 10 ,"10,25 ",Đạt ,Khuyến khích 
+382 ,NGUYỄN THỊ LIÊM ,05/06/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10A7 ,THPT Hà Huy Tập ,Địa lý 10 ,"12,5 ",Đạt ,Ba 
+383 ,LÊ ANH HÀO ,08/01/2009,Đức Thọ - Hà Tĩnh ,Nam ,10 Lý ,THPT Chuyên Hà Tĩnh ,Vật lý 10 ,"16,5 ",Đạt ,Nhất 
+384 ,TRẦN LÂM GIANG ,14/01/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A1 ,THPT Nguyễn Huệ ,Hoá học 10 ,"9,75 ",Đạt ,Khuyến khích 
+385 ,NGUYỄN GIA HIẾU ,16/10/2009,TP Vinh - Nghệ An ,Nam ,10A1 ,THPT Kỳ Anh ,Sinh học 10 ,16 ,Đạt ,Nhất 
+386 ,VÕ THỊ DIỆU LINH ,04/10/2009,Thành phố Hà Tĩnh ,Nữ ,10 Địa ,THPT Chuyên Hà Tĩnh ,Địa lý 10 ,"14,5 ",Đạt ,Nhì 
+387 ,HOÀNG THỊ HẰNG ,02/11/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A1 ,THPT Nguyễn Thị Bích Châu ,Vật lý 10 ,"6,5 ",Hỏng ,
+388 ,NGUYỄN MẠNH HẢI ,08/07/2009,Cẩm Xuyên - Hà Tĩnh ,Nam ,10 Hóa ,THPT Chuyên Hà Tĩnh ,Hoá học 10 ,"13,38 ",Đạt ,Nhì 
+389 ,PHAN XUÂN HIẾU ,23/07/2009,Thành phố Hà Tĩnh ,Nam ,10 Sinh ,THPT Chuyên Hà Tĩnh ,Sinh học 10 ,"11,5 ",Đạt ,Ba 
+390 ,DƯƠNG THỊ HÀ LINH ,24/03/2009,Thạch Hà - Hà Tĩnh ,Nữ ,10 Địa ,THPT Chuyên Hà Tĩnh ,Địa lý 10 ,"11,25 ",Đạt ,Khuyến khích 
+391 ,CHU ĐỨC HIẾU ,09/10/2009,Thành phố Hà Tĩnh ,Nam ,10 Lý ,THPT Chuyên Hà Tĩnh ,Vật lý 10 ,"10,25 ",Đạt ,Ba 
+392 ,LÊ THỊ HẰNG ,17/11/2009,Trạm y tế xã Thạch Tân ,Nữ ,10A1 ,THPT Lê Quý Đôn ,Hoá học 10 ,"7,25 ",Hỏng ,
+393 ,ĐẶNG NGUYỄN GIA HUY ,31/01/2009,Bệnh viện Đa khoa Hà Tĩnh ,Nam ,10A5 ,THPT Cẩm Bình ,Sinh học 10 ,"11,5 ",Đạt ,Ba 
+394 ,TRƯƠNG NGỌC HÀ LINH ,08/08/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A3 ,THPT Nguyễn Thị Bích Châu ,Địa lý 10 ,11 ,Đạt ,Khuyến khích 
+395 ,PHAN TRUNG HIẾU ,13/04/2009,Hương Khê - Hà Tĩnh ,Nam ,10 Lý ,THPT Chuyên Hà Tĩnh ,Vật lý 10 ,12 ,Đạt ,Nhì 
+396 ,LÊ ĐỨC HIẾU ,20/01/2009,Thành phố Hà Tĩnh ,Nam ,10 Hóa ,THPT Chuyên Hà Tĩnh ,Hoá học 10 ,11 ,Đạt ,Ba 
+397 ,NGUYỄN TIẾN HÙNG ,11/05/2009,Kỳ Anh - Hà Tĩnh ,Nam ,10A1 ,THPT Nguyễn Huệ ,Sinh học 10 ,11 ,Đạt ,Ba 
+398 ,VÕ THỊ KHÁNH LINH ,14/10/2009,Thành phố Hà Tĩnh ,Nữ ,10 Địa ,THPT Chuyên Hà Tĩnh ,Địa lý 10 ,"9,5 ",Hỏng ,
+399 ,NGUYỄN CAO HỢP ,28/03/2009,Thành phố Hà Tĩnh ,Nam ,10 Lý ,THPT Chuyên Hà Tĩnh ,Vật lý 10 ,10 ,Đạt ,Ba 
+400 ,NGUYỄN LÊ HIẾU ,30/05/2009,Hương Sơn - Hà Tĩnh ,Nam ,10 Hóa ,THPT Chuyên Hà Tĩnh ,Hoá học 10 ,"7,5 ",Hỏng ,
+401 ,NGUYỄN TRẦN MỘC HƯƠNG ,27/06/2009,Hà Nội ,Nữ ,10A1 ,"TH,THCS vàTHPT ISCHOOL Hà Tĩnh ",Sinh học 10 ,"6,25 ",Hỏng ,
+402 ,NGUYỄN THỊ MỸ LINH ,11/02/2009,Thạch Hà-Hà Tĩnh ,Nữ ,10A7 ,THPT Nguyễn Trung Thiên ,Địa lý 10 ,"11,25 ",Đạt ,Khuyến khích 
+403 ,DƯƠNG GIA HUY ,05/02/2009,TP. Hà Tĩnh - Hà Tĩnh ,Nam ,10A1 ,"TH, THCS và THPT ĐH Hà Tĩnh ",Vật lý 10 ,"5,5 ",Hỏng ,
+404 ,NGUYỄN MINH HIỆP ,18/11/2009,Thành phố Hà Tĩnh ,Nam ,10 Hóa ,THPT Chuyên Hà Tĩnh ,Hoá học 10 ,"12,75 ",Đạt ,Nhì 
+405 ,NGÔ NGUYỄN HUYỀN KHÁNH ,02/09/2009,Thành phố Hà Tĩnh ,Nữ ,10 Sinh ,THPT Chuyên Hà Tĩnh ,Sinh học 10 ,13 ,Đạt ,Nhì 
+406 ,NGUYỄN THỊ PHƯƠNG LINH ,11/10/2009,Thành phố Hà Tĩnh ,Nữ ,10 Địa ,THPT Chuyên Hà Tĩnh ,Địa lý 10 ,12 ,Đạt ,Khuyến khích 
+407 ,ĐẶNG QUANG HUY ,05/04/2009,Cẩm Xuyên - Hà Tĩnh ,Nam ,10A1 ,THPT Cẩm Bình ,Vật lý 10 ,"9,25 ",Đạt ,Khuyến khích 
+408 ,NGUYỄN KHÁNH HUYỀN ,01/01/2009,Thạch Hà-Hà Tĩnh ,Nữ ,10A1 ,THPT Nguyễn Trung Thiên ,Hoá học 10 ,"7,75 ",Hỏng ,
+409 ,VÕ PHAN NGỌC KHÁNH ,28/08/2009,Thành phố Hà Tĩnh ,Nữ ,10 Sinh ,THPT Chuyên Hà Tĩnh ,Sinh học 10 ,"13,25 ",Đạt ,Nhì 
+410 ,VÕ NGỌC MINH ,19/09/2009,Thành phố Hà Tĩnh ,Nữ ,10 Địa ,THPT Chuyên Hà Tĩnh ,Địa lý 10 ,"10,25 ",Hỏng ,
+411 ,PHẠM QUỐC HUY ,09/05/2009,Thạch Hà-Hà Tĩnh ,Nam ,10A1 ,THPT Nguyễn Trung Thiên ,Vật lý 10 ,"9,5 ",Đạt ,Khuyến khích 
+412 ,LÊ THỊ THANH HUYỀN ,29/11/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A1 ,THPT Kỳ Lâm ,Hoá học 10 ,"6,5 ",Hỏng ,
+413 ,TRẦN VĂN QUANG KHẢI ,06/06/2009,Thành phố Hà Tĩnh ,Nam ,10 Toán 1 ,THPT Chuyên Hà Tĩnh ,Sinh học 10 ,15 ,Đạt ,Nhất 
+414 ,TRƯƠNG THẢO MY ,25/10/2009,Thành phố Hà Tĩnh ,Nữ ,10 Địa ,THPT Chuyên Hà Tĩnh ,Địa lý 10 ,"9,75 ",Hỏng ,
+415 ,LÊ PHÙNG VIỆT HÙNG ,26/10/2009,Thành phố Hà Tĩnh ,Nam ,10 Lý ,THPT Chuyên Hà Tĩnh ,Vật lý 10 ,"15,75 ",Đạt ,Nhất 
+416 ,TRẦN NGUYỄN GIA HUY ,08/01/2009,Nghi Xuân - Hà Tĩnh ,Nam ,10 Hóa ,THPT Chuyên Hà Tĩnh ,Hoá học 10 ,"7,25 ",Hỏng ,
+417 ,LÊ BÁ KHOÁI ,12/02/2009,Thanh Hóa ,Nam ,10 Sinh ,THPT Chuyên Hà Tĩnh ,Sinh học 10 ,"14,25 ",Đạt ,Nhì 
+418 ,DƯƠNG THỊ LÊ NA ,03/04/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A4 ,THPT Kỳ Lâm ,Địa lý 10 ,"5,5 ",Hỏng ,
+419 ,ĐẶNG ĐÌNH NAM KHÁNH ,04/09/2009,Bệnh viện đa khoa Hà Tĩnh ,Nam ,10A4 ,THPT Lê Quý Đôn ,Vật lý 10 ,6 ,Hỏng ,
+420 ,NGUYỄN TRẦN TRỌNG HỮU ,01/01/2009,Thị xã Hồng Lĩnh - Hà Tĩnh ,Nam ,10 Hóa ,THPT Chuyên Hà Tĩnh ,Hoá học 10 ,"11,5 ",Đạt ,Ba 
+421 ,PHAN TÙNG LÂM ,13/01/2009,Kỳ Anh - Hà Tĩnh ,Nam ,10A1 ,THPT Nguyễn Thị Bích Châu ,Sinh học 10 ,"10,5 ",Đạt ,Khuyến khích 
+422 ,HOÀNG KIM NGÂN ,07/09/2009,TP Hà Tĩnh-Hà Tĩnh ,Nữ ,10D2 ,THPT Phan Đình Phùng ,Địa lý 10 ,"9,25 ",Hỏng ,
+423 ,ĐẶNG THẾ KHÁNH ,07/01/2009,TP Hà Tĩnh - Hà Tĩnh ,Nam ,10A1 ,THPT Cẩm Bình ,Vật lý 10 ,"13,75 ",Đạt ,Nhì 
+424 ,ĐINH VIẾT BẢO KHANG ,01/01/2009,Bệnh viện Đa khoa Nghệ An ,Nam ,10A1 ,THPT Cẩm Bình ,Hoá học 10 ,"6,5 ",Hỏng ,
+425 ,TRỊNH ÁI LINH ,08/02/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A1 ,THPT Nguyễn Huệ ,Sinh học 10 ,"9,25 ",Đạt ,Khuyến khích 
+426 ,HOÀNG THÚY NGÂN ,08/01/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A10 ,THPT Nguyễn Huệ ,Địa lý 10 ,14 ,Đạt ,Nhì 
+427 ,LÊ MINH KHÔI ,04/10/2009,Con Cuông - Nghệ An ,Nam ,10 Lý ,THPT Chuyên Hà Tĩnh ,Vật lý 10 ,7 ,Hỏng ,
+428 ,HỒ HÀ KHANG ,05/08/2009,Kỳ Anh - Hà Tĩnh ,Nam ,10A1 ,THPT Kỳ Lâm ,Hoá học 10 ,"5,75 ",Hỏng ,
+429 ,CAO NGUYỄN BẢO LINH ,20/05/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A1 ,THPT Nguyễn Huệ ,Sinh học 10 ,"11,75 ",Đạt ,Ba 
+430 ,NGUYỄN THỊ BẢO NGỌC ,12/08/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A3 ,THPT Kỳ Lâm ,Địa lý 10 ,"8,25 ",Hỏng ,
+431 ,ĐẬU HOÀNG KIÊN ,01/12/2009,TP Hà Tĩnh-Hà Tĩnh ,Nam ,10A6 ,THPT Phan Đình Phùng ,Vật lý 10 ,"6,5 ",Hỏng ,
+432 ,LÊ BẢO KHÁNH ,29/01/2009,Thành phố Hà Tĩnh ,Nam ,10 Hóa ,THPT Chuyên Hà Tĩnh ,Hoá học 10 ,"10,75 ",Đạt ,Ba 
+433 ,TRẦN THỊ HÀ LINH ,02/12/2009,Thành phố Hà Tĩnh ,Nữ ,10 Sinh ,THPT Chuyên Hà Tĩnh ,Sinh học 10 ,14 ,Đạt ,Nhì 
+434 ,TRẦN THỊ BẢO NGỌC ,16/10/2009,Bệnh viện đa khoa Hà Tĩnh ,Nữ ,10D1 ,THPT Lê Quý Đôn ,Địa lý 10 ,13 ,Đạt ,Ba 
+435 ,TRẦN HUY LÂM ,15/07/2009,Thành phố Hà Tĩnh ,Nam ,10 Lý ,THPT Chuyên Hà Tĩnh ,Vật lý 10 ,"15,5 ",Đạt ,Nhì 
+436 ,PHAN NAM KHÁNH ,09/10/2009,Thành phố Hà Tĩnh ,Nam ,10 Hóa ,THPT Chuyên Hà Tĩnh ,Hoá học 10 ,"10,75 ",Đạt ,Ba 
+437 ,NGUYỄN BÙI KHÁNH LINH ,17/08/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10 Sinh ,THPT Chuyên Hà Tĩnh ,Sinh học 10 ,14 ,Đạt ,Nhì 
+438 ,TRẦN THỊ BẢO NGỌC ,23/10/2009,Thành phố Hà Tĩnh ,Nữ ,10 Địa ,THPT Chuyên Hà Tĩnh ,Địa lý 10 ,"13,25 ",Đạt ,Ba 
+439 ,LÊ NGỌC KHÁNH LINH ,24/06/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A1 ,THPT Nguyễn Huệ ,Vật lý 10 ,"9,5 ",Đạt ,Khuyến khích 
+440 ,TRẦN ANH KHOA ,06/01/2009,Thành phố Hà Tĩnh ,Nam ,10 Hóa ,THPT Chuyên Hà Tĩnh ,Hoá học 10 ,"8,25 ",Hỏng ,
+441 ,TRẦN KHÁNH LINH ,20/08/2009,Thành phố Hà Tĩnh ,Nữ ,10 Sinh ,THPT Chuyên Hà Tĩnh ,Sinh học 10 ,"9,5 ",Đạt ,Khuyến khích 
+442 ,TÔN NỮ HẠNH NGUYÊN ,08/11/2009,Hà Nội ,Nữ ,10 Địa ,THPT Chuyên Hà Tĩnh ,Địa lý 10 ,14 ,Đạt ,Nhì 
+443 ,TRẦN THỊ THÙY LINH ,08/03/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A1 ,THPT Nguyễn Thị Bích Châu ,Vật lý 10 ,5 ,Hỏng ,
+444 ,PHẠM TIẾN KHOA ,14/04/2009,Can Lộc - Hà Tĩnh ,Nam ,10 Hóa ,THPT Chuyên Hà Tĩnh ,Hoá học 10 ,"14,25 ",Đạt ,Nhất 
+445 ,VÕ NGUYỄN THẢO LINH ,23/10/2009,Thành phố Hà Tĩnh ,Nữ ,10 Sinh ,THPT Chuyên Hà Tĩnh ,Sinh học 10 ,"15,75 ",Đạt ,Nhất 
+446 ,NGUYỄN HỒ PHƯƠNG NGUYÊN ,16/07/2009,Thành phố Hà Tĩnh ,Nữ ,10 Địa ,THPT Chuyên Hà Tĩnh ,Địa lý 10 ,"10,5 ",Đạt ,Khuyến khích 
+447 ,TRẦN VĂN LĨNH ,29/07/2009,Trạm y tế xã Thạch Xuân - Thạch Hà ,Nam ,10A1 ,THPT Lê Quý Đôn ,Vật lý 10 ,7 ,Hỏng ,
+448 ,HỒ CẨM LINH ,02/01/2009,Thạch Hà-Hà Tĩnh ,Nữ ,10A1 ,THPT Nguyễn Trung Thiên ,Hoá học 10 ,10 ,Đạt ,Ba 
+449 ,TRẦN THỊ KHÁNH LY ,15/12/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A1 ,THPT Lê Quảng Chí ,Sinh học 10 ,"8,75 ",Hỏng ,
+450 ,NGUYỄN VÕ THẢO NGUYÊN ,06/03/2009,Thành phố Hà Tĩnh ,Nữ ,10 Địa ,THPT Chuyên Hà Tĩnh ,Địa lý 10 ,"9,25 ",Hỏng ,
+451 ,TÔ MẠNH LONG ,18/02/2009,TP. Hà Tĩnh - Hà Tĩnh ,Nam ,10A4 ,"TH, THCS và THPT ĐH Hà Tĩnh ",Vật lý 10 ,"2,5 ",Hỏng ,
+452 ,TRẦN HOÀNG LONG ,20/03/2009,Thành phố Hà Tĩnh ,Nam ,10A3 ,THPT Thành Sen ,Hoá học 10 ,"5,5 ",Hỏng ,
+453 ,NGUYỄN HỮU BẢO MINH ,01/11/2009,Thành phố Hà Tĩnh ,Nam ,10 Sinh ,THPT Chuyên Hà Tĩnh ,Sinh học 10 ,"9,5 ",Đạt ,Khuyến khích 
+454 ,TRẦN THẢO NGUYÊN ,02/01/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A7 ,THPT Kỳ Anh ,Địa lý 10 ,13 ,Đạt ,Ba 
+455 ,NGUYỄN THÁI LỘC ,08/08/2009,TP Hà Tĩnh-Hà Tĩnh ,Nam ,10A3 ,THPT Phan Đình Phùng ,Vật lý 10 ,"8,5 ",Đạt ,Khuyến khích 
+456 ,NGUYỄN THỊ HÀ LY ,02/10/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10A1 ,THPT Hà Huy Tập ,Hoá học 10 ,"9,75 ",Đạt ,Khuyến khích 
+457 ,PHẠM QUANG MINH ,13/09/2009,Kỳ Anh - Hà Tĩnh ,Nam ,10A1 ,THPT Kỳ Anh ,Sinh học 10 ,"11,5 ",Đạt ,Ba 
+458 ,NGUYỄN THỊ LINH NHI ,31/03/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A9 ,THPT Lê Quảng Chí ,Địa lý 10 ,"13,25 ",Đạt ,Ba 
+459 ,NGUYỄN HOÀNG MAI ,28/02/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A3 ,THPT Kỳ Anh ,Vật lý 10 ,"9,5 ",Đạt ,Khuyến khích 
+460 ,NGUYỄN DUY MẠNH ,22/04/2009,TP Hà Tĩnh-Hà Tĩnh ,Nam ,10A8 ,THPT Phan Đình Phùng ,Hoá học 10 ,"10,25 ",Đạt ,Ba 
+461 ,MAI HÀ MY ,03/01/2009,Bệnh viện đa khoa tỉnh Hà Tĩnh ,Nữ ,10A1 ,THPT Lê Quý Đôn ,Sinh học 10 ,"12,75 ",Đạt ,Nhì 
+462 ,TRƯƠNG NGUYỄN THẢO NHI ,27/08/2009,TP. Hồ Chí Minh ,Nữ ,10A4 ,"TH, THCS và THPT ĐH Hà Tĩnh ",Địa lý 10 ,"10,25 ",Hỏng ,
+463 ,ĐẶNG VĂN LÊ MẠNH ,09/07/2009,Thạch Hà - Hà Tĩnh ,Nam ,10 Toán 1 ,THPT Chuyên Hà Tĩnh ,Vật lý 10 ,"8,75 ",Đạt ,Khuyến khích 
+464 ,LÊ TIẾN MẠNH ,28/12/2009,Kỳ Anh - Hà Tĩnh ,Nam ,10A1 ,THPT Nguyễn Huệ ,Hoá học 10 ,"11,25 ",Đạt ,Ba 
+465 ,NGUYỄN THỊ HẰNG NGA ,02/10/2009,Thạch Hà - Hà Tĩnh ,Nữ ,10 Sinh ,THPT Chuyên Hà Tĩnh ,Sinh học 10 ,"10,5 ",Đạt ,Khuyến khích 
+466 ,CAO TUỆ NHI ,03/02/2009,Thành phố Hà Tĩnh ,Nữ ,10 Địa ,THPT Chuyên Hà Tĩnh ,Địa lý 10 ,"10,5 ",Đạt ,Khuyến khích 
+467 ,LÊ NGỌC MINH ,27/07/2009,Cẩm Xuyên - Hà Tĩnh ,Nam ,10 Lý ,THPT Chuyên Hà Tĩnh ,Vật lý 10 ,19 ,Đạt ,Nhất 
+468 ,DƯƠNG BÌNH MINH ,23/03/2009,Thành phố Hà Tĩnh ,Nam ,10 Hóa ,THPT Chuyên Hà Tĩnh ,Hoá học 10 ,"9,5 ",Đạt ,Khuyến khích 
+469 ,TRẦN THỊ BẢO NGỌC ,20/12/2009,Can Lộc - Hà Tĩnh ,Nữ ,10 Sinh ,THPT Chuyên Hà Tĩnh ,Sinh học 10 ,11 ,Đạt ,Ba 
+470 ,NGUYỄN THỊ NHUNG ,23/02/2009,Bệnh viện đa khoa Thạch Hà ,Nữ ,10C1 ,THPT Lê Quý Đôn ,Địa lý 10 ,"14,5 ",Đạt ,Nhì 
+471 ,NGUYỄN TUẤN MINH ,14/02/2009,Thành phố Hà Tĩnh ,Nam ,10 Lý ,THPT Chuyên Hà Tĩnh ,Vật lý 10 ,"10,25 ",Đạt ,Ba 
+472 ,PHAN CÔNG MINH ,23/09/2009,Kỳ Anh - Hà Tĩnh ,Nam ,10A1 ,THPT Nguyễn Huệ ,Hoá học 10 ,10 ,Đạt ,Ba 
+473 ,HOÀNG THỊ NHƯ NGỌC ,02/01/2009,Thạch Hà-Hà Tĩnh ,Nữ ,10A1 ,THPT Nguyễn Trung Thiên ,Sinh học 10 ,8 ,Hỏng ,
+474 ,BÙI TRÚC NHƯ ,08/12/2009,Thị xã Hồng Lĩnh - Hà Tĩnh ,Nữ ,10 Địa ,THPT Chuyên Hà Tĩnh ,Địa lý 10 ,"10,25 ",Hỏng ,
+475 ,TRẦN NGUYỄN TRÀ MY ,22/04/2009,Thành phố Hà Tĩnh ,Nữ ,10 Lý ,THPT Chuyên Hà Tĩnh ,Vật lý 10 ,6 ,Hỏng ,
+476 ,TRẦN THẢO MINH ,01/01/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10A1 ,THPT Cẩm Xuyên ,Hoá học 10 ,10 ,Đạt ,Ba 
+477 ,VÕ THỊ NHƯ NGỌC ,20/01/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10 Sinh ,THPT Chuyên Hà Tĩnh ,Sinh học 10 ,9 ,Đạt ,Khuyến khích 
+478 ,NGUYỄN THỊ YẾN NHƯ ,20/04/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A9 ,THPT Nguyễn Huệ ,Địa lý 10 ,"9,25 ",Hỏng ,
+479 ,HỒ BẢO NAM ,08/01/2009,Kỳ Anh - Hà Tĩnh ,Nam ,10A1 ,THPT Kỳ Anh ,Vật lý 10 ,"8,75 ",Đạt ,Khuyến khích 
+480 ,NGUYỄN THỊ LÊ NA ,27/04/2009,Bệnh viện đa khoa Hà Tĩnh ,Nữ ,10A1 ,THPT Lê Quý Đôn ,Hoá học 10 ,9 ,Đạt ,Khuyến khích 
+481 ,NGUYỄN ĐÌNH NGUYÊN ,12/08/2009,Thành phố Hà Tĩnh ,Nam ,10 Sinh ,THPT Chuyên Hà Tĩnh ,Sinh học 10 ,"12,5 ",Đạt ,Nhì 
+482 ,NGUYỄN THỊ KHÁNH PHƯƠNG ,15/02/2009,Thành phố Hà Tĩnh ,Nữ ,10 Địa ,THPT Chuyên Hà Tĩnh ,Địa lý 10 ,"11,25 ",Đạt ,Khuyến khích 
+483 ,TRƯƠNG HOÀNG NAM ,27/02/2009,Kỳ Anh - Hà Tĩnh ,Nam ,10A1 ,THPT Nguyễn Huệ ,Vật lý 10 ,"7,5 ",Hỏng ,
+484 ,LÊ GIANG NAM ,22/04/2009,Kỳ Anh - Hà Tĩnh ,Nam ,10A1 ,THPT Nguyễn Huệ ,Hoá học 10 ,"10,75 ",Đạt ,Ba 
+485 ,HOÀNG ĐỨC NGUYÊN ,03/05/2009,Cẩm Xuyên - Hà Tĩnh ,Nam ,10A1 ,THPT Cẩm Xuyên ,Sinh học 10 ,9 ,Đạt ,Khuyến khích 
+486 ,PHANTHỊ NHƯ QUỲNH ,03/06/2009,Bệnh viện Đa khoa Hà Tĩnh ,Nữ ,10A10 ,THPT Cẩm Bình ,Địa lý 10 ,"12,25 ",Đạt ,Ba 
+487 ,VÕ HỮU HOÀNG NAM ,28/06/2009,Cẩm Xuyên - Hà Tĩnh ,Nam ,10A1 ,THPT Hà Huy Tập ,Vật lý 10 ,"9,25 ",Đạt ,Khuyến khích 
+488 ,DƯƠNG TUẤN NGHĨA ,01/01/2009,Kỳ Anh - Hà Tĩnh ,Nam ,10A1 ,THPT Kỳ Lâm ,Hoá học 10 ,"8,75 ",Đạt ,Khuyến khích 
+489 ,BÙI PHÚ NGUYÊN ,07/06/2009,TP Hà Tĩnh-Hà Tĩnh ,Nam ,10A8 ,THPT Phan Đình Phùng ,Sinh học 10 ,"11,25 ",Đạt ,Ba 
+490 ,NGUYỄN THÁI SƠN ,04/10/2009,Thành phố Hà Tĩnh ,Nam ,10 Địa ,THPT Chuyên Hà Tĩnh ,Địa lý 10 ,"11,5 ",Đạt ,Khuyến khích 
+491 ,PHAN CÔNG TUẤN NAM ,18/02/2009,Thành phố Hà Tĩnh ,Nam ,10 Lý ,THPT Chuyên Hà Tĩnh ,Vật lý 10 ,8 ,Đạt ,Khuyến khích 
+492 ,NGUYỄN MINH NGỌC ,08/11/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10A1 ,THPT Nguyễn Đình Liễn ,Hoá học 10 ,"9,25 ",Đạt ,Khuyến khích 
+493 ,NGUYỄN HOÀNG THANH NHÀN ,26/04/2009,Thạch Hà-Hà Tĩnh ,Nữ ,10A1 ,THPT Nguyễn Trung Thiên ,Sinh học 10 ,"11,75 ",Đạt ,Ba 
+494 ,NGUYỄN THỊ ANH TÂM ,01/03/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A4 ,THPT Nguyễn Thị Bích Châu ,Địa lý 10 ,"13,25 ",Đạt ,Ba 
+495 ,NGUYỄN BẢO NGUYÊN ,02/01/2009,Cẩm Xuyên - Hà Tĩnh ,Nam ,10A1 ,THPT Cẩm Xuyên ,Vật lý 10 ,13 ,Đạt ,Nhì 
+496 ,NGUYỄN THẢO NGUYÊN ,18/05/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10A1 ,THPT Cẩm Bình ,Hoá học 10 ,"7,5 ",Hỏng ,
+497 ,PHAN TRỌNG NHÂN ,20/11/2009,Thành phố Hà Tĩnh ,Nam ,10 Toán 1 ,THPT Chuyên Hà Tĩnh ,Sinh học 10 ,15 ,Đạt ,Nhất 
+498 ,LÊ THỊ HỒNG THÁI ,22/10/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A9 ,THPT Lê Quảng Chí ,Địa lý 10 ,14 ,Đạt ,Nhì 
+499 ,NGUYỄN HOÀNG NHẬT ,07/11/2009,Thành phố Hà Tĩnh ,Nam ,10 Lý ,THPT Chuyên Hà Tĩnh ,Vật lý 10 ,"11,5 ",Đạt ,Ba 
+500 ,LÊ VĂN NGUYÊN ,23/04/2009,Thạch Hà-Hà Tĩnh ,Nam ,10A1 ,THPT Nguyễn Trung Thiên ,Hoá học 10 ,"8,75 ",Đạt ,Khuyến khích 
+501 ,PHAN THỊ YẾN NHI ,30/07/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10A1 ,THPT Hà Huy Tập ,Sinh học 10 ,"11,5 ",Đạt ,Ba 
+502 ,NGUYỄN XUÂN THÁI ,12/12/2009,Cẩm Xuyên - Hà Tĩnh ,Nam ,10A7 ,THPT Cẩm Xuyên ,Địa lý 10 ,13 ,Đạt ,Ba 
+503 ,NGUYỄN KHẮC MINH NHẬT ,29/11/2009,Hương Sơn - Hà Tĩnh ,Nam ,10A1 ,THPT Nguyễn Huệ ,Vật lý 10 ,"5,5 ",Hỏng ,
+504 ,NGUYỄN LONG NHẬT ,04/09/2009,Đức Thọ - Hà Tĩnh ,Nam ,10 Hóa ,THPT Chuyên Hà Tĩnh ,Hoá học 10 ,"9,25 ",Đạt ,Khuyến khích 
+505 ,PHẠM THỊ HỒNG NHUNG ,04/10/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A1 ,THPT Nguyễn Thị Bích Châu ,Sinh học 10 ,"5,75 ",Hỏng ,
+506 ,ĐINH THỊ THẢO ,06/09/2009,Thạch Hà-Hà Tĩnh ,Nữ ,10A6 ,THPT Nguyễn Trung Thiên ,Địa lý 10 ,"13,25 ",Đạt ,Ba 
+507 ,NGUYỄN XUÂN NHẬT ,24/07/2009,Cẩm Xuyên - Hà Tĩnh ,Nam ,10A1 ,THPT Nguyễn Đình Liễn ,Vật lý 10 ,"8,75 ",Đạt ,Khuyến khích 
+508 ,NGUYỄN TRỌNG NHẬT ,06/06/2009,Cẩm Xuyên - Hà Tĩnh ,Nam ,10A1 ,THPT Nguyễn Đình Liễn ,Hoá học 10 ,8 ,Hỏng ,
+509 ,DƯƠNG THỊ QUỲNH NHƯ ,31/05/2009,Quận 5 - TP Hồ Chí Minh ,Nữ ,10A1 ,THPT Nguyễn Huệ ,Sinh học 10 ,"10,5 ",Đạt ,Khuyến khích 
+510 ,PHẠM ANH THƯ ,13/06/2009,Thành phố Hà Tĩnh ,Nữ ,10 Địa ,THPT Chuyên Hà Tĩnh ,Địa lý 10 ,"13,75 ",Đạt ,Nhì 
+511 ,NGUYỄN THỊ NHUNG ,28/03/2009,Trạm y tế xã Thạch Điền ,Nữ ,10A4 ,THPT Lê Quý Đôn ,Vật lý 10 ,"8,5 ",Đạt ,Khuyến khích 
+512 ,NGUYỄN TRẦN ANH NHI ,16/08/2009,TP Hà Tĩnh-Hà Tĩnh ,Nữ ,10A8 ,THPT Phan Đình Phùng ,Hoá học 10 ,8 ,Hỏng ,
+513 ,NGUYỄN QUỲNH NHƯ ,01/05/2009,Bệnh viện Đa khoa Hà Tĩnh ,Nữ ,10A5 ,THPT Cẩm Bình ,Sinh học 10 ,"9,5 ",Đạt ,Khuyến khích 
+514 ,PHẠM ĐÀO ANH THƯ ,12/11/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10A13 ,THPT Cẩm Bình ,Địa lý 10 ,"13,75 ",Đạt ,Nhì 
+515 ,PHAN TRỌNG NHƯ ,10/10/2009,Lộc Hà - Hà Tĩnh ,Nam ,10 Lý ,THPT Chuyên Hà Tĩnh ,Vật lý 10 ,"10,75 ",Đạt ,Ba 
+516 ,LƯƠNG THỊ HUYỀN NHI ,25/10/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A1 ,THPT Lê Quảng Chí ,Hoá học 10 ,"11,5 ",Đạt ,Ba 
+517 ,NGUYỄN THỊ QUỲNH NHƯ ,05/11/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A1 ,THPT Kỳ Lâm ,Sinh học 10 ,"8,75 ",Hỏng ,
+518 ,NGUYỄN THUỶ TIÊN ,14/04/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A7 ,THPT Kỳ Anh ,Địa lý 10 ,"15,75 ",Đạt ,Nhất 
+519 ,PHẠM HỒNG PHÚC ,27/11/2009,Nghi Xuân - Hà Tĩnh ,Nam ,10 Lý ,THPT Chuyên Hà Tĩnh ,Vật lý 10 ,11 ,Đạt ,Ba 
+520 ,NGUYỄN THỊ YẾN NHI ,14/02/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10A1 ,THPT Hà Huy Tập ,Hoá học 10 ,"10,5 ",Đạt ,Ba 
+521 ,NGUYỄN THỊ TỐ NHƯ ,22/05/2009,Thạch Hà - Hà Tĩnh ,Nữ ,10 Sinh ,THPT Chuyên Hà Tĩnh ,Sinh học 10 ,"11,5 ",Đạt ,Ba 
+522 ,CAO MAI HÀ TRANG ,16/12/2009,Hương Khê - Hà Tĩnh ,Nữ ,10 Địa ,THPT Chuyên Hà Tĩnh ,Địa lý 10 ,"12,75 ",Đạt ,Ba 
+523 ,NGUYỄN MINH PHÚC ,27/03/2009,Thành phố Hà Tĩnh ,Nam ,10 Lý ,THPT Chuyên Hà Tĩnh ,Vật lý 10 ,"9,75 ",Đạt ,Ba 
+524 ,DƯƠNG THỊ HÀ PHƯƠNG ,19/10/2009,TP Hà Tĩnh-Hà Tĩnh ,Nữ ,10A3 ,THPT Phan Đình Phùng ,Hoá học 10 ,10 ,Đạt ,Ba 
+525 ,VÕ HOÀNG PHÚC ,24/10/2009,Can Lộc - Hà Tĩnh ,Nam ,10 Sinh ,THPT Chuyên Hà Tĩnh ,Sinh học 10 ,15 ,Đạt ,Nhất 
+526 ,ĐÀO THỊ HÀ TRANG ,18/03/2009,Thành phố Hà Tĩnh ,Nữ ,10 Địa ,THPT Chuyên Hà Tĩnh ,Địa lý 10 ,"13,5 ",Đạt ,Nhì 
+527 ,LÊ MINH QUÂN ,18/04/2009,Kỳ Anh - Hà Tĩnh ,Nam ,10A1 ,THPT Lê Quảng Chí ,Vật lý 10 ,7 ,Hỏng ,
+528 ,NGUYỄN TRƯỜNG XUÂN PHƯỚC ,24/01/2009,Quảng Trị ,Nam ,10 Hóa ,THPT Chuyên Hà Tĩnh ,Hoá học 10 ,5 ,Hỏng ,
+529 ,NGUYỄN ĐỨC PHÚ ,19/01/2009,Kỳ Anh - Hà Tĩnh ,Nam ,10A2 ,THPT Lê Quảng Chí ,Sinh học 10 ,"11,5 ",Đạt ,Ba 
+530 ,NGUYỄN THỊ HÀ TRANG ,13/08/2009,Thạch Hà-Hà Tĩnh ,Nữ ,10A7 ,THPT Nguyễn Trung Thiên ,Địa lý 10 ,11 ,Đạt ,Khuyến khích 
+531 ,PHẠM ĐÌNH QUỐC ,19/06/2009,Thạch Hà  - Hà Tĩnh ,Nam ,10 Lý ,THPT Chuyên Hà Tĩnh ,Vật lý 10 ,"14,5 ",Đạt ,Nhì 
+532 ,NGUYỄN HỮU QUANG ,20/03/2009,Quảng Bình ,Nam ,10 Hóa ,THPT Chuyên Hà Tĩnh ,Hoá học 10 ,15 ,Đạt ,Nhất 
+533 ,LÊ NGỌC QUANG ,18/05/2009,Cẩm Xuyên - Hà Tĩnh ,Nam ,10A1 ,THPT Hà Huy Tập ,Sinh học 10 ,10 ,Đạt ,Khuyến khích 
+534 ,LÊ NGUYỄN MAI TRANG ,30/11/2009,Thạch Hà-Hà Tĩnh ,Nữ ,10D5 ,THPT Phan Đình Phùng ,Địa lý 10 ,"11,75 ",Đạt ,Khuyến khích 
+535 ,NGÔ ĐẶNG THÁI SƠN ,26/05/2009,Thành phố Hà Tĩnh ,Nam ,10 Lý ,THPT Chuyên Hà Tĩnh ,Vật lý 10 ,"15,75 ",Đạt ,Nhất 
+536 ,ĐINH MINH QUANG ,08/10/2009,Nghệ An ,Nam ,10 Hóa ,THPT Chuyên Hà Tĩnh ,Hoá học 10 ,11 ,Đạt ,Ba 
+537 ,ĐẶNG BẢO QUỐC ,01/05/2009,Kỳ Anh - Hà Tĩnh ,Nam ,10A3 ,THPT Nguyễn Huệ ,Sinh học 10 ,10 ,Đạt ,Khuyến khích 
+538 ,BÙI NGUYỄN QUỲNH TRANG ,27/07/2009,Thành phố Hà Tĩnh ,Nữ ,10A9 ,THPT Thành Sen ,Địa lý 10 ,"12,75 ",Đạt ,Ba 
+539 ,NGUYỄN HUY THÁI SƠN ,06/06/2009,Thành phố Hà Tĩnh ,Nam ,10 Lý ,THPT Chuyên Hà Tĩnh ,Vật lý 10 ,"16,25 ",Đạt ,Nhất 
+540 ,NGUYỄN CHÍ QUÂN ,20/10/2009,Kỳ Anh - Hà Tĩnh ,Nam ,10A1 ,THPT Kỳ Anh ,Hoá học 10 ,9 ,Đạt ,Khuyến khích 
+541 ,HỒ THỊ TRÚC QUỲNH ,25/04/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A1 ,THPT Kỳ Lâm ,Sinh học 10 ,4 ,Hỏng ,
+542 ,VÕ NGỌC TRÂM ,25/10/2009,Thành phố Hà Tĩnh ,Nữ ,10A8 ,THPT Thành Sen ,Địa lý 10 ,13 ,Đạt ,Ba 
+543 ,LÊ VĂN SỸ ,21/08/2009,Cẩm Xuyên - Hà Tĩnh ,Nam ,10A1 ,THPT Cẩm Bình ,Vật lý 10 ,11 ,Đạt ,Ba 
+544 ,ĐINH LÊ THỤC QUYÊN ,11/04/2009,Thành phố Hà Tĩnh ,Nữ ,10 Hóa ,THPT Chuyên Hà Tĩnh ,Hoá học 10 ,"8,75 ",Đạt ,Khuyến khích 
+545 ,NGUYỄN THANH SANG ,27/04/2009,Thạch Hà-Hà Tĩnh ,Nam ,10A7 ,THPT Phan Đình Phùng ,Sinh học 10 ,"11,75 ",Đạt ,Ba 
+546 ,NGUYỄN THỊ CẨM TÚ ,12/06/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A3 ,THPT Nguyễn Thị Bích Châu ,Địa lý 10 ,10 ,Hỏng ,
+547 ,NGUYỄN VĂN THÀNH ,12/05/2009,Cẩm Xuyên - Hà Tĩnh ,Nam ,10A1 ,THPT Hà Huy Tập ,Vật lý 10 ,7 ,Hỏng ,
+548 ,NGUYỄN NHƯ QUỲNH ,20/04/2009,Hương Sơn - Hà Tĩnh ,Nữ ,10 Hóa ,THPT Chuyên Hà Tĩnh ,Hoá học 10 ,"11,75 ",Đạt ,Ba 
+549 ,TRỊNH MINH TÀI ,07/04/2009,Cẩm Xuyên - Hà Tĩnh ,Nam ,10A1 ,THPT Nguyễn Đình Liễn ,Sinh học 10 ,"8,75 ",Hỏng ,
+550 ,PHẠM THỊ PHƯƠNG UYÊN ,05/12/2009,Thị xã Hồng Lĩnh - Hà Tĩnh ,Nữ ,10 Địa ,THPT Chuyên Hà Tĩnh ,Địa lý 10 ,"13,25 ",Đạt ,Ba 
+551 ,PHẠM ĐÌNH THÁI ,16/02/2009,Kỳ Anh - Hà Tĩnh ,Nam ,10A1 ,THPT Nguyễn Thị Bích Châu ,Vật lý 10 ,7 ,Hỏng ,
+552 ,LÊ XUÂN THẢO ,09/12/2009,Khánh Hòa ,Nam ,10 Hóa ,THPT Chuyên Hà Tĩnh ,Hoá học 10 ,12 ,Đạt ,Nhì 
+553 ,NGUYỄN THU THẢO ,02/11/2009,Thành phố Hồ Chí Minh ,Nữ ,10 Sinh ,THPT Chuyên Hà Tĩnh ,Sinh học 10 ,"14,5 ",Đạt ,Nhì 
+554 ,NGUYỄN THỊ QUÝ VĂN ,15/11/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10A4 ,THPT Nguyễn Đình Liễn ,Địa lý 10 ,14 ,Đạt ,Nhì 
+555 ,TỐNG TRẦN THÁI ,18/08/2009,Thành phố Hà Tĩnh ,Nam ,10 Lý ,THPT Chuyên Hà Tĩnh ,Vật lý 10 ,"5,5 ",Hỏng ,
+556 ,PHAN ANH THƠ ,12/12/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A1 ,THPT Kỳ Anh ,Hoá học 10 ,9 ,Đạt ,Khuyến khích 
+557 ,MAI ĐỨC THỌ ,06/01/2009,Kỳ Anh - Hà Tĩnh ,Nam ,10A1 ,THPT Nguyễn Thị Bích Châu ,Sinh học 10 ,"9,5 ",Đạt ,Khuyến khích 
+558 ,CAO THỊ CẨM VÂN ,19/10/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10 Địa ,THPT Chuyên Hà Tĩnh ,Địa lý 10 ,"13,5 ",Đạt ,Nhì 
+559 ,LÊ TRẦN ĐẠI THẮNG ,30/10/2009,Kỳ Anh - Hà Tĩnh ,Nam ,10A1 ,THPT Lê Quảng Chí ,Vật lý 10 ,"6,5 ",Hỏng ,
+560 ,HÀ NAM BẢO THỤC ,13/12/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A1 ,THPT Kỳ Anh ,Hoá học 10 ,10 ,Đạt ,Ba 
+561 ,NGUYỄN THỊ NGỌC THÚY ,04/08/2009,Hương Sơn - Hà Tĩnh ,Nữ ,10 Sinh ,THPT Chuyên Hà Tĩnh ,Sinh học 10 ,"14,5 ",Đạt ,Nhì 
+562 ,PHẠM ĐÌNH VIỆT ,11/08/2009,Cẩm Xuyên - Hà Tĩnh ,Nam ,10A6 ,THPT Hà Huy Tập ,Địa lý 10 ,8 ,Hỏng ,
+563 ,LÂM QUỐC THÔNG ,22/04/2009,Bệnh viện đa khoa huyện Can Lộc ,Nam ,10A1 ,THPT Lê Quý Đôn ,Vật lý 10 ,6 ,Hỏng ,
+564 ,NGUYỄN HIỀN THƯƠNG ,01/10/2009,Thạch Hà-Hà Tĩnh ,Nữ ,10A1 ,THPT Nguyễn Trung Thiên ,Hoá học 10 ,"9,25 ",Đạt ,Khuyến khích 
+565 ,NGUYỄN PHƯƠNG THÚY ,14/06/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A1 ,THPT Lê Quảng Chí ,Sinh học 10 ,"11,75 ",Đạt ,Ba 
+566 ,NGUYỄN THỊ KHÁNH VY ,31/07/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10A6 ,THPT Hà Huy Tập ,Địa lý 10 ,9 ,Hỏng ,
+567 ,NGUYỄN THỊ QUỲNH THƠ ,07/02/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A1 ,THPT Nguyễn Huệ ,Vật lý 10 ,"10,25 ",Đạt ,Ba 
+568 ,PHẠM THỊ THỦY TIÊN ,29/03/2009,Thành phố Hà Tĩnh ,Nữ ,10 Hóa ,THPT Chuyên Hà Tĩnh ,Hoá học 10 ,"12,5 ",Đạt ,Nhì 
+569 ,PHAN ANH THƯ ,12/01/2009,Thành phố Hà Tĩnh ,Nữ ,10 Sinh ,THPT Chuyên Hà Tĩnh ,Sinh học 10 ,12 ,Đạt ,Ba 
+570 ,TRẦN KHÁNH VY ,16/01/2009,Thành phố Hà Tĩnh ,Nữ ,10 Địa ,THPT Chuyên Hà Tĩnh ,Địa lý 10 ,"12,25 ",Đạt ,Ba 
+571 ,TRƯƠNG KHÁNH TOÀN ,10/09/2009,Thành phố Hà Tĩnh ,Nam ,10 Lý ,THPT Chuyên Hà Tĩnh ,Vật lý 10 ,"8,5 ",Đạt ,Khuyến khích 
+572 ,VÕ HÀ TRANG ,09/09/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10A1 ,THPT Cẩm Bình ,Hoá học 10 ,"5,5 ",Hỏng ,
+573 ,NGUYỄN BÙI HÀ TRANG ,03/09/2009,Thành phố Hà Tĩnh ,Nữ ,10 Sinh ,THPT Chuyên Hà Tĩnh ,Sinh học 10 ,"12,75 ",Đạt ,Nhì 
+574 ,NGUYỄN PHƯƠNG VY ,15/12/2009,Thạch Hà - Hà Tĩnh ,Nữ ,10 Địa ,THPT Chuyên Hà Tĩnh ,Địa lý 10 ,"13,75 ",Đạt ,Nhì 
+575 ,NGUYỄN KHUÊ TRANG ,06/01/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10 Lý ,THPT Chuyên Hà Tĩnh ,Vật lý 10 ,"16,5 ",Đạt ,Nhất 
+576 ,NGUYỄN THỊ MAI TRANG ,16/01/2009,Thành phố Hà Tĩnh ,Nữ ,10 Hóa ,THPT Chuyên Hà Tĩnh ,Hoá học 10 ,"13,3 ",Đạt ,Nhì 
+577 ,NGUYỄN TRẦN HIỀN TRANG ,28/03/2009,Ky Anh - Hà Tĩnh ,Nữ ,10A1 ,THPT Kỳ Anh ,Sinh học 10 ,"12,25 ",Đạt ,Nhì 
+578 ,ĐÀO LÊ TƯỜNG VY ,22/09/2009,Thành phố Hà Tĩnh ,Nữ ,10 Địa ,THPT Chuyên Hà Tĩnh ,Địa lý 10 ,"9,75 ",Hỏng ,
+579 ,ĐINH VĂN TRƯỜNG ,21/03/2009,Thành phố Hà Tĩnh ,Nam ,10 Lý ,THPT Chuyên Hà Tĩnh ,Vật lý 10 ,"16,25 ",Đạt ,Nhất 
+580 ,NGUYỄN HOÀNG TRUNG ,03/10/2009,Nghê An ,Nam ,10 Hóa ,THPT Chuyên Hà Tĩnh ,Hoá học 10 ,"16,2 ",Đạt ,Nhất 
+581 ,NGUYỄN THỊ HƯƠNG TRÀ ,02/01/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10A1 ,THPT Cẩm Xuyên ,Sinh học 10 ,"8,5 ",Hỏng ,
+582 ,TRƯƠNG NGUYỄN YẾN VY ,30/04/2009,Thành phố Hà Tĩnh ,Nữ ,10 Địa ,THPT Chuyên Hà Tĩnh ,Địa lý 10 ,"13,75 ",Đạt ,Nhì 
+583 ,VÕ TÁ ANH TUẤN ,09/09/2009,Cẩm Xuyên - Hà Tĩnh ,Nam ,10A1 ,THPT Nguyễn Đình Liễn ,Vật lý 10 ,7 ,Hỏng ,
+584 ,LÊ XUÂN TRƯỜNG ,21/03/2009,Kỳ Anh - Hà Tĩnh ,Nam ,10A1 ,THPT Lê Quảng Chí ,Hoá học 10 ,"11,25 ",Đạt ,Ba 
+585 ,TRẦN CÔNG TRÁNG ,14/03/2009,Thành phố Hà Tĩnh ,Nam ,10 Toán 1 ,THPT Chuyên Hà Tĩnh ,Sinh học 10 ,15 ,Đạt ,Nhất 
+586 ,NGUYỄN LÊ HẢI YẾN ,27/10/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10A13 ,THPT Cẩm Bình ,Địa lý 10 ,12 ,Đạt ,Khuyến khích 
+587 ,NGUYỄN CHÂU TƯỜNG ,18/09/2009,Lộc Hà - Hà Tĩnh ,Nam ,10 Lý ,THPT Chuyên Hà Tĩnh ,Vật lý 10 ,"10,5 ",Đạt ,Ba 
+588 ,BÙI THỊ CẨM TÚ ,26/12/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10A1 ,THPT Cẩm Xuyên ,Hoá học 10 ,"13,4 ",Đạt ,Nhì 
+589 ,NGUYỄN THỊ TRINH ,19/07/2009,Lộc Hà - Hà Tĩnh ,Nữ ,10 Sinh ,THPT Chuyên Hà Tĩnh ,Sinh học 10 ,14 ,Đạt ,Nhì 
+590 ,TRẦN THỊ HOÀNG YẾN ,09/02/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A8 ,THPT Nguyễn Huệ ,Địa lý 10 ,9 ,Hỏng ,
+591 ,NGUYỄN THỊ THU UYÊN ,18/04/2009,Hương Sơn - Hà Tĩnh ,Nữ ,10 Lý ,THPT Chuyên Hà Tĩnh ,Vật lý 10 ,"10,5 ",Đạt ,Ba 
+592 ,PHAN SỸ HOÀNG VIỆT ,03/03/2009,Kỳ Anh - Hà Tĩnh ,Nam ,10 Hóa ,THPT Chuyên Hà Tĩnh ,Hoá học 10 ,"12,25 ",Đạt ,Nhì 
+593 ,NGUYỄN QUỐC TRỌNG ,25/11/2009,Cẩm Xuyên - Hà Tĩnh ,Nam ,10A2 ,THPT Cẩm Xuyên ,Sinh học 10 ,8 ,Hỏng ,
+594 ,LÊ HẢI YẾN ,06/09/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A3 ,THPT Lê Quảng Chí ,Vật lý 10 ,"6,25 ",Hỏng ,
+595 ,TRẦN DUY VŨ ,08/09/2009,Can Lộc - Hà Tĩnh ,Nam ,10 Hóa ,THPT Chuyên Hà Tĩnh ,Hoá học 10 ,"10,5 ",Đạt ,Ba 
+596 ,NGUYỄN ĐĂNG ANH TUẤN ,26/03/2009,Cẩm Xuyên - Hà Tĩnh ,Nam ,10A2 ,THPT Hà Huy Tập ,Sinh học 10 ,8 ,Hỏng ,
+597 ,NGUYỄN THỊ HÀ VY ,02/06/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10A1 ,THPT Cẩm Xuyên ,Hoá học 10 ,7 ,Hỏng ,
+598 ,NGUYỄN KIM TÚ ,11/07/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10 Sinh ,THPT Chuyên Hà Tĩnh ,Sinh học 10 ,11 ,Đạt ,Ba 
+599 ,PHẠM THỊ XUÂN ,20/07/2009,Lâm Hà - Lâm Đồng ,Nữ ,10A1 ,THPT Nguyễn Thị Bích Châu ,Hoá học 10 ,"3,5 ",Hỏng ,
+600 ,PHAN THỊ THẢO VÂN ,17/01/2009,Thành phố Hà Tĩnh ,Nữ ,10 Sinh ,THPT Chuyên Hà Tĩnh ,Sinh học 10 ,"9,5 ",Đạt ,Khuyến khích 
+601 ,NGUYỄN THỊ THÚY VÂN ,10/01/2009,Thạch Hà-Hà Tĩnh ,Nữ ,10A2 ,THPT Nguyễn Trung Thiên ,Sinh học 10 ,8 ,Hỏng ,
+602 ,ĐẶNG QUANG VIỆT ,04/04/2009,Cẩm Xuyên - Hà Tĩnh ,Nam ,10 Sinh ,THPT Chuyên Hà Tĩnh ,Sinh học 10 ,13 ,Đạt ,Nhì 
+603 ,DƯƠNG NGUYỄN BẢO ANH ,17/10/2009,Cẩm Xuyên - Hà Tĩnh ,Nam ,10A13 ,THPT Cẩm Xuyên ,Tiếng Anh 10 ,"8,7 ",Hỏng ,
+604 ,TRẦN HOÀNG ANH ,11/10/2009,Thành phố Hà Tĩnh ,Nam ,10 Anh 2 ,THPT Chuyên Hà Tĩnh ,Tiếng Anh 10 ,"15,65 ",Đạt ,Ba 
+605 ,NGUYỄN THỊ LỘC ANH ,29/01/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A11 ,THPT Kỳ Anh ,Tiếng Anh 10 ,"11,55 ",Đạt ,Khuyến khích 
+606 ,NGUYỄN MINH ANH ,09/05/2009,Bệnh viện Đa khoa Hà Tĩnh ,Nữ ,10A1 ,THPT Nguyễn Huệ ,Tiếng Anh 10 ,"10,9 ",Đạt ,Khuyến khích 
+607 ,PHẠM VĂN NHẬT ANH ,02/12/2009,Thành phố Hà Tĩnh ,Nam ,10 Anh 1 ,THPT Chuyên Hà Tĩnh ,Tiếng Anh 10 ,-1 ,Vắng thi ,
+608 ,NGÔ TRẦN QUANG ANH ,01/04/2009,Tuyên Hóa - Quảng Bình ,Nam ,10 Anh 1 ,THPT Chuyên Hà Tĩnh ,Tiếng Anh 10 ,"16,95 ",Đạt ,Nhì 
+609 ,NGUYỄN XUÂN QUỐC ANH ,09/06/2009,Thanh Bình - Ninh Bình ,Nam ,10 Anh 2 ,THPT Chuyên Hà Tĩnh ,Tiếng Anh 10 ,"14,97 ",Đạt ,Ba 
+610 ,LÊ QUỲNH ANH ,05/05/2009,Thành phố Hà Tĩnh ,Nữ ,10 Anh 1 ,THPT Chuyên Hà Tĩnh ,Tiếng Anh 10 ,"17,3 ",Đạt ,Nhất 
+611 ,NGUYỄN THẢO ANH ,12/03/2009,Hoàn Kiếm-Hà Nội ,Nữ ,10D1 ,THPT Phan Đình Phùng ,Tiếng Anh 10 ,"11,82 ",Đạt ,Khuyến khích 
+612 ,PHAN TUẤN ANH ,29/01/2009,Đức Thọ - Hà Tĩnh ,Nam ,10 Anh 1 ,THPT Chuyên Hà Tĩnh ,Tiếng Anh 10 ,"17,22 ",Đạt ,Nhất 
+613 ,TRẦN ĐẶNG KHÁNH BĂNG ,16/04/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10A7 ,THPT Hà Huy Tập ,Tiếng Anh 10 ,"9,57 ",Hỏng ,
+614 ,BÙI NGỌC DIỆP CHI ,01/10/2009,Lộc Hà - Hà Tĩnh ,Nữ ,10 Anh 2 ,THPT Chuyên Hà Tĩnh ,Tiếng Anh 10 ,13 ,Đạt ,Khuyến khích 
+615 ,NGUYỄN TRẦN DIỆP CHI ,19/07/2009,Hương Sơn - Hà Tĩnh ,Nữ ,10 Anh 2 ,THPT Chuyên Hà Tĩnh ,Tiếng Anh 10 ,"14,83 ",Đạt ,Ba 
+616 ,NGUYỄN BIỆN THỤC CHI ,08/09/2009,Thành phố Hà Tĩnh ,Nữ ,10 Anh 2 ,THPT Chuyên Hà Tĩnh ,Tiếng Anh 10 ,15 ,Đạt ,Ba 
+617 ,VÕ QUỐC CƯỜNG ,05/12/2008,Thành phố Hà Tĩnh ,Nam ,10A8 ,THPT Thành Sen ,Tiếng Anh 10 ,"7,45 ",Hỏng ,
+618 ,ĐẶNG NGỌC DIỆP ,24/09/2009,Nghệ An ,Nữ ,10 Anh 1 ,THPT Chuyên Hà Tĩnh ,Tiếng Anh 10 ,"16,2 ",Đạt ,Nhì 
+619 ,NGUYỄN HUYỀN DIỆU ,26/01/2009,Thành phố Hà Tĩnh ,Nữ ,10 Anh 2 ,THPT Chuyên Hà Tĩnh ,Tiếng Anh 10 ,-1 ,Vắng thi ,
+620 ,NGUYỄN THANH KHÁNH DUY ,11/11/2009,Thành phố Hà Tĩnh ,Nam ,10 Anh 1 ,THPT Chuyên Hà Tĩnh ,Tiếng Anh 10 ,-1 ,Vắng thi ,
+621 ,NGUYỄN THÁI DƯƠNG ,13/11/2009,Kỳ Anh - Hà Tĩnh ,Nam ,10A3 ,THPT Kỳ Anh ,Tiếng Anh 10 ,"11,05 ",Đạt ,Khuyến khích 
+622 ,TRỊNH THỊ THÙY DƯƠNG ,24/02/2009,TP Hà Tĩnh-Hà Tĩnh ,Nữ ,10D1 ,THPT Phan Đình Phùng ,Tiếng Anh 10 ,"11,75 ",Đạt ,Khuyến khích 
+623 ,HỒ LINH ĐAN ,31/01/2009,Đức Thọ - Hà Tĩnh ,Nữ ,10 Anh 1 ,THPT Chuyên Hà Tĩnh ,Tiếng Anh 10 ,17 ,Đạt ,Nhì 
+624 ,NGUYỄN LÊ LINH ĐAN ,14/09/2009,Thành phố Hà Tĩnh ,Nữ ,10 Anh 1 ,THPT Chuyên Hà Tĩnh ,Tiếng Anh 10 ,"16,2 ",Đạt ,Nhì 
+625 ,NGUYỄN BẢO HOÀNG GIANG ,02/05/2009,Thành phố Hà Tĩnh ,Nữ ,10 Anh 1 ,THPT Chuyên Hà Tĩnh ,Tiếng Anh 10 ,"16,75 ",Đạt ,Nhì 
+626 ,NGUYỄN HƯƠNG GIANG ,06/09/2009,TP Biên Hòa - Đồng Nai ,Nữ ,10A4 ,THPT Kỳ Lâm ,Tiếng Anh 10 ,"7,6 ",Hỏng ,
+627 ,NGUYỄN BẢO HÀ ,09/11/2009,Thành phố Hà Tĩnh ,Nữ ,10 Anh 1 ,THPT Chuyên Hà Tĩnh ,Tiếng Anh 10 ,"17,28 ",Đạt ,Nhất 
+628 ,PHAN GIA HÂN ,11/11/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10A4 ,THPT Nguyễn Đình Liễn ,Tiếng Anh 10 ,"8,05 ",Hỏng ,
+629 ,TRẦN THỊ HIẾU ,13/10/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10A1 ,THPT Hà Huy Tập ,Tiếng Anh 10 ,"12,2 ",Đạt ,Khuyến khích 
+630 ,LƯƠNG KHÁNH HOÀ ,28/10/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A3 ,THPT Kỳ Anh ,Tiếng Anh 10 ,"11,8 ",Đạt ,Khuyến khích 
+631 ,PHẠM KHÁNH HUYỀN ,20/07/2009,Thành phố Hà Tĩnh ,Nữ ,10 Anh 2 ,THPT Chuyên Hà Tĩnh ,Tiếng Anh 10 ,"15,63 ",Đạt ,Ba 
+632 ,NGÔ KIẾN HUY ,05/12/2009,Thành phố Hà Tĩnh ,Nam ,10 Anh 2 ,THPT Chuyên Hà Tĩnh ,Tiếng Anh 10 ,"14,73 ",Đạt ,Ba 
+633 ,TRẦN VĂN HUY ,02/01/2009,Thành phố Hà Tĩnh ,Nam ,10 Anh 1 ,THPT Chuyên Hà Tĩnh ,Tiếng Anh 10 ,"16,08 ",Đạt ,Nhì 
+634 ,DƯƠNG ĐỨC HƯNG ,21/01/2009,Bệnh viện đa khoa tỉnh Hà Tĩnh ,Nam ,10A1 ,THPT Lê Quý Đôn ,Tiếng Anh 10 ,"5,35 ",Hỏng ,
+635 ,THÁI MINH KHUÊ ,05/07/2009,Đức Thọ - Hà Tĩnh ,Nữ ,10 Anh 1 ,THPT Chuyên Hà Tĩnh ,Tiếng Anh 10 ,"14,65 ",Đạt ,Ba 
+636 ,HỒ SAO KHUÊ ,09/04/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10 Anh 1 ,THPT Chuyên Hà Tĩnh ,Tiếng Anh 10 ,"15,05 ",Đạt ,Ba 
+637 ,NGUYỄN THÙY KHUYÊN ,10/12/2009,Hương Sơn - Hà Tĩnh ,Nữ ,10 Anh 2 ,THPT Chuyên Hà Tĩnh ,Tiếng Anh 10 ,"14,95 ",Đạt ,Ba 
+638 ,BÙI LÊ ĐỨC KIÊN ,20/10/2009,Thạch Hà-Hà Tĩnh ,Nam ,10A1 ,THPT Nguyễn Trung Thiên ,Tiếng Anh 10 ,"8,98 ",Hỏng ,
+639 ,NGUYỄN HOÀNG BẢO LÊ ,09/01/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A3 ,THPT Kỳ Anh ,Tiếng Anh 10 ,-1 ,Vắng thi ,
+640 ,PHAN HÀ LÊ ,17/03/2009,Thành phố Hà Tĩnh ,Nữ ,10 Anh 2 ,THPT Chuyên Hà Tĩnh ,Tiếng Anh 10 ,"15,4 ",Đạt ,Ba 
+641 ,PHẠM THỊ BẢO LINH ,18/05/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10A14 ,THPT Cẩm Bình ,Tiếng Anh 10 ,"15,23 ",Đạt ,Ba 
+642 ,VÕ DIỆU LINH ,02/04/2009,Đức Thọ - Hà Tĩnh ,Nữ ,10 Anh 2 ,THPT Chuyên Hà Tĩnh ,Tiếng Anh 10 ,-1 ,Vắng thi ,
+643 ,VÕ DIỆU LINH ,01/12/2009,Can Lộc - Hà Tĩnh ,Nữ ,10 Anh 2 ,THPT Chuyên Hà Tĩnh ,Tiếng Anh 10 ,-1 ,Vắng thi ,
+644 ,NGUYỄN NGỌC GIA LINH ,19/07/2009,Tân Kỳ - Nghệ An ,Nữ ,10A1 ,THPT Kỳ Lâm ,Tiếng Anh 10 ,"6,98 ",Hỏng ,
+645 ,BÙI THỊ HÀ LINH ,28/03/2009,Thành phố Hà Tĩnh ,Nữ ,10 Anh 2 ,THPT Chuyên Hà Tĩnh ,Tiếng Anh 10 ,"15,5 ",Đạt ,Ba 
+646 ,VÕ THỊ HOÀNG LINH ,01/06/2009,Thành phố Hà Tĩnh ,Nữ ,10 Anh 2 ,THPT Chuyên Hà Tĩnh ,Tiếng Anh 10 ,"12,6 ",Đạt ,Khuyến khích 
+647 ,NGUYỄN THỊ KHÁNH LINH ,25/05/2009,TP Hà Tĩnh-Hà Tĩnh ,Nữ ,10D4 ,THPT Phan Đình Phùng ,Tiếng Anh 10 ,"13,03 ",Đạt ,Khuyến khích 
+648 ,VŨ KHÁNH LINH ,20/05/2009,Thành phố Hà Tĩnh ,Nữ ,10 Anh 2 ,THPT Chuyên Hà Tĩnh ,Tiếng Anh 10 ,"16,08 ",Đạt ,Nhì 
+649 ,LÊ NGUYỄN PHƯƠNG LINH ,09/06/2009,Mộ Đức - Quảng Ngãi ,Nữ ,10A7 ,THPT Nguyễn Huệ ,Tiếng Anh 10 ,"12,35 ",Đạt ,Khuyến khích 
+650 ,LÊ VŨ THÙY LINH ,29/12/2009,Thành phố Hà Tĩnh ,Nữ ,10 Anh 2 ,THPT Chuyên Hà Tĩnh ,Tiếng Anh 10 ,"15,63 ",Đạt ,Ba 
+651 ,NGUYỄN HIỂN LONG ,17/09/2009,Thành phố Hà Tĩnh ,Nam ,10 Anh 1 ,THPT Chuyên Hà Tĩnh ,Tiếng Anh 10 ,"16,15 ",Đạt ,Nhì 
+652 ,LÊ XUÂN LONG ,12/02/2009,Trạm y tế xã Ngọc Sơn - Thạch Hà ,Nam ,10A4 ,THPT Lê Quý Đôn ,Tiếng Anh 10 ,"8,15 ",Hỏng ,
+653 ,NGUYỄN PHAN THẢO LY ,27/03/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10A4 ,THPT Cẩm Xuyên ,Tiếng Anh 10 ,"10,7 ",Đạt ,Khuyến khích 
+654 ,TRẦN BÌNH MINH ,26/10/2009,Thành phố Hà Tĩnh ,Nam ,10 Anh 1 ,THPT Chuyên Hà Tĩnh ,Tiếng Anh 10 ,"13,2 ",Đạt ,Ba 
+655 ,NGUYỄN BẢO QUANG MINH ,10/12/2009,Kỳ Anh - Hà Tĩnh ,Nam ,10A4 ,THPT Kỳ Lâm ,Tiếng Anh 10 ,"5,03 ",Hỏng ,
+656 ,VÕ THỊ LY NA ,21/01/2009,Thạch Hà-Hà Tĩnh ,Nữ ,10A5 ,THPT Nguyễn Trung Thiên ,Tiếng Anh 10 ,"7,55 ",Hỏng ,
+657 ,TRẦN THUÝ NGA ,02/08/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A8 ,THPT Lê Quảng Chí ,Tiếng Anh 10 ,"11,03 ",Đạt ,Khuyến khích 
+658 ,NGUYỄN QUỲNH NGÂN ,06/07/2009,Nghi Xuân - Hà Tĩnh ,Nữ ,10 Anh 2 ,THPT Chuyên Hà Tĩnh ,Tiếng Anh 10 ,"17,38 ",Đạt ,Nhất 
+659 ,LÊ HOÀNG BẢO NGỌC ,07/02/2009,Đống Đa - Hà Nội ,Nữ ,10 Anh 1 ,THPT Chuyên Hà Tĩnh ,Tiếng Anh 10 ,"14,83 ",Đạt ,Ba 
+660 ,NGUYỄN BẢO NGỌC ,12/07/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10 Anh 2 ,THPT Chuyên Hà Tĩnh ,Tiếng Anh 10 ,-1 ,Vắng thi ,
+661 ,TRẦN KHÁNH NGỌC ,02/11/2009,Thành phố Hà Tĩnh ,Nữ ,10 Anh 1 ,THPT Chuyên Hà Tĩnh ,Tiếng Anh 10 ,"15,5 ",Đạt ,Ba 
+662 ,NGUYỄN MINH HOÀNG NGUYÊN ,18/08/2009,Đức Thọ - Hà Tĩnh ,Nam ,10 Anh 1 ,THPT Chuyên Hà Tĩnh ,Tiếng Anh 10 ,"15,6 ",Đạt ,Ba 
+663 ,ĐẶNG KHÁNH NGUYÊN ,05/06/2009,Thành phố Hà Tĩnh ,Nam ,10 Anh 1 ,THPT Chuyên Hà Tĩnh ,Tiếng Anh 10 ,"16,78 ",Đạt ,Nhì 
+664 ,NGUYỄN KHÔI NGUYÊN ,13/10/2009,TP. Hà Tĩnh - Hà Tĩnh ,Nam ,10A1 ,"TH, THCS và THPT ĐH Hà Tĩnh ",Tiếng Anh 10 ,"8,53 ",Hỏng ,
+665 ,VÕ HẠNH NHÂN ,29/06/2009,Can Lộc - Hà Tĩnh ,Nữ ,10 Anh 1 ,THPT Chuyên Hà Tĩnh ,Tiếng Anh 10 ,"17,6 ",Đạt ,Nhất 
+666 ,VÕ HIỀN NHÂN ,29/06/2009,Can Lộc - Hà Tĩnh ,Nữ ,10 Anh 1 ,THPT Chuyên Hà Tĩnh ,Tiếng Anh 10 ,"17,18 ",Đạt ,Nhì 
+667 ,TRẦN NGUYỄN TRÍ NHÂN ,04/03/2009,Thành phố Vinh - Nghệ An ,Nam ,10 Anh 1 ,THPT Chuyên Hà Tĩnh ,Tiếng Anh 10 ,"12,95 ",Đạt ,Khuyến khích 
+668 ,LÊ NGUYỄN Ý NHI ,31/07/2009,Nghệ An ,Nữ ,10 Anh 1 ,THPT Chuyên Hà Tĩnh ,Tiếng Anh 10 ,"14,3 ",Đạt ,Ba 
+669 ,PHẠM THỊ QUỲNH NHƯ ,22/07/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10A1 ,THPT Hà Huy Tập ,Tiếng Anh 10 ,"8,95 ",Hỏng ,
+670 ,NGUYỄN HÀ PHƯƠNG ,02/01/2009,Thành phố Hà Tĩnh ,Nữ ,10 Anh 2 ,THPT Chuyên Hà Tĩnh ,Tiếng Anh 10 ,-1 ,Vắng thi ,
+671 ,ĐINH HẠNH PHƯƠNG ,23/02/2009,Thành phố Huế ,Nữ ,10 Anh 2 ,THPT Chuyên Hà Tĩnh ,Tiếng Anh 10 ,"16,65 ",Đạt ,Nhì 
+672 ,NGUYỄN KHÁNH PHƯƠNG ,15/01/2009,Thành phố Hà Tĩnh ,Nữ ,10 Anh 1 ,THPT Chuyên Hà Tĩnh ,Tiếng Anh 10 ,"14,5 ",Đạt ,Ba 
+673 ,HOÀNG MINH PHƯƠNG ,13/07/2009,Thạch Hà - Hà Tĩnh ,Nữ ,10 Anh 2 ,THPT Chuyên Hà Tĩnh ,Tiếng Anh 10 ,"17,58 ",Đạt ,Nhất 
+674 ,NGUYỄN THẢO PHƯƠNG ,25/09/2009,Thành phố Hà Tĩnh ,Nữ ,10 Anh 2 ,THPT Chuyên Hà Tĩnh ,Tiếng Anh 10 ,"14,55 ",Đạt ,Ba 
+675 ,ĐẬU VĂN QUÂN ,05/10/2009,Cẩm Xuyên - Hà Tĩnh ,Nam ,10A4 ,THPT Cẩm Xuyên ,Tiếng Anh 10 ,"10,88 ",Đạt ,Khuyến khích 
+676 ,NGUYỄN TUẤN THANH ,02/12/2009,TP Hà Tĩnh-Hà Tĩnh ,Nam ,10D4 ,THPT Phan Đình Phùng ,Tiếng Anh 10 ,"12,6 ",Đạt ,Khuyến khích 
+677 ,ĐẶNG PHƯƠNG THẢO ,04/07/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10 Anh 1 ,THPT Chuyên Hà Tĩnh ,Tiếng Anh 10 ,18 ,Đạt ,Nhất 
+678 ,NGUYỄN TRẦN PHƯƠNG THẢO ,04/09/2009,Hương Khê - Hà Tĩnh ,Nữ ,10 Anh 1 ,THPT Chuyên Hà Tĩnh ,Tiếng Anh 10 ,"15,5 ",Đạt ,Ba 
+679 ,PHAN THỊ PHƯƠNG THẢO ,11/06/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10A1 ,THPT Hà Huy Tập ,Tiếng Anh 10 ,"9,25 ",Hỏng ,
+680 ,PHAN ĐỨC THẮNG ,10/09/2009,Đức Thọ - Hà Tĩnh ,Nam ,10 Anh 1 ,THPT Chuyên Hà Tĩnh ,Tiếng Anh 10 ,"16,8 ",Đạt ,Nhì 
+681 ,TRẦN HUYỀN THI ,21/01/2009,Thành phố Hà Tĩnh ,Nữ ,10 Anh 1 ,THPT Chuyên Hà Tĩnh ,Tiếng Anh 10 ,"17,2 ",Đạt ,Nhì 
+682 ,DƯƠNG THỊ PHƯƠNG THÚY ,10/01/2009,Thành phố Hà Tĩnh ,Nữ ,10 Anh 1 ,THPT Chuyên Hà Tĩnh ,Tiếng Anh 10 ,"17,2 ",Đạt ,Nhì 
+683 ,ĐẶNG THỊ THU THỦY ,30/01/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10 Anh 1 ,THPT Chuyên Hà Tĩnh ,Tiếng Anh 10 ,15 ,Đạt ,Ba 
+684 ,LÊ THỊ ANH THƯ ,17/05/2009,Thành phố Hà Tĩnh ,Nữ ,10 Anh 2 ,THPT Chuyên Hà Tĩnh ,Tiếng Anh 10 ,"13,8 ",Đạt ,Ba 
+685 ,NGUYỄN NGỌC ANH THƯ ,16/10/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10A4 ,THPT Cẩm Xuyên ,Tiếng Anh 10 ,10 ,Đạt ,Khuyến khích 
+686 ,TỐNG THỊ ANH THƯ ,15/08/2009,Thành phố Hà Tĩnh ,Nữ ,10 Anh 2 ,THPT Chuyên Hà Tĩnh ,Tiếng Anh 10 ,-1 ,Vắng thi ,
+687 ,DƯƠNG THỊ HOÀI THƯ ,01/01/2009,TP Hà Tĩnh ,Nữ ,10A5 ,THPT Nguyễn Trung Thiên ,Tiếng Anh 10 ,"8,85 ",Hỏng ,
+688 ,BÙI HỒ NHẬT THƯƠNG ,12/12/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10 Anh 2 ,THPT Chuyên Hà Tĩnh ,Tiếng Anh 10 ,-1 ,Vắng thi ,
+689 ,TRƯƠNG NGUYỄN HÀ TIÊN ,08/04/2009,Thành phố Hà Tĩnh ,Nữ ,10 Anh 2 ,THPT Chuyên Hà Tĩnh ,Tiếng Anh 10 ,"16,65 ",Đạt ,Nhì 
+690 ,NGUYỄN THỊ MINH TRANG ,02/06/2009,Trạm y tế xã Nam Hương - Thạch Hà ,Nữ ,10D4 ,THPT Lê Quý Đôn ,Tiếng Anh 10 ,"10,93 ",Đạt ,Khuyến khích 
+691 ,NGUYỄN THỊ MINH TRANG ,18/06/2009,Hương Khê - Hà Tĩnh ,Nữ ,10 Anh 1 ,THPT Chuyên Hà Tĩnh ,Tiếng Anh 10 ,"16,23 ",Đạt ,Nhì 
+692 ,NGUYỄN TRẦN THẢO TRÂM ,01/02/2009,Thành Phố Hà Tĩnh ,Nữ ,10 Anh 2 ,THPT Chuyên Hà Tĩnh ,Tiếng Anh 10 ,"15,9 ",Đạt ,Nhì 
+693 ,NGUYỄN TÔ THỦY TRINH ,10/04/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10 Anh 1 ,THPT Chuyên Hà Tĩnh ,Tiếng Anh 10 ,"15,73 ",Đạt ,Nhì 
+694 ,PHẠM ĐỨC TRÍ ,12/04/2009,Thành phố Hà Tĩnh ,Nam ,10 Anh 1 ,THPT Chuyên Hà Tĩnh ,Tiếng Anh 10 ,"15,08 ",Đạt ,Ba 
+695 ,BÙI TRẦN MAI UYÊN ,22/11/2009,Gia Lai ,Nữ ,10 Anh 2 ,THPT Chuyên Hà Tĩnh ,Tiếng Anh 10 ,"14,25 ",Đạt ,Ba 
+696 ,NGUYỄN NGỌC THẢO UYÊN ,10/01/2009,Hương Sơn - Hà Tĩnh ,Nữ ,10 Anh 1 ,THPT Chuyên Hà Tĩnh ,Tiếng Anh 10 ,"15,78 ",Đạt ,Nhì 
+697 ,NGUYỄN THỊ HÀ VY ,07/11/2009,Thành phố Hà Tĩnh ,Nữ ,10 Anh 2 ,THPT Chuyên Hà Tĩnh ,Tiếng Anh 10 ,"15,83 ",Đạt ,Nhì 
+698 ,ĐẶNG THỊ BẢO AN ,29/11/2009,Thành phố Hà Tĩnh ,Nữ ,10 Pháp ,THPT Chuyên Hà Tĩnh ,Tiếng Pháp 10 ,"12,5 ",Đạt ,Khuyến khích 
+699 ,BÙI LÊ HÀ ANH ,05/07/2009,Thành phố Hà Tĩnh ,Nữ ,10 Pháp ,THPT Chuyên Hà Tĩnh ,Tiếng Pháp 10 ,"11,8 ",Đạt ,Khuyến khích 
+700 ,THÂN VĂN HOÀI ANH ,08/08/2009,Can Lộc - Hà Tĩnh ,Nam ,10 Pháp ,THPT Chuyên Hà Tĩnh ,Tiếng Pháp 10 ,"13,5 ",Đạt ,Ba 
+701 ,VƯƠNG GIA BẢO ,21/10/2009,Thành phố Hà Tĩnh ,Nam ,10 Pháp ,THPT Chuyên Hà Tĩnh ,Tiếng Pháp 10 ,"14,2 ",Đạt ,Nhì 
+702 ,LƯƠNG THỊ NGỌC BÍCH ,11/01/2009,Hương Sơn - Hà Tĩnh ,Nữ ,10 Pháp ,THPT Chuyên Hà Tĩnh ,Tiếng Pháp 10 ,"11,4 ",Đạt ,Khuyến khích 
+703 ,VÕ LÊ PHƯƠNG CHI ,07/03/2009,Can Lộc - Hà Tĩnh ,Nữ ,10 Pháp ,THPT Chuyên Hà Tĩnh ,Tiếng Pháp 10 ,"10,8 ",Hỏng ,
+704 ,TRẦN QUỲNH CHI ,18/11/2009,Hương Khê - Hà Tĩnh ,Nữ ,10 Pháp ,THPT Chuyên Hà Tĩnh ,Tiếng Pháp 10 ,"14,1 ",Đạt ,Ba 
+705 ,TRẦN THÙY CHI ,31/08/2009,Thành phố Hà Tĩnh ,Nữ ,10 Pháp ,THPT Chuyên Hà Tĩnh ,Tiếng Pháp 10 ,"13,1 ",Đạt ,Khuyến khích 
+706 ,PHẠM NGỌC DIỆP ,21/02/2009,Thành phố Hà Tĩnh ,Nữ ,10 Pháp ,THPT Chuyên Hà Tĩnh ,Tiếng Pháp 10 ,"13,3 ",Đạt ,Ba 
+707 ,TRẦN QUỐC ĐẠT ,21/08/2009,Can Lộc - Hà Tĩnh ,Nam ,10 Pháp ,THPT Chuyên Hà Tĩnh ,Tiếng Pháp 10 ,"11,1 ",Hỏng ,
+708 ,HỒ NGỌC HÂN ,03/10/2009,Thành phố Hà Tĩnh ,Nữ ,10 Pháp ,THPT Chuyên Hà Tĩnh ,Tiếng Pháp 10 ,"10,2 ",Hỏng ,
+709 ,TRẦN NINH HIỆP ,15/04/2009,Thành phố Hồ Chí Minh ,Nam ,10 Pháp ,THPT Chuyên Hà Tĩnh ,Tiếng Pháp 10 ,"13,4 ",Đạt ,Ba 
+710 ,NGUYỄN TRỌNG MINH HOÀNG ,14/08/2009,Thành phố Vinh - Nghệ An ,Nam ,10 Pháp ,THPT Chuyên Hà Tĩnh ,Tiếng Pháp 10 ,"17,5 ",Đạt ,Nhất 
+711 ,NGUYỄN SỸ HUY ,26/11/2009,Cẩm Xuyên - Hà Tĩnh ,Nam ,10 Pháp ,THPT Chuyên Hà Tĩnh ,Tiếng Pháp 10 ,"13,2 ",Đạt ,Ba 
+712 ,NGUYỄN THỊ TUYẾT MAI ,14/04/2009,Thành phố Hà Tĩnh ,Nữ ,10 Pháp ,THPT Chuyên Hà Tĩnh ,Tiếng Pháp 10 ,"14,6 ",Đạt ,Nhì 
+713 ,ĐẶNG HIỀN MINH ,16/01/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10 Pháp ,THPT Chuyên Hà Tĩnh ,Tiếng Pháp 10 ,14 ,Đạt ,Ba 
+714 ,PHAN ĐĂNG NHẬT MINH ,18/08/2009,Cẩm Xuyên - Hà Tĩnh ,Nam ,10 Pháp ,THPT Chuyên Hà Tĩnh ,Tiếng Pháp 10 ,"14,9 ",Đạt ,Nhì 
+715 ,NGUYỄN PHAN HÀ MY ,01/11/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10 Pháp ,THPT Chuyên Hà Tĩnh ,Tiếng Pháp 10 ,"16,5 ",Đạt ,Nhất 
+716 ,NGUYỄN THẢO MY ,03/02/2009,Thành phố Hà Tĩnh ,Nữ ,10 Pháp ,THPT Chuyên Hà Tĩnh ,Tiếng Pháp 10 ,"16,1 ",Đạt ,Nhì 
+717 ,VÕ HỒNG NGÂN ,14/02/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10 Pháp ,THPT Chuyên Hà Tĩnh ,Tiếng Pháp 10 ,"12,3 ",Đạt ,Khuyến khích 
+718 ,NGUYỄN KIM NGÂN ,20/06/2009,Thành phố Hà Tĩnh ,Nữ ,10 Pháp ,THPT Chuyên Hà Tĩnh ,Tiếng Pháp 10 ,"11,9 ",Đạt ,Khuyến khích 
+719 ,VÕ KIM NGÂN ,18/03/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10 Pháp ,THPT Chuyên Hà Tĩnh ,Tiếng Pháp 10 ,"11,8 ",Đạt ,Khuyến khích 
+720 ,NGUYỄN THẢO NGÂN ,14/06/2009,Thành phố Hà Tĩnh ,Nữ ,10 Pháp ,THPT Chuyên Hà Tĩnh ,Tiếng Pháp 10 ,"11,85 ",Đạt ,Khuyến khích 
+721 ,NGUYỄN HOÀNG NGUYÊN ,15/04/2009,Thành phố Hà Tĩnh ,Nam ,10 Pháp ,THPT Chuyên Hà Tĩnh ,Tiếng Pháp 10 ,"13,4 ",Đạt ,Ba 
+722 ,NGUYỄN LÊ TUYẾT NHI ,23/03/2009,Thị xã Hồng Lĩnh - Hà Tĩnh ,Nữ ,10 Pháp ,THPT Chuyên Hà Tĩnh ,Tiếng Pháp 10 ,16 ,Đạt ,Nhì 
+723 ,TRƯƠNG QUANG PHÚ ,14/01/2009,Thành phố Hà Tĩnh ,Nam ,10 Pháp ,THPT Chuyên Hà Tĩnh ,Tiếng Pháp 10 ,"12,7 ",Đạt ,Khuyến khích 
+724 ,NGUYỄN MAI PHƯƠNG ,04/03/2009,Thành phố Hà Tĩnh ,Nữ ,10 Pháp ,THPT Chuyên Hà Tĩnh ,Tiếng Pháp 10 ,"11,4 ",Đạt ,Khuyến khích 
+725 ,VŨ PHƯƠNG THẢO ,25/09/2009,Thành phố Hà Tĩnh ,Nữ ,10 Pháp ,THPT Chuyên Hà Tĩnh ,Tiếng Pháp 10 ,"12,8 ",Đạt ,Khuyến khích 
+726 ,LÊ XUÂN THU ,20/01/2009,Thành phố Hà Tĩnh ,Nữ ,10 Pháp ,THPT Chuyên Hà Tĩnh ,Tiếng Pháp 10 ,"14,8 ",Đạt ,Nhì 
+727 ,NGUYỄN BẢO TRÂM ,28/01/2009,Thành phố Hà Tĩnh ,Nữ ,10 Pháp ,THPT Chuyên Hà Tĩnh ,Tiếng Pháp 10 ,"5,7 ",Hỏng ,
+728 ,TRẦN THỊ CẨM TÚ ,24/12/2009,Thanh Hóa ,Nữ ,10 Pháp ,THPT Chuyên Hà Tĩnh ,Tiếng Pháp 10 ,"13,8 ",Đạt ,Ba 
+729 ,NGUYỄN THỊ HÀ VI ,15/11/2009,Thành phố Hà Tĩnh ,Nữ ,10 Pháp ,THPT Chuyên Hà Tĩnh ,Tiếng Pháp 10 ,"14,8 ",Đạt ,Nhì 
+730 ,TRẦN ĐẶNG NGUYÊN VŨ ,20/12/2009,Thành phố Hà Tĩnh ,Nam ,10 Pháp ,THPT Chuyên Hà Tĩnh ,Tiếng Pháp 10 ,"13,7 ",Đạt ,Ba 
+731 ,NGUYỄN ĐẶNG HÀ AN ,22/05/2009,Anh Sơn - Nghệ An ,Nữ ,10 Trung ,THPT Chuyên Hà Tĩnh ,Tiếng Trung Quốc 10 ,"14,4 ",Đạt ,Ba 
+732 ,THẠCH BÙI HÀ ANH ,27/10/2009,Thạch Hà - Hà Tĩnh ,Nữ ,10 Trung ,THPT Chuyên Hà Tĩnh ,Tiếng Trung Quốc 10 ,"12,15 ",Đạt ,Khuyến khích 
+733 ,NGUYỄN HÀ PHƯƠNG ANH ,14/08/2009,Thành phố Hà Tĩnh ,Nữ ,10 Trung ,THPT Chuyên Hà Tĩnh ,Tiếng Trung Quốc 10 ,"13,75 ",Đạt ,Ba 
+734 ,HOÀNG NGUYỄN QUỲNH ANH ,22/10/2009,Thành phố Hà Tĩnh ,Nữ ,10 Trung ,THPT Chuyên Hà Tĩnh ,Tiếng Trung Quốc 10 ,"7,5 ",Hỏng ,
+735 ,TRƯƠNG HUYỀN BẢO ,31/12/2009,Thành phố Hà Tĩnh ,Nữ ,10 Trung ,THPT Chuyên Hà Tĩnh ,Tiếng Trung Quốc 10 ,"15,8 ",Đạt ,Nhì 
+736 ,TRẦN HẬU AN BÌNH ,09/09/2009,Thành phố Hà Tĩnh ,Nam ,10 Trung ,THPT Chuyên Hà Tĩnh ,Tiếng Trung Quốc 10 ,"9,7 ",Hỏng ,
+737 ,NGUYỄN BẢO CHÂU ,21/07/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10 Trung ,THPT Chuyên Hà Tĩnh ,Tiếng Trung Quốc 10 ,"13,95 ",Đạt ,Ba 
+738 ,TRẦN PHƯƠNG CHI ,09/09/2009,Hương Sơn - Hà Tĩnh ,Nữ ,10 Trung ,THPT Chuyên Hà Tĩnh ,Tiếng Trung Quốc 10 ,"12,95 ",Đạt ,Khuyến khích 
+739 ,TRẦN DIỆP THẢO CHI ,02/04/2009,Thành phố Hà Tĩnh ,Nữ ,10 Trung ,THPT Chuyên Hà Tĩnh ,Tiếng Trung Quốc 10 ,"15,45 ",Đạt ,Nhì 
+740 ,TRẦN BẢO DIỆP ,04/02/2009,Thành phố Hà Tĩnh ,Nữ ,10 Trung ,THPT Chuyên Hà Tĩnh ,Tiếng Trung Quốc 10 ,"7,15 ",Hỏng ,
+741 ,TRẦN HẢI DIỆP ,28/11/2009,Thị xã Hồng Lĩnh - Hà Tĩnh ,Nữ ,10 Trung ,THPT Chuyên Hà Tĩnh ,Tiếng Trung Quốc 10 ,"16,25 ",Đạt ,Nhì 
+742 ,LÊ THỊ MỸ DUNG ,09/10/2009,Can Lộc - Hà Tĩnh ,Nữ ,10 Trung ,THPT Chuyên Hà Tĩnh ,Tiếng Trung Quốc 10 ,"16,4 ",Đạt ,Nhất 
+743 ,NGUYỄN THẾ DŨNG ,22/04/2009,Thành phố Hà Tĩnh ,Nam ,10 Trung ,THPT Chuyên Hà Tĩnh ,Tiếng Trung Quốc 10 ,"9,05 ",Hỏng ,
+744 ,TRẦN THUỲ DƯƠNG ,02/01/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10 Trung ,THPT Chuyên Hà Tĩnh ,Tiếng Trung Quốc 10 ,"14,55 ",Đạt ,Ba 
+745 ,LÊ THỊ LINH ĐAN ,07/12/2009,Thành phố Hà Tĩnh ,Nữ ,10 Trung ,THPT Chuyên Hà Tĩnh ,Tiếng Trung Quốc 10 ,"13,65 ",Đạt ,Khuyến khích 
+746 ,NGUYỄN QUỲNH GIANG ,02/02/2009,Thành phố Hà Tĩnh ,Nữ ,10 Trung ,THPT Chuyên Hà Tĩnh ,Tiếng Trung Quốc 10 ,"8,3 ",Hỏng ,
+747 ,HỒ NGỌC HÀ ,01/01/2009,Hương Sơn - Hà Tĩnh ,Nữ ,10 Trung ,THPT Chuyên Hà Tĩnh ,Tiếng Trung Quốc 10 ,"10,6 ",Đạt ,Khuyến khích 
+748 ,DƯƠNG BẢO HÂN ,19/05/2009,Thành phố Hà Tĩnh ,Nữ ,10 Trung ,THPT Chuyên Hà Tĩnh ,Tiếng Trung Quốc 10 ,"15,7 ",Đạt ,Nhì 
+749 ,NGUYỄN THỊ THU HOÀI ,23/05/2009,TP Hà Tĩnh- Hà Tĩnh ,Nữ ,10A1 ,"TH,THCS và THPT Albert Einstein ",Tiếng Trung Quốc 10 ,"8,8 ",Hỏng ,
+750 ,NGUYỄN THỊ KHÁNH HUYỀN ,01/01/2009,Thạch Hà - Hà Tĩnh ,Nữ ,10 Trung ,THPT Chuyên Hà Tĩnh ,Tiếng Trung Quốc 10 ,"12,8 ",Đạt ,Khuyến khích 
+751 ,NGUYỄN THỊ BẢO LINH ,05/11/2009,Thành phố Hà Tĩnh ,Nữ ,10 Trung ,THPT Chuyên Hà Tĩnh ,Tiếng Trung Quốc 10 ,"9,8 ",Hỏng ,
+752 ,BÙI CẨM LINH ,29/03/2009,Thành phố Hà Tĩnh ,Nữ ,10 Trung ,THPT Chuyên Hà Tĩnh ,Tiếng Trung Quốc 10 ,"16,4 ",Đạt ,Nhất 
+753 ,ĐẶNG PHƯƠNG LINH ,09/01/2009,Thạch Hà - Hà Tĩnh ,Nữ ,10 Trung ,THPT Chuyên Hà Tĩnh ,Tiếng Trung Quốc 10 ,"12,4 ",Đạt ,Khuyến khích 
+754 ,NGUYỄN HOÀNG ĐÔNG MAI ,02/12/2009,Hà Tĩnh ,Nữ ,10 Trung ,THPT Chuyên Hà Tĩnh ,Tiếng Trung Quốc 10 ,"12,05 ",Đạt ,Khuyến khích 
+755 ,NGUYỄN THỊ HIỀN MAI ,14/03/2009,Cẩm Xuyên - Hà Tĩnh ,Nữ ,10 Trung ,THPT Chuyên Hà Tĩnh ,Tiếng Trung Quốc 10 ,"16,3 ",Đạt ,Nhì 
+756 ,PHẠM NGỌC MINH ,20/12/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10 Trung ,THPT Chuyên Hà Tĩnh ,Tiếng Trung Quốc 10 ,"15,1 ",Đạt ,Ba 
+757 ,HỒ NGUYỆT MINH ,02/05/2009,Thành phố Hà Tĩnh ,Nữ ,10 Trung ,THPT Chuyên Hà Tĩnh ,Tiếng Trung Quốc 10 ,"14,9 ",Đạt ,Ba 
+758 ,LÊ TUẤN MINH ,26/11/2009,Thành phố Hà Tĩnh ,Nam ,10 Trung ,THPT Chuyên Hà Tĩnh ,Tiếng Trung Quốc 10 ,"15,3 ",Đạt ,Nhì 
+759 ,TƯỞNG TRẦN AN NA ,21/08/2009,Nghi Xuân - Hà Tĩnh ,Nữ ,10 Trung ,THPT Chuyên Hà Tĩnh ,Tiếng Trung Quốc 10 ,"11,4 ",Đạt ,Khuyến khích 
+760 ,NGUYỄN THẢO NGUYÊN ,05/09/2009,Thành phố Hồ Chí Minh ,Nữ ,10 Trung ,THPT Chuyên Hà Tĩnh ,Tiếng Trung Quốc 10 ,"10,7 ",Đạt ,Khuyến khích 
+761 ,TRƯƠNG THỊ TÚ OANH ,25/11/2009,Thành phố Hà Tĩnh ,Nữ ,10 Trung ,THPT Chuyên Hà Tĩnh ,Tiếng Trung Quốc 10 ,"15,9 ",Đạt ,Nhì 
+762 ,BÙI NGÀN PHỐ ,01/01/2009,Thạch Hà - Hà Tĩnh ,Nữ ,10 Trung ,THPT Chuyên Hà Tĩnh ,Tiếng Trung Quốc 10 ,"14,9 ",Đạt ,Ba 
+763 ,NGUYỄN THỤC QUYÊN ,09/09/2009,Hoàn Kiếm - Hà Nội ,Nữ ,10 Trung ,THPT Chuyên Hà Tĩnh ,Tiếng Trung Quốc 10 ,"6,2 ",Hỏng ,
+764 ,TRẦN KHÁNH THÀNH ,29/11/2009,Can Lộc- Hà Tĩnh ,Nam ,10A1 ,"TH,THCS và THPT Albert Einstein ",Tiếng Trung Quốc 10 ,"10,7 ",Đạt ,Khuyến khích 
+765 ,NGUYỄN PHƯƠNG THẢO ,05/08/2009,Thành phố Hà Tĩnh ,Nữ ,10 Trung ,THPT Chuyên Hà Tĩnh ,Tiếng Trung Quốc 10 ,"12,1 ",Đạt ,Khuyến khích 
+766 ,TRẦN THỊ HUYỀN TRANG ,15/10/2009,Nghi Xuân - Hà Tĩnh ,Nữ ,10 Trung ,THPT Chuyên Hà Tĩnh ,Tiếng Trung Quốc 10 ,"14,25 ",Đạt ,Ba 
+767 ,NGUYỄN NỮ TỐ UYÊN ,04/02/2009,Thành phố Hà Tĩnh ,Nữ ,10 Trung ,THPT Chuyên Hà Tĩnh ,Tiếng Trung Quốc 10 ,"15,15 ",Đạt ,Ba 
+768 ,VÕ KIM BẢO AN ,30/03/2009,Cẩm Xuyên - Hà Tĩnh ,Nam ,10A2 ,THPT Hà Huy Tập ,Tin học 10 ,"8,95 ",Đạt ,Khuyến khích 
+769 ,TRẦN ĐÌNH AN ,28/01/2009,TP Hà Tĩnh-Hà Tĩnh ,Nam ,10A8 ,THPT Phan Đình Phùng ,Tin học 10 ,"13,2 ",Đạt ,Ba 
+770 ,NGUYỄN NHẬT ANH ,31/03/2009,Thành phố Hà Tĩnh ,Nam ,10 Tin ,THPT Chuyên Hà Tĩnh ,Tin học 10 ,20 ,Đạt ,Nhất 
+771 ,NGUYỄN THIỆN AN ,02/12/2009,Kỳ Anh - Hà Tĩnh ,Nam ,10A4 ,THPT Kỳ Anh ,Tin học 10 ,"11,5 ",Đạt ,Ba 
+772 ,THÁI HỮU ĐĂNG BẢO ,12/11/2009,Thành phố Hà Tĩnh ,Nam ,10 Tin ,THPT Chuyên Hà Tĩnh ,Tin học 10 ,"17,6 ",Đạt ,Nhì 
+773 ,NGUYỄN KIM GIA BẢO ,02/02/2009,Thành phố Hà Tĩnh ,Nam ,10 Tin ,THPT Chuyên Hà Tĩnh ,Tin học 10 ,20 ,Đạt ,Nhất 
+774 ,NGUYỄN PHI GIA BẢO ,05/10/2009,Thành phố Hà Tĩnh ,Nam ,10 Tin ,THPT Chuyên Hà Tĩnh ,Tin học 10 ,"12,8 ",Đạt ,Ba 
+775 ,THÁI LƯƠNG BÌNH ,15/01/2009,Thành phố Hà Tĩnh ,Nam ,10 Tin ,THPT Chuyên Hà Tĩnh ,Tin học 10 ,20 ,Đạt ,Nhất 
+776 ,BIỆN VĂN NHƯ CƯƠNG ,08/03/2009,Cẩm Xuyên - Hà Tĩnh ,Nam ,10A4 ,THPT Kỳ Anh ,Tin học 10 ,"6,95 ",Hỏng ,
+777 ,NGUYỄN MẠNH CƯỜNG ,03/06/2009,Đức Thọ - Hà Tĩnh ,Nam ,10 Tin ,THPT Chuyên Hà Tĩnh ,Tin học 10 ,17 ,Đạt ,Nhì 
+778 ,VÕ XUÂN CƯỜNG ,12/10/2009,Thành phố Vinh - Nghệ An ,Nam ,10 Tin ,THPT Chuyên Hà Tĩnh ,Tin học 10 ,"16,7 ",Đạt ,Nhì 
+779 ,NGUYỄN ĐÌNH DŨNG ,29/04/2009,Cẩm Xuyên - Hà Tĩnh ,Nam ,10A1 ,THPT Hà Huy Tập ,Tin học 10 ,5 ,Hỏng ,
+780 ,PHAN NAM DŨNG ,11/03/2009,Thành phố Hà Tĩnh ,Nam ,10 Tin ,THPT Chuyên Hà Tĩnh ,Tin học 10 ,17 ,Đạt ,Nhì 
+781 ,NGUYỄN QUỐC DŨNG ,13/01/2009,Thành phố Hà Tĩnh ,Nam ,10 Tin ,THPT Chuyên Hà Tĩnh ,Tin học 10 ,"15,1 ",Đạt ,Nhì 
+782 ,NGUYỄN TƯỜNG VIỆT DŨNG ,27/11/2009,Thành phố Hà Tĩnh ,Nam ,10 Tin ,THPT Chuyên Hà Tĩnh ,Tin học 10 ,5 ,Hỏng ,
+783 ,TRẦN ĐÌNH ĐẠT ,23/07/2009,Can Lộc - Hà Tĩnh ,Nam ,10 Tin ,THPT Chuyên Hà Tĩnh ,Tin học 10 ,"15,4 ",Đạt ,Nhì 
+784 ,TRƯƠNG LÊ TUẤN ĐẠT ,01/01/2009,Cẩm Xuyên - Hà Tĩnh ,Nam ,10A5 ,THPT Cẩm Bình ,Tin học 10 ,"9,4 ",Đạt ,Khuyến khích 
+785 ,NGUYỄN MINH ĐĂNG ,16/01/2009,TP Hà Tĩnh-Hà Tĩnh ,Nam ,10A3 ,THPT Phan Đình Phùng ,Tin học 10 ,5 ,Hỏng ,
+786 ,TRẦN NGUYỄN MINH ĐỨC ,10/04/2009,Thành phố Hà Tĩnh ,Nam ,10 Tin ,THPT Chuyên Hà Tĩnh ,Tin học 10 ,"9,3 ",Đạt ,Khuyến khích 
+787 ,PHẠM TRÍ ĐỨC ,14/10/2009,Thạch Hà - Hà Tĩnh ,Nam ,10 Tin ,THPT Chuyên Hà Tĩnh ,Tin học 10 ,6 ,Hỏng ,
+788 ,TRẦN VIỆT HÀ ,12/08/2009,Cẩm Xuyên - Hà Tĩnh ,Nam ,10 Tin ,THPT Chuyên Hà Tĩnh ,Tin học 10 ,"9,3 ",Đạt ,Khuyến khích 
+789 ,LÊ HOÀNG HẢI ,24/06/2009,Thành phố Hà Nội ,Nam ,10 Tin ,THPT Chuyên Hà Tĩnh ,Tin học 10 ,"9,3 ",Đạt ,Khuyến khích 
+790 ,BÙI QUANG HOÀNG ,08/04/2009,Thành phố Hà Tĩnh ,Nam ,10 Tin ,THPT Chuyên Hà Tĩnh ,Tin học 10 ,"8,4 ",Đạt ,Khuyến khích 
+791 ,NGUYỄN TRỌNG VIỆT HUY ,23/02/2009,Cẩm Xuyên - Hà Tĩnh ,Nam ,10A1 ,THPT Hà Huy Tập ,Tin học 10 ,"9,9 ",Đạt ,Khuyến khích 
+792 ,LÊ VĂN GIA HÙNG ,11/10/2009,Kỳ Anh - Hà Tĩnh ,Nam ,10A1 ,THPT Kỳ Anh ,Tin học 10 ,5 ,Hỏng ,
+793 ,NGUYỄN HUY HƯNG ,20/09/2009,Kỳ Anh - Hà Tĩnh ,Nam ,10A3 ,THPT Kỳ Anh ,Tin học 10 ,"17,2 ",Đạt ,Nhì 
+794 ,LÊ TRẦN NAM KHÁNH ,22/10/2009,Thành phố Hà Tĩnh ,Nam ,10 Tin ,THPT Chuyên Hà Tĩnh ,Tin học 10 ,"9,3 ",Đạt ,Khuyến khích 
+795 ,DƯƠNG ANH KHOA ,26/07/2009,Kỳ Anh - Hà Tĩnh ,Nam ,10A1 ,THPT Nguyễn Huệ ,Tin học 10 ,5 ,Hỏng ,
+796 ,NGUYỄN DUY KHOA ,06/06/2009,Kỳ Anh - Hà Tĩnh ,Nam ,10 Tin ,THPT Chuyên Hà Tĩnh ,Tin học 10 ,"12,1 ",Đạt ,Ba 
+797 ,LÊ ĐỨC KHOA ,02/01/2009,Thành phố Hà Tĩnh ,Nam ,10 Tin ,THPT Chuyên Hà Tĩnh ,Tin học 10 ,"11,2 ",Đạt ,Ba 
+798 ,PHAN BÁ ANH KHÔI ,04/12/2009,Bệnh viện đa khoa tỉnh Hà Tĩnh ,Nam ,10A1 ,THPT Lê Quý Đôn ,Tin học 10 ,"13,9 ",Đạt ,Ba 
+799 ,ĐƯỜNG NGUYỄN HẢI LONG ,20/05/2009,Đức Thọ - Hà Tĩnh ,Nam ,10 Toán 2 ,THPT Chuyên Hà Tĩnh ,Tin học 10 ,20 ,Đạt ,Nhất 
+800 ,NGUYỄN XUÂN MINH LỘC ,19/12/2009,Thành phố Hà Tĩnh ,Nam ,10 Tin ,THPT Chuyên Hà Tĩnh ,Tin học 10 ,"14,1 ",Đạt ,Ba 
+801 ,ĐẶNG LÊ MINH ,29/04/2009,Can Lộc - Hà Tĩnh ,Nam ,10 Tin ,THPT Chuyên Hà Tĩnh ,Tin học 10 ,"11,8 ",Đạt ,Ba 
+802 ,VÕ QUANG NHẬT MINH ,19/11/2009,Thành phố Hà Tĩnh ,Nam ,10 Tin ,THPT Chuyên Hà Tĩnh ,Tin học 10 ,"12,15 ",Đạt ,Ba 
+803 ,NGUYỄN TIẾN MINH ,19/09/2009,Kỳ Anh - Hà Tĩnh ,Nam ,10A1 ,THPT Lê Quảng Chí ,Tin học 10 ,"5,4 ",Hỏng ,
+804 ,PHẠM LÊ PHƯƠNG NAM ,08/04/2009,Kỳ Anh - Hà Tĩnh ,Nam ,10A1 ,THPT Kỳ Lâm ,Tin học 10 ,5 ,Hỏng ,
+805 ,LÊ THÀNH NAM ,12/12/2009,Thành phố Hà Tĩnh ,Nam ,10 Tin ,THPT Chuyên Hà Tĩnh ,Tin học 10 ,"11,9 ",Đạt ,Ba 
+806 ,NGUYỄN HIẾU NGHĨA ,25/01/2009,"Lộc Hà, Hà Tĩnh ",Nam ,10A2 ,THPT Thành Sen ,Tin học 10 ,"8,4 ",Đạt ,Khuyến khích 
+807 ,NGÔ XUÂN NGHỊ ,03/01/2009,Thành phố Hà Tĩnh ,Nam ,10 Tin ,THPT Chuyên Hà Tĩnh ,Tin học 10 ,"7,65 ",Hỏng ,
+808 ,NGUYỄN PHI NGUYÊN ,21/09/2009,Trạm y tế xã Thạch Xuân ,Nam ,10A1 ,THPT Lê Quý Đôn ,Tin học 10 ,"10,8 ",Đạt ,Ba 
+809 ,PHAN VĂN THÀNH NHÂN ,16/12/2009,TP Hà Tĩnh-Hà Tĩnh ,Nam ,10A2 ,THPT Nguyễn Trung Thiên ,Tin học 10 ,"5,4 ",Hỏng ,
+810 ,NGUYỄN TIẾN NHÂN ,02/12/2009,Thành phố Hà Tĩnh ,Nam ,10 Tin ,THPT Chuyên Hà Tĩnh ,Tin học 10 ,"14,2 ",Đạt ,Ba 
+811 ,NGUYỄN GIA NHƯ ,26/01/2009,Trạm y tế xã Thạch Lưu ,Nữ ,10A1 ,THPT Lê Quý Đôn ,Tin học 10 ,"11,5 ",Đạt ,Ba 
+812 ,NGUYỄN TRẦN HUY QUANG ,28/05/2009,TP Hà Tĩnh-Hà Tĩnh ,Nam ,10A1 ,THPT Cẩm Bình ,Tin học 10 ,"9,7 ",Đạt ,Khuyến khích 
+813 ,NGUYỄN HỒNG QUÂN ,21/11/2009,Thành phố Hà Tĩnh ,Nam ,10 Toán 1 ,THPT Chuyên Hà Tĩnh ,Tin học 10 ,"14,8 ",Đạt ,Nhì 
+814 ,TRƯƠNG MINH QUÂN ,26/06/2009,TP Hà Tĩnh-Hà Tĩnh ,Nam ,10A6 ,THPT Phan Đình Phùng ,Tin học 10 ,"17,2 ",Đạt ,Nhì 
+815 ,NGUYỄN VĂN QUÂN ,07/03/2009,Cẩm Xuyên - Hà Tĩnh ,Nam ,10A1 ,THPT Nguyễn Đình Liễn ,Tin học 10 ,"7,35 ",Hỏng ,
+816 ,NGUYỄN THỊ NHƯ QUỲNH ,10/01/2009,Trạm y tế xã Thạch Lưu ,Nữ ,10A1 ,THPT Lê Quý Đôn ,Tin học 10 ,"11,5 ",Đạt ,Ba 
+817 ,TRẦN TUẤN SANG ,31/08/2009,Đức Thọ - Hà Tĩnh ,Nam ,10 Tin ,THPT Chuyên Hà Tĩnh ,Tin học 10 ,"8,05 ",Hỏng ,
+818 ,NGUYỄN ĐÌNH SƠN ,17/06/2009,Thành phố Hà Tĩnh ,Nam ,10 Toán 1 ,THPT Chuyên Hà Tĩnh ,Tin học 10 ,20 ,Đạt ,Nhất 
+819 ,HOÀNG THANH SƠN ,21/12/2009,Kỳ Anh -  Hà Tĩnh ,Nam ,10A1 ,THPT Nguyễn Huệ ,Tin học 10 ,"8,25 ",Đạt ,Khuyến khích 
+820 ,LÊ HỮU TÀI ,15/07/2009,Hương Khê - Hà Tĩnh ,Nam ,10 Tin ,THPT Chuyên Hà Tĩnh ,Tin học 10 ,"11,5 ",Đạt ,Ba 
+821 ,HOÀNG MẠNH TÂN ,23/08/2009,Thành phố Hà Tĩnh ,Nam ,10 Tin ,THPT Chuyên Hà Tĩnh ,Tin học 10 ,9 ,Đạt ,Khuyến khích 
+822 ,NGUYỄN CÔNG THÀNH ,28/02/2009,Thạch Hà-Hà Tĩnh ,Nam ,10A1 ,THPT Nguyễn Trung Thiên ,Tin học 10 ,5 ,Hỏng ,
+823 ,LÊ NGỌC THẮNG ,04/03/2009,Cẩm Xuyên - Hà Tĩnh ,Nam ,10A1 ,THPT Cẩm Xuyên ,Tin học 10 ,5 ,Hỏng ,
+824 ,NGUYỄN MINH THIÊN ,04/01/2009,Cẩm Xuyên - Hà Tĩnh ,Nam ,10 Tin ,THPT Chuyên Hà Tĩnh ,Tin học 10 ,"14,9 ",Đạt ,Nhì 
+825 ,NGUYỄN CHÍ TRUNG ,06/09/2009,Thành phố Hà Tĩnh ,Nam ,10 Tin ,THPT Chuyên Hà Tĩnh ,Tin học 10 ,"11,5 ",Đạt ,Ba 
+826 ,THÁI TRUNG ,06/06/2009,Thành phố Hà Tĩnh ,Nam ,10 Tin ,THPT Chuyên Hà Tĩnh ,Tin học 10 ,"17,9 ",Đạt ,Nhì 
+827 ,NGUYỄN BÁ ANH TUẤN ,03/03/2009,Cẩm Xuyên - Hà Tĩnh ,Nam ,10A1 ,THPT Cẩm Xuyên ,Tin học 10 ,"7,85 ",Hỏng ,
+828 ,TRẦN LÊ ANH TUẤN ,02/12/2009,Thành phố Hà Tĩnh ,Nam ,10 Toán 1 ,THPT Chuyên Hà Tĩnh ,Tin học 10 ,"10,2 ",Đạt ,Khuyến khích 
+829 ,PHẠM CẨM TÚ ,10/02/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A1 ,THPT Kỳ Lâm ,Tin học 10 ,5 ,Hỏng ,
+830 ,NGUYỄN VÕ THẢO UYÊN ,20/09/2009,Kỳ Anh - Hà Tĩnh ,Nữ ,10A3 ,THPT Kỳ Anh ,Tin học 10 ,"9,3 ",Đạt ,Khuyến khích 
+831 ,NGÔ ĐỨC VIỆT ,23/03/2009,Thành phố Hà Tĩnh ,Nam ,10 Tin ,THPT Chuyên Hà Tĩnh ,Tin học 10 ,5 ,Hỏng ,
+832 ,NGUYỄN QUỐC VINH ,03/06/2009,Thành phố Hà Tĩnh ,Nam ,10 Tin ,THPT Chuyên Hà Tĩnh ,Tin học 10 ,17 ,Đạt ,Nhì 
+833 ,NGUYỄN TRỌNG ANH VŨ ,07/06/2009,Thạch Hà - Hà Tĩnh ,Nam ,10 Tin ,THPT Chuyên Hà Tĩnh ,Tin học 10 ,"18,25 ",Đạt ,Nhì 
+834 ,DƯƠNG TUẤN VŨ ,29/05/2009,Hương Khê-Hà Tĩnh ,Nam ,10A1 ,THPT Phan Đình Phùng ,Tin học 10 ,"5,5 ",Hỏng ,
+835 ,HOÀNG ĐỨC AN ,19/01/2009,Hương Khê - Hà Tĩnh ,Nam ,10A1 ,THPT Hàm Nghi ,Toán 10 ,12 ,Đạt ,Ba 
+836 ,LÊ NGUYỄN HOÀI ANH ,19/10/2009,Đức Thọ - Hà Tĩnh ,Nữ ,10A5 ,THPT Nguyễn Thị Minh Khai ,Ngữ văn 10 ,11 ,Hỏng ,
+837 ,DƯƠNG HÀ ANH ,03/07/2009,"Nghi Xuân, Hà Tĩnh ",Nữ ,10A11 ,THPT Nguyễn Du ,Lịch sử 10 ,13 ,Đạt ,Ba 
+838 ,NGUYỄN TRỌNG ĐỨC ANH ,20/11/2009,Đức Thọ - Hà Tĩnh ,Nam ,10A1 ,THPT Trần Phú ,Toán 10 ,13 ,Đạt ,Ba 
+839 ,PHẠM THỊ LAN ANH ,17/02/2009,Hà Tĩnh ,Nữ ,10A2 ,THPT Lý Tự Trọng ,Ngữ văn 10 ,11 ,Hỏng ,
+840 ,PHẠM NGUYỄN QUỲNH ANH ,25/08/2009,Hà Tĩnh ,Nữ ,10A4 ,THPT Lý Tự Trọng ,Lịch sử 10 ,16 ,Đạt ,Nhất 
+841 ,TRẦN NGUYỄN TUẤN ANH ,08/10/2009,"Đồng Lộc, Can Lộc, Hà Tĩnh ",Nam ,10A1 ,THPT Đồng Lộc ,Toán 10 ,12 ,Đạt ,Ba 
+842 ,LÊ QUYÊN ANH ,22/03/2009,Đức Cơ - Gia Lai ,Nữ ,10A3 ,THPT Nguyễn Văn Trỗi ,Ngữ văn 10 ,12 ,Đạt ,Khuyến khích 
+843 ,VÕ NGUYỄN THÚY AN ,31/12/2009,Đức Thọ - Hà Tĩnh ,Nữ ,10D1 ,THPT Nguyễn Thị Minh Khai ,Lịch sử 10 ,"11,75 ",Đạt ,Khuyến khích 
+844 ,PHAN VÂN ANH ,03/08/2009,Hương Sơn - Hà Tĩnh ,Nữ ,10A ,THPT Lý Chính Thắng ,Toán 10 ,"7,75 ",Hỏng ,
+845 ,TRẦN BẢO CHÂU ,07/02/2009,TP Vinh - Nghệ An ,Nữ ,10A3 ,THPT Nguyễn Công Trứ ,Ngữ văn 10 ,"10,5 ",Hỏng ,
+846 ,NGUYỄN THỊ NGỌC ÁNH ,13/01/2009,Lộc Hà - Hà Tĩnh ,Nữ ,10A11 ,THPT Nguyễn Văn Trỗi ,Lịch sử 10 ,15 ,Đạt ,Nhì 
+847 ,HỒ GIA BẢO ,19/06/2009,"Đức Thọ, Hà Tĩnh ",Nam ,10A1 ,THPT Đức Thọ ,Toán 10 ,"9,25 ",Đạt ,Khuyến khích 
+848 ,BÙI THỊ BẢO CHI ,29/09/2009,"Can Lộc, Hà Tĩnh ",Nữ ,10A7 ,THPT Nguyễn Đổng Chi ,Ngữ văn 10 ,"11,5 ",Hỏng ,
+849 ,NGUYỄN PHẠM THANH BÌNH ,03/11/2009,Hương Sơn - Hà Tĩnh ,Nữ ,10D1 ,THPT Hương Sơn ,Lịch sử 10 ,"10,5 ",Hỏng ,
+850 ,NGUYỄN XUÂN GIA BẢO ,02/09/2009,Can Lộc - Hà Tĩnh ,Nam ,10A1 ,THPT Can Lộc ,Toán 10 ,"11,5 ",Đạt ,Ba 
+851 ,LÊ NGUYỄN KHÁNH CHI ,30/08/2009,Lộc Hà - Hà Tĩnh ,Nữ ,10A4 ,THPT Mai Thúc Loan ,Ngữ văn 10 ,"13,5 ",Đạt ,Nhì 
+852 ,ĐẶNG THÙY CHI ,18/07/2009,Đức Thọ - Hà Tĩnh ,Nữ ,10A3 ,THPT Hồng Lĩnh ,Lịch sử 10 ,"13,25 ",Đạt ,Ba 
+853 ,NGÔ NHẬT BẢO ,23/08/2009,Lộc Hà - Hà Tĩnh ,Nam ,10A1 ,THPT Nguyễn Văn Trỗi ,Toán 10 ,"14,75 ",Đạt ,Nhì 
+854 ,LÊ LINH CHI ,14/10/2009,Đức Thọ - Hà Tĩnh ,Nữ ,10D ,THPT Cù Huy Cận ,Ngữ văn 10 ,11 ,Hỏng ,
+855 ,LÊ THỊ HUYỀN DIỆU ,04/01/2009,"Lộc Hà, Hà Tĩnh ",Nữ ,10A8 ,THPT Nguyễn Đổng Chi ,Lịch sử 10 ,"12,5 ",Đạt ,Khuyến khích 
+856 ,LÊ QUÂN BẢO ,26/01/2009,Vũ Quang- Hà Tĩnh ,Nam ,10A1 ,THPT Vũ Quang ,Toán 10 ,"6,25 ",Hỏng ,
+857 ,PHẠM PHƯƠNG CHI ,14/12/2009,Hồng Lĩnh - Hà Tĩnh ,Nữ ,10A1 ,THPT Nguyễn Thị Minh Khai ,Ngữ văn 10 ,"12,5 ",Đạt ,Ba 
+858 ,NGUYỄN KHOA HIỀN DỊU ,28/06/2009,"Nghi Xuân, Hà Tĩnh ",Nữ ,10A11 ,THPT Nguyễn Du ,Lịch sử 10 ,"12,5 ",Đạt ,Khuyến khích 
+859 ,TRẦN HỮU CẢNH ,03/02/2009,TP Vinh - Nghệ An ,Nam ,10A1 ,THPT Nguyễn Công Trứ ,Toán 10 ,"3,75 ",Hỏng ,
+860 ,NGUYỄN QUỲNH CHI ,21/01/2009,Hương Khê - Hà Tĩnh ,Nữ ,10C1 ,THPT Hương Khê ,Ngữ văn 10 ,12 ,Đạt ,Khuyến khích 
+861 ,LÊ THỊ THÙY DUNG ,15/10/2009,Lộc Hà - Hà Tĩnh ,Nữ ,10A6 ,THPT Mai Thúc Loan ,Lịch sử 10 ,"10,5 ",Hỏng ,
+862 ,TRẦN THỊ KIỀU CHINH ,25/01/2009,"Quang Lộc, Can Lộc, Hà Tĩnh ",Nữ ,10A1 ,THPT Đồng Lộc ,Toán 10 ,"4,5 ",Hỏng ,
+863 ,NGUYỄN HỒ QUỲNH CHI ,14/08/2009,"Can Lộc, Hà Tĩnh ",Nữ ,10A6 ,THPT Nghèn ,Ngữ văn 10 ,"13,5 ",Đạt ,Nhì 
+864 ,VÕ VĂN DƯƠNG ,13/01/2009,Hương Khê - Hà Tĩnh ,Nam ,10C2 ,THPT Hương Khê ,Lịch sử 10 ,15 ,Đạt ,Nhì 
+865 ,BÙI THỊ QUỲNH CHI ,20/07/2009,TP Vinh - Nghệ An ,Nữ ,10A1 ,THPT Nguyễn Thị Minh Khai ,Toán 10 ,12 ,Đạt ,Ba 
+866 ,TRẦN BẢO QUỲNH CHI ,11/11/2009,Hương Khê - Hà Tĩnh ,Nữ ,10D1 ,THPT Cao Thắng ,Ngữ văn 10 ,11 ,Hỏng ,
+867 ,NGUYỄN THỊ HƯƠNG GIANG ,12/03/2009,Hà Tĩnh ,Nữ ,10A2 ,THPT Lý Tự Trọng ,Lịch sử 10 ,16 ,Đạt ,Nhất 
+868 ,NGUYỄN KHẮC CÔNG ,04/08/2009,Can Lộc - Hà Tĩnh ,Nam ,10A1 ,THPT Can Lộc ,Toán 10 ,"6,25 ",Hỏng ,
+869 ,NGUYỄN YẾN CHI ,17/03/2009,Hương Sơn - Hà Tĩnh ,Nữ ,10D1 ,THPT Hương Sơn ,Ngữ văn 10 ,12 ,Đạt ,Khuyến khích 
+870 ,NGUYỄN KHẮC GIÁO ,02/05/2009,Lộc Hà - Hà Tĩnh ,Nam ,10A6 ,THPT Nguyễn Văn Trỗi ,Lịch sử 10 ,"13,75 ",Đạt ,Ba 
+871 ,NGUYỄN BÙI ĐỨC DUY ,13/03/2009,"Đức Thọ, Hà Tĩnh ",Nam ,10A1 ,THPT Đức Thọ ,Toán 10 ,"5,75 ",Hỏng ,
+872 ,NGUYỄN THỊ NGỌC DIỄM ,26/05/2009,Hương Sơn - Hà Tĩnh ,Nữ ,10C ,THPT Lý Chính Thắng ,Ngữ văn 10 ,12 ,Đạt ,Khuyến khích 
+873 ,TRẦN THỊ THƯƠNG HÀ ,29/03/2009,Lộc Hà - Hà Tĩnh ,Nữ ,10A7 ,THPT Mai Thúc Loan ,Lịch sử 10 ,"11,75 ",Đạt ,Khuyến khích 
+874 ,BÙI TRÍ DŨNG ,12/11/2009,Hương Sơn - Hà Tĩnh ,Nam ,10A ,THPT Lê Hữu Trác ,Toán 10 ,"7,25 ",Hỏng ,
+875 ,VÕ THỊ KIỀU DUNG ,03/03/2009,Hương Khê - Hà Tĩnh ,Nữ ,10A1 ,THPT Phúc Trạch ,Ngữ văn 10 ,12 ,Đạt ,Khuyến khích 
+876 ,NGUYỄN THUÝ HẰNG ,15/04/2009,Hương Khê - Hà Tĩnh ,Nữ ,10A3 ,THPT Phúc Trạch ,Lịch sử 10 ,"13,25 ",Đạt ,Ba 
+877 ,HOÀNG XUÂN DŨNG ,25/09/2009,Hà Tĩnh ,Nam ,10A5 ,THPT Lý Tự Trọng ,Toán 10 ,"14,25 ",Đạt ,Nhì 
+878 ,PHAN NGỌC DUYÊN ,04/01/2009,Hương Sơn - Hà Tĩnh ,Nữ ,10C ,THPT Lê Hữu Trác ,Ngữ văn 10 ,"12,25 ",Đạt ,Ba 
+879 ,NGUYỄN LÊ GIA HÂN ,19/12/2009,Đức Thọ - Hà Tĩnh ,Nữ ,10A5 ,THPT Nguyễn Thị Minh Khai ,Lịch sử 10 ,"11,25 ",Đạt ,Khuyến khích 
+880 ,NGUYỄN THỊ ANH ĐÀO ,26/11/2009,Hương Khê - Hà Tĩnh ,Nữ ,10A1 ,THPT Hương Khê ,Toán 10 ,"9,5 ",Đạt ,Khuyến khích 
+881 ,PHAN PHƯƠNG DUYÊN ,05/02/2009,TP Vinh - Nghệ An ,Nữ ,10A3 ,THPT Hồng Lĩnh ,Ngữ văn 10 ,"13,25 ",Đạt ,Nhì 
+882 ,TRẦN KHÁNH HIÊN ,26/02/2009,Nghi Xuân - Hà Tĩnh ,Nữ ,10A3 ,THPT Nguyễn Công Trứ ,Lịch sử 10 ,11 ,Hỏng ,
+883 ,LÊ PHI ĐẠT ,20/10/2009,hà tĩnh ,Nam ,10A5 ,THPT Lý Tự Trọng ,Toán 10 ,"9,5 ",Đạt ,Khuyến khích 
+884 ,PHAN TRẦN THUỲ DƯƠNG ,11/04/2009,Hương Khê - Hà Tĩnh ,Nữ ,10A7 ,THPT Hàm Nghi ,Ngữ văn 10 ,11 ,Hỏng ,
+885 ,NGUYỄN THỊ THANH HIỀN ,06/05/2009,"Đức Thọ, Hà Tĩnh ",Nữ ,10A3 ,THPT Đức Thọ ,Lịch sử 10 ,12 ,Đạt ,Khuyến khích 
+886 ,NGUYỄN HOÀNG TIẾN ĐẠT ,25/12/2008,Nghi Xuân - Hà Tĩnh ,Nam ,10A2 ,THPT Nguyễn Công Trứ ,Toán 10 ,"6,5 ",Hỏng ,
+887 ,HOÀNG KHÁNH ĐAN ,25/01/2009,"Nghi Xuân, Hà Tĩnh ",Nữ ,10A11 ,THPT Nguyễn Du ,Ngữ văn 10 ,"13,5 ",Đạt ,Nhì 
+888 ,NGUYỄN THỊ THU HIỀN ,12/04/2009,Vũ Quang- Hà Tĩnh ,Nữ ,10A2 ,THPT Vũ Quang ,Lịch sử 10 ,11 ,Hỏng ,
+889 ,ĐÀO DUY ĐĂNG ,25/05/2009,Hương Sơn - Hà Tĩnh ,Nam ,10A1 ,THPT Hương Sơn ,Toán 10 ,"12,75 ",Đạt ,Ba 
+890 ,NGUYỄN VĂN ĐỨC ,28/05/2009,Đức Thọ - Hà Tĩnh ,Nam ,10A1 ,THPT Trần Phú ,Ngữ văn 10 ,14 ,Đạt ,Nhất 
+891 ,NGUYỄN THU HIỀN ,22/05/2009,Can Lộc - Hà Tĩnh ,Nữ ,10A3 ,THPT Can Lộc ,Lịch sử 10 ,14 ,Đạt ,Nhì 
+892 ,NGUYỄN MINH HẢI ,30/06/2009,Đức Thọ - Hà Tĩnh ,Nam ,10A1 ,THPT Nguyễn Thị Minh Khai ,Toán 10 ,"10,75 ",Đạt ,Khuyến khích 
+893 ,PHẠM HÀ GIANG ,24/02/2009,Thạch Hà- Hà Tĩnh ,Nữ ,10A2 ,THPT Vũ Quang ,Ngữ văn 10 ,11 ,Hỏng ,
+894 ,NGUYỄN THỊ HOA ,25/09/2009,Đức Thọ - Hà Tĩnh ,Nữ ,10A3 ,THPT Trần Phú ,Lịch sử 10 ,10 ,Hỏng ,
+895 ,PHAN HỒNG HẠNH ,04/01/2009,Vũ Quang - Hà Tĩnh ,Nữ ,10A1 ,THPT Trần Phú ,Toán 10 ,"14,5 ",Đạt ,Nhì 
+896 ,VÕ THỊ HƯƠNG GIANG ,18/03/2009,Đức Thọ - Hà Tĩnh ,Nữ ,10A4 ,THPT Trần Phú ,Ngữ văn 10 ,"11,25 ",Hỏng ,
+897 ,NGUYỄN THỊ HOA ,09/11/2009,Lộc Hà - Hà Tĩnh ,Nữ ,10A6 ,THPT Nguyễn Văn Trỗi ,Lịch sử 10 ,"14,25 ",Đạt ,Nhì 
+898 ,VÕ BÙI GIA HÂN ,29/07/2009,Lộc Hà - Hà Tĩnh ,Nữ ,10A1 ,THPT Mai Thúc Loan ,Toán 10 ,13 ,Đạt ,Ba 
+899 ,NGUYỄN QUỲNH GIAO ,30/07/2009,Hồng Lĩnh - Hà Tĩnh ,Nữ ,10A3 ,THPT Hồng Lĩnh ,Ngữ văn 10 ,11 ,Hỏng ,
+900 ,NGUYỄN HUY HOÀNG ,05/05/2009,Đức Thọ - Hà Tĩnh ,Nam ,10A4 ,THPT Trần Phú ,Lịch sử 10 ,"14,75 ",Đạt ,Nhì 
+901 ,ĐẶNG THỊ MINH HOA ,03/08/2009,"Can Lộc, Hà Tĩnh ",Nữ ,10A1 ,THPT Nghèn ,Toán 10 ,"8,5 ",Hỏng ,
+902 ,NGUYỄN THỊ THU HÀ ,01/03/2009,Nghi Xuân - Hà Tĩnh ,Nữ ,10A4 ,THPT Nghi Xuân ,Ngữ văn 10 ,"11,5 ",Hỏng ,
+903 ,LÊ QUANG HOÀ ,08/01/2009,Nghi Xuân - Hà Tĩnh ,Nam ,10A4 ,THPT Nghi Xuân ,Lịch sử 10 ,"11,5 ",Đạt ,Khuyến khích 
+904 ,NGUYỄN THỊ MỸ HOA ,30/11/2008,Đức Thọ - Hà Tĩnh ,Nữ ,10A1 ,THPT Can Lộc ,Toán 10 ,"7,5 ",Hỏng ,
+905 ,TRẦN THỊ THU HÀ ,25/10/2009,"Nghi Xuân, Hà Tĩnh ",Nữ ,10A11 ,THPT Nguyễn Du ,Ngữ văn 10 ,"12,5 ",Đạt ,Ba 
+906 ,NGUYỄN HỒNG KHUYÊN ,18/02/2009,Vũ Quang - Hà Tĩnh ,Nữ ,10D ,THPT Cù Huy Cận ,Lịch sử 10 ,"13,25 ",Đạt ,Ba 
+907 ,PHAN HUY HOÀNG ,08/03/2009,Lộc Hà - Hà Tĩnh ,Nam ,10A1 ,THPT Mai Thúc Loan ,Toán 10 ,"7,75 ",Hỏng ,
+908 ,PHAN THANH HẰNG ,11/03/2009,"Thượng Lộc, Can Lộc, Hà Tĩnh ",Nữ ,10A6 ,THPT Đồng Lộc ,Ngữ văn 10 ,"10,5 ",Hỏng ,
+909 ,HOÀNG THỊ THIÊN KIM ,22/06/2009,"Lộc Hà, Hà Tĩnh ",Nữ ,10A8 ,THPT Nguyễn Đổng Chi ,Lịch sử 10 ,"9,1 ",Hỏng ,
+910 ,LÊ HỮU HOÀNG ,21/06/2009,Đức Thọ - Hà Tĩnh ,Nam ,10A1 ,THPT Nguyễn Thị Minh Khai ,Toán 10 ,"9,5 ",Đạt ,Khuyến khích 
+911 ,NGUYỄN THỊ THÚY HẰNG ,04/09/2009,Đức Thọ - Hà Tĩnh ,Nữ ,10A4 ,THPT Trần Phú ,Ngữ văn 10 ,"12,75 ",Đạt ,Ba 
+912 ,NGUYỄN THỊ HÀ LINH ,24/03/2009,Hương Khê - Hà Tĩnh ,Nữ ,10A3 ,THPT Phúc Trạch ,Lịch sử 10 ,11 ,Hỏng ,
+913 ,NGHIÊM TRUNG HOÀNG ,02/11/2009,Đức Thọ - Hà Tĩnh ,Nam ,10A1 ,THPT Nguyễn Thị Minh Khai ,Toán 10 ,"13,5 ",Đạt ,Nhì 
+914 ,NGUYỄN THỊ HÒA ,26/09/2009,"Can Lộc, Hà Tĩnh ",Nữ ,10A5 ,THPT Nguyễn Đổng Chi ,Ngữ văn 10 ,11 ,Hỏng ,
+915 ,LÊ THỊ KHÁNH LINH ,12/02/2009,Hương Khê - Hà Tĩnh ,Nữ ,10A4 ,THPT Hương Khê ,Lịch sử 10 ,11 ,Hỏng ,
+916 ,ĐẶNG THỊ KHÁNH HUYỀN ,01/01/2009,Hồng Lĩnh - Hà Tĩnh ,Nữ ,10A14 ,THPT Hồng Lĩnh ,Toán 10 ,"8,5 ",Hỏng ,
+917 ,NGUYỄN THỊ KHÁNH HUYỀN ,27/05/2009,Hương Sơn - Hà Tĩnh ,Nữ ,10D1 ,THPT Cao Thắng ,Ngữ văn 10 ,"13,5 ",Đạt ,Nhì 
+918 ,NGÔ TRẦN KHÁNH LINH ,08/12/2009,"Sơn Lộc, Can Lộc, Hà Tĩnh ",Nữ ,10A6 ,THPT Đồng Lộc ,Lịch sử 10 ,11 ,Hỏng ,
+919 ,TRẦN THỊ THANH HUYỀN ,24/04/2009,"Bệnh viên Đa khoa Nghi Xuân, Hà Tĩnh ",Nữ ,10A1 ,THPT Nguyễn Du ,Toán 10 ,8 ,Hỏng ,
+920 ,ĐẶNG THỊ KIỀU KHANH ,10/04/2009,"Vũ Quang, Hà Tĩnh ",Nữ ,10A3 ,THPT Đức Thọ ,Ngữ văn 10 ,"11,5 ",Hỏng ,
+921 ,VÕ THỊ KHÁNH LY ,25/01/2009,Hương Sơn - Hà Tĩnh ,Nữ ,10D ,THPT Lý Chính Thắng ,Lịch sử 10 ,"10,1 ",Hỏng ,
+922 ,NGUYỄN THU HUYỀN ,17/09/2009,"Can Lộc, Hà Tĩnh ",Nữ ,10A1 ,THPT Nghèn ,Toán 10 ,"9,25 ",Đạt ,Khuyến khích 
+923 ,LÊ THỊ HƯƠNG LAN ,16/01/2009,"Can Lộc, Hà Tĩnh ",Nữ ,10A8 ,THPT Nguyễn Đổng Chi ,Ngữ văn 10 ,"12,75 ",Đạt ,Ba 
+924 ,LÊ KIỀU MAI ,16/10/2009,Hương Sơn - Hà Tĩnh ,Nữ ,10I ,THPT Lê Hữu Trác ,Lịch sử 10 ,11 ,Hỏng ,
+925 ,NGUYỄN QUỐC HUY ,28/09/2009,Thành phố Vinh - Nghệ An ,Nam ,10A1 ,THPT Hương Sơn ,Toán 10 ,"8,25 ",Hỏng ,
+926 ,PHAN NGỌC LAN ,21/03/2009,"Đức Thọ, Hà Tĩnh ",Nữ ,10A3 ,THPT Đức Thọ ,Ngữ văn 10 ,11 ,Hỏng ,
+927 ,TRẦN TỐ NGA ,17/11/2009,Đức Thọ - Hà Tĩnh ,Nữ ,10A4 ,THPT Trần Phú ,Lịch sử 10 ,"12,5 ",Đạt ,Khuyến khích 
+928 ,THIỀU QUANG VŨ HUY ,21/07/2009,"Can Lộc, Hà Tĩnh ",Nam ,10A1 ,THPT Nghèn ,Toán 10 ,"10,25 ",Đạt ,Khuyến khích 
+929 ,NGUYỄN THỊ CẨM LINH ,15/11/2009,Hồng Lĩnh - Hà Tĩnh ,Nữ ,10A1 ,THPT Can Lộc ,Ngữ văn 10 ,"12,5 ",Đạt ,Ba 
+930 ,LÊ KIM NGÂN ,11/09/2009,"Mỹ Lộc, Can Lộc, Hà Tĩnh ",Nữ ,10A10 ,THPT Đồng Lộc ,Lịch sử 10 ,"10,25 ",Hỏng ,
+931 ,PHAN THẾ HƯNG ,23/01/2009,Nghi Xuân - Hà Tĩnh ,Nam ,10A1 ,THPT Nghi Xuân ,Toán 10 ,"4,75 ",Hỏng ,
+932 ,NGUYỄN DIỆU LINH ,07/06/2009,Hồng Lĩnh - Hà Tĩnh ,Nữ ,10A3 ,THPT Hồng Lĩnh ,Ngữ văn 10 ,14 ,Đạt ,Nhất 
+933 ,TRẦN THỊ KIM NGÂN ,01/01/2009,"Đức Thọ, Hà Tĩnh ",Nữ ,10A2 ,THPT Đức Thọ ,Lịch sử 10 ,11 ,Hỏng ,
+934 ,VĂN ĐÌNH KHANG ,05/01/2009,Hương Sơn - Hà Tĩnh ,Nam ,10A ,THPT Lê Hữu Trác ,Toán 10 ,"8,25 ",Hỏng ,
+935 ,LƯU GIA LINH ,02/12/2009,Hương Sơn - Hà Tĩnh ,Nữ ,10D2 ,THPT Hương Sơn ,Ngữ văn 10 ,"13,75 ",Đạt ,Nhì 
+936 ,LÊ BẢO NGỌC ,08/07/2009,Hồng Lĩnh - Hà Tĩnh ,Nữ ,10A5 ,THPT Hồng Lĩnh ,Lịch sử 10 ,"10,5 ",Hỏng ,
+937 ,BÙI TRUNG KIÊN ,24/08/2009,Nghi Xuân - Hà Tĩnh ,Nam ,10A1 ,THPT Nguyễn Công Trứ ,Toán 10 ,"8,5 ",Hỏng ,
+938 ,NGUYỄN HOÀNG LINH ,08/01/2009,"Khánh Vĩnh Yên, Can Lộc, Hà Tĩnh ",Nữ ,10A6 ,THPT Đồng Lộc ,Ngữ văn 10 ,13 ,Đạt ,Ba 
+939 ,NGUYỄN THỊ BẢO NGỌC ,02/02/2009,Hương Khê - Hà Tĩnh ,Nữ ,10A7 ,THPT Hàm Nghi ,Lịch sử 10 ,"11,5 ",Đạt ,Khuyến khích 
+940 ,ĐINH TRẦN KIỀU LÊ ,16/03/2009,TP Vinh - Nghệ An ,Nữ ,10A1 ,THPT Nguyễn Công Trứ ,Toán 10 ,"4,75 ",Hỏng ,
+941 ,TRẦN THỊ KHÁNH LINH ,15/04/2009,Lộc Hà - Hà Tĩnh ,Nữ ,10A6 ,THPT Mai Thúc Loan ,Ngữ văn 10 ,"13,75 ",Đạt ,Nhì 
+942 ,NGUYỄN BẢO NGỌC ,11/07/2009,"Can Lộc, Hà Tĩnh ",Nữ ,10A6 ,THPT Nghèn ,Lịch sử 10 ,15 ,Đạt ,Nhì 
+943 ,NGUYỄN HOÀNG LINH ,18/05/2009,Đức Thọ- Hà Tĩnh ,Nữ ,10A1 ,THPT Vũ Quang ,Toán 10 ,"10,75 ",Đạt ,Khuyến khích 
+944 ,NGUYỄN LÊ THẢO LINH ,11/04/2009,Can Lộc - Hà Tĩnh ,Nữ ,10A5 ,THPT Can Lộc ,Ngữ văn 10 ,"12,5 ",Đạt ,Ba 
+945 ,PHAN BẢO NGỌC ,27/10/2009,"Nghi Xuân, Hà Tĩnh ",Nữ ,10A11 ,THPT Nguyễn Du ,Lịch sử 10 ,"11,75 ",Đạt ,Khuyến khích 
+946 ,TRẦN KHÁNH LINH ,07/08/2009,Nghi Xuân - Hà Tĩnh ,Nữ ,10A1 ,THPT Nghi Xuân ,Toán 10 ,"9,25 ",Đạt ,Khuyến khích 
+947 ,HỒ QUỲNH MAI ,06/02/2009,Đức Thọ - Hà Tĩnh ,Nữ ,10A5 ,THPT Trần Phú ,Ngữ văn 10 ,"13,75 ",Đạt ,Nhì 
+948 ,TRẦN THỊ BẢO NGỌC ,06/10/2009,Hương Sơn - Hà Tĩnh ,Nữ ,10C1 ,THPT Cao Thắng ,Lịch sử 10 ,10 ,Hỏng ,
+949 ,TRẦN ĐÌNH LƯƠNG ,27/02/2009,Đức Thọ - Hà Tĩnh ,Nam ,10A1 ,THPT Trần Phú ,Toán 10 ,"12,25 ",Đạt ,Ba 
+950 ,THÁI THỊ HÀ MY ,11/09/2009,Hương Khê - Hà Tĩnh ,Nữ ,10A3 ,THPT Hương Khê ,Ngữ văn 10 ,"11,75 ",Đạt ,Khuyến khích 
+951 ,NGUYỄN PHƯƠNG NGỌC ,01/07/2009,Hồng Lĩnh - Hà Tĩnh ,Nữ ,10A3 ,THPT Hồng Lĩnh ,Lịch sử 10 ,11 ,Hỏng ,
+952 ,NGUYỄN NỮ HUYỀN MY ,03/06/2009,Lộc Hà - Hà Tĩnh ,Nữ ,10A1 ,THPT Nguyễn Văn Trỗi ,Toán 10 ,8 ,Hỏng ,
+953 ,LÊ TIỂU MỸ ,06/02/2009,Hương Sơn - Hà Tĩnh ,Nữ ,10C ,THPT Lê Hữu Trác ,Ngữ văn 10 ,12 ,Đạt ,Khuyến khích 
+954 ,VÕ THỊ NGỌC ,14/09/2009,Can Lộc - Hà Tĩnh ,Nữ ,10A5 ,THPT Can Lộc ,Lịch sử 10 ,13 ,Đạt ,Ba 
+955 ,TRẦN THỊ BẢO NGỌC ,04/11/2009,Nghi Xuân - Hà Tĩnh ,Nữ ,10A1 ,THPT Nghi Xuân ,Toán 10 ,"8,5 ",Hỏng ,
+956 ,NGUYỄN THANH NGÂN ,10/01/2009,Hương Khê - Hà Tĩnh ,Nữ ,10A1 ,THPT Phúc Trạch ,Ngữ văn 10 ,12 ,Đạt ,Khuyến khích 
+957 ,LÊ MINH NGUYỆT ,29/07/2009,Hương Sơn - Hà Tĩnh ,Nữ ,10D ,THPT Cù Huy Cận ,Lịch sử 10 ,"14,75 ",Đạt ,Nhì 
+958 ,NGUYỄN HỮU NHÂN ,22/06/2009,Đức Thọ - Hà Tĩnh ,Nam ,10A1 ,THPT Trần Phú ,Toán 10 ,12 ,Đạt ,Ba 
+959 ,ĐÀO TRẦN BẢO NGỌC ,05/01/2009,TP Vinh - Nghệ An ,Nữ ,10A3 ,THPT Hồng Lĩnh ,Ngữ văn 10 ,"14,5 ",Đạt ,Nhất 
+960 ,LÊ THỊ MINH NGUYỆT ,23/08/2009,Đức Thọ - Hà Tĩnh ,Nữ ,10D4 ,THPT Nguyễn Thị Minh Khai ,Lịch sử 10 ,"10,75 ",Hỏng ,
+961 ,NGUYỄN QUÝ NHÂN ,20/07/2009,Hương Sơn - Hà Tĩnh ,Nam ,10A1 ,THPT Hương Sơn ,Toán 10 ,"7,75 ",Hỏng ,
+962 ,LÊ BẢO NGỌC ,16/04/2009,Đức Thọ - Hà Tĩnh ,Nữ ,10A ,THPT Cù Huy Cận ,Ngữ văn 10 ,12 ,Đạt ,Khuyến khích 
+963 ,LÊ NGUYỄN THANH NHÀN ,08/04/2009,Đức Thọ - Hà Tĩnh ,Nữ ,10A4 ,THPT Trần Phú ,Lịch sử 10 ,13 ,Đạt ,Ba 
+964 ,TRẦN NGÔ KIM NHẬT ,13/10/2009,"Bệnh viên Đa khoa Nghi Xuân, Hà Tĩnh ",Nam ,10A1 ,THPT Nguyễn Du ,Toán 10 ,"6,25 ",Hỏng ,
+965 ,LÊ BẢO NGỌC ,19/09/2009,Hương Sơn - Hà Tĩnh ,Nữ ,10D1 ,THPT Cao Thắng ,Ngữ văn 10 ,11 ,Hỏng ,
+966 ,HOÀNG GIA NHI ,25/08/2009,Hương Khê - Hà Tĩnh ,Nữ ,10C1 ,THPT Hương Khê ,Lịch sử 10 ,"9,5 ",Hỏng ,
+967 ,NGUYỄN GIA NHƯ ,19/10/2009,Hồng Lĩnh - Hà Tĩnh ,Nữ ,10A14 ,THPT Hồng Lĩnh ,Toán 10 ,"9,5 ",Đạt ,Khuyến khích 
+968 ,NGUYỄN BẢO NGỌC ,12/12/2009,Hương Khê - Hà Tĩnh ,Nữ ,10A7 ,THPT Hàm Nghi ,Ngữ văn 10 ,13 ,Đạt ,Ba 
+969 ,LÊ TRẦN UYÊN NHI ,07/09/2009,Hà Tĩnh ,Nữ ,10A3 ,THPT Lý Tự Trọng ,Lịch sử 10 ,"13,75 ",Đạt ,Ba 
+970 ,ĐẶNG THẾ PHONG ,29/01/2009,"Trung Lộc, Can Lộc, Hà Tĩnh ",Nam ,10A2 ,THPT Đồng Lộc ,Toán 10 ,"5,75 ",Hỏng ,
+971 ,TRẦN BẢO NGỌC ,17/02/2009,Nghi Xuân - Hà Tĩnh ,Nữ ,10A3 ,THPT Nguyễn Công Trứ ,Ngữ văn 10 ,11 ,Hỏng ,
+972 ,NGUYỄN THỊ YẾN NHI ,16/08/2009,"Can Lộc, Hà Tĩnh ",Nữ ,10A5 ,THPT Nghèn ,Lịch sử 10 ,"12,75 ",Đạt ,Ba 
+973 ,ĐINH BẢO PHÚC ,10/06/2009,Nam Phong - Nam Định ,Nam ,10A15 ,THPT Hồng Lĩnh ,Toán 10 ,"11,25 ",Đạt ,Ba 
+974 ,PHAN THỊ KHÁNH NGỌC ,16/11/2009,Lộc Hà - Hà Tĩnh ,Nữ ,10A11 ,THPT Nguyễn Văn Trỗi ,Ngữ văn 10 ,"12,5 ",Đạt ,Ba 
+975 ,TRẦN THỊ YẾN NHI ,29/05/2009,Hương Sơn - Hà Tĩnh ,Nữ ,10D4 ,THPT Hương Sơn ,Lịch sử 10 ,9 ,Hỏng ,
+976 ,PHẠM THỊ NAM PHƯƠNG ,21/05/2009,Hương Sơn - Hà Tĩnh ,Nữ ,10A1 ,THPT Cao Thắng ,Toán 10 ,11 ,Đạt ,Khuyến khích 
+977 ,TRẦN LAN NGỌC ,12/02/2009,Hương Khê - Hà Tĩnh ,Nữ ,10C1 ,THPT Hương Khê ,Ngữ văn 10 ,"13,25 ",Đạt ,Nhì 
+978 ,NGUYỄN HỒNG NHUNG ,13/11/2009,Hương Khê - Hà Tĩnh ,Nữ ,10A7 ,THPT Hàm Nghi ,Lịch sử 10 ,10 ,Hỏng ,
+979 ,TRẦN THỊ QUỲNH PHƯƠNG ,16/02/2009,Đức Thọ - Hà Tĩnh ,Nữ ,10A1 ,THPT Trần Phú ,Toán 10 ,"11,75 ",Đạt ,Ba 
+980 ,ĐINH THÚY NGỌC ,09/11/2009,Hà Nội ,Nữ ,10A3 ,THPT Lý Tự Trọng ,Ngữ văn 10 ,"12,75 ",Đạt ,Ba 
+981 ,TRẦN THỊ TUYẾT NHUNG ,20/01/2009,"Can Lộc, Hà Tĩnh ",Nữ ,10A7 ,THPT Nghèn ,Lịch sử 10 ,"14,25 ",Đạt ,Nhì 
+982 ,PHẠM MẠNH QUÂN ,15/01/2009,Hương Sơn - Hà Tĩnh ,Nam ,10A1 ,THPT Cao Thắng ,Toán 10 ,"6,5 ",Hỏng ,
+983 ,NGUYỄN HỒ HẠNH NGUYÊN ,24/01/2009,"Can Lộc, Hà Tĩnh ",Nữ ,10A6 ,THPT Nghèn ,Ngữ văn 10 ,13 ,Đạt ,Ba 
+984 ,HÀ NGỌC QUỲNH NHƯ ,07/09/2009,Hương Sơn - Hà Tĩnh ,Nữ ,10D ,THPT Lý Chính Thắng ,Lịch sử 10 ,"11,5 ",Đạt ,Khuyến khích 
+985 ,PHAN HUY PHI QUYỀN ,09/01/2009,Lộc Hà - Hà Tĩnh ,Nam ,10A1 ,THPT Mai Thúc Loan ,Toán 10 ,"15,75 ",Đạt ,Nhất 
+986 ,LÊ THỊ THẢO NGUYÊN ,26/06/2009,"Can Lộc, Hà Tĩnh ",Nữ ,10A1 ,THPT Nghèn ,Ngữ văn 10 ,"11,5 ",Hỏng ,
+987 ,NGUYỄN THỊ QUỲNH NHƯ ,28/04/2009,"Ngọc Sơn, Thạch Hà, Hà Tĩnh ",Nữ ,10A10 ,THPT Đồng Lộc ,Lịch sử 10 ,"11,5 ",Đạt ,Khuyến khích 
+988 ,PHAN NHƯ QUỲNH ,22/02/2009,Vũ Quang - Hà Tĩnh ,Nữ ,10A ,THPT Cù Huy Cận ,Toán 10 ,8 ,Hỏng ,
+989 ,HOÀNG TRẦN THANH NHÀN ,03/07/2009,Hương Sơn - Hà Tĩnh ,Nữ ,10C ,THPT Lê Hữu Trác ,Ngữ văn 10 ,11 ,Hỏng ,
+990 ,TRẦN THỊ QUỲNH NHƯ ,29/10/2009,Hương Khê - Hà Tĩnh ,Nữ ,10C1 ,THPT Hương Khê ,Lịch sử 10 ,"10,75 ",Hỏng ,
+991 ,ĐẶNG TIẾN SƠN ,24/10/2009,Lộc Hà - Hà Tĩnh ,Nam ,10A1 ,THPT Nguyễn Văn Trỗi ,Toán 10 ,"11,75 ",Đạt ,Ba 
+992 ,NGUYỄN THỊ PHƯƠNG NHI ,28/03/2009,"Xuân Lộc, Can Lộc, Hà Tĩnh ",Nữ ,10A6 ,THPT Đồng Lộc ,Ngữ văn 10 ,11 ,Hỏng ,
+993 ,NGUYỄN TRẦN TÂM NHƯ ,10/12/2009,Hồng Lĩnh - Hà Tĩnh ,Nữ ,10A5 ,THPT Hồng Lĩnh ,Lịch sử 10 ,"11,75 ",Đạt ,Khuyến khích 
+994 ,BÙI NGUYỄN ANH TÂN ,14/02/2009,"Can Lộc, Hà Tĩnh ",Nam ,10A1 ,THPT Nghèn ,Toán 10 ,6 ,Hỏng ,
+995 ,NGUYỄN THỊ PHƯƠNG NHI ,01/09/2009,Lộc Hà - Hà Tĩnh ,Nữ ,10A11 ,THPT Nguyễn Văn Trỗi ,Ngữ văn 10 ,13 ,Đạt ,Ba 
+996 ,TRẦN TÂM NHƯ ,18/11/2009,Nghi Xuân - Hà Tĩnh ,Nữ ,10A3 ,THPT Nghi Xuân ,Lịch sử 10 ,11 ,Hỏng ,
+997 ,NGUYỄN SỸ TRỌNG TẤN ,28/05/2009,Hà Tĩnh ,Nam ,10A5 ,THPT Lý Tự Trọng ,Toán 10 ,"10,5 ",Đạt ,Khuyến khích 
+998 ,NGUYỄN THỊ YẾN NHI ,19/06/2009,Hồng Lĩnh - Hà Tĩnh ,Nữ ,10A3 ,THPT Hồng Lĩnh ,Ngữ văn 10 ,13 ,Đạt ,Ba 
+999 ,NGUYỄN XUÂN SANG ,04/11/2009,Vũ Quang- Hà Tĩnh ,Nữ ,10A1 ,THPT Vũ Quang ,Lịch sử 10 ,11 ,Hỏng ,
+1000 ,NGUYỄN THỊ THÁI ,16/05/2009,Hương Khê - Hà Tĩnh ,Nữ ,10A2 ,THPT Hương Khê ,Toán 10 ,"11,75 ",Đạt ,Ba 
+1001 ,NGUYỄN THỊ YẾN NHI ,04/07/2009,Hương Sơn - Hà Tĩnh ,Nữ ,10A5 ,THPT Nguyễn Thị Minh Khai ,Ngữ văn 10 ,12 ,Đạt ,Khuyến khích 
+1002 ,NGÔ PHƯƠNG THẢO ,19/08/2009,Hương Khê - Hà Tĩnh ,Nữ ,10A7 ,THPT Hàm Nghi ,Lịch sử 10 ,"8,75 ",Hỏng ,
+1003 ,NGUYỄN PHƯƠNG THẢO ,01/09/2009,Hương Khê - Hà Tĩnh ,Nữ ,10A1 ,THPT Hương Khê ,Toán 10 ,"12,25 ",Đạt ,Ba 
+1004 ,LÊ DIỄM NHƯ ,16/09/2009,"Trung tâm Y tế huyện Nghi Xuân, Hà Tĩnh ",Nữ ,10A10 ,THPT Nguyễn Du ,Ngữ văn 10 ,12 ,Đạt ,Khuyến khích 
+1005 ,ĐẶNG THỊ THẮM ,20/04/2009,Nghi Xuân - Hà Tĩnh ,Nữ ,10A3 ,THPT Nguyễn Công Trứ ,Lịch sử 10 ,"11,5 ",Đạt ,Khuyến khích 
+1006 ,NGUYỄN NGỌC THỦY TIÊN ,06/12/2009,Vũ Quang - Hà Tĩnh ,Nữ ,10A ,THPT Cù Huy Cận ,Toán 10 ,7 ,Hỏng ,
+1007 ,LÊ THỊ KHÁNH NHƯ ,05/02/2009,Hương Sơn - Hà Tĩnh ,Nữ ,10D1 ,THPT Hương Sơn ,Ngữ văn 10 ,"12,5 ",Đạt ,Ba 
+1008 ,TRẦN VĂN THIÊN ,27/10/2009,Can Lộc - Hà Tĩnh ,Nam ,10A5 ,THPT Can Lộc ,Lịch sử 10 ,"13,25 ",Đạt ,Ba 
+1009 ,ĐÀO QUANG TIỆP ,20/06/2009,Hương Khê - Hà Tĩnh ,Nam ,10A1 ,THPT Hàm Nghi ,Toán 10 ,9 ,Đạt ,Khuyến khích 
+1010 ,NGUYỄN THỊ QUỲNH NHƯ ,14/10/2009,Can Lộc - Hà Tĩnh ,Nữ ,10A5 ,THPT Can Lộc ,Ngữ văn 10 ,12 ,Đạt ,Khuyến khích 
+1011 ,NGUYỄN ANH THƠ ,08/11/2009,Hương Sơn - Hà Tĩnh ,Nữ ,10D2 ,THPT Cao Thắng ,Lịch sử 10 ,"11,6 ",Đạt ,Khuyến khích 
+1012 ,NGUYỄN HUYỀN TRANG ,03/04/2009,hà tĩnh ,Nữ ,10A5 ,THPT Lý Tự Trọng ,Toán 10 ,"12,75 ",Đạt ,Ba 
+1013 ,TRƯƠNG HUYỀN PHƯƠNG ,04/02/2009,Nghi Xuân - Hà Tĩnh ,Nữ ,10A3 ,THPT Nghi Xuân ,Ngữ văn 10 ,12 ,Đạt ,Khuyến khích 
+1014 ,PHẠM ANH THƠ ,06/10/2009,Vũ Quang - Hà Tĩnh ,Nữ ,10D ,THPT Cù Huy Cận ,Lịch sử 10 ,"11,85 ",Đạt ,Khuyến khích 
+1015 ,TRẦN MAI TRANG ,28/01/2009,Lộc Hà - Hà Tĩnh ,Nữ ,10A1 ,THPT Nguyễn Văn Trỗi ,Toán 10 ,6 ,Hỏng ,
+1016 ,LÊ NHƯ QUỲNH ,20/02/2009,Vũ Quang- Hà Tĩnh ,Nữ ,10A2 ,THPT Vũ Quang ,Ngữ văn 10 ,9 ,Hỏng ,
+1017 ,TRẦN THỊ THU THỦY ,09/02/2009,Lộc Hà - Hà Tĩnh ,Nữ ,10A7 ,THPT Mai Thúc Loan ,Lịch sử 10 ,11 ,Hỏng ,
+1018 ,NGUYỄN KIÊN TRUNG ,23/01/2009,"Khánh Vĩnh Yên, Can Lộc, Hà Tĩnh ",Nam ,10A1 ,THPT Đồng Lộc ,Toán 10 ,5 ,Hỏng ,
+1019 ,LÊ NGUYỄN NHƯ THẢO ,12/02/2009,"TX Hồng Lĩnh, Hà Tĩnh ",Nữ ,10A6 ,THPT Đồng Lộc ,Ngữ văn 10 ,12 ,Đạt ,Khuyến khích 
+1020 ,ĐẬU ANH THƯ ,28/01/2009,Hà Tĩnh ,Nữ ,10A2 ,THPT Lý Tự Trọng ,Lịch sử 10 ,"13,75 ",Đạt ,Ba 
+1021 ,HỒ QUANG TRUNG ,29/03/2009,"Nghi Xuân, Hà Tĩnh ",Nam ,10A1 ,THPT Nguyễn Du ,Toán 10 ,"8,5 ",Hỏng ,
+1022 ,BÙI PHƯƠNG THẢO ,23/06/2009,Hồng Lĩnh - Hà Tĩnh ,Nữ ,10A3 ,THPT Hồng Lĩnh ,Ngữ văn 10 ,"13,5 ",Đạt ,Nhì 
+1023 ,TRẦN ANH THƯ ,09/05/2009,Biên Hòa - Đồng Nai ,Nữ ,10A5 ,THPT Nguyễn Thị Minh Khai ,Lịch sử 10 ,12 ,Đạt ,Khuyến khích 
+1024 ,PHAN TRỌNG TUÂN ,09/01/2009,Hương Khê - Hà Tĩnh ,Nam ,10A1 ,THPT Hương Khê ,Toán 10 ,"14,5 ",Đạt ,Nhì 
+1025 ,NGUYỄN PHƯƠNG THẢO ,23/11/2009,"Can Lộc, Hà Tĩnh ",Nữ ,10A6 ,THPT Nghèn ,Ngữ văn 10 ,11 ,Hỏng ,
+1026 ,NGUYỄN PHƯƠNG TRANG ,02/12/2009,"Khánh Vĩnh Yên, Can Lộc, Hà Tĩnh ",Nữ ,10A6 ,THPT Đồng Lộc ,Lịch sử 10 ,"14,5 ",Đạt ,Nhì 
+1027 ,NGUYỄN ĐÌNH ANH TUẤN ,10/09/2009,Hương Sơn - Hà Tĩnh ,Nam ,10A1 ,THPT Hương Sơn ,Toán 10 ,11 ,Đạt ,Khuyến khích 
+1028 ,LÊ ANH THƯ ,19/06/2009,Hà Tĩnh ,Nữ ,10A3 ,THPT Lý Tự Trọng ,Ngữ văn 10 ,13 ,Đạt ,Ba 
+1029 ,LÊ THỊ QUỲNH TRANG ,04/05/2009,"Lộc Hà, Hà Tĩnh ",Nữ ,10A8 ,THPT Nguyễn Đổng Chi ,Lịch sử 10 ,"10,1 ",Hỏng ,
+1030 ,DƯƠNG HOÀNG TUẤN ,30/04/2009,Hương Sơn - Hà Tĩnh ,Nam ,10A1 ,THPT Cao Thắng ,Toán 10 ,"8,75 ",Hỏng ,
+1031 ,CAO THỊ HÀ TRANG ,15/02/2009,Hương Khê - Hà Tĩnh ,Nữ ,10A3 ,THPT Phúc Trạch ,Ngữ văn 10 ,"10,5 ",Hỏng ,
+1032 ,PHAN THỊ TRÀ ,24/03/2009,Lộc Hà - Hà Tĩnh ,Nữ ,10A6 ,THPT Nguyễn Văn Trỗi ,Lịch sử 10 ,"13,75 ",Đạt ,Ba 
+1033 ,PHẠM ÁNH TUYẾT ,08/08/2009,Nghi Xuân - Hà Tĩnh ,Nữ ,10A15 ,THPT Hồng Lĩnh ,Toán 10 ,"8,75 ",Hỏng ,
+1034 ,TRẦN THỊ HẠNH TRANG ,18/12/2009,Lộc Hà - Hà Tĩnh ,Nữ ,10A7 ,THPT Mai Thúc Loan ,Ngữ văn 10 ,"12,5 ",Đạt ,Ba 
+1035 ,LÊ PHƯƠNG TRÚC ,06/12/2009,Hương Sơn - Hà Tĩnh ,Nữ ,10D1 ,THPT Cao Thắng ,Lịch sử 10 ,14 ,Đạt ,Nhì 
+1036 ,HOÀNG ĐÌNH TÚ ,22/02/2009,"Bệnh viện Đa khoa Nghi Xuân, Hà Tĩnh ",Nam ,10A1 ,THPT Nguyễn Du ,Toán 10 ,6 ,Hỏng ,
+1037 ,LÊ HUYỀN TRANG ,08/12/2009,Hương Sơn - Hà Tĩnh ,Nữ ,10C ,THPT Lý Chính Thắng ,Ngữ văn 10 ,"13,25 ",Đạt ,Nhì 
+1038 ,HOÀNG THỊ TRÚC ,05/02/2009,"Can Lộc, Hà Tĩnh ",Nữ ,10A4 ,THPT Nghèn ,Lịch sử 10 ,"12,25 ",Đạt ,Khuyến khích 
+1039 ,TRẦN MAI TRANG ,01/11/2009,Hương Sơn - Hà Tĩnh ,Nữ ,10D1 ,THPT Cao Thắng ,Ngữ văn 10 ,"12,5 ",Đạt ,Ba 
+1040 ,NGUYỄN THỊ KIM TUYẾN ,25/10/2009,Hồng Lĩnh - Hà Tĩnh ,Nữ ,10A5 ,THPT Hồng Lĩnh ,Lịch sử 10 ,"10,5 ",Hỏng ,
+1041 ,TRẦN QUỲNH TRANG ,02/10/2009,Lộc Hà - Hà Tĩnh ,Nữ ,10A4 ,THPT Mai Thúc Loan ,Ngữ văn 10 ,14 ,Đạt ,Nhất 
+1042 ,PHẠM GIA CÁT TƯỜNG ,26/11/2009,Vĩnh Long ,Nữ ,10A6 ,THPT Mai Thúc Loan ,Lịch sử 10 ,"8,75 ",Hỏng ,
+1043 ,NGUYỄN THỊ THÙY TRANG ,18/02/2009,Can Lộc - Hà Tĩnh ,Nữ ,10A1 ,THPT Can Lộc ,Ngữ văn 10 ,11 ,Hỏng ,
+1044 ,LƯƠNG BẢO UYÊN ,11/11/2009,Can Lộc - Hà Tĩnh ,Nữ ,10A5 ,THPT Can Lộc ,Lịch sử 10 ,"14,75 ",Đạt ,Nhì 
+1045 ,NGUYỄN NGỌC HUYỀN TRÂM ,24/04/2009,Hà Tĩnh ,Nữ ,10A3 ,THPT Lý Tự Trọng ,Ngữ văn 10 ,"14,5 ",Đạt ,Nhất 
+1046 ,TRẦN PHI VÂN ,26/07/2009,Con Cuông - Nghệ An ,Nữ ,10I ,THPT Lê Hữu Trác ,Lịch sử 10 ,9 ,Hỏng ,
+1047 ,TRẦN LÊ KHÁNH TRÂM ,01/12/2009,Hương Sơn - Hà Tĩnh ,Nữ ,10C ,THPT Lê Hữu Trác ,Ngữ văn 10 ,11 ,Hỏng ,
+1048 ,TRƯƠNG THỊ MAI UYÊN ,20/06/2009,Hương Khê - Hà Tĩnh ,Nữ ,10A8 ,THPT Hàm Nghi ,Ngữ văn 10 ,"12,5 ",Đạt ,Ba 
+1049 ,PHAN ĐÀO PHƯƠNG UYÊN ,02/04/2009,TP Vinh - Nghệ An ,Nữ ,10A3 ,THPT Nguyễn Công Trứ ,Ngữ văn 10 ,"11,75 ",Đạt ,Khuyến khích 
+1050 ,ĐẶNG NGUYỄN THỤC UYÊN ,29/08/2009,"Nghi Xuân, Hà Tĩnh ",Nữ ,10A12 ,THPT Nguyễn Du ,Ngữ văn 10 ,12 ,Đạt ,Khuyến khích 
+1051 ,NGUYỄN HÀ VY ,12/01/2009,Hương Khê - Hà Tĩnh ,Nữ ,10A1 ,THPT Hương Khê ,Ngữ văn 10 ,"12,5 ",Đạt ,Ba 
+1052 ,NGUYỄN NGỌC KHÁNH VY ,25/09/2009,Hương Sơn - Hà Tĩnh ,Nữ ,10A1 ,THPT Hương Sơn ,Ngữ văn 10 ,14 ,Đạt ,Nhất 
+1053 ,PHAN THỊ THẢO VY ,19/04/2009,Lộc Hà - Hà Tĩnh ,Nữ ,10A6 ,THPT Nguyễn Văn Trỗi ,Ngữ văn 10 ,"12,25 ",Đạt ,Ba 
+1054 ,TRẦN BẢO YẾN ,16/05/2009,Nghi Xuân - Hà Tĩnh ,Nữ ,10A3 ,THPT Nghi Xuân ,Ngữ văn 10 ,12 ,Đạt ,Khuyến khích 
+1055 ,NGUYỄN HẢI YẾN ,21/02/2009,Lộc Hà - Hà Tĩnh ,Nữ ,10A7 ,THPT Mai Thúc Loan ,Ngữ văn 10 ,13 ,Đạt ,Ba 
+1056 ,LÊ THỊ HOÀNG YẾN ,20/10/2009,Thuận An - Bình Dương ,Nữ ,10A2 ,THPT Cù Huy Cận ,Ngữ văn 10 ,11 ,Hỏng ,
+1057 ,NGUYỄN THỊ THU YẾN ,23/03/2009,Hương Sơn - Hà Tĩnh ,Nữ ,10A5 ,THPT Nguyễn Thị Minh Khai ,Ngữ văn 10 ,"12,25 ",Đạt ,Ba 
+1058 ,NGUYỄN HOÀNG ANH ,03/01/2009,Lộc Hà - Hà Tĩnh ,Nam ,10A2 ,THPT Nguyễn Văn Trỗi ,Vật lý 10 ,11 ,Đạt ,Ba 
+1059 ,NGUYỄN THỊ BÌNH AN ,24/10/2009,"Đồng Lộc, Can Lộc, Hà Tĩnh ",Nữ ,10A1 ,THPT Đồng Lộc ,Hoá học 10 ,"10,25 ",Đạt ,Ba 
+1060 ,LỮ AN AN ,26/10/2009,Đức Thọ - Hà Tĩnh ,Nữ ,10A1 ,THPT Trần Phú ,Sinh học 10 ,"16,25 ",Đạt ,Nhất 
+1061 ,NGUYỄN THỊ DƯƠNG AN ,17/04/2009,Nghi Xuân - Hà Tĩnh ,Nữ ,10A4 ,THPT Nguyễn Công Trứ ,Địa lý 10 ,"7,25 ",Hỏng ,
+1062 ,TRẦN THỊ QUỲNH ANH ,29/11/2009,Vũ Quang - Hà Tĩnh ,Nữ ,10A ,THPT Cù Huy Cận ,Vật lý 10 ,"8,25 ",Đạt ,Khuyến khích 
+1063 ,NGUYỄN NGỌC PHƯƠNG ANH ,27/04/2009,Đức Thọ - Hà Tĩnh ,Nữ ,10A14 ,THPT Hồng Lĩnh ,Hoá học 10 ,"7,75 ",Hỏng ,
+1064 ,HỒ NGỌC HOÀNG ANH ,25/10/2009,Hà Tĩnh ,Nữ ,10A6 ,THPT Lý Tự Trọng ,Sinh học 10 ,"9,75 ",Đạt ,Khuyến khích 
+1065 ,TRẦN NGUYỄN NGỌC ANH ,13/06/2009,Vũ Quang - Hà Tĩnh ,Nữ ,10D ,THPT Cù Huy Cận ,Địa lý 10 ,11 ,Đạt ,Khuyến khích 
+1066 ,NGUYỄN TUẤN ANH ,07/10/2009,Hồng Lĩnh - Hà Tĩnh ,Nam ,10A14 ,THPT Hồng Lĩnh ,Vật lý 10 ,"1,5 ",Hỏng ,
+1067 ,NGUYỄN QUỐC ANH ,22/04/2009,Vũ Quang - Hà Tĩnh ,Nam ,10A1 ,THPT Cù Huy Cận ,Hoá học 10 ,"8,5 ",Đạt ,Khuyến khích 
+1068 ,NGUYỄN THỊ HOÀI AN ,27/04/2009,Hương Sơn - Hà Tĩnh ,Nữ ,10A1 ,THPT Cao Thắng ,Sinh học 10 ,"6,5 ",Hỏng ,
+1069 ,LÊ NGỌC QUỲNH ANH ,10/05/2009,Can Lộc - Hà Tĩnh ,Nữ ,10A5 ,THPT Can Lộc ,Địa lý 10 ,"9,75 ",Hỏng ,
+1070 ,NGHIÊM VIỆT ANH ,19/05/2009,Đức Thọ - Hà Tĩnh ,Nam ,10A1 ,THPT Nguyễn Thị Minh Khai ,Vật lý 10 ,12 ,Đạt ,Nhì 
+1071 ,THÁI TRỊNH TRƯỜNG AN ,02/11/2009,Lộc Hà - Hà Tĩnh ,Nam ,10A1 ,THPT Nguyễn Văn Trỗi ,Hoá học 10 ,"13,75 ",Đạt ,Nhì 
+1072 ,ĐOÀN PHƯƠNG ANH ,18/09/2009,"Đức Thọ, Hà Tĩnh ",Nữ ,10A1 ,THPT Đức Thọ ,Sinh học 10 ,5 ,Hỏng ,
+1073 ,VÕ LÊ THUỲ AN ,16/10/2009,Đức Thọ - Hà Tĩnh ,Nữ ,10A5 ,THPT Nguyễn Thị Minh Khai ,Địa lý 10 ,"13,25 ",Đạt ,Ba 
+1074 ,TRỊNH QUỐC BẢO ,28/03/2009,Hương Sơn - Hà Tĩnh ,Nam ,10A1 ,THPT Cao Thắng ,Vật lý 10 ,"9,5 ",Đạt ,Khuyến khích 
+1075 ,HOÀNG TRẦN DUY BẢO ,19/04/2009,Hà Tĩnh ,Nam ,10A5 ,THPT Lý Tự Trọng ,Hoá học 10 ,"13,25 ",Đạt ,Nhì 
+1076 ,TRẦN NGỌC ÁNH ,09/11/2009,Vũ Quang - Hà Tĩnh ,Nữ ,10A ,THPT Cù Huy Cận ,Sinh học 10 ,"12,25 ",Đạt ,Nhì 
+1077 ,PHAN THỊ KHÁNH CHI ,09/08/2009,Đức Thọ - Hà Tĩnh ,Nữ ,10A5 ,THPT Nguyễn Thị Minh Khai ,Địa lý 10 ,14 ,Đạt ,Nhì 
+1078 ,PHẠM NGUYỄN HẢI BÌNH ,22/09/2009,"Can Lộc, Hà Tĩnh ",Nam ,10A1 ,THPT Nghèn ,Vật lý 10 ,6 ,Hỏng ,
+1079 ,LÊ THẾ BẢO ,29/03/2009,Đức Thọ- Hà Tĩnh ,Nam ,10A1 ,THPT Vũ Quang ,Hoá học 10 ,"9,25 ",Đạt ,Khuyến khích 
+1080 ,HỒ THỊ ÁNH ,05/02/2009,Lộc Hà - Hà Tĩnh ,Nữ ,10A2 ,THPT Nguyễn Văn Trỗi ,Sinh học 10 ,7 ,Hỏng ,
+1081 ,NGUYỄN THỊ LINH CHI ,17/08/2009,Can Lộc - Hà Tĩnh ,Nữ ,10A5 ,THPT Can Lộc ,Địa lý 10 ,10 ,Hỏng ,
+1082 ,NGUYỄN THỊ MINH CHÂU ,12/09/2009,BV đa khoa khu vực 1 - Đồng Nai ,Nữ ,10A1 ,THPT Can Lộc ,Vật lý 10 ,"5,25 ",Hỏng ,
+1083 ,PHAN TRỌNG BẢO ,24/06/2009,Hương Khê - Hà Tĩnh ,Nam ,10A1 ,THPT Hàm Nghi ,Hoá học 10 ,3 ,Hỏng ,
+1084 ,ĐOÀN THÁI BẢO ,29/12/2009,Vũ Quang- Hà Tĩnh ,Nam ,10A1 ,THPT Vũ Quang ,Sinh học 10 ,"7,5 ",Hỏng ,
+1085 ,PHAN QUỲNH CHI ,05/05/2009,Đức Thọ - Hà Tĩnh ,Nữ ,10A4 ,THPT Trần Phú ,Địa lý 10 ,"10,5 ",Đạt ,Khuyến khích 
+1086 ,ĐẶNG BÁ BẢO CHUNG ,30/09/2009,"Sơn Lộc, Can Lộc, Hà Tĩnh ",Nam ,10A1 ,THPT Đồng Lộc ,Vật lý 10 ,9 ,Đạt ,Khuyến khích 
+1087 ,HÀ VĂN BẰNG ,30/08/2009,"Nghi Xuân, Hà Tĩnh ",Nam ,10A1 ,THPT Nguyễn Du ,Hoá học 10 ,"9,5 ",Đạt ,Khuyến khích 
+1088 ,NGUYỄN VĂN BÌNH ,05/06/2009,Ea Kar - Đắk Lắk ,Nam ,10A2 ,THPT Nguyễn Văn Trỗi ,Sinh học 10 ,"8,5 ",Hỏng ,
+1089 ,NGUYỄN KỲ DUYÊN ,22/10/2009,Hương Khê - Hà Tĩnh ,Nữ ,10A7 ,THPT Hàm Nghi ,Địa lý 10 ,"11,5 ",Đạt ,Khuyến khích 
+1090 ,PHAN QUỐC CƯƠNG ,02/01/2009,Nghi Xuân - Hà Tĩnh ,Nam ,10A1 ,THPT Nguyễn Công Trứ ,Vật lý 10 ,"8,75 ",Đạt ,Khuyến khích 
+1091 ,TRẦN THỊ THANH BÌNH ,04/05/2009,Xuân Lộc - Đồng Nai ,Nữ ,10A1 ,THPT Nguyễn Công Trứ ,Hoá học 10 ,"9,75 ",Đạt ,Khuyến khích 
+1092 ,PHẠM HÀ CHÂU ,01/06/2009,Hương Khê - Hà Tĩnh ,Nữ ,10A1 ,THPT Hương Khê ,Sinh học 10 ,"6,5 ",Hỏng ,
+1093 ,HỒ THÙY DƯƠNG ,15/11/2009,Nghi Xuân - Hà Tĩnh ,Nữ ,10A7 ,THPT Mai Thúc Loan ,Địa lý 10 ,"13,5 ",Đạt ,Nhì 
+1094 ,PHAN DOÃN CƯỜNG ,16/10/2009,Đức Thọ - Hà Tĩnh ,Nam ,10A1 ,THPT Nguyễn Thị Minh Khai ,Vật lý 10 ,"15,75 ",Đạt ,Nhất 
+1095 ,NGUYỄN THƯ BÌNH ,19/12/2009,Hương Sơn - Hà Tĩnh ,Nữ ,10A1 ,THPT Hương Sơn ,Hoá học 10 ,"6,75 ",Hỏng ,
+1096 ,CÙ HUY CƯƠNG ,29/09/2009,Hồng Lĩnh - Hà Tĩnh ,Nam ,10A1 ,THPT Hồng Lĩnh ,Sinh học 10 ,"9,75 ",Đạt ,Khuyến khích 
+1097 ,NGUYỄN THỊ GIANG ,20/09/2009,"Khánh Vĩnh Yên, Can Lộc, Hà Tĩnh ",Nữ ,10A8 ,THPT Đồng Lộc ,Địa lý 10 ,"8,25 ",Hỏng ,
+1098 ,HỒ MẠNH CƯỜNG ,27/01/2009,Nghi Xuân - Hà Tĩnh ,Nam ,10A1 ,THPT Nghi Xuân ,Vật lý 10 ,4 ,Hỏng ,
+1099 ,VÕ QUỲNH CHI ,28/08/2009,"Can Lộc, Hà Tĩnh ",Nữ ,10A1 ,THPT Nghèn ,Hoá học 10 ,"8,5 ",Đạt ,Khuyến khích 
+1100 ,LÊ VĂN KIÊN CƯỜNG ,28/03/2009,Hà Tĩnh ,Nam ,10A6 ,THPT Lý Tự Trọng ,Sinh học 10 ,"8,5 ",Hỏng ,
+1101 ,NGUYỄN TRƯỜNG GIANG ,19/07/2009,Hương Sơn - Hà Tĩnh ,Nam ,10D ,THPT Lý Chính Thắng ,Địa lý 10 ,11 ,Đạt ,Khuyến khích 
+1102 ,NGUYỄN NGỌC DUYÊN ,29/05/2009,Can Lộc - Hà Tĩnh ,Nữ ,10A1 ,THPT Can Lộc ,Vật lý 10 ,7 ,Hỏng ,
+1103 ,TRẦN NGUYỄN VÂN CHI ,26/10/2009,Bệnh viên hữu nghị Đa khoa Nghệ An ,Nữ ,10A1 ,THPT Nguyễn Du ,Hoá học 10 ,"9,5 ",Đạt ,Khuyến khích 
+1104 ,PHẠM NGỌC DIỆP ,20/03/2009,Lộc Hà - Hà Tĩnh ,Nữ ,10A3 ,THPT Mai Thúc Loan ,Sinh học 10 ,"8,25 ",Hỏng ,
+1105 ,TÔN NGUYỄN NGUYỆT HẰNG ,21/09/2009,"Can Lộc, Hà Tĩnh ",Nữ ,10A6 ,THPT Nghèn ,Địa lý 10 ,"10,75 ",Đạt ,Khuyến khích 
+1106 ,NGUYỄN VIỆT DUY ,27/01/2009,"Đức Thọ, Hà Tĩnh ",Nam ,10A1 ,THPT Đức Thọ ,Vật lý 10 ,"10,25 ",Đạt ,Ba 
+1107 ,LÊ THÀNH CHƯƠNG ,05/06/2009,Đức Thọ - Hà Tĩnh ,Nam ,10A1 ,THPT Trần Phú ,Hoá học 10 ,"8,4 ",Đạt ,Khuyến khích 
+1108 ,TRẦN THỊ HOÀI DUNG ,19/03/2009,Đức Thọ - Hà Tĩnh ,Nữ ,10A1 ,THPT Trần Phú ,Sinh học 10 ,"11,5 ",Đạt ,Ba 
+1109 ,ĐOÀN GIA HÂN ,08/02/2009,Hồng Lĩnh - Hà Tĩnh ,Nữ ,10A3 ,THPT Hồng Lĩnh ,Địa lý 10 ,11 ,Đạt ,Khuyến khích 
+1110 ,NGUYỄN QUỐC DŨNG ,19/05/2009,Lộc Hà - Hà Tĩnh ,Nam ,10A1 ,THPT Nguyễn Văn Trỗi ,Vật lý 10 ,"10,5 ",Đạt ,Ba 
+1111 ,LÊ SỸ CƯƠNG ,04/05/2009,"Can Lộc, Hà Tĩnh ",Nam ,10A1 ,THPT Nghèn ,Hoá học 10 ,"7,25 ",Hỏng ,
+1112 ,PHẠM THỊ THÙY DUNG ,14/08/2009,Lộc Hà - Hà Tĩnh ,Nữ ,10A3 ,THPT Mai Thúc Loan ,Sinh học 10 ,"10,25 ",Đạt ,Khuyến khích 
+1113 ,PHAN THỊ THU HIỀN ,04/03/2009,Bình Dương ,Nữ ,10A7 ,THPT Mai Thúc Loan ,Địa lý 10 ,"8,75 ",Hỏng ,
+1114 ,HOÀNG ĐOÀN TIẾN DŨNG ,04/11/2009,TP Biên Hòa - Đồng Nai ,Nam ,10A ,THPT Hương Sơn ,Vật lý 10 ,"5,25 ",Hỏng ,
+1115 ,NGUYỄN CÔNG DANH ,07/11/2009,TP Vinh - Nghệ An ,Nam ,10A15 ,THPT Hồng Lĩnh ,Hoá học 10 ,"11,5 ",Đạt ,Ba 
+1116 ,LÊ THẢO DUYÊN ,02/01/2009,Đức Thọ - Hà Tĩnh ,Nữ ,10A1 ,THPT Nguyễn Thị Minh Khai ,Sinh học 10 ,"10,75 ",Đạt ,Ba 
+1117 ,LÊ THANH HUYỀN ,09/09/2009,"Mỹ Lộc, Can Lộc, Hà Tĩnh ",Nữ ,10A6 ,THPT Đồng Lộc ,Địa lý 10 ,15 ,Đạt ,Nhất 
+1118 ,PHAN TUẤN DŨNG ,10/02/2009,Vũ Quang - Hà Tĩnh ,Nam ,10A ,THPT Cù Huy Cận ,Vật lý 10 ,8 ,Đạt ,Khuyến khích 
+1119 ,ĐẶNG NGỌC DIỆP ,05/07/2009,Nghi Xuân - Hà Tĩnh ,Nữ ,10A1 ,THPT Nghi Xuân ,Hoá học 10 ,"7,75 ",Hỏng ,
+1120 ,NGUYỄN THỊ THUỲ DƯƠNG ,19/04/2009,Nghi Xuân - Hà Tĩnh ,Nữ ,10A1 ,THPT Nguyễn Công Trứ ,Sinh học 10 ,"6,75 ",Hỏng ,
+1121 ,LÊ TRẦN GIA HUY ,21/10/2009,Hương Khê - Hà Tĩnh ,Nam ,10C1 ,THPT Hương Khê ,Địa lý 10 ,"13,5 ",Đạt ,Nhì 
+1122 ,LÊ VĂN DŨNG ,07/10/2009,Can Lộc - Hà Tĩnh ,Nam ,10A1 ,THPT Can Lộc ,Vật lý 10 ,"13,25 ",Đạt ,Nhì 
+1123 ,NGUYỄN HOÀNG DUY ,07/03/2009,Hương Sơn - Hà Tĩnh ,Nam ,10A1 ,THPT Nguyễn Thị Minh Khai ,Hoá học 10 ,"12,25 ",Đạt ,Nhì 
+1124 ,ĐÀO NGUYỄN ANH ĐỨC ,26/11/2009,Vũ Quang- Hà Tĩnh ,Nam ,10A1 ,THPT Vũ Quang ,Sinh học 10 ,"7,5 ",Hỏng ,
+1125 ,LÊ THỊ THU HƯƠNG ,10/01/2009,Nghi Xuân - Hà Tĩnh ,Nữ ,10A4 ,THPT Nguyễn Công Trứ ,Địa lý 10 ,9 ,Hỏng ,
+1126 ,NGUYỄN XUÂN DŨNG ,13/02/2009,"Nghi Xuân, Hà Tĩnh ",Nam ,10A1 ,THPT Nguyễn Du ,Vật lý 10 ,"7,5 ",Hỏng ,
+1127 ,NGUYỄN XUÂN DUY ,07/04/2009,Lộc Hà - Hà Tĩnh ,Nam ,10A1 ,THPT Nguyễn Văn Trỗi ,Hoá học 10 ,8 ,Hỏng ,
+1128 ,LÊ VĂN MINH ĐỨC ,25/05/2009,Hồng Lĩnh - Hà Tĩnh ,Nam ,10A1 ,THPT Hồng Lĩnh ,Sinh học 10 ,6 ,Hỏng ,
+1129 ,BÙI BẢO LINH ,21/11/2009,Hồng Lĩnh - Hà Tĩnh ,Nữ ,10A3 ,THPT Hồng Lĩnh ,Địa lý 10 ,13 ,Đạt ,Ba 
+1130 ,VÕ HẢI DƯƠNG ,02/01/2009,Đức Thọ - Hà Tĩnh ,Nam ,10A1 ,THPT Trần Phú ,Vật lý 10 ,10 ,Đạt ,Ba 
+1131 ,NGUYỄN TIẾN DŨNG ,27/07/2009,Đức Thọ - Hà Tĩnh ,Nam ,10A1 ,THPT Nguyễn Thị Minh Khai ,Hoá học 10 ,"13,35 ",Đạt ,Nhì 
+1132 ,NGUYỄN THỊ HÀ GIANG ,02/01/2009,"Lộc Hà, Hà Tĩnh ",Nữ ,10A1 ,THPT Nguyễn Đổng Chi ,Sinh học 10 ,"10,25 ",Đạt ,Khuyến khích 
+1133 ,BẠCH THỊ DIỆU LINH ,05/11/2009,Đức Thọ - Hà Tĩnh ,Nữ ,10A5 ,THPT Nguyễn Thị Minh Khai ,Địa lý 10 ,"12,5 ",Đạt ,Ba 
+1134 ,NGUYỄN PHAN DUY ĐẠT ,25/04/2009,Hương Khê- Hà Tĩnh ,Nam ,10A1 ,THPT Vũ Quang ,Vật lý 10 ,"7,5 ",Hỏng ,
+1135 ,ĐẶNG HẢI ĐĂNG ,09/09/2009,Lộc Hà - Hà Tĩnh ,Nam ,10A1 ,THPT Nguyễn Văn Trỗi ,Hoá học 10 ,"12,5 ",Đạt ,Nhì 
+1136 ,NGUYỄN TRÀ GIANG ,10/09/2009,"Hương Khê, Hà Tĩnh ",Nữ ,10A1 ,THPT Đồng Lộc ,Sinh học 10 ,"8,5 ",Hỏng ,
+1137 ,ĐẶNG KHÁNH LINH ,18/03/2009,"Trung Lộc, Can Lộc, Hà Tĩnh ",Nữ ,10A6 ,THPT Đồng Lộc ,Địa lý 10 ,"9,5 ",Hỏng ,
+1138 ,TRẦN ĐÌNH TIẾN ĐẠT ,20/02/2009,Lộc Hà - Hà Tĩnh ,Nam ,10A1 ,THPT Mai Thúc Loan ,Vật lý 10 ,4 ,Hỏng ,
+1139 ,NGUYỄN HẢI ĐĂNG ,07/07/2009,Đức Thọ - Hà Tĩnh ,Nam ,10A1 ,THPT Trần Phú ,Hoá học 10 ,12 ,Đạt ,Nhì 
+1140 ,PHAN ĐÌNH HẢI ,09/05/2009,Hương Sơn - Hà Tĩnh ,Nam ,10A ,THPT Lý Chính Thắng ,Sinh học 10 ,"13,5 ",Đạt ,Nhì 
+1141 ,LÊ THỊ MỸ LINH ,08/11/2009,Hương Sơn - Hà Tĩnh ,Nữ ,10D2 ,THPT Hương Sơn ,Địa lý 10 ,"9,5 ",Hỏng ,
+1142 ,NGUYỄN HẢI ĐĂNG ,15/07/2009,Can Lộc - Hà Tĩnh ,Nam ,10A1 ,THPT Can Lộc ,Vật lý 10 ,"9,5 ",Đạt ,Khuyến khích 
+1143 ,TRẦN MINH ĐĂNG ,02/10/2009,"Quang Lộc, Can Lộc, Hà Tĩnh ",Nam ,10A1 ,THPT Đồng Lộc ,Hoá học 10 ,"9,5 ",Đạt ,Khuyến khích 
+1144 ,TRẦN QUANG HÀ ,25/11/2009,Đức Thọ - Hà Tĩnh ,Nam ,10A1 ,THPT Nguyễn Thị Minh Khai ,Sinh học 10 ,"10,25 ",Đạt ,Khuyến khích 
+1145 ,MAI THỊ THÙY LINH ,26/07/2009,Lộc Hà - Hà Tĩnh ,Nữ ,10A10 ,THPT Nguyễn Văn Trỗi ,Địa lý 10 ,"12,75 ",Đạt ,Ba 
+1146 ,PHAN HUY HẢI ĐĂNG ,27/04/2009,Lộc Hà - Hà Tĩnh ,Nam ,10A1 ,THPT Mai Thúc Loan ,Vật lý 10 ,"5,5 ",Hỏng ,
+1147 ,LÊ HOÀNG ANH ĐỨC ,13/03/2009,Hương Khê - Hà Tĩnh ,Nam ,10A1 ,THPT Hương Khê ,Hoá học 10 ,"8,75 ",Đạt ,Khuyến khích 
+1148 ,BÙI THỊ HÀ ,14/08/2009,Lộc Hà - Hà Tĩnh ,Nữ ,10A1 ,THPT Nguyễn Văn Trỗi ,Sinh học 10 ,"10,75 ",Đạt ,Ba 
+1149 ,NGUYỄN THỊ CẨM LY ,29/01/2009,Hương Khê - Hà Tĩnh ,Nữ ,10A4 ,THPT Hương Khê ,Địa lý 10 ,"14,5 ",Đạt ,Nhì 
+1150 ,LÊ HẢI ĐỊNH ,15/11/2009,Đức Thọ - Hà Tĩnh ,Nam ,10A1 ,THPT Nguyễn Thị Minh Khai ,Vật lý 10 ,"14,5 ",Đạt ,Nhì 
+1151 ,NGUYỄN THANH HÀ ,10/07/2009,Hương Sơn - Hà Tĩnh ,Nữ ,10A1 ,THPT Cao Thắng ,Hoá học 10 ,"9,5 ",Đạt ,Khuyến khích 
+1152 ,NGUYỄN THỊ THU HIỀN ,05/02/2009,Hương Khê - Hà Tĩnh ,Nữ ,10A4 ,THPT Hương Khê ,Sinh học 10 ,"9,25 ",Đạt ,Khuyến khích 
+1153 ,NGUYỄN KHÁNH LY ,30/05/2009,Hà Tĩnh ,Nữ ,10A4 ,THPT Lý Tự Trọng ,Địa lý 10 ,"8,75 ",Hỏng ,
+1154 ,LÊ TIẾN ANH ĐỨC ,19/03/2009,hà tĩnh ,Nam ,10A5 ,THPT Lý Tự Trọng ,Vật lý 10 ,13 ,Đạt ,Nhì 
+1155 ,PHAN THANH HẢI ,12/03/2009,Đức Thọ - Hà Tĩnh ,Nam ,10A1 ,THPT Nguyễn Thị Minh Khai ,Hoá học 10 ,13 ,Đạt ,Nhì 
+1156 ,NGUYỄN THU HIỀN ,06/03/2009,Đức Thọ - Hà Tĩnh ,Nữ ,10A1 ,THPT Trần Phú ,Sinh học 10 ,"12,5 ",Đạt ,Nhì 
+1157 ,TRẦN THỊ KHÁNH LY ,21/12/2009,Lộc Hà - Hà Tĩnh ,Nữ ,10A11 ,THPT Nguyễn Văn Trỗi ,Địa lý 10 ,"13,75 ",Đạt ,Nhì 
+1158 ,VÕ SONG HÀO ,05/02/2009,Hương Khê - Hà Tĩnh ,Nam ,10A1 ,THPT Hương Khê ,Vật lý 10 ,7 ,Hỏng ,
+1159 ,NGUYỄN VĂN HẢI ,28/01/2009,Nghi Xuân - Hà Tĩnh ,Nam ,10A1 ,THPT Nguyễn Công Trứ ,Hoá học 10 ,"11,5 ",Đạt ,Ba 
+1160 ,NGUYỄN THU HIỀN ,14/12/2009,Hương Sơn - Hà Tĩnh ,Nữ ,10A ,THPT Hương Sơn ,Sinh học 10 ,10 ,Đạt ,Khuyến khích 
+1161 ,LÊ THỊ NHƯ MAI ,03/12/2009,Hà Tĩnh ,Nữ ,10A4 ,THPT Lý Tự Trọng ,Địa lý 10 ,"12,5 ",Đạt ,Ba 
+1162 ,NGUYỄN NAM HẢI ,04/02/2009,Vũ Quang - Hà Tĩnh ,Nam ,10A ,THPT Cù Huy Cận ,Vật lý 10 ,"10,75 ",Đạt ,Ba 
+1163 ,NGUYỄN MINH HIẾU ,30/01/2009,Đức Thọ - Hà Tĩnh ,Nam ,10A2 ,THPT Nguyễn Thị Minh Khai ,Hoá học 10 ,"9,5 ",Đạt ,Khuyến khích 
+1164 ,NGUYỄN AN HOÀI ,25/08/2009,Hương Khê - Hà Tĩnh ,Nữ ,10A1 ,THPT Hàm Nghi ,Sinh học 10 ,10 ,Đạt ,Khuyến khích 
+1165 ,NGUYỄN VĂN ANH MINH ,09/01/2009,Hương Sơn - Hà Tĩnh ,Nam ,10C ,THPT Lê Hữu Trác ,Địa lý 10 ,"8,5 ",Hỏng ,
+1166 ,NGUYỄN LƯƠNG HIẾU ,24/08/2009,"Can Lộc, Hà Tĩnh ",Nam ,10A1 ,THPT Nghèn ,Vật lý 10 ,"9,5 ",Đạt ,Khuyến khích 
+1167 ,LÊ HUY HOÀNG ,17/02/2009,"Vũ Quang, Hà Tĩnh ",Nam ,10A1 ,THPT Đức Thọ ,Hoá học 10 ,6 ,Hỏng ,
+1168 ,LÊ VĂN HOÀNG ,12/08/2009,Đức Thọ - Hà Tĩnh ,Nam ,10A1 ,THPT Nguyễn Thị Minh Khai ,Sinh học 10 ,12 ,Đạt ,Ba 
+1169 ,HỒ ĐẶNG HUYỀN MY ,20/09/2009,Hương Khê - Hà Tĩnh ,Nữ ,10A7 ,THPT Hàm Nghi ,Địa lý 10 ,7 ,Hỏng ,
+1170 ,PHAN ĐỨC HIỂN ,17/09/2009,Nghi Xuân - Hà Tĩnh ,Nam ,10A1 ,THPT Nghi Xuân ,Vật lý 10 ,"7,25 ",Hỏng ,
+1171 ,CAO MẠNH HOÀN ,06/01/2009,Hương Sơn - Hà Tĩnh ,Nam ,10A ,THPT Lê Hữu Trác ,Hoá học 10 ,"7,25 ",Hỏng ,
+1172 ,LÊ HỮU KHÁNH ,14/06/2009,Hà Tĩnh ,Nam ,10A6 ,THPT Lý Tự Trọng ,Sinh học 10 ,7 ,Hỏng ,
+1173 ,PHAN QUỲNH NGA ,03/04/2009,"Nghi Xuân, Hà Tĩnh ",Nữ ,10A12 ,THPT Nguyễn Du ,Địa lý 10 ,"11,75 ",Đạt ,Khuyến khích 
+1174 ,BÙI NGỌC HOÁ ,07/10/2009,"Đức Thọ, Hà Tĩnh ",Nam ,10A1 ,THPT Đức Thọ ,Vật lý 10 ,"12,5 ",Đạt ,Nhì 
+1175 ,HOÀNG GIA HUY ,22/05/2009,TP Vinh - Nghệ An ,Nam ,10A14 ,THPT Hồng Lĩnh ,Hoá học 10 ,"8,25 ",Hỏng ,
+1176 ,TRẦN ĐÌNH KHÁNH LÂM ,28/01/2009,"Can Lộc, Hà Tĩnh ",Nam ,10A2 ,THPT Nghèn ,Sinh học 10 ,"8,75 ",Hỏng ,
+1177 ,ĐẶNG THUÝ NGA ,21/05/2009,Hương Sơn - Hà Tĩnh ,Nữ ,10C ,THPT Lê Hữu Trác ,Địa lý 10 ,"12,25 ",Đạt ,Ba 
+1178 ,NGUYỄN THIỆN HUY ,10/02/2009,"Can Lộc, Hà Tĩnh ",Nam ,10A1 ,THPT Nghèn ,Vật lý 10 ,"11,75 ",Đạt ,Ba 
+1179 ,THẠCH GIA HUY ,14/08/2009,Hà Tĩnh ,Nam ,10A5 ,THPT Lý Tự Trọng ,Hoá học 10 ,13 ,Đạt ,Nhì 
+1180 ,NGUYỄN DIỆU LINH ,10/01/2009,Can Lộc - Hà Tĩnh ,Nữ ,10A2 ,THPT Can Lộc ,Sinh học 10 ,"12,25 ",Đạt ,Nhì 
+1181 ,NGUYỄN THỊ BẢO NGỌC ,23/05/2009,Vũ Quang - Hà Tĩnh ,Nữ ,10D ,THPT Cù Huy Cận ,Địa lý 10 ,"7,75 ",Hỏng ,
+1182 ,ĐỖ QUỐC HÙNG ,28/01/2009,Nghi Xuân - Hà Tĩnh ,Nam ,10A1 ,THPT Nguyễn Công Trứ ,Vật lý 10 ,"9,5 ",Đạt ,Khuyến khích 
+1183 ,TRẦN VĂN HUY ,22/07/2009,Bệnh viện hữu nghị Đa khoa Nghệ An ,Nam ,10A1 ,THPT Nguyễn Du ,Hoá học 10 ,"10,25 ",Đạt ,Ba 
+1184 ,TRẦN SỸ LUÂN ,23/06/2009,Đức Thọ - Hà Tĩnh ,Nam ,10A1 ,THPT Nguyễn Thị Minh Khai ,Sinh học 10 ,"10,75 ",Đạt ,Ba 
+1185 ,NGUYỄN HỒ BẢO NGỌC ,25/05/2009,Hương Sơn - Hà Tĩnh ,Nữ ,10C ,THPT Lý Chính Thắng ,Địa lý 10 ,"11,75 ",Đạt ,Khuyến khích 
+1186 ,TRẦN GIA KHIÊM ,11/12/2009,Đức Thọ - Hà Tĩnh ,Nam ,10A1 ,THPT Trần Phú ,Vật lý 10 ,"8,5 ",Đạt ,Khuyến khích 
+1187 ,PHAN XUÂN HÙNG ,22/01/2009,"Nghi Xuân, Hà Tĩnh ",Nam ,10A4 ,THPT Nguyễn Du ,Hoá học 10 ,6 ,Hỏng ,
+1188 ,PHAN THỊ HUYỀN MY ,16/11/2009,"Bệnh viện Đa khoa Nghi Xuân, Hà Tĩnh ",Nữ ,10A4 ,THPT Nguyễn Du ,Sinh học 10 ,7 ,Hỏng ,
+1189 ,NGUYỄN ĐẶNG BẢO NGỌC ,17/09/2009,"Nghi Xuân, Hà Tĩnh ",Nữ ,10A11 ,THPT Nguyễn Du ,Địa lý 10 ,12 ,Đạt ,Khuyến khích 
+1190 ,TRẦN Y KHOA ,06/11/2009,hà tĩnh ,Nam ,10A5 ,THPT Lý Tự Trọng ,Vật lý 10 ,"10,5 ",Đạt ,Ba 
+1191 ,NGUYỄN TUẤN HƯNG ,08/08/2009,Lộc Hà - Hà Tĩnh ,Nam ,10A1 ,THPT Mai Thúc Loan ,Hoá học 10 ,"9,5 ",Đạt ,Khuyến khích 
+1192 ,NGUYỄN THỊ THANH NGÂN ,16/06/2009,Can Lộc - Hà Tĩnh ,Nữ ,10A2 ,THPT Can Lộc ,Sinh học 10 ,"10,5 ",Đạt ,Khuyến khích 
+1193 ,NGUYỄN BÍCH NGỌC ,01/01/2009,Lộc Hà - Hà Tĩnh ,Nữ ,10A11 ,THPT Nguyễn Văn Trỗi ,Địa lý 10 ,"12,25 ",Đạt ,Ba 
+1194 ,TRẦN NGỌC KHUÊ ,12/11/2009,TP Hà Tinh ,Nam ,10A13 ,THPT Hồng Lĩnh ,Vật lý 10 ,"7,5 ",Hỏng ,
+1195 ,TRẦN QUỐC KHA ,02/01/2009,"Lộc Hà, Hà Tĩnh ",Nam ,10A1 ,THPT Nguyễn Đổng Chi ,Hoá học 10 ,"8,5 ",Đạt ,Khuyến khích 
+1196 ,NGUYỄN PHAN BẢO NGỌC ,22/10/2009,Hồng Lĩnh - Hà Tĩnh ,Nữ ,10A15 ,THPT Hồng Lĩnh ,Sinh học 10 ,"8,25 ",Hỏng ,
+1197 ,HỒ THỊ HỒNG NGỌC ,07/11/2009,Hương Khê - Hà Tĩnh ,Nữ ,10C1 ,THPT Hương Khê ,Địa lý 10 ,"13,25 ",Đạt ,Ba 
+1198 ,PHẠM ĐĂNG LÂM ,10/11/2009,Hồng Lĩnh - Hà Tĩnh ,Nam ,10A15 ,THPT Hồng Lĩnh ,Vật lý 10 ,"6,75 ",Hỏng ,
+1199 ,TRẦN TRỌNG KHẢI ,21/10/2009,Hương Sơn - Hà Tĩnh ,Nam ,10A ,THPT Hương Sơn ,Hoá học 10 ,"6,75 ",Hỏng ,
+1200 ,NGUYỄN DUY NGUYÊN ,12/07/2009,"Nghi Xuân, Hà Tĩnh ",Nam ,10A4 ,THPT Nguyễn Du ,Sinh học 10 ,"7,75 ",Hỏng ,
+1201 ,NGUYỄN TRẦN BẢO NHI ,06/11/2009,"Nghi Xuân, Hà Tĩnh ",Nữ ,10A11 ,THPT Nguyễn Du ,Địa lý 10 ,"13,5 ",Đạt ,Nhì 
+1202 ,TRẦN NGỌC LÂM ,10/10/2009,"Bệnh viện Đa khoa Tương Dương, Nghệ An ",Nam ,10A1 ,THPT Nguyễn Du ,Vật lý 10 ,8 ,Đạt ,Khuyến khích 
+1203 ,NGUYỄN TIẾN LÂM ,22/07/2009,Can Lộc - Hà Tĩnh ,Nam ,10A1 ,THPT Can Lộc ,Hoá học 10 ,10 ,Đạt ,Ba 
+1204 ,TRẦN HOÀNG NGUYÊN ,02/03/2009,Hồng Lĩnh - Hà Tĩnh ,Nam ,10A1 ,THPT Can Lộc ,Sinh học 10 ,"9,25 ",Đạt ,Khuyến khích 
+1205 ,NGÔ PHÚC HIỀN NHI ,17/09/2009,Diên Khánh - Khánh Hòa ,Nữ ,10A4 ,THPT Hương Khê ,Địa lý 10 ,14 ,Đạt ,Nhì 
+1206 ,HOÀNG NGUYÊN LÂM ,24/09/2009,Thạch Hà - Hà Tĩnh ,Nữ ,10A1 ,THPT Nguyễn Văn Trỗi ,Vật lý 10 ,"7,75 ",Hỏng ,
+1207 ,CAO NHẬT LINH ,17/01/2009,Hương Sơn - Hà Tĩnh ,Nữ ,10A ,THPT Hương Sơn ,Hoá học 10 ,"8,25 ",Hỏng ,
+1208 ,LÊ DUY KHÔI NGUYÊN ,03/10/2009,Hồng Lĩnh - Hà Tĩnh ,Nam ,10A1 ,THPT Hồng Lĩnh ,Sinh học 10 ,10 ,Đạt ,Khuyến khích 
+1209 ,VĂN HOÀNG NHI ,01/06/2009,Hương Sơn - Hà Tĩnh ,Nữ ,10D1 ,THPT Hương Sơn ,Địa lý 10 ,"9,5 ",Hỏng ,
+1210 ,NGUYỄN KHÁNH LINH ,09/08/2009,Hương Khê - Hà Tĩnh ,Nữ ,10A1 ,THPT Phúc Trạch ,Vật lý 10 ,"10,25 ",Đạt ,Ba 
+1211 ,LÊ TRẦN KHÁNH LY ,02/06/2009,Đức Thọ - Hà Tĩnh ,Nữ ,10A2 ,THPT Nguyễn Thị Minh Khai ,Hoá học 10 ,"13,3 ",Đạt ,Nhì 
+1212 ,LÊ NGÔ SAN NGUYÊN ,31/10/2009,Hương Sơn - Hà Tĩnh ,Nữ ,10A ,THPT Hương Sơn ,Sinh học 10 ,11 ,Đạt ,Ba 
+1213 ,NGUYỄN NGỌC PHƯƠNG NHI ,17/02/2009,Vũ Quang- Hà Tĩnh ,Nữ ,10A2 ,THPT Vũ Quang ,Địa lý 10 ,"8,5 ",Hỏng ,
+1214 ,NGUYỄN KHÁNH LY ,13/02/2009,Đức Thọ - Hà Tĩnh ,Nữ ,10A1 ,THPT Trần Phú ,Vật lý 10 ,"7,75 ",Hỏng ,
+1215 ,NGUYỄN TRẦN VÂN LY ,14/04/2009,Hương Khê - Hà Tĩnh ,Nữ ,10A1 ,THPT Hương Khê ,Hoá học 10 ,"11,25 ",Đạt ,Ba 
+1216 ,ĐÀO THỊ YẾN NHƯ ,20/01/2009,"Quang Lộc, Can Lộc, Hà Tĩnh ",Nữ ,10A1 ,THPT Đồng Lộc ,Sinh học 10 ,"8,5 ",Hỏng ,
+1217 ,LẠI BÙI YẾN NHI ,20/12/2009,"Đức Thọ, Hà Tĩnh ",Nữ ,10A3 ,THPT Đức Thọ ,Địa lý 10 ,"8,5 ",Hỏng ,
+1218 ,TRẦN KHÁNH LY ,13/01/2009,Hương Sơn - Hà Tĩnh ,Nữ ,10A ,THPT Hương Sơn ,Vật lý 10 ,5 ,Hỏng ,
+1219 ,NGUYỄN BÁ MẠNH ,07/09/2009,"Khánh Vĩnh Yên, Can Lộc, Hà Tĩnh ",Nam ,10A2 ,THPT Đồng Lộc ,Hoá học 10 ,"6,25 ",Hỏng ,
+1220 ,NGUYỄN SỸ PHÚ ,26/11/2009,Can Lộc - Hà Tĩnh ,Nam ,10A2 ,THPT Can Lộc ,Sinh học 10 ,"11,75 ",Đạt ,Ba 
+1221 ,VÕ THỊ HỒNG NHUNG ,06/02/2009,"Can Lộc, Hà Tĩnh ",Nữ ,10A7 ,THPT Nghèn ,Địa lý 10 ,13 ,Đạt ,Ba 
+1222 ,NGUYỄN XUÂN MẠNH ,31/10/2009,Can Lộc - Hà Tĩnh ,Nam ,10A1 ,THPT Can Lộc ,Vật lý 10 ,"13,75 ",Đạt ,Nhì 
+1223 ,NGUYỄN ĐÌNH MẠNH ,12/12/2009,Đức Thọ - Hà Tĩnh ,Nam ,10A1 ,THPT Trần Phú ,Hoá học 10 ,"12,8 ",Đạt ,Nhì 
+1224 ,TRẦN PHÚ ,18/09/2009,Nghi Xuân - Hà Tĩnh ,Nam ,10A2 ,THPT Nguyễn Công Trứ ,Sinh học 10 ,"7,5 ",Hỏng ,
+1225 ,HỒ LÊ BẢO NHƯ ,13/04/2009,Hương Sơn - Hà Tĩnh ,Nữ ,10C ,THPT Lý Chính Thắng ,Địa lý 10 ,"9,75 ",Hỏng ,
+1226 ,PHÙNG ANH MINH ,31/08/2009,Hương Sơn - Hà Tĩnh ,Nam ,10A ,THPT Lê Hữu Trác ,Vật lý 10 ,9 ,Đạt ,Khuyến khích 
+1227 ,BÙI ĐẠI NAM ,17/03/2009,Lộc Hà - Hà Tĩnh ,Nam ,10A1 ,THPT Nguyễn Văn Trỗi ,Hoá học 10 ,8 ,Hỏng ,
+1228 ,LÊ VĂN PHƯƠNG ,06/01/2009,Hương Sơn - Hà Tĩnh ,Nam ,10A ,THPT Hương Sơn ,Sinh học 10 ,"13,5 ",Đạt ,Nhì 
+1229 ,PHAN THỊ NHƯ ,25/03/2009,Bệnh Viện Đa Khoa Hà Tĩnh ,Nữ ,10A7 ,THPT Mai Thúc Loan ,Địa lý 10 ,"9,75 ",Hỏng ,
+1230 ,NGÔ BÌNH MINH ,27/03/2009,Vũ Quang- Hà Tĩnh ,Nam ,10A1 ,THPT Vũ Quang ,Vật lý 10 ,6 ,Hỏng ,
+1231 ,NGUYỄN ĐÌNH NAM ,08/01/2009,Hương Sơn - Hà Tĩnh ,Nam ,10A ,THPT Lê Hữu Trác ,Hoá học 10 ,"10,75 ",Đạt ,Ba 
+1232 ,HOÀNG THỊ NGỌC PHƯỢNG ,03/06/2009,Đức Thọ - Hà Tĩnh ,Nữ ,10A1 ,THPT Trần Phú ,Sinh học 10 ,7 ,Hỏng ,
+1233 ,LÊ THỊ CÁT NINH ,13/12/2009,"Lộc Hà, Hà Tĩnh ",Nữ ,10A5 ,THPT Nguyễn Đổng Chi ,Địa lý 10 ,"10,5 ",Đạt ,Khuyến khích 
+1234 ,PHẠM NHẬT MINH ,29/06/2009,Hương Khê - Hà Tĩnh ,Nam ,10A1 ,THPT Hương Khê ,Vật lý 10 ,"7,5 ",Hỏng ,
+1235 ,PHAN LÊ HIẾU NGHĨA ,21/02/2009,Hương Sơn - Hà Tĩnh ,Nam ,10A ,THPT Lý Chính Thắng ,Hoá học 10 ,"5,75 ",Hỏng ,
+1236 ,PHẠM VĂN QUYẾT ,16/01/2009,Hương Sơn - Hà Tĩnh ,Nam ,10A ,THPT Lê Hữu Trác ,Sinh học 10 ,"10,25 ",Đạt ,Khuyến khích 
+1237 ,NGUYỄN TRỌNG PHÚC ,22/09/2009,Nghi Xuân - Hà Tĩnh ,Nam ,10A4 ,THPT Nghi Xuân ,Địa lý 10 ,"11,5 ",Đạt ,Khuyến khích 
+1238 ,LÊ SỸ HÀ NAM ,05/08/2009,Hương Sơn - Hà Tĩnh ,Nam ,10A1 ,THPT Cao Thắng ,Vật lý 10 ,8 ,Đạt ,Khuyến khích 
+1239 ,HOÀNG HỮU NGHĨA ,12/02/2009,Can Lộc - Hà Tĩnh ,Nam ,10A1 ,THPT Can Lộc ,Hoá học 10 ,10 ,Đạt ,Ba 
+1240 ,ĐẶNG THỊ NGỌC QUỲNH ,19/06/2009,"Can Lộc, Hà Tĩnh ",Nữ ,10A1 ,THPT Đồng Lộc ,Sinh học 10 ,"8,5 ",Hỏng ,
+1241 ,NGUYỄN THỊ MAI PHƯƠNG ,27/02/2009,"Thạch Hà, Hà Tĩnh ",Nữ ,10A8 ,THPT Nguyễn Đổng Chi ,Địa lý 10 ,"10,75 ",Đạt ,Khuyến khích 
+1242 ,TRẦN BẢO NGỌC ,01/10/2009,Hương Khê - Hà Tĩnh ,Nam ,10A1 ,THPT Hương Khê ,Vật lý 10 ,9 ,Đạt ,Khuyến khích 
+1243 ,LÊ THỊ HỒNG NGỌC ,07/11/2009,Hà Tĩnh ,Nữ ,10A6 ,THPT Lý Tự Trọng ,Hoá học 10 ,"9,75 ",Đạt ,Khuyến khích 
+1244 ,TRẦN THỊ THU SANG ,24/07/2009,"Can Lộc, Hà Tĩnh ",Nữ ,10A1 ,THPT Nghèn ,Sinh học 10 ,"9,5 ",Đạt ,Khuyến khích 
+1245 ,NGUYỄN THỊ MINH PHƯƠNG ,14/01/2009,"Thượng Lộc, Can Lộc, Hà Tĩnh ",Nữ ,10A6 ,THPT Đồng Lộc ,Địa lý 10 ,"11,25 ",Đạt ,Khuyến khích 
+1246 ,VŨ THỊ MINH NGỌC ,11/02/2009,"Thị xã Hồng Lĩnh, Hà Tĩnh ",Nữ ,10A1 ,THPT Đồng Lộc ,Vật lý 10 ,"9,25 ",Đạt ,Khuyến khích 
+1247 ,NGUYỄN XUÂN NHẬT ,13/01/2009,Hồng Lĩnh - Hà Tĩnh ,Nam ,10A15 ,THPT Hồng Lĩnh ,Hoá học 10 ,"11,5 ",Đạt ,Ba 
+1248 ,NGUYỄN ANH SƠN ,27/11/2009,Hương Sơn - Hà Tĩnh ,Nam ,10A ,THPT Lê Hữu Trác ,Sinh học 10 ,7 ,Hỏng ,
+1249 ,NGUYỄN THỊ QUỲNH PHƯƠNG ,02/09/2009,Đức Thọ - Hà Tĩnh ,Nữ ,10A4 ,THPT Trần Phú ,Địa lý 10 ,11 ,Đạt ,Khuyến khích 
+1250 ,NGUYỄN ĐÌNH HOÀNG NGUYÊN ,02/08/2009,Can Lộc - Hà Tĩnh ,Nam ,10A1 ,THPT Can Lộc ,Vật lý 10 ,"9,5 ",Đạt ,Khuyến khích 
+1251 ,NGUYỄN HOÀNG PHONG NHI ,14/01/2009,Hồng Lĩnh - Hà Tĩnh ,Nữ ,10A15 ,THPT Hồng Lĩnh ,Hoá học 10 ,6 ,Hỏng ,
+1252 ,ĐINH TIẾN THÀNH ,19/05/2009,Hương Khê - Hà Tĩnh ,Nam ,10A1 ,THPT Hàm Nghi ,Sinh học 10 ,"11,5 ",Đạt ,Ba 
+1253 ,ĐẶNG THỊ THÙY PHƯƠNG ,06/12/2009,Hà Tĩnh ,Nữ ,10A3 ,THPT Lý Tự Trọng ,Địa lý 10 ,"12,5 ",Đạt ,Ba 
+1254 ,LÊ KHÔI NGUYÊN ,10/12/2009,Đức Thọ - Hà Tĩnh ,Nam ,10A1 ,THPT Nguyễn Thị Minh Khai ,Vật lý 10 ,13 ,Đạt ,Nhì 
+1255 ,LÊ ĐỨC NINH ,09/10/2009,Đức Thọ - Hà Tĩnh ,Nam ,10A1 ,THPT Trần Phú ,Hoá học 10 ,"9,25 ",Đạt ,Khuyến khích 
+1256 ,NGUYỄN VIẾT THÀNH ,26/04/2009,Can Lộc - Hà Tĩnh ,Nam ,10A1 ,THPT Nguyễn Văn Trỗi ,Sinh học 10 ,9 ,Đạt ,Khuyến khích 
+1257 ,HỒ THỊ QUỲNH ,15/03/2009,Lộc Hà - Hà Tĩnh ,Nữ ,10A11 ,THPT Nguyễn Văn Trỗi ,Địa lý 10 ,15 ,Đạt ,Nhất 
+1258 ,NGUYỄN THỊ THẢO NGUYÊN ,19/01/2009,Lộc Hà - Hà Tĩnh ,Nữ ,10A1 ,THPT Mai Thúc Loan ,Vật lý 10 ,9 ,Đạt ,Khuyến khích 
+1259 ,PHAN ĐẠI PHONG ,04/03/2009,Hương Khê - Hà Tĩnh ,Nam ,10A1 ,THPT Hương Khê ,Hoá học 10 ,"12,75 ",Đạt ,Nhì 
+1260 ,TRẦN NGUYỄN AN THẢO ,17/04/2009,Đức Thọ - Hà Tĩnh ,Nữ ,10A1 ,THPT Trần Phú ,Sinh học 10 ,8 ,Hỏng ,
+1261 ,TRẦN PHƯƠNG THẢO ,19/11/2009,Nghi Xuân - Hà Tĩnh ,Nữ ,10A4 ,THPT Nghi Xuân ,Địa lý 10 ,13 ,Đạt ,Ba 
+1262 ,PHAN ĐÌNH NGUYỆN ,10/04/2009,Can Lộc - Hà Tĩnh ,Nam ,10A1 ,THPT Nguyễn Văn Trỗi ,Vật lý 10 ,15 ,Đạt ,Nhì 
+1263 ,NGUYỄN VIẾT THÁI PHÚC ,07/11/2009,Vũ Quang- Hà Tĩnh ,Nam ,10A1 ,THPT Vũ Quang ,Hoá học 10 ,4 ,Hỏng ,
+1264 ,NGUYỄN THỊ PHƯƠNG THẢO ,12/03/2009,"Can Lộc, Hà Tĩnh ",Nữ ,10A1 ,THPT Nghèn ,Sinh học 10 ,"8,5 ",Hỏng ,
+1265 ,NGUYỄN THỊ DIỆU THU ,15/10/2009,Can Lộc - Hà Tĩnh ,Nữ ,10A6 ,THPT Nguyễn Văn Trỗi ,Địa lý 10 ,"11,5 ",Đạt ,Khuyến khích 
+1266 ,HOÀNG ĐĂNG NHẬT ,10/12/2009,Nghi Xuân - Hà Tĩnh ,Nam ,10A1 ,THPT Nguyễn Công Trứ ,Vật lý 10 ,10 ,Đạt ,Ba 
+1267 ,ĐINH ĐỨC PHÚ ,20/10/2009,"Nghi Xuân, Hà Tĩnh ",Nam ,10A1 ,THPT Nguyễn Du ,Hoá học 10 ,"9,5 ",Đạt ,Khuyến khích 
+1268 ,NGUYỄN HỒNG THẮM ,01/10/2009,Lộc Hà - Hà Tĩnh ,Nữ ,10A3 ,THPT Mai Thúc Loan ,Sinh học 10 ,11 ,Đạt ,Ba 
+1269 ,PHAN THỊ DIỆU THÙY ,17/08/2009,"Lộc Hà, Hà Tĩnh ",Nữ ,10A5 ,THPT Nguyễn Đổng Chi ,Địa lý 10 ,"11,5 ",Đạt ,Khuyến khích 
+1270 ,TRẦN LONG NHẬT ,03/05/2009,Hương Khê - Hà Tĩnh ,Nam ,10A1 ,THPT Hương Khê ,Vật lý 10 ,"8,5 ",Đạt ,Khuyến khích 
+1271 ,NGUYỄN THỊ HÀ PHƯƠNG ,27/09/2009,Hương Khê - Hà Tĩnh ,Nữ ,10A1 ,THPT Phúc Trạch ,Hoá học 10 ,"5,75 ",Hỏng ,
+1272 ,NGUYỄN THỊ ANH THƯ ,28/12/2009,"Kỳ Anh, Hà Tĩnh ",Nữ ,10A1 ,THPT Nguyễn Du ,Sinh học 10 ,"9,5 ",Đạt ,Khuyến khích 
+1273 ,NGUYỄN ANH THƯ ,01/12/2009,Hồng Lĩnh - Hà Tĩnh ,Nữ ,10A4 ,THPT Hồng Lĩnh ,Địa lý 10 ,"11,5 ",Đạt ,Khuyến khích 
+1274 ,NGUYỄN THỊ KIỀU OANH ,21/07/2009,"Can Lộc, Hà Tĩnh ",Nữ ,10A2 ,THPT Nghèn ,Vật lý 10 ,"6,75 ",Hỏng ,
+1275 ,NGUYỄN MẠNH QUÂN ,05/04/2009,Nghi Xuân - Hà Tĩnh ,Nam ,10A1 ,THPT Nghi Xuân ,Hoá học 10 ,"9,25 ",Đạt ,Khuyến khích 
+1276 ,PHAN THỊ HOÀI THƯƠNG ,30/07/2009,"Lộc Hà, Hà Tĩnh ",Nữ ,10A1 ,THPT Nguyễn Đổng Chi ,Sinh học 10 ,7 ,Hỏng ,
+1277 ,PHẠM ANH THƯ ,28/09/2009,Hương Sơn- Hà Tĩnh ,Nữ ,10A2 ,THPT Vũ Quang ,Địa lý 10 ,"8,5 ",Hỏng ,
+1278 ,TRẦN HỮU PHÚ ,16/01/2009,Lộc Hà - Hà Tĩnh ,Nam ,10A1 ,THPT Mai Thúc Loan ,Vật lý 10 ,9 ,Đạt ,Khuyến khích 
+1279 ,LÊ HỮU MINH QUÂN ,21/12/2009,Hương Khê - Hà Tĩnh ,Nam ,10A1 ,THPT Hương Khê ,Hoá học 10 ,"6,25 ",Hỏng ,
+1280 ,TRẦN THÙY TRANG ,18/11/2009,Hồng Lĩnh - Hà Tĩnh ,Nữ ,10A1 ,THPT Hồng Lĩnh ,Sinh học 10 ,13 ,Đạt ,Nhì 
+1281 ,NGUYỄN NAM HUYỀN TRANG ,14/11/2009,Đức Thọ - Hà Tĩnh ,Nữ ,10A5 ,THPT Nguyễn Thị Minh Khai ,Địa lý 10 ,"15,5 ",Đạt ,Nhất 
+1282 ,ĐẶNG NGUYỄN HỒNG QUÂN ,05/07/2009,Hương Khê - Hà Tĩnh ,Nam ,10A1 ,THPT Hàm Nghi ,Vật lý 10 ,6 ,Hỏng ,
+1283 ,TRẦN TẤN SANG ,31/03/2009,Lộc Hà - Hà Tĩnh ,Nam ,10A1 ,THPT Mai Thúc Loan ,Hoá học 10 ,"11,5 ",Đạt ,Ba 
+1284 ,NGUYỄN HỒ YẾN TRANG ,29/10/2009,Hương Sơn - Hà Tĩnh ,Nữ ,10A1 ,THPT Cao Thắng ,Sinh học 10 ,9 ,Đạt ,Khuyến khích 
+1285 ,NGUYỄN THỊ QUỲNH TRANG ,28/02/2009,Đức Thọ - Hà Tĩnh ,Nữ ,10A4 ,THPT Trần Phú ,Địa lý 10 ,"13,25 ",Đạt ,Ba 
+1286 ,PHAN ĐĂNG SƠN ,20/09/2009,Đức Thọ - Hà Tĩnh ,Nam ,10A1 ,THPT Trần Phú ,Vật lý 10 ,"8,5 ",Đạt ,Khuyến khích 
+1287 ,TRƯƠNG TẤN SANG ,20/12/2009,Nghi Xuân - Hà Tĩnh ,Nam ,10A1 ,THPT Nghi Xuân ,Hoá học 10 ,"8,25 ",Hỏng ,
+1288 ,MAI THANH TRÀ ,13/08/2009,Hương Khê - Hà Tĩnh ,Nữ ,10A1 ,THPT Hương Khê ,Sinh học 10 ,11 ,Đạt ,Ba 
+1289 ,NGUYỄN BẢO QUỲNH TRÂM ,18/10/2009,Hà Tĩnh ,Nữ ,10A2 ,THPT Lý Tự Trọng ,Địa lý 10 ,11 ,Đạt ,Khuyến khích 
+1290 ,NGUYỄN MINH SUM ,06/11/2009,Hà Tĩnh ,Nam ,10A5 ,THPT Lý Tự Trọng ,Vật lý 10 ,"10,75 ",Đạt ,Ba 
+1291 ,TRẦN QUANG SÁNG ,12/08/2009,Đức Thọ - Hà Tĩnh ,Nam ,10A1 ,THPT Trần Phú ,Hoá học 10 ,6 ,Hỏng ,
+1292 ,NGUYỄN THỊ THANH TRÚC ,21/01/2009,"Can Lộc, Hà Tĩnh ",Nữ ,10A2 ,THPT Nghèn ,Sinh học 10 ,6 ,Hỏng ,
+1293 ,NGUYỄN THỊ LY TRÚC ,01/06/2009,"Can Lộc, Hà Tĩnh ",Nữ ,10A7 ,THPT Nghèn ,Địa lý 10 ,11 ,Đạt ,Khuyến khích 
+1294 ,TRẦN ĐỨC TÀI ,24/06/2009,Đức Thọ - Hà Tĩnh ,Nam ,10A2 ,THPT Trần Phú ,Vật lý 10 ,9 ,Đạt ,Khuyến khích 
+1295 ,NGUYỄN ĐĂNG THÀNH ,02/01/2009,Vũ Quang - Hà Tĩnh ,Nam ,10A ,THPT Cù Huy Cận ,Hoá học 10 ,"12,75 ",Đạt ,Nhì 
+1296 ,THÂN THỊ PHƯƠNG VI ,02/06/2009,"Can Lộc, Hà Tĩnh ",Nữ ,10A1 ,THPT Đồng Lộc ,Sinh học 10 ,9 ,Đạt ,Khuyến khích 
+1297 ,LÊ THỊ KIM TUYẾN ,02/10/2009,Nghi Xuân - Hà Tĩnh ,Nữ ,10A7 ,THPT Nguyễn Công Trứ ,Địa lý 10 ,"8,25 ",Hỏng ,
+1298 ,LÊ TỬ THANH ,14/12/2009,Lộc Hà - Hà Tĩnh ,Nam ,10A4 ,THPT Nguyễn Văn Trỗi ,Vật lý 10 ,"11,5 ",Đạt ,Ba 
+1299 ,ĐOÀN NGỌC THÀNH ,16/03/2009,"Can Lộc, Hà Tĩnh ",Nam ,10A1 ,THPT Nghèn ,Hoá học 10 ,"6,25 ",Hỏng ,
+1300 ,LÊ NHẬT UY VŨ ,31/07/2009,Hương Sơn - Hà Tĩnh ,Nam ,10A ,THPT Lý Chính Thắng ,Sinh học 10 ,10 ,Đạt ,Khuyến khích 
+1301 ,LÊ THỊ THU UYÊN ,17/02/2009,"Đức Thọ, Hà Tĩnh ",Nữ ,10A3 ,THPT Đức Thọ ,Địa lý 10 ,9 ,Hỏng ,
+1302 ,VÕ ĐỨC THÀNH ,09/06/2009,"Nghi Xuân, Hà Tĩnh ",Nam ,10A1 ,THPT Nguyễn Du ,Vật lý 10 ,"9,75 ",Đạt ,Ba 
+1303 ,TRẦN TRỌNG THIÊN ,21/11/2009,Hương Sơn - Hà Tĩnh ,Nam ,10A ,THPT Lê Hữu Trác ,Hoá học 10 ,"7,5 ",Hỏng ,
+1304 ,NGUYỄN MAI PHƯƠNG VY ,19/12/2009,Nghi Xuân - Hà Tĩnh ,Nữ ,10A1 ,THPT Nghi Xuân ,Sinh học 10 ,"8,5 ",Hỏng ,
+1305 ,ĐẶNG THỊ NHƯ Ý ,17/03/2009,Can Lộc - Hà Tĩnh ,Nữ ,10A10 ,THPT Nguyễn Văn Trỗi ,Địa lý 10 ,13 ,Đạt ,Ba 
+1306 ,PHẠM VŨ NHẬT THÀNH ,14/01/2009,Hương Sơn - Hà Tĩnh ,Nam ,10A ,THPT Hương Sơn ,Vật lý 10 ,"10,5 ",Đạt ,Ba 
+1307 ,NGUYỄN ĐỨC THỊNH ,31/08/2009,Hà Tĩnh ,Nam ,10A5 ,THPT Lý Tự Trọng ,Hoá học 10 ,"11,75 ",Đạt ,Ba 
+1308 ,PHAN THỊ XUÂN ,20/02/2009,Hương Khê - Hà Tĩnh ,Nữ ,10A1 ,THPT Hương Khê ,Sinh học 10 ,"11,25 ",Đạt ,Ba 
+1309 ,NGUYỄN SỸ THẮNG ,04/01/2009,Hà Tĩnh ,Nam ,10A5 ,THPT Lý Tự Trọng ,Vật lý 10 ,"11,75 ",Đạt ,Ba 
+1310 ,PHAN PHÚC THÔNG ,11/02/2009,Lộc Hà - Hà Tĩnh ,Nam ,10A1 ,THPT Nguyễn Văn Trỗi ,Hoá học 10 ,"12,75 ",Đạt ,Nhì 
+1311 ,NGUYỄN THỊ HẢI YẾN ,01/08/2009,Vũ Quang - Hà Tĩnh ,Nữ ,10A ,THPT Cù Huy Cận ,Sinh học 10 ,"8,5 ",Hỏng ,
+1312 ,NGUYỄN VĂN THIỆN ,19/05/2009,Hương Khê - Hà Tĩnh ,Nam ,10A1 ,THPT Hàm Nghi ,Vật lý 10 ,"5,5 ",Hỏng ,
+1313 ,HOÀNG ANH THƯ ,22/03/2009,Hương Sơn - Hà Tĩnh ,Nữ ,10A ,THPT Hương Sơn ,Hoá học 10 ,9 ,Đạt ,Khuyến khích 
+1314 ,NGUYỄN HẢI YẾN ,26/10/2009,Hà Tĩnh ,Nữ ,10A6 ,THPT Lý Tự Trọng ,Sinh học 10 ,"8,5 ",Hỏng ,
+1315 ,NGUYỄN PHƯƠNG THÚY ,20/12/2009,BVĐK Hà Tĩnh - Hà Tĩnh ,Nữ ,10A14 ,THPT Hồng Lĩnh ,Vật lý 10 ,"4,75 ",Hỏng ,
+1316 ,TRẦN BẢO THY ,13/01/2009,Can Lộc - Hà Tĩnh ,Nữ ,10A1 ,THPT Can Lộc ,Hoá học 10 ,"9,75 ",Đạt ,Khuyến khích 
+1317 ,TÔN ĐỨC TIẾN ,08/01/2009,Phố Nối - Hưng Yên ,Nam ,10A1 ,THPT Nguyễn Công Trứ ,Vật lý 10 ,"15,25 ",Đạt ,Nhì 
+1318 ,TRẦN THỊ THU TRANG ,24/07/2009,"Can Lộc, Hà Tĩnh ",Nữ ,10A1 ,THPT Nghèn ,Hoá học 10 ,"8,5 ",Đạt ,Khuyến khích 
+1319 ,NGUYỄN THỊ THUỲ TRÂM ,05/01/2009,"Đồng Lộc, Can Lộc, Hà Tĩnh ",Nữ ,10A1 ,THPT Đồng Lộc ,Vật lý 10 ,"7,25 ",Hỏng ,
+1320 ,PHAN ĐÌNH TRỌNG ,31/05/2009,Hương Sơn - Hà Tĩnh ,Nam ,10A1 ,THPT Cao Thắng ,Hoá học 10 ,"12,25 ",Đạt ,Nhì 
+1321 ,NGUYỄN VĂN TRỌNG ,29/01/2009,Vũ Quang - Hà Tĩnh ,Nam ,10A ,THPT Cù Huy Cận ,Vật lý 10 ,8 ,Đạt ,Khuyến khích 
+1322 ,VÕ ANH TUẤN ,07/05/2009,"Đức Thọ, Hà Tĩnh ",Nam ,10A1 ,THPT Đức Thọ ,Hoá học 10 ,"5,85 ",Hỏng ,
+1323 ,NGUYỄN HOÀI ANH TUẤN ,02/01/2009,Hương Sơn - Hà Tĩnh ,Nam ,10A ,THPT Hương Sơn ,Vật lý 10 ,"7,75 ",Hỏng ,
+1324 ,NGUYỄN TÚ UYÊN ,04/11/2009,"Sơn Lộc, Can Lộc, Hà Tĩnh ",Nữ ,10A1 ,THPT Đồng Lộc ,Hoá học 10 ,"9,75 ",Đạt ,Khuyến khích 
+1325 ,NGUYỄN UY VŨ ,19/12/2009,Đức Thọ - Hà Tĩnh ,Nam ,10A1 ,THPT Nguyễn Thị Minh Khai ,Vật lý 10 ,13 ,Đạt ,Nhì 
+1326 ,PHẠM BÁ VIỆT ,16/05/2009,Lộc Hà - Hà Tĩnh ,Nam ,10A1 ,THPT Mai Thúc Loan ,Hoá học 10 ,8 ,Hỏng ,
+1327 ,ĐẶNG BÙI ANH VŨ ,13/09/2009,Hương Khê - Hà Tĩnh ,Nam ,10A1 ,THPT Hàm Nghi ,Hoá học 10 ,"2,5 ",Hỏng ,
+1328 ,LÊ MINH VŨ ,12/04/2009,"Ngọc Sơn, Thạch Hà, Hà Tĩnh ",Nam ,10A1 ,THPT Đồng Lộc ,Hoá học 10 ,"7,75 ",Hỏng ,
+1329 ,TRẦN LUÂN VỸ ,11/05/2009,Hương Sơn - Hà Tĩnh ,Nam ,10A1 ,THPT Cao Thắng ,Hoá học 10 ,"10,5 ",Đạt ,Ba 
+1330 ,HOÀNG NHƯ Ý ,22/03/2009,Can Lộc - Hà Tĩnh ,Nữ ,10A1 ,THPT Can Lộc ,Hoá học 10 ,7 ,Hỏng ,
+1331 ,QUẾ PHAN HÀ AN ,14/08/2009,Đức Thọ - Hà Tĩnh ,Nữ ,10A5 ,THPT Trần Phú ,Tiếng Anh 10 ,"6,38 ",Hỏng ,
+1332 ,THÂN PHAN HÀ ANH ,15/11/2009,"Sơn Lộc, Can Lộc, Hà Tĩnh ",Nữ ,10A6 ,THPT Đồng Lộc ,Tiếng Anh 10 ,"9,73 ",Hỏng ,
+1333 ,TRẦN QUỲNH ANH ,23/04/2009,Đức Thọ - Hà Tĩnh ,Nữ ,10A5 ,THPT Nguyễn Thị Minh Khai ,Tiếng Anh 10 ,"12,33 ",Đạt ,Khuyến khích 
+1334 ,TRƯƠNG QUỲNH ANH ,02/01/2009,TP Vinh - Nghệ An ,Nữ ,10A3 ,THPT Nguyễn Công Trứ ,Tiếng Anh 10 ,"6,8 ",Hỏng ,
+1335 ,HOÀNG TÚ ANH ,16/02/2009,Đức Thọ - Hà Tĩnh ,Nữ ,10A1 ,THPT Nguyễn Thị Minh Khai ,Tiếng Anh 10 ,"13,58 ",Đạt ,Ba 
+1336 ,CÙ VIỆT BÁCH ,05/05/2009,Lộc Hà - Hà Tĩnh ,Nam ,10A3 ,THPT Nguyễn Văn Trỗi ,Tiếng Anh 10 ,"7,45 ",Hỏng ,
+1337 ,NGUYỄN MINH CHÂU ,19/11/2009,"Can Lộc, Hà Tĩnh ",Nữ ,10A6 ,THPT Nghèn ,Tiếng Anh 10 ,"10,53 ",Đạt ,Khuyến khích 
+1338 ,NGUYỄN LÊ DIỆU CHI ,25/07/2009,Hương Sơn - Hà Tĩnh ,Nữ ,10C ,THPT Lý Chính Thắng ,Tiếng Anh 10 ,"5,85 ",Hỏng ,
+1339 ,LÊ NGUYỄN THẢO CHI ,28/07/2009,TP Hà Tĩnh ,Nữ ,10A14 ,THPT Hồng Lĩnh ,Tiếng Anh 10 ,"10,65 ",Đạt ,Khuyến khích 
+1340 ,TRẦN DUY ,23/01/2009,Hương Khê - Hà Tĩnh ,Nam ,10A1 ,THPT Hương Khê ,Tiếng Anh 10 ,"10,78 ",Đạt ,Khuyến khích 
+1341 ,LÊ VĂN TUẤN DŨNG ,15/07/2009,Hương Khê - Hà Tĩnh ,Nam ,10A1 ,THPT Hương Khê ,Tiếng Anh 10 ,"13,8 ",Đạt ,Ba 
+1342 ,HOÀNG LINH ĐAN ,10/09/2009,Hồng Lĩnh - Hà Tĩnh ,Nữ ,10A1 ,THPT Can Lộc ,Tiếng Anh 10 ,"11,08 ",Đạt ,Khuyến khích 
+1343 ,TRẦN LINH ĐAN ,02/01/2009,Nghi Xuân - Hà Tĩnh ,Nữ ,10A3 ,THPT Nguyễn Công Trứ ,Tiếng Anh 10 ,"8,95 ",Hỏng ,
+1344 ,NGUYỄN KHÁNH ĐỨC ,24/06/2009,Hương Sơn - Hà Tĩnh ,Nam ,10C ,THPT Lê Hữu Trác ,Tiếng Anh 10 ,"6,98 ",Hỏng ,
+1345 ,ĐẶNG HƯƠNG GIANG ,31/10/2009,"Trung Lộc, Can Lộc, Hà Tĩnh ",Nữ ,10A6 ,THPT Đồng Lộc ,Tiếng Anh 10 ,"9,03 ",Hỏng ,
+1346 ,NGUYỄN TRÀ GIANG ,18/01/2009,Can Lộc - Hà Tĩnh ,Nữ ,10A1 ,THPT Can Lộc ,Tiếng Anh 10 ,"9,1 ",Hỏng ,
+1347 ,NGUYỄN HUY HOÀNG ,24/04/2009,Đức Thọ- Hà Tĩnh ,Nam ,10A1 ,THPT Vũ Quang ,Tiếng Anh 10 ,"7,65 ",Hỏng ,
+1348 ,LƯU KHÁNH HUYỀN ,03/04/2009,Hương Sơn - Hà Tĩnh ,Nữ ,10D1 ,THPT Cao Thắng ,Tiếng Anh 10 ,"9,03 ",Hỏng ,
+1349 ,HOÀNG XUÂN HUY ,01/03/2009,Hương Sơn - Hà Tĩnh ,Nam ,10A1 ,THPT Cao Thắng ,Tiếng Anh 10 ,"10,1 ",Đạt ,Khuyến khích 
+1350 ,LÊ TIẾN HƯNG ,21/07/2009,Lộc Hà - Hà Tĩnh ,Nam ,10A1 ,THPT Mai Thúc Loan ,Tiếng Anh 10 ,"10,13 ",Đạt ,Khuyến khích 
+1351 ,NGUYỄN BẢO KHANG ,27/10/2009,TP Vinh - Nghệ An ,Nam ,10A3 ,THPT Nguyễn Công Trứ ,Tiếng Anh 10 ,"6,43 ",Hỏng ,
+1352 ,NGUYỄN ĐÌNH BẢO LÂM ,23/05/2009,Lộc Hà - Hà Tĩnh ,Nam ,10A1 ,THPT Nguyễn Văn Trỗi ,Tiếng Anh 10 ,"9,3 ",Hỏng ,
+1353 ,ĐÀO NHẬT LINH ,14/01/2009,Đức Thọ - Hà Tĩnh ,Nữ ,10D ,THPT Cù Huy Cận ,Tiếng Anh 10 ,"11,6 ",Đạt ,Khuyến khích 
+1354 ,TRẦN THỊ THANH MAI ,06/08/2009,Nghi Xuân - Hà Tĩnh ,Nữ ,10A1 ,THPT Nguyễn Công Trứ ,Tiếng Anh 10 ,"12,8 ",Đạt ,Khuyến khích 
+1355 ,TRẦN HÀ MINH ,15/03/2009,"Can Lộc, Hà Tĩnh ",Nữ ,10A6 ,THPT Nghèn ,Tiếng Anh 10 ,-1 ,Vắng thi ,
+1356 ,NGUYỄN ÁNH NGỌC ,14/04/2009,Đức Thọ - Hà Tĩnh ,Nữ ,10A5 ,THPT Trần Phú ,Tiếng Anh 10 ,"7,25 ",Hỏng ,
+1357 ,DƯƠNG BẢO NGỌC ,15/04/2009,Nghi Xuân - Hà Tĩnh ,Nữ ,10A3 ,THPT Nghi Xuân ,Tiếng Anh 10 ,"10,53 ",Đạt ,Khuyến khích 
+1358 ,TRẦN THỊ KHÁNH NGỌC ,16/03/2009,Hương Khê - Hà Tĩnh ,Nữ ,10A2 ,THPT Hương Khê ,Tiếng Anh 10 ,"10,4 ",Đạt ,Khuyến khích 
+1359 ,NGUYỄN THẢO NGỌC ,02/07/2009,Hồng Lĩnh - Hà Tĩnh ,Nữ ,10A3 ,THPT Hồng Lĩnh ,Tiếng Anh 10 ,"9,45 ",Hỏng ,
+1360 ,NGUYỄN GIA NGUYÊN ,20/06/2009,"Nghi Xuân, Hà Tĩnh ",Nam ,10A11 ,THPT Nguyễn Du ,Tiếng Anh 10 ,"13,75 ",Đạt ,Ba 
+1361 ,BÙI PHƯƠNG NGUYÊN ,19/01/2009,Hồng Lĩnh - Hà Tĩnh ,Nữ ,10A3 ,THPT Hồng Lĩnh ,Tiếng Anh 10 ,"10,53 ",Đạt ,Khuyến khích 
+1362 ,TRẦN TRUNG NGUYÊN ,11/10/2009,Đức Thọ - Hà Tĩnh ,Nam ,10A1 ,THPT Trần Phú ,Tiếng Anh 10 ,"6,45 ",Hỏng ,
+1363 ,NGUYỄN THIỆN NHÂN ,27/08/2009,Hồng Lĩnh - Hà Tĩnh ,Nam ,10A13 ,THPT Hồng Lĩnh ,Tiếng Anh 10 ,"9,6 ",Hỏng ,
+1364 ,BÙI TRỌNG NHÂN ,07/01/2009,Hương Sơn - Hà Tĩnh ,Nam ,10A1 ,THPT Hương Sơn ,Tiếng Anh 10 ,"13,18 ",Đạt ,Khuyến khích 
+1365 ,LÊ VĂN NHẬT ,20/06/2009,Đức Thọ - Hà Tĩnh ,Nam ,10A ,THPT Cù Huy Cận ,Tiếng Anh 10 ,"9,2 ",Hỏng ,
+1366 ,NGUYỄN MAI NHI ,19/12/2009,"Nghi Xuân, Hà Tĩnh ",Nữ ,10A11 ,THPT Nguyễn Du ,Tiếng Anh 10 ,"13,58 ",Đạt ,Ba 
+1367 ,NGUYỄN THỊ THẢO NHI ,07/11/2009,"Can Lộc, Hà Tĩnh ",Nữ ,10A6 ,THPT Đồng Lộc ,Tiếng Anh 10 ,"7,88 ",Hỏng ,
+1368 ,TRẦN YẾN NHI ,14/11/2009,Đức Thọ - Hà Tĩnh ,Nữ ,10A3 ,THPT Nguyễn Thị Minh Khai ,Tiếng Anh 10 ,"13,43 ",Đạt ,Ba 
+1369 ,ĐOÀN GIA NHƯ ,15/05/2009,Hương Sơn - Hà Tĩnh ,Nữ ,10A1 ,THPT Hương Sơn ,Tiếng Anh 10 ,"11,85 ",Đạt ,Khuyến khích 
+1370 ,TRẦN ĐẶNG KHÁNH NHƯ ,22/02/2009,Hồng Lĩnh - Hà Tĩnh ,Nữ ,10A14 ,THPT Hồng Lĩnh ,Tiếng Anh 10 ,"7,38 ",Hỏng ,
+1371 ,LÊ PHƯƠNG THẢO ,17/05/2009,Hương Sơn - Hà Tĩnh ,Nữ ,10C ,THPT Lê Hữu Trác ,Tiếng Anh 10 ,"9,4 ",Hỏng ,
+1372 ,TRẦN KIM THẠCH ,29/11/2009,Hương Khê - Hà Tĩnh ,Nam ,10A1 ,THPT Hương Khê ,Tiếng Anh 10 ,"11,25 ",Đạt ,Khuyến khích 
+1373 ,BÙI THỊ ANH THƠ ,11/10/2009,"Can Lộc, Hà Tĩnh ",Nữ ,10A6 ,THPT Nghèn ,Tiếng Anh 10 ,"8,75 ",Hỏng ,
+1374 ,LÊ ANH THƯ ,04/07/2009,Bệnh viện đa khoa Hà Tĩnh ,Nữ ,10A1 ,THPT Can Lộc ,Tiếng Anh 10 ,"8,9 ",Hỏng ,
+1375 ,NGUYỄN KHÁNH TRANG ,27/10/2009,"Can Lộc, Hà Tĩnh ",Nữ ,10A6 ,THPT Nghèn ,Tiếng Anh 10 ,"10,28 ",Đạt ,Khuyến khích 
+1376 ,LÊ VŨ TUẤN ,01/09/2009,Hà Tĩnh ,Nam ,10A1 ,THPT Lý Tự Trọng ,Tiếng Anh 10 ,"13,73 ",Đạt ,Ba 
+1377 ,VÕ THỊ THẢO UYÊN ,29/11/2009,Lộc Hà - Hà Tĩnh ,Nữ ,10A4 ,THPT Mai Thúc Loan ,Tiếng Anh 10 ,"9,13 ",Hỏng ,
+1378 ,THÁI PHƯƠNG VY ,26/03/2009,Đức Thọ - Hà Tĩnh ,Nữ ,10A5 ,THPT Trần Phú ,Tiếng Anh 10 ,"7,33 ",Hỏng ,
+1379 ,NGUYỄN THỊ HẢI YẾN ,10/02/2009,Hương Sơn - Hà Tĩnh ,Nữ ,10A1 ,THPT Hương Sơn ,Tiếng Anh 10 ,"14,05 ",Đạt ,Ba 
+1380 ,TRẦN ĐỨC ANH ,01/03/2009,Hương Khê - Hà Tĩnh ,Nam ,10A1 ,THPT Hương Khê ,Tin học 10 ,5 ,Hỏng ,
+1381 ,LÊ HUYỀN ANH ,04/11/2009,Hương Sơn - Hà Tĩnh ,Nữ ,10A ,THPT Lý Chính Thắng ,Tin học 10 ,"9,55 ",Đạt ,Khuyến khích 
+1382 ,NGUYỄN TUẤN ANH ,10/01/2009,Đức Thọ - Hà Tĩnh ,Nam ,10A1 ,THPT Nguyễn Thị Minh Khai ,Tin học 10 ,"14,8 ",Đạt ,Nhì 
+1383 ,NGUYỄN GIA BẢO ,20/01/2009,Lộc Hà - Hà Tĩnh ,Nam ,10A1 ,THPT Mai Thúc Loan ,Tin học 10 ,5 ,Hỏng ,
+1384 ,PHẠM GIA BẢO ,27/04/2009,Hương Sơn - Hà Tĩnh ,Nam ,10A ,THPT Hương Sơn ,Tin học 10 ,"11,4 ",Đạt ,Ba 
+1385 ,BÙI THÁI BẢO ,22/07/2009,"Can Lộc, Hà Tĩnh ",Nam ,10A3 ,THPT Nghèn ,Tin học 10 ,"10,5 ",Đạt ,Ba 
+1386 ,TRẦN HOÀNG DŨNG ,19/05/2009,Hương Sơn - Hà Tĩnh ,Nam ,10A ,THPT Lê Hữu Trác ,Tin học 10 ,5 ,Hỏng ,
+1387 ,PHAN TUẤN DŨNG ,07/03/2009,"Nghi Xuân, Hà Tĩnh ",Nam ,10A1 ,THPT Nguyễn Du ,Tin học 10 ,"18,45 ",Đạt ,Nhì 
+1388 ,TRẦN VĂN ĐOÀN ,18/02/2009,"Mỹ Lộc, Can Lộc, Hà Tĩnh ",Nam ,10A1 ,THPT Đồng Lộc ,Tin học 10 ,"8,6 ",Đạt ,Khuyến khích 
+1389 ,NGUYỄN TRẦN ANH ĐỨC ,21/03/2009,Lộc Hà - Hà Tĩnh ,Nam ,10A4 ,THPT Nguyễn Văn Trỗi ,Tin học 10 ,"8,7 ",Đạt ,Khuyến khích 
+1390 ,VÕ QUỐC HẢI ,27/10/2009,"Can Lộc, Hà Tĩnh ",Nam ,10A1 ,THPT Nghèn ,Tin học 10 ,"12,3 ",Đạt ,Ba 
+1391 ,NGUYỄN VĂN HẬU ,07/08/2009,Hương Khê - Hà Tĩnh ,Nam ,10A1 ,THPT Hàm Nghi ,Tin học 10 ,"10,2 ",Đạt ,Khuyến khích 
+1392 ,NGUYỄN LÊ HOÀNG ,09/06/2009,Nghi Xuân - Hà Tĩnh ,Nam ,10A2 ,THPT Nguyễn Công Trứ ,Tin học 10 ,"8,1 ",Đạt ,Khuyến khích 
+1393 ,TRẦN XUÂN HÙNG ,30/09/2009,"Nghi Xuân, Hà Tĩnh ",Nam ,10A1 ,THPT Nguyễn Du ,Tin học 10 ,7 ,Hỏng ,
+1394 ,NGUYỄN VIỆT HƯNG ,15/01/2009,"Đồng Lộc, Can Lộc, Hà Tĩnh ",Nam ,10A2 ,THPT Đồng Lộc ,Tin học 10 ,"8,7 ",Đạt ,Khuyến khích 
+1395 ,ĐÀO PHAN DUY KHANG ,03/06/2009,BV Bà Rịa - Bà Rịa Vũng Tàu ,Nam ,10A1 ,THPT Nguyễn Văn Trỗi ,Tin học 10 ,"5,1 ",Hỏng ,
+1396 ,ĐINH QUỐC KIÊN ,18/10/2009,Hồng Lĩnh - Hà Tĩnh ,Nam ,10A1 ,THPT Trần Phú ,Tin học 10 ,"9,3 ",Đạt ,Khuyến khích 
+1397 ,PHAN SĨ KỲ ,24/07/2009,Đức Thọ - Hà Tĩnh ,Nam ,10A1 ,THPT Nguyễn Thị Minh Khai ,Tin học 10 ,20 ,Đạt ,Nhất 
+1398 ,VĂN SỸ LƯỢNG ,28/01/2009,Hương Sơn - Hà Tĩnh ,Nam ,10A ,THPT Lê Hữu Trác ,Tin học 10 ,"11,1 ",Đạt ,Ba 
+1399 ,DƯƠNG LÊ NA ,09/07/2009,Hương Khê - Hà Tĩnh ,Nữ ,10A1 ,THPT Hương Khê ,Tin học 10 ,5 ,Hỏng ,
+1400 ,PHẠM HẢI NAM ,12/02/2009,Đức Thọ - Hà Tĩnh ,Nam ,10A5 ,THPT Trần Phú ,Tin học 10 ,"18,8 ",Đạt ,Nhì 
+1401 ,TÔ HỮU NGỌC ,16/11/2009,Lộc Hà - Hà Tĩnh ,Nam ,10A2 ,THPT Mai Thúc Loan ,Tin học 10 ,"16,7 ",Đạt ,Nhì 
+1402 ,ĐINH THỊ NHƯ NGỌC ,08/02/2009,Hương Sơn - Hà Tĩnh ,Nữ ,10A ,THPT Lý Chính Thắng ,Tin học 10 ,"5,9 ",Hỏng ,
+1403 ,NGUYỄN ĐÌNH KHÔI NGUYÊN ,13/04/2009,TP Vinh - Nghệ An ,Nam ,10A14 ,THPT Hồng Lĩnh ,Tin học 10 ,"8,7 ",Đạt ,Khuyến khích 
+1404 ,TRẦN QUANG NGUYÊN ,12/01/2009,Đức Thọ - Hà Tĩnh ,Nam ,10A1 ,THPT Trần Phú ,Tin học 10 ,"8,25 ",Đạt ,Khuyến khích 
+1405 ,PHAN TẤT VŨ NGUYÊN ,10/01/2009,Hồng Lĩnh - Hà Tĩnh ,Nam ,10A14 ,THPT Hồng Lĩnh ,Tin học 10 ,"7,2 ",Hỏng ,
+1406 ,VÕ THIỆN NHÂN ,10/09/2009,Đức Thọ - Hà Tĩnh ,Nam ,10A ,THPT Cù Huy Cận ,Tin học 10 ,"8,4 ",Đạt ,Khuyến khích 
+1407 ,LÊ THỊ NHÂN ,16/08/2009,Can Lộc - Hà Tĩnh ,Nữ ,10A4 ,THPT Can Lộc ,Tin học 10 ,5 ,Hỏng ,
+1408 ,LÊ HỒNG NHẬT ,06/12/2009,Hương Khê - Hà Tĩnh ,Nam ,10A1 ,THPT Hương Khê ,Tin học 10 ,"10,3 ",Đạt ,Khuyến khích 
+1409 ,PHAN NGUYỄN LONG NHẬT ,09/05/2009,Hương Sơn - Hà Tĩnh ,Nam ,10A ,THPT Hương Sơn ,Tin học 10 ,"16,2 ",Đạt ,Nhì 
+1410 ,NGUYỄN ĐỨC MINH NHẬT ,06/03/2009,Hương Khê - Hà Tĩnh ,Nam ,10A1 ,THPT Hương Khê ,Tin học 10 ,10 ,Đạt ,Khuyến khích 
+1411 ,NGUYỄN PHAN MINH NHẬT ,19/03/2009,BV Đức Thọ - Hà Tĩnh ,Nam ,10C ,THPT Lê Hữu Trác ,Tin học 10 ,"7,9 ",Hỏng ,
+1412 ,TRẦN MINH NHẬT ,05/09/2009,Đức Thọ - Hà Tĩnh ,Nam ,10A1 ,THPT Nguyễn Thị Minh Khai ,Tin học 10 ,"11,2 ",Đạt ,Ba 
+1413 ,NGUYỄN THỊ TUỆ NHI ,10/02/2009,Can Lộc - Hà Tĩnh ,Nữ ,10A2 ,THPT Can Lộc ,Tin học 10 ,5 ,Hỏng ,
+1414 ,LÊ UYỂN NHI ,21/07/2009,Hương Sơn - Hà Tĩnh ,Nữ ,10A1 ,THPT Cao Thắng ,Tin học 10 ,"8,4 ",Đạt ,Khuyến khích 
+1415 ,PHAN TRUNG PHÚC ,04/12/2009,Đức Thọ - Hà Tĩnh ,Nam ,10A1 ,THPT Trần Phú ,Tin học 10 ,"13,6 ",Đạt ,Ba 
+1416 ,LÊ VĂN THIÊN PHÚ ,07/11/2009,Hà Tĩnh ,Nam ,10A1 ,THPT Lý Tự Trọng ,Tin học 10 ,"8,4 ",Đạt ,Khuyến khích 
+1417 ,PHAN MINH QUÂN ,21/08/2009,Nghi Xuân - Hà Tĩnh ,Nam ,10A1 ,THPT Nghi Xuân ,Tin học 10 ,"9,7 ",Đạt ,Khuyến khích 
+1418 ,PHAN ĐĂNG THÁI SƠN ,14/09/2009,Đức Thọ - Hà Tĩnh ,Nam ,10A1 ,THPT Nguyễn Thị Minh Khai ,Tin học 10 ,"14,8 ",Đạt ,Nhì 
+1419 ,NGUYỄN HUY BẢO THẠCH ,18/06/2009,Hương Khê - Hà Tĩnh ,Nam ,10A1 ,THPT Hàm Nghi ,Tin học 10 ,5 ,Hỏng ,
+1420 ,NGUYỄN SỸ DUY THĂNG ,18/02/2009,Can Lộc - Hà Tĩnh ,Nam ,10A1 ,THPT Trần Phú ,Tin học 10 ,"16,7 ",Đạt ,Nhì 
+1421 ,TRẦN THÁI THIỆN ,18/05/2009,Hương Sơn - Hà Tĩnh ,Nam ,10A1 ,THPT Hương Sơn ,Tin học 10 ,"7,55 ",Hỏng ,
+1422 ,PHAN QUANG TUẤN ,20/12/2009,Lộc Hà - Hà Tĩnh ,Nam ,10A3 ,THPT Nguyễn Văn Trỗi ,Tin học 10 ,"11,4 ",Đạt ,Ba 
+1423 ,PHAN THỊ TÚ ,11/04/2009,Lộc Hà - Hà Tĩnh ,Nữ ,10A1 ,THPT Nguyễn Văn Trỗi ,Tin học 10 ,5 ,Hỏng ,
+1424 ,NGUYỄN ANH VŨ ,14/05/2009,Hà Tĩnh ,Nam ,10A1 ,THPT Lý Tự Trọng ,Tin học 10 ,5 ,Hỏng ,
