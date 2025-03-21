@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Công cụ tra cứu điểm thi - CLB Lập trình THPT Chuyên Hà Tĩnh</title>
+    <link rel="stylesheet" href="../static/css/tra-diem.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="score-lookup-container">
+            <div class="score-lookup-header">
+                <h1>Công cụ tra cứu điểm thi thuộc CLB Lập trình trường THPT Chuyên Hà Tĩnh</h1>
+                <p>Nhập số báo danh để tra cứu kết quả thi và thứ hạng của bạn</p>
+            </div>
+
+            {% if error %}
+            <div class="error-message">
+                <i class="fas fa-exclamation-circle"></i>
+                <span>{{ error }}</span>
+            </div>
+            {% endif %}
+
+            <form action="{% url 'score-ranking' %}" method="POST" class="score-lookup-form">
+                {% csrf_token %}
+                <div class="input-group">
+                    <i class="fas fa-id-card input-icon"></i>
+                    <input type="text" id="studentId" name="sbd" placeholder="Nhập số báo danh" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-graduation-cap input-icon"></i>
+                    <select id="examType">
+                        <option value="thpt">Kỳ thi chọn HSG tỉnh lớp 11 tỉnh Hà Tĩnh</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-calendar-alt input-icon"></i>
+                    <select id="examYear">
+                        <option value="2024">Năm 2025</option>
+                    </select>
+                </div>
+                <button type="submit" class="search-btn">
+                    <i class="fas fa-search"></i>
+                    Tra cứu
+                </button>
+            </form>
+
+            <div class="result-container" {% if not sbd %}style="display: none;"{% endif %}>
+                <div class="student-info">
+                    <div class="student-header">
+                        <h3>Thông tin thí sinh</h3>
+                    </div>
+                    <div class="student-details">
+                        <div class="student-data">
+                            <div class="data-row">
+                                <span class="data-label">Họ và tên:</span>
+                                <span class="data-value" id="studentName">{{ name }}</span>
+                            </div>
+                            <div class="data-row">
+                                <span class="data-label">Số báo danh:</span>
+                                <span class="data-value" id="studentIdDisplay">{{ sbd }}</span>
+                            </div>
+                            <div class="data-row">
+                                <span class="data-label">Ngày sinh:</span>
+                                <span class="data-value" id="studentDob">{{ birth }}</span>
+                            </div>
+                            <div class="data-row">
+                                <span class="data-label">Trường:</span>
+                                <span class="data-value" id="studentSchool">{{ school }}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="score-details">
+                    <div class="score-header">
+                        <h3>Kết quả điểm thi</h3>
+                        <div class="rank-badge">
+                            Top <span id="rankPercentage">{{ rank|default:"5" }}</span>% toàn khóa
+                        </div>
+                    </div>
+                    <div class="score-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Môn thi</th>
+                                    <th>Điểm</th>
+                                    <th>Xếp loại</th>
+                                    <th>Top % trong môn</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>{{ subject|default:"Toán" }}</td>
+                                    <td id="scoreMath">{{ score|default:"--" }}</td>
+                                    <td>
+                                        {% if score %}
+                                            {% if score >= 9.0 %}
+                                                <span class="grade-excellent">Xuất sắc</span>
+                                            {% elif score >= 8.0 %}
+                                                <span class="grade-excellent">Giỏi</span>
+                                            {% elif score >= 7.0 %}
+                                                <span class="grade-good">Khá</span>
+                                            {% elif score >= 5.0 %}
+                                                <span class="grade-average">Trung bình</span>
+                                            {% else %}
+                                                <span class="grade-poor">Yếu</span>
+                                            {% endif %}
+                                        {% else %}
+                                            <span>--</span>
+                                        {% endif %}
+                                    </td>
+                                    <td>
+                                        {% if rank %}
+                                            <span class="comparison-positive">Top {{ subject_rank }}% (Hạng {{ subject_rank_position }}) trong môn {{ subject }}</span>
+                                        {% else %}
+                                            <span>--</span>
+                                        {% endif %}
+                                    </td>
+                                </tr>
+                                <tr class="total-row">
+                                    <td>Tổng điểm</td>
+                                    <td id="scoreTotal">{{ score|default:"--" }}</td>
+                                    <td colspan="2">
+                                        {% if prize %}
+                                            <span class="grade-excellent">{{ prize }} - (Hạng {{ rank_position|default:"1" }}) toàn khóa</span>
+                                        {% else %}
+                                            <span>--</span>
+                                        {% endif %}
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="comparison-section">
+                    <div class="comparison-header">
+                        <h3>Thống kê và so sánh</h3>
+                    </div>
+                    <div class="ranking-info">
+                        <div class="ranking-item">
+                            <div class="ranking-title">Xếp hạng toàn khóa</div>
+                            <div class="ranking-stat">
+                                <div class="stat-number">Đạt hạng {{ rank_position|default:"1" }} trong {{ count_all_candidate|default:"1000" }} thí sinh</div>
+                                <div class="stat-desc">Điểm của bạn cao hơn {{ rank_desc|default:"95" }}% thí sinh</div>
+                            </div>
+                        </div>
+                        <div class="ranking-item">
+                            <div class="ranking-title">Xếp hạng môn {{ subject|default:"Toán" }}</div>
+                            <div class="ranking-stat">
+                                <div class="stat-number">Top {{ subject_rank|default:"4" }}% (Hạng {{ subject_rank_position|default:"1" }})</div>
+                                <div class="stat-desc">Cao hơn {{ subject_rank_desc|default:"96" }}% thí sinh trong môn {{ subject|default:"Toán" }}</div>
+                            </div>
+                        </div>
+                        <div class="ranking-item">
+                            <div class="ranking-title">So với điểm trung bình</div>
+                            <div class="ranking-stat">
+                                {% if score %}
+                                    <div class="stat-number">{{ average_score_subject }} điểm</div>
+                                    <div class="stat-desc">Điểm trung bình toàn môn {{ subject }}</div>
+                                {% else %}
+                                    <div class="stat-number">--</div>
+                                    <div class="stat-desc">Chưa có dữ liệu so sánh</div>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comparison-content">
+                        <canvas id="comparisonChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="action-buttons">
+                    <button class="print-btn">
+                        <i class="fas fa-print"></i>
+                        In kết quả
+                    </button>
+                    <button class="share-btn">
+                        <i class="fas fa-share-alt"></i>
+                        Chia sẻ
+                    </button>
+                    <button class="download-btn">
+                        <i class="fas fa-download"></i>
+                        Tải PDF
+                    </button>
+                </div>
+            </div>
+
+            <div class="features-section">
+                <h2>Tính năng tra cứu điểm thi</h2>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <i class="fas fa-chart-pie"></i>
+                        <h3>Kết quả chính xác</h3>
+                        <p>Tra cứu điểm thi nhanh chóng với kết quả chính xác từ nguồn dữ liệu chính thức</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-trophy"></i>
+                        <h3>Xếp hạng chi tiết</h3>
+                        <p>Biết chính xác bạn đứng ở top bao nhiêu phần trăm của kỳ thi và từng môn học</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-lightbulb"></i>
+                        <h3>So sánh trực quan</h3>
+                        <p>Biểu đồ trực quan giúp bạn thấy rõ mức độ thành tích của mình</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-clock"></i>
+                        <h3>Tra cứu nhanh chóng</h3>
+                        <p>Kết quả được hiển thị ngay lập tức sau khi nhập số báo danh</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Hiển thị kết quả nếu có dữ liệu trả về từ server
+        document.addEventListener('DOMContentLoaded', function() {
+            // Kiểm tra nếu có dữ liệu từ server trả về (kiểm tra qua sbd)
+            const sbd = document.getElementById('studentIdDisplay').textContent.trim();
+            if (sbd && sbd !== "") {
+                document.querySelector('.result-container').style.display = 'block';
+                // Kiểm tra có điểm thi và hiển thị
+                if ("{{ score }}") {
+                    document.querySelector('.result-container').scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    renderComparisonChart();
+                }
+            }
+        });
+        
+        // Render comparison chart
+        function renderComparisonChart() {
+            const ctx = document.getElementById('comparisonChart').getContext('2d');
+            
+            // Tạo biến JavaScript từ các giá trị Django template
+            const scoreData = {
+                student: parseFloat("{{ score|default:9.25 }}"),
+                average: 7.45,
+                highest: parseFloat("{{ top_score_subject|default:10.0 }}"),
+                lowest: 3.2
+            };
+            
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Điểm của bạn', 'Điểm trung bình', 'Điểm cao nhất', 'Điểm thấp nhất'],
+                    datasets: [
+                        {
+                            label: 'Điểm số',
+                            data: [scoreData.student, scoreData.average, scoreData.highest, scoreData.lowest],
+                            backgroundColor: [
+                                'rgba(78, 122, 51, 0.7)',
+                                'rgba(54, 162, 235, 0.7)',
+                                'rgba(255, 193, 7, 0.7)',
+                                'rgba(220, 53, 69, 0.7)'
+                            ],
+                        }
+                    ]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            max: 20
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            display: false
+                        }
+                    }
+                }
+            });
+        }
+        
+        // Print functionality
+        document.querySelector('.print-btn').addEventListener('click', function() {
+            window.print();
+        });
+        
+        // Share functionality
+        document.querySelector('.share-btn').addEventListener('click', function() {
+            // In a real application, you would implement sharing functionality
+            alert('Chức năng chia sẻ đang được phát triển');
+        });
+        
+        // Download functionality
+        document.querySelector('.download-btn').addEventListener('click', function() {
+            // In a real application, you would implement PDF download
+            alert('Chức năng tải PDF đang được phát triển');
+        });
+    </script>
+</body>
+</html> 

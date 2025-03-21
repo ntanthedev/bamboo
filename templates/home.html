@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ - BambooLab</title>
+    <link rel="stylesheet" href="../static/css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <a href="/">
+                    <img src="../static/images/logo.png" alt="BambooLab Logo">
+                    <span>BambooLab</span>
+                </a>
+            </div>
+            
+            <div class="nav-links">
+                <a href="/" class="active">Trang chủ</a>
+                <a href="/services">Dịch vụ</a>
+                <a href="/about">Giới thiệu</a>
+                <a href="/contact">Liên hệ</a>
+                <a href="/blog">Blog</a>
+            </div>
+            
+            <div class="nav-buttons">
+                <a href="/login" class="login-btn">Đăng nhập</a>
+                <a href="/signup" class="signup-btn">Đăng ký</a>
+            </div>
+            
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Chào mừng đến với BambooLab</h1>
+            <p>Nền tảng học tập và phát triển kỹ năng lập trình hàng đầu Việt Nam</p>
+            <div class="hero-buttons">
+                <a href="/courses" class="primary-btn">Khám phá khóa học</a>
+                <a href="/trial" class="secondary-btn">Dùng thử miễn phí</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="../static/images/main.png" alt="BambooLab Hero">
+        </div>
+    </section>
+    
+    <!-- Features Section -->
+    <section class="features-section">
+        <h2>Tính năng nổi bật</h2>
+        <div class="features-container">
+            <div class="feature-card">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Học tập linh hoạt</h3>
+                <p>Truy cập khóa học mọi lúc, mọi nơi với nội dung được cập nhật liên tục</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-users"></i>
+                <h3>Cộng đồng hỗ trợ</h3>
+                <p>Tham gia cộng đồng học tập năng động với sự hỗ trợ từ chuyên gia</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-certificate"></i>
+                <h3>Chứng chỉ giá trị</h3>
+                <p>Nhận chứng chỉ được công nhận bởi các doanh nghiệp hàng đầu</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Courses Section -->
+    <section class="courses-section">
+        <h2>Khóa học phổ biến</h2>
+        <div class="courses-container">
+            <div class="course-card">
+                <div class="course-image">
+                    <img src="../static/images/course1.jpg" alt="Khóa học Python">
+                </div>
+                <div class="course-content">
+                    <span class="course-tag">Cơ bản</span>
+                    <h3>Lập trình Python từ cơ bản đến nâng cao</h3>
+                    <p>Học cách lập trình Python từ đầu và xây dựng các ứng dụng thực tế</p>
+                    <div class="course-info">
+                        <span><i class="fas fa-clock"></i> 40 giờ</span>
+                        <span><i class="fas fa-star"></i> 4.8/5</span>
+                    </div>
+                </div>
+            </div>
+            <div class="course-card">
+                <div class="course-image">
+                    <img src="../static/images/course2.jpg" alt="Khóa học Web">
+                </div>
+                <div class="course-content">
+                    <span class="course-tag">Trung cấp</span>
+                    <h3>Phát triển Web với HTML, CSS và JavaScript</h3>
+                    <p>Xây dựng website đáp ứng từ đầu với các công nghệ web hiện đại</p>
+                    <div class="course-info">
+                        <span><i class="fas fa-clock"></i> 50 giờ</span>
+                        <span><i class="fas fa-star"></i> 4.9/5</span>
+                    </div>
+                </div>
+            </div>
+            <div class="course-card">
+                <div class="course-image">
+                    <img src="../static/images/course3.jpg" alt="Khóa học Data Science">
+                </div>
+                <div class="course-content">
+                    <span class="course-tag">Nâng cao</span>
+                    <h3>Khoa học dữ liệu và Machine Learning</h3>
+                    <p>Phân tích dữ liệu và xây dựng mô hình ML cho các vấn đề thực tế</p>
+                    <div class="course-info">
+                        <span><i class="fas fa-clock"></i> 60 giờ</span>
+                        <span><i class="fas fa-star"></i> 4.7/5</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="view-all">
+            <a href="/courses" class="view-all-btn">Xem tất cả khóa học <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <h2>Học viên nói gì về chúng tôi</h2>
+        <div class="testimonials-container">
+            <div class="testimonial-card">
+                <div class="testimonial-avatar">
+                    <img src="../static/images/avatar1.jpg" alt="Người dùng 1">
+                </div>
+                <p class="testimonial-content">"BambooLab đã giúp tôi từ một người không biết gì về lập trình trở thành một developer chuyên nghiệp chỉ trong 6 tháng."</p>
+                <h4>Nguyễn Văn A</h4>
+                <p class="testimonial-role">Frontend Developer</p>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-avatar">
+                    <img src="../static/images/avatar2.jpg" alt="Người dùng 2">
+                </div>
+                <p class="testimonial-content">"Nội dung khóa học rất thực tế và dễ hiểu. Tôi đặc biệt thích cách các bài tập được thiết kế để áp dụng vào dự án thực tế."</p>
+                <h4>Trần Thị B</h4>
+                <p class="testimonial-role">Data Scientist</p>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-avatar">
+                    <img src="../static/images/avatar3.jpg" alt="Người dùng 3">
+                </div>
+                <p class="testimonial-content">"Cộng đồng hỗ trợ tuyệt vời. Bất cứ khi nào tôi gặp khó khăn, luôn có người sẵn sàng giúp đỡ và hướng dẫn tôi."</p>
+                <h4>Lê Minh C</h4>
+                <p class="testimonial-role">Backend Developer</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2>Sẵn sàng bắt đầu hành trình học tập?</h2>
+            <p>Đăng ký ngay hôm nay để nhận ưu đãi 30% cho khóa học đầu tiên của bạn</p>
+            <a href="/signup" class="cta-btn">Đăng ký ngay</a>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <div class="footer-logo">
+                    <img src="../static/images/logo.png" alt="BambooLab Logo">
+                    <span>BambooLab</span>
+                </div>
+                <p>Nền tảng học tập lập trình hàng đầu Việt Nam với sứ mệnh đào tạo thế hệ developer tài năng.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Khóa học</h4>
+                <ul>
+                    <li><a href="#">Python</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                    <li><a href="#">Data Science</a></li>
+                    <li><a href="#">Machine Learning</a></li>
+                    <li><a href="#">Web Development</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Liên kết</h4>
+                <ul>
+                    <li><a href="#">Về chúng tôi</a></li>
+                    <li><a href="#">Đội ngũ giảng viên</a></li>
+                    <li><a href="#">Đối tác</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Tuyển dụng</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Liên hệ</h4>
+                <ul class="contact-info">
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Đường ABC, Quận 1, TP.HCM</li>
+                    <li><i class="fas fa-phone"></i> (028) 1234 5678</li>
+                    <li><i class="fas fa-envelope"></i> info@bamboolab.vn</li>
+                </ul>
+                <div class="newsletter">
+                    <h4>Đăng ký nhận tin</h4>
+                    <form>
+                        <input type="email" placeholder="Email của bạn">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="copyright">
+                <p>&copy; 2023 BambooLab. Tất cả các quyền được bảo lưu.</p>
+            </div>
+            <div class="footer-links">
+                <a href="/terms-of-service">Điều khoản dịch vụ</a>
+                <a href="/privacy-policy">Chính sách bảo mật</a>
+                <a href="/cookie-policy">Chính sách cookie</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle mobile menu
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+            document.querySelector('.nav-buttons').classList.toggle('active');
+        });
+    </script>
+</body>
+</html> 

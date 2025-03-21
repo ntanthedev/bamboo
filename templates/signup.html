@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký - BambooLab</title>
+    <link rel="stylesheet" href="../static/css/signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="signup-container">
+        <div class="signup-form">
+            <h1>Đăng ký</h1>
+            <div class="error-message" id="errorMessage"></div>
+            <form id="signupForm">
+                <div class="input-group">
+                    <i class="fas fa-user input-icon"></i>
+                    <input type="text" id="name" placeholder="Họ và tên" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-envelope input-icon"></i>
+                    <input type="email" id="email" placeholder="Email của bạn" required onblur="showVerificationCode()">
+                </div>
+                <div class="input-group verification-code" style="display: none;">
+                    <i class="fas fa-key input-icon"></i>
+                    <input type="text" id="verification-code" placeholder="Mã xác minh">
+                    <button type="button" id="resend-code" class="resend-btn" onclick="resendCode()">Gửi lại mã</button>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-phone input-icon"></i>
+                    <input type="tel" id="phone" placeholder="Số điện thoại" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-lock input-icon"></i>
+                    <input type="password" id="password" placeholder="Mật khẩu" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-lock input-icon"></i>
+                    <input type="password" id="repeat-password" placeholder="Nhập lại mật khẩu" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-ticket-alt input-icon"></i>
+                    <input type="text" id="invite-code" placeholder="Mã mời">
+                </div>
+                <div class="option-group">
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="terms" required>
+                        <label for="terms">Tôi đồng ý với <a href="#">Điều khoản dịch vụ</a></label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Lưu đăng nhập</label>
+                    </div>
+                </div>
+                <div class="button-group">
+                    <button type="submit" class="register-btn">Đăng ký</button>
+                </div>
+                
+                <div class="social-login">
+                    <p>Hoặc đăng ký bằng</p>
+                    <div class="social-buttons">
+                        <a href="#" class="social-btn google">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a href="#" class="social-btn github">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-btn facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-btn discord">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="login-link">
+                    <a href="#">Tôi đã có tài khoản</a>
+                </div>
+            </form>
+        </div>
+        <div class="image-section">
+            <img src="../static/images/main.png  " alt="BambooLab Logo">
+        </div>
+    </div>
+
+    <script>
+        function showVerificationCode() {
+            const emailInput = document.getElementById('email');
+            const verificationCodeDiv = document.querySelector('.verification-code');
+            
+            if (emailInput.value.trim() !== '') {
+                verificationCodeDiv.style.display = 'flex';
+            } else {
+                verificationCodeDiv.style.display = 'none';
+            }
+        }
+
+        function resendCode() {
+            const resendBtn = document.getElementById('resend-code');
+            let countdown = 60;
+            
+            // Disable button and start countdown
+            resendBtn.disabled = true;
+            resendBtn.classList.add('disabled');
+            
+            // Update button text with countdown
+            resendBtn.textContent = `Đợi ${countdown}s`;
+            
+            // Send verification code here (placeholder)
+            console.log('Gửi lại mã xác minh...');
+            
+            // Start countdown interval
+            const interval = setInterval(() => {
+                countdown--;
+                resendBtn.textContent = `Đợi ${countdown}s`;
+                
+                if (countdown <= 0) {
+                    clearInterval(interval);
+                    resendBtn.textContent = 'Gửi lại mã';
+                    resendBtn.disabled = false;
+                    resendBtn.classList.remove('disabled');
+                }
+            }, 1000);
+        }
+    </script>
+</body>
+</html> 

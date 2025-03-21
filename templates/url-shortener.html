@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rút gọn Link - BambooLab</title>
+    <link rel="stylesheet" href="../static/css/url-shortener.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <a href="/">
+                    <img src="../static/images/logo.png" alt="BambooLab Logo">
+                    <span>BambooLab</span>
+                </a>
+            </div>
+            
+            <div class="nav-links">
+                <a href="/">Trang chủ</a>
+                <a href="/services">Dịch vụ</a>
+                <a href="/about">Giới thiệu</a>
+                <a href="/contact">Liên hệ</a>
+                <a href="/blog">Blog</a>
+            </div>
+            
+            <div class="nav-buttons">
+                <a href="/login" class="login-btn">Đăng nhập</a>
+                <a href="/signup" class="signup-btn">Đăng ký</a>
+            </div>
+            
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="url-shortener-container">
+            <div class="url-shortener-header">
+                <h1>Rút gọn Link</h1>
+                <p>Chuyển đổi link dài thành link ngắn gọn, dễ nhớ và dễ chia sẻ</p>
+            </div>
+
+            <div class="url-shortener-form">
+                <div class="input-group">
+                    <i class="fas fa-link input-icon"></i>
+                    <input type="url" id="longUrl" placeholder="Nhập link cần rút gọn" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-palette input-icon"></i>
+                    <input type="text" id="customAlias" placeholder="Tùy chỉnh alias (không bắt buộc)">
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-clock input-icon"></i>
+                    <select id="expiryTime">
+                        <option value="0">Không giới hạn</option>
+                        <option value="1">1 ngày</option>
+                        <option value="7">7 ngày</option>
+                        <option value="30">30 ngày</option>
+                        <option value="90">90 ngày</option>
+                    </select>
+                </div>
+                <button type="submit" class="shorten-btn">
+                    <i class="fas fa-compress-alt"></i>
+                    Rút gọn Link
+                </button>
+            </div>
+
+            <div class="result-container" style="display: none;">
+                <div class="result-header">
+                    <h3>Link đã rút gọn</h3>
+                    <button class="copy-btn">
+                        <i class="fas fa-copy"></i>
+                        Sao chép
+                    </button>
+                </div>
+                <div class="result-url">
+                    <input type="text" id="shortUrl" readonly>
+                </div>
+                <div class="result-stats">
+                    <div class="stat-item">
+                        <i class="fas fa-chart-line"></i>
+                        <span>Lượt click: <strong>0</strong></span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Hết hạn: <strong>Không giới hạn</strong></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="features-section">
+                <h2>Tính năng nổi bật</h2>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Bảo mật cao</h3>
+                        <p>Link được mã hóa và bảo vệ khỏi các mối đe dọa</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-chart-bar"></i>
+                        <h3>Thống kê chi tiết</h3>
+                        <p>Theo dõi số lượt click và nguồn truy cập</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-clock"></i>
+                        <h3>Thời gian tùy chỉnh</h3>
+                        <p>Đặt thời gian hết hạn cho link rút gọn</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-qrcode"></i>
+                        <h3>QR Code</h3>
+                        <p>Tự động tạo mã QR cho link rút gọn</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recent-links">
+                <h2>Link gần đây</h2>
+                <div class="links-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Link gốc</th>
+                                <th>Link rút gọn</th>
+                                <th>Ngày tạo</th>
+                                <th>Lượt click</th>
+                                <th>Thao tác</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="original-url">https://example.com/very-long-url-that-needs-to-be-shortened</td>
+                                <td class="short-url">bamboolab.vn/abc123</td>
+                                <td>2024-03-20</td>
+                                <td>150</td>
+                                <td>
+                                    <button class="action-btn copy" title="Sao chép">
+                                        <i class="fas fa-copy"></i>
+                                    </button>
+                                    <button class="action-btn qr" title="Xem QR Code">
+                                        <i class="fas fa-qrcode"></i>
+                                    </button>
+                                    <button class="action-btn delete" title="Xóa">
+                                        <i class="fas fa-trash"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <div class="footer-logo">
+                    <img src="../static/images/logo.png" alt="BambooLab Logo">
+                    <span>BambooLab</span>
+                </div>
+                <p>Nền tảng học tập lập trình hàng đầu Việt Nam với sứ mệnh đào tạo thế hệ developer tài năng.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Khóa học</h4>
+                <ul>
+                    <li><a href="#">Python</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                    <li><a href="#">Data Science</a></li>
+                    <li><a href="#">Machine Learning</a></li>
+                    <li><a href="#">Web Development</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Liên kết</h4>
+                <ul>
+                    <li><a href="#">Về chúng tôi</a></li>
+                    <li><a href="#">Đội ngũ giảng viên</a></li>
+                    <li><a href="#">Đối tác</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Tuyển dụng</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Liên hệ</h4>
+                <ul class="contact-info">
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Đường ABC, Quận 1, TP.HCM</li>
+                    <li><i class="fas fa-phone"></i> (028) 1234 5678</li>
+                    <li><i class="fas fa-envelope"></i> info@bamboolab.vn</li>
+                </ul>
+                <div class="newsletter">
+                    <h4>Đăng ký nhận tin</h4>
+                    <form>
+                        <input type="email" placeholder="Email của bạn">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="copyright">
+                <p>&copy; 2023 BambooLab. Tất cả các quyền được bảo lưu.</p>
+            </div>
+            <div class="footer-links">
+                <a href="/terms-of-service">Điều khoản dịch vụ</a>
+                <a href="/privacy-policy">Chính sách bảo mật</a>
+                <a href="/cookie-policy">Chính sách cookie</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle mobile menu
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+            document.querySelector('.nav-buttons').classList.toggle('active');
+        });
+
+        // URL Shortener functionality
+        document.querySelector('.url-shortener-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const longUrl = document.getElementById('longUrl').value;
+            const customAlias = document.getElementById('customAlias').value;
+            const expiryTime = document.getElementById('expiryTime').value;
+
+            // Here you would typically make an API call to your backend
+            // For demo purposes, we'll just show the result container
+            document.querySelector('.result-container').style.display = 'block';
+            document.getElementById('shortUrl').value = 'bamboolab.vn/' + (customAlias || 'abc123');
+        });
+
+        // Copy button functionality
+        document.querySelector('.copy-btn').addEventListener('click', function() {
+            const shortUrl = document.getElementById('shortUrl');
+            shortUrl.select();
+            document.execCommand('copy');
+            
+            // Show feedback
+            const originalText = this.innerHTML;
+            this.innerHTML = '<i class="fas fa-check"></i> Đã sao chép!';
+            setTimeout(() => {
+                this.innerHTML = originalText;
+            }, 2000);
+        });
+    </script>
+</body>
+</html> 
