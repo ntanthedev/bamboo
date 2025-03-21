@@ -107,3 +107,8 @@ def ScoreRanking(request):
         except Exception as e:
             return render(request, 'tra-diem.html', {'error': f'Lỗi xử lý dữ liệu: {str(e)}'})
         
+#cho toàn bộ url khác chuyển hướng về /ScoreRanking
+from django.shortcuts import redirect
+
+def redirect_to_score_ranking(request):
+    return redirect('score-ranking')
