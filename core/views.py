@@ -120,6 +120,46 @@ def ScoreRanking(request):
             
             subject_rank_desc = 100 - subject_rank  # Phần trăm còn lại cao hơn
             
+            # Xác định giải cao hơn và điểm cần đạt
+            current_score = float(candidate.score)
+            higher_prize_info = None
+            
+            # Danh sách các giải từ cao đến thấp
+            prize_rank = ['Nhất', 'Nhì', 'Ba', 'Khuyến khích', '']
+            current_prize_index = -1
+            
+            # Tìm vị trí giải hiện tại trong danh sách
+            for i, prize_name in enumerate(prize_rank):
+                if candidate.prize and prize_name.lower() in candidate.prize.lower():
+                    current_prize_index = i
+                    break
+            
+            # Nếu không xác định được giải, mặc định là không có giải
+            if current_prize_index == -1:
+                current_prize_index = len(prize_rank) - 1
+            
+            # Nếu đã có giải cao nhất thì không cần thông báo
+            if current_prize_index > 0:  # Có giải và không phải giải Nhất
+                # Tìm thí sinh có giải cao hơn 1 bậc trong cùng môn
+                next_prize = prize_rank[current_prize_index - 1]
+                higher_prize_candidates = Candidate.objects.filter(
+                    subject=candidate.subject,
+                    prize__icontains=next_prize
+                ).order_by('score')
+                
+                if higher_prize_candidates.exists():
+                    min_score_for_higher_prize = higher_prize_candidates.first().score
+                    points_needed = float(min_score_for_higher_prize) - current_score
+                    
+                    # Làm tròn đến 2 chữ số thập phân
+                    points_needed = round(points_needed, 2)
+                    
+                    higher_prize_info = {
+                        'next_prize': next_prize,
+                        'min_score': min_score_for_higher_prize,
+                        'points_needed': points_needed
+                    }
+            
             # Truyền dữ liệu vào template
             data_output = {
                 'sbd': candidate.sbd,
@@ -141,6 +181,7 @@ def ScoreRanking(request):
                 'subject_rank_position': subject_rank_position,
                 'count_all_candidate': all_candidates,
                 'average_score_subject': round(average_score_subject, 2),
+                'higher_prize_info': higher_prize_info,
             }
             return render(request, 'tra-diem.html', data_output)
             

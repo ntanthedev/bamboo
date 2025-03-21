@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Công cụ tra cứu điểm thi - CLB Lập trình THPT Chuyên Hà Tĩnh</title>
+    <title>Công cụ phân tích điểm thi thuộc CLB Lập trình trường THPT Chuyên Hà Tĩnh</title>
     <link rel="stylesheet" href="../static/css/tra-diem.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -48,6 +48,25 @@
             border-radius: 5px;
             margin-bottom: 10px;
         }
+        .ranking-item-highlight {
+            animation: pulse 2s infinite;
+        }
+        .stat-number-highlight {
+            font-weight: bold;
+            color: #e63946;
+            font-size: 1.2em;
+        }
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(230, 57, 70, 0.4);
+            }
+            70% {
+                box-shadow: 0 0 0 10px rgba(230, 57, 70, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(230, 57, 70, 0);
+            }
+        }
     </style>
 </head>
 <body>
@@ -55,7 +74,7 @@
     <main class="main-content">
         <div class="score-lookup-container">
             <div class="score-lookup-header">
-                <h1>Công cụ tra cứu điểm thi thuộc CLB Lập trình trường THPT Chuyên Hà Tĩnh</h1>
+                <h1>Công cụ phân tích điểm thi CLB Lập trình trường THPT Chuyên Hà Tĩnh</h1>
                 <p>Nhập số báo danh để tra cứu kết quả thi và thứ hạng của bạn</p>
             </div>
 
@@ -132,7 +151,7 @@
                     <div class="score-header">
                         <h3>Kết quả điểm thi</h3>
                         <div class="rank-badge">
-                            Top <span id="rankPercentage">{{ rank|default:"5" }}</span>% toàn khóa
+                            Môn thi <span id="rankPercentage">{{ subject }}</span>
                         </div>
                     </div>
                     <div class="score-table">
@@ -206,6 +225,15 @@
                                 {% endif %}
                             </div>
                         </div>
+                        {% if higher_prize_info %}
+                        <div class="ranking-item ranking-item-highlight">
+                            <div class="ranking-title">Điểm cần để đạt giải cao hơn</div>
+                            <div class="ranking-stat">
+                                <div class="stat-number stat-number-highlight">+ {{ higher_prize_info.points_needed }} điểm</div>
+                                <div class="stat-desc">Để đạt giải {{ higher_prize_info.next_prize }} (tối thiểu {{ higher_prize_info.min_score }} điểm)</div>
+                            </div>
+                        </div>
+                        {% endif %}
                     </div>
                     <div class="comparison-content">
                         <canvas id="comparisonChart"></canvas>
