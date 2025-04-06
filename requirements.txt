@@ -1,0 +1,5 @@
+django==5.2.0
+eventlet==0.39.1
+redis==5.2.1
+celery==5.5.0
+
