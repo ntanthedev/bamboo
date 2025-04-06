@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}BambooLab{% endblock %}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Biến màu và style cơ bản */
+        :root {
+            --primary-color: #5a9145;
+            --primary-light: #7db25a;
+            --primary-dark: #4a7a38;
+            --primary-bg: #edf5e7;
+            --accent-color: #20a98a;
+            --text-color: #3b5728;
+            --text-light: #6b8b54;
+            --white: #FFFFFF;
+            --light-bg: #f5f9f0;
+            --dark-bg: #ebf2e4;
+            --gray-text: #6c757d;
+            --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+            --border-color: rgba(0, 0, 0, 0.07);
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--gray-text);
+            background-color: var(--primary-bg);
+            background-image: 
+                radial-gradient(circle at 25% 20%, rgba(255, 255, 255, 0.2) 0%, transparent 50%),
+                radial-gradient(circle at 75% 80%, rgba(255, 255, 255, 0.2) 0%, transparent 50%);
+            background-attachment: fixed;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        main {
+            flex-grow: 1; /* Đẩy footer xuống dưới */
+        }
+
+        /* --- Navbar styles (Old Version) --- */
+        .navbar {
+            background-color: var(--primary-dark);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            height: 100%;
+        }
+
+        .logo-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            flex-shrink: 0;
+            margin-right: 20px;
+        }
+
+        .logo a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: var(--white);
+            font-weight: bold;
+            font-size: 1.3rem;
+            line-height: 1;
+        }
+
+        .sponsor-text {
+            font-size: 0.75rem;
+            color: rgba(255, 255, 255, 0.65);
+            margin-top: 0px;
+            line-height: 1;
+            font-weight: 400;
+            margin-left: 1px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 15px; /* Adjusted gap */
+            justify-content: center;
+            flex-grow: 1;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.85);
+            font-weight: 500;
+            transition: color 0.3s, background-color 0.3s;
+            padding: 5px 10px;
+            border-radius: 6px;
+            font-size: 0.95rem; /* Slightly smaller font */
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--white);
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 10px; /* Adjusted gap */
+            flex-shrink: 0;
+            margin-left: 20px; /* Adjusted margin */
+            align-items: center;
+        }
+
+        .login-btn, .signup-btn {
+            padding: 5px 15px; /* Adjusted padding */
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s;
+            font-size: 0.95rem;
+            white-space: nowrap; /* Prevent wrapping */
+        }
+
+        .login-btn {
+            color: var(--white);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .signup-btn {
+            background-color: var(--primary-light);
+            color: white;
+            border: 1px solid var(--primary-light);
+        }
+
+        .login-btn:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-color: var(--white);
+        }
+
+        .signup-btn:hover {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        
+        /* Dropdown specific styles for old navbar */
+        .nav-buttons .dropdown-menu {
+            background-color: white;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-top: 5px !important;
+        }
+        
+        .nav-buttons .dropdown-item {
+            color: #333;
+            font-size: 0.9rem;
+            padding: 0.4rem 1rem;
+        }
+        
+        .nav-buttons .dropdown-item:hover {
+            background-color: var(--light-bg);
+            color: var(--primary-dark);
+        }
+        
+        .nav-buttons .nav-link.dropdown-toggle::after {
+            display: none; /* Hide default Bootstrap caret */
+        }
+        
+        .nav-buttons .login-btn i.fa-caret-down {
+             margin-left: 5px;
+        }
+        
+        .menu-toggle {
+            display: none;
+            cursor: pointer;
+            font-size: 1.5rem;
+            color: var(--white);
+            background: none;
+            border: none;
+            padding: 5px 10px;
+        }
+
+        @media (max-width: 992px) {
+            .navbar-container {
+                flex-wrap: wrap;
+            }
+            .nav-links,
+            .nav-buttons {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                position: absolute;
+                top: 60px; /* Adjust based on navbar height */
+                left: 0;
+                background-color: var(--primary-dark);
+                padding: 15px 20px;
+                gap: 10px;
+                box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+            }
+            .nav-links {
+                align-items: flex-start;
+            }
+            .nav-links.active,
+            .nav-buttons.active {
+                display: flex;
+            }
+            .menu-toggle {
+                display: block;
+                order: 3;
+                margin-left: auto;
+            }
+            .nav-buttons {
+                position: relative;
+                top: auto;
+                left: auto;
+                box-shadow: none;
+                padding: 0;
+                margin-top: 15px;
+                background-color: transparent;
+                width: 100%;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+            .navbar-container > .logo-container {
+                flex-grow: 1;
+            }
+            .navbar-container > .menu-toggle {
+                flex-shrink: 0;
+            }
+             .nav-buttons.active {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                width: 100%;
+                margin-top: 15px;
+            }
+            /* Ensure dropdown works on mobile */
+            .nav-buttons .dropdown {
+                width: 100%;
+            }
+            .nav-buttons .dropdown-toggle {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+            }
+             .nav-buttons .dropdown-menu {
+                 position: static !important; /* Override Bootstrap */
+                 width: 100%;
+                 border: none;
+                 box-shadow: none;
+                 background-color: rgba(255, 255, 255, 0.05);
+             }
+             .nav-buttons .dropdown-item {
+                 color: rgba(255, 255, 255, 0.85);
+             }
+             .nav-buttons .dropdown-item:hover {
+                 background-color: rgba(255, 255, 255, 0.1);
+                 color: white;
+             }
+        }
+        /* --- End Navbar styles --- */
+    </style>
+    {% block styles %}{% endblock %}
+</head>
+<body>
+    {% block navbar %}
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <div class="logo">
+                    <a href="/">
+                        <span>BambooLab</span>
+                    </a>
+                </div>
+                <div class="sponsor-text">
+                    Được tài trợ bởi Chuyên Hà Tĩnh Online Judge
+                </div>
+            </div>
+
+            <div class="nav-links">
+                 <a href="/" class="{% if request.path == '/' %}active{% endif %}">Trang chủ</a>
+                 {% if user.is_staff %}
+                 <a href="{% url 'quiz-list' %}" class="{% if '/quiz/' in request.path %}active{% endif %}">Trắc nghiệm</a>
+                 <a href="{% url 'document-list' %}" class="{% if '/documents/' in request.path %}active{% endif %}">Tài liệu</a>
+                 <a href="{% url 'upload-document' %}" class="{% if request.path == '/upload-document/' %}active{% endif %}">Tải tài liệu</a>
+                 <a href="{% url 'score-ranking' %}" class="{% if request.path == '/score-ranking/' %}active{% endif %}">Tra cứu điểm</a>
+                 {% endif %}
+                 <a href="#">Giới thiệu</a>
+                 <a href="#">Liên hệ</a>
+            </div>
+
+            <div class="nav-buttons">
+                 {% if user.is_authenticated %}
+                 <div class="nav-item dropdown">
+                     <a class="login-btn dropdown-toggle d-flex align-items-center" href="#" id="userDropdownOld" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                         Xin chào {{ user.first_name|default:user.username }}
+                     </a>
+                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdownOld">
+                         {% if user.is_staff %}
+                         <li><a class="dropdown-item" href="{% url 'admin:index' %}"><i class="fas fa-cog me-2"></i>Quản trị</a></li>
+                         {% endif %}
+                         <li><a class="dropdown-item" href="{% url 'user_profile' %}"><i class="fas fa-user me-2"></i>Tài khoản</a></li>
+                         <li><hr class="dropdown-divider"></li>
+                         <li><a class="dropdown-item" href="{% url 'logout_view' %}"><i class="fas fa-sign-out-alt me-2"></i>Đăng xuất</a></li>
+                     </ul>
+                 </div>
+                 {% else %}
+                 <a href="{% url 'login_view' %}" class="login-btn">Đăng nhập</a>
+                 <a href="{% url 'register_view' %}" class="signup-btn">Đăng ký</a>
+                 {% endif %}
+            </div>
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+    {% endblock %}
+
+    <main class="flex-grow-1">
+        {% if messages %}
+        <div class="container mt-3">
+            {% for message in messages %}
+            <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+                {{ message }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+        
+        {% block content %}
+        <!-- Nội dung chính của các trang con sẽ được chèn vào đây -->
+        {% endblock %}
+    </main>
+
+    <!-- Optional: Footer có thể thêm vào đây nếu muốn nó xuất hiện trên mọi trang -->
+    <!-- 
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container text-center">
+            <span class="text-muted">© 2024 BambooLab</span>
+        </div>
+    </footer> 
+    -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Script cho menu toggle (chung cho mọi trang có navbar)
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        const navButtons = document.querySelector('.nav-buttons');
+
+        if (menuToggle && navLinks && navButtons) { // Check if elements exist
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                navButtons.classList.toggle('active'); 
+            });
+        }
+    </script>
+    {% block scripts %}
+    <!-- Scripts riêng của từng trang sẽ được chèn vào đây -->
+    {% endblock %}
+</body>
+</html> 

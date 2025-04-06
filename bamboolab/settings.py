@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -25,7 +26,9 @@ SECRET_KEY = "django-insecure-&j(j6s2(f02nvh4i-8v$)sm4sn-!j+_6(nvzy)w+b3u#s9ll54
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['bamboolab.thptchuyenhatinh.edu.vn','127.0.0.1']
+
+CSRF_TRUSTED_ORIGINS = ['https://bamboolab.thptchuyenhatinh.edu.vn','http://127.0.0.1:8000']
 
 
 # Application definition
@@ -122,3 +125,18 @@ STATICFILES_DIRS = [BASE_DIR / 'static']
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+# Media files (Uploads)
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# Celery Configuration
+CELERY_BROKER_URL = 'redis://default:oJilO3ifLG53y1xK1BmjIdBNdMPTEwMo@redis-18788.crce178.ap-east-1-1.ec2.redns.redis-cloud.com:18788'
+CELERY_RESULT_BACKEND = 'redis://default:oJilO3ifLG53y1xK1BmjIdBNdMPTEwMo@redis-18788.crce178.ap-east-1-1.ec2.redns.redis-cloud.com:18788'
+CELERY_ACCEPT_CONTENT = ['json']
+CELERY_TASK_SERIALIZER = 'json'
+CELERY_RESULT_SERIALIZER = 'json'
+CELERY_TIMEZONE = TIME_ZONE
+
+# Google Generative AI API (Gemini)
+GEMINI_API_KEY = 'AIzaSyDvrbX8pZ0dDNCYyRYWycQu20bzKW9wZhM'  # Thay bằng API key thực của bạn

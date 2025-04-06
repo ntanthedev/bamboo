@@ -1,0 +1,542 @@
+{% extends 'base.html' %}
+{% load custom_tags %}
+
+{% block title %}Kết quả bài kiểm tra: {{ subject.name }}{% endblock %}
+
+{% block styles %}
+{{ block.super }}
+{# Link to Font Awesome for icons #}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<style>
+    :root {
+        --result-bg: #f8f9fa;
+        --result-card-bg: #ffffff;
+        --correct-bg: #d1e7dd; /* Light green */
+        --correct-border: #a3cfbb;
+        --correct-icon-color: #198754; /* Bootstrap success green */
+        --incorrect-bg: #f8d7da; /* Light red */
+        --incorrect-border: #f1aeb5;
+        --incorrect-icon-color: #dc3545; /* Bootstrap danger red */
+        --user-select-border: #0d6efd; /* Bootstrap primary blue */
+        --explanation-bg: #e9ecef; /* Light gray */
+        --explanation-border: #ced4da;
+        --explanation-icon-color: #495057; /* Darker gray */
+        --text-dark: #212529;
+        --text-muted: #6c757d;
+        --primary-color: #4a7a38; /* Your primary green */
+        --primary-dark: #3b612c;
+        --primary-light: #e0f2e0;
+        --border-color: #dee2e6; /* Standard border color */
+        --nav-panel-width: 100px; /* Width of the nav panel */
+        --main-content-gap: 2rem; /* Gap between content and nav */
+    }
+    body {
+        background-color: var(--result-bg);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: var(--text-dark);
+    }
+
+    /* Main layout container */
+    .result-layout-container {
+        display: grid;
+        grid-template-columns: 1fr auto; /* Content takes remaining space, nav takes its width */
+        gap: var(--main-content-gap);
+        max-width: calc(850px + var(--nav-panel-width) + var(--main-content-gap)); /* Adjust max-width */
+        margin: 2.5rem auto;
+        align-items: start; /* Align items to the top */
+    }
+
+    .result-container {
+        /* Removed max-width and margin auto as it's handled by the layout container */
+        background-color: var(--result-card-bg);
+        padding: 2.5rem 3rem;
+        border-radius: 12px;
+        box-shadow: 0 6px 25px rgba(0,0,0,0.09);
+        border: 1px solid var(--border-color);
+        grid-column: 1 / 2; /* Place in the first column */
+    }
+
+    /* Navigation Panel */
+    .quiz-nav-panel {
+        grid-column: 2 / 3; /* Place in the second column */
+        width: var(--nav-panel-width);
+        background-color: var(--result-card-bg);
+        padding: 1.5rem 0.5rem;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+        border: 1px solid var(--border-color);
+        position: sticky; /* Make it sticky */
+        top: 2rem; /* Adjust top position as needed */
+        max-height: calc(100vh - 4rem); /* Limit height to viewport height */
+        overflow-y: auto; /* Add scroll if needed */
+    }
+    .quiz-nav-panel h4 {
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: var(--primary-dark);
+        text-align: center;
+        margin-bottom: 1.5rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid var(--border-color);
+    }
+    .quiz-nav-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(35px, 1fr)); /* Responsive grid */
+        gap: 0.6rem;
+        justify-content: center;
+    }
+    .quiz-nav-item a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 35px; /* Fixed width */
+        height: 35px; /* Fixed height */
+        border-radius: 50%; /* Circular shape */
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 0.9rem;
+        color: var(--text-muted);
+        background-color: var(--result-bg);
+        border: 1px solid var(--border-color);
+        transition: all 0.2s ease;
+    }
+    .quiz-nav-item a:hover {
+        background-color: var(--primary-light);
+        color: var(--primary-dark);
+        border-color: var(--primary-color);
+        transform: scale(1.1);
+    }
+    /* Styles for correct/incorrect navigation items */
+    .quiz-nav-item.nav-correct a {
+        background-color: var(--correct-bg);
+        color: var(--correct-icon-color);
+        border-color: var(--correct-border);
+    }
+    .quiz-nav-item.nav-correct a:hover {
+        background-color: #b8dbc5;
+        border-color: #8eccaa;
+    }
+    .quiz-nav-item.nav-incorrect a {
+        background-color: var(--incorrect-bg);
+        color: var(--incorrect-icon-color);
+        border-color: var(--incorrect-border);
+    }
+     .quiz-nav-item.nav-incorrect a:hover {
+        background-color: #f1c0c5;
+        border-color: #ecabb1;
+    }
+    /* Style for the currently active nav item (optional) */
+    .quiz-nav-item a.active {
+        box-shadow: 0 0 0 3px var(--user-select-border);
+        border-color: var(--user-select-border);
+    }
+
+    /* Rest of the existing styles... */
+    .result-header {
+        border-bottom: 1px solid var(--border-color);
+        padding-bottom: 1.5rem;
+        margin-bottom: 2.5rem;
+        text-align: center;
+    }
+    .result-header h1 {
+        color: var(--primary-dark);
+        margin-bottom: 0.8rem;
+        font-weight: 700;
+        font-size: 1.9rem; /* Slightly larger */
+    }
+    .score-display {
+        font-size: 3.5rem; /* Larger score */
+        font-weight: 700;
+        color: var(--primary-color);
+        margin: 1.2rem 0;
+        line-height: 1;
+    }
+    .score-display sup {
+        font-size: 2rem;
+        color: var(--text-muted);
+        font-weight: 500;
+        margin-left: 4px;
+    }
+    .score-summary p {
+        font-size: 1.15rem; /* Slightly larger text */
+        color: var(--text-dark);
+        margin-bottom: 0.3rem;
+    }
+    .time-info {
+        font-size: 0.9rem;
+        color: var(--text-muted);
+        margin-top: 1rem;
+    }
+
+    .review-section h3 {
+        color: var(--primary-dark);
+        margin-bottom: 2rem;
+        padding-bottom: 0.8rem;
+        border-bottom: 3px solid var(--primary-light);
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+
+    .question-block {
+        margin-bottom: 3rem; /* More space between questions */
+        padding-bottom: 2.5rem;
+        border-bottom: 1px dashed var(--border-color); /* Dashed border */
+        scroll-margin-top: 2rem; /* Add margin when scrolling to avoid header overlap */
+    }
+    /* Use last-of-type to target the last question block */
+    .question-block:last-of-type {
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .question-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 1.5rem;
+        gap: 1rem;
+    }
+    .question-text {
+        font-size: 1.2rem; /* Larger question text */
+        font-weight: 600;
+        line-height: 1.7; /* More line spacing */
+        flex-grow: 1;
+        color: var(--text-dark);
+    }
+    .question-number {
+        color: var(--primary-color);
+        margin-right: 0.6rem;
+        font-weight: 700;
+    }
+    .question-result-icon {
+        font-size: 1.6rem; /* Larger result icon */
+        flex-shrink: 0;
+        margin-top: 4px;
+        line-height: 1; /* Prevent extra space */
+    }
+    .correct-icon { color: var(--correct-icon-color); }
+    .incorrect-icon { color: var(--incorrect-icon-color); }
+
+    /* Styling for Answer display */
+    .answers-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0.9rem; /* Slightly more gap */
+    }
+    .answer-item {
+        padding: 0.9rem 1.3rem;
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        gap: 1.1rem;
+        position: relative;
+        background-color: var(--result-card-bg);
+        transition: all 0.2s ease-in-out;
+        line-height: 1.6;
+        font-size: 1.05rem; /* Slightly larger answer text */
+    }
+
+    /* Correct Answer Styling */
+    .answer-item.correct-answer {
+        background-color: var(--correct-bg);
+        border-color: var(--correct-border);
+        font-weight: 600;
+        color: var(--text-dark);
+    }
+    .correct-answer .answer-icon {
+        color: var(--correct-icon-color);
+    }
+
+    /* User Selected Styling */
+    .answer-item.user-selected {
+         /* Use padding-left combined with border-left for visual cue */
+         border-left: 6px solid var(--user-select-border);
+         padding-left: calc(1.3rem - 5px); /* Adjust padding to align text visually */
+    }
+    /* User Selected Incorrect Answer Styling */
+    .answer-item.user-selected.incorrect-answer {
+         background-color: var(--incorrect-bg);
+         border-color: var(--incorrect-border);
+         border-left-color: var(--incorrect-icon-color); /* Danger red border */
+         color: var(--text-dark);
+    }
+    .user-selected.incorrect-answer .answer-icon {
+        color: var(--incorrect-icon-color);
+    }
+
+    /* Incorrect Answer (Not Selected) Styling */
+    .answer-item.incorrect-answer:not(.user-selected) {
+         /* Optional: Slightly fade out incorrect, unselected answers */
+         /* opacity: 0.85; */ 
+         background-color: #fdfdfe; /* Very light background if needed */
+    }
+    .answer-item.incorrect-answer:not(.user-selected) .answer-icon {
+         color: var(--text-muted); /* Gray circle */
+    }
+
+    .answer-icon {
+        font-size: 1.3rem; /* Larger icons */
+        flex-shrink: 0;
+        width: 22px; /* Ensure alignment */
+        text-align: center;
+        line-height: 1;
+        margin-right: 0.2rem; /* Small space after icon */
+    }
+    .answer-item span {
+        flex-grow: 1;
+    }
+
+    /* Explanation Styling */
+    .explanation-item {
+        background-color: var(--explanation-bg);
+        border: 1px solid var(--explanation-border);
+        border-left: 6px solid var(--explanation-border);
+        padding: 0.9rem 1.3rem;
+        /* margin-top: -0.4rem; */ /* Remove negative margin, use gap */
+        margin-left: calc(1.1rem + 22px + 0.2rem); /* Indent explanation */
+        margin-top: 0.5rem; /* Space above explanation */
+        border-radius: 8px;
+        display: flex;
+        align-items: flex-start;
+        gap: 1.1rem;
+    }
+    .explanation-icon {
+        color: var(--explanation-icon-color);
+        margin-top: 0.3em;
+        font-size: 1.2rem;
+        flex-shrink: 0;
+        line-height: 1;
+    }
+    .explanation-text {
+        font-size: 1rem;
+        color: var(--text-dark);
+        line-height: 1.7;
+        flex-grow: 1;
+    }
+
+    /* Action Buttons Styling */
+    .action-buttons {
+        text-align: center;
+        margin-top: 3.5rem;
+        padding-top: 2rem;
+        border-top: 1px solid var(--border-color);
+        display: flex;
+        justify-content: center;
+        gap: 1.2rem; /* More space between buttons */
+    }
+    .btn-action {
+        color: white;
+        border: none;
+        padding: 0.8rem 1.8rem;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 1.05rem;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.6rem;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .btn-action:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+        color: white;
+    }
+    /* Primary Button (Retry) */
+    .btn-action.primary {
+        background-color: var(--primary-color);
+    }
+    .btn-action.primary:hover {
+        background-color: var(--primary-dark);
+    }
+    /* Secondary Button (Choose Subject) */
+    .btn-action.secondary {
+        background-color: #6c757d; /* Bootstrap secondary gray */
+        color: white;
+    }
+    .btn-action.secondary:hover {
+        background-color: #5a6268;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 992px) {
+        .result-layout-container {
+            grid-template-columns: 1fr; /* Stack content and nav panel */
+            gap: 1.5rem;
+            max-width: 850px; /* Adjust max-width for single column */
+        }
+        .result-container {
+            grid-column: 1 / -1; /* Take full width */
+        }
+        .quiz-nav-panel {
+            grid-column: 1 / -1; /* Take full width */
+            width: auto; /* Auto width */
+            position: static; /* Remove sticky position */
+            max-height: none; /* Remove max-height */
+            margin-bottom: 1.5rem;
+        }
+        .quiz-nav-list {
+            grid-template-columns: repeat(auto-fill, minmax(35px, 1fr)); /* Allow more items per row */
+        }
+    }
+    @media (max-width: 768px) {
+         .result-container {
+            padding: 2rem 1.5rem;
+         }
+         .score-display {
+             font-size: 3rem;
+         }
+         .score-display sup {
+             font-size: 1.8rem;
+         }
+         .question-text {
+             font-size: 1.1rem;
+         }
+         .action-buttons {
+            flex-direction: column;
+            gap: 0.8rem;
+         }
+         .btn-action {
+             width: 100%;
+             justify-content: center;
+         }
+    }
+
+</style>
+{% endblock %}
+
+{% block content %}
+{# Main layout container #}
+<div class="result-layout-container">
+
+    {# Main content area #}
+    <div class="result-container">
+        <div class="result-header">
+            <h1>Kết quả bài kiểm tra: {{ subject.name }}</h1>
+            <div class="score-display">{{ score|default:0|floatformat:2 }}<sup>/10</sup></div>
+            <div class="score-summary">
+                <p>Bạn đã trả lời đúng {{ correct_answers_count }} trên tổng số {{ total_questions }} câu.</p>
+            </div>
+            <p class="time-info">Hoàn thành lúc: {{ attempt.end_time|date:"H:i - d/m/Y" }}</p>
+        </div>
+
+        <div class="review-section">
+            <h3>Xem lại bài làm</h3>
+            {% for question in questions %}
+            <div class="question-block" id="q-{{ forloop.counter }}"> {# Ensure this ID matches nav link #}
+                <div class="question-header">
+                    <div class="question-text">
+                        <span class="question-number">Câu {{ forloop.counter }}:</span>
+                        {{ question.text|linebreaksbr }}
+                    </div>
+                    {% with correct_answer_id=correct_answer_ids_map|get_item:question.id user_answer_id=user_answers|get_item:question.id %}
+                    {% if user_answer_id == correct_answer_id %}
+                        <i class="fas fa-check-circle question-result-icon correct-icon" title="Đúng"></i>
+                    {% else %}
+                        <i class="fas fa-times-circle question-result-icon incorrect-icon" title="Sai"></i>
+                    {% endif %}
+                    {% endwith %}
+                </div>
+
+                <ul class="answers-list">
+                {% with user_selected_answer_id=user_answers|get_item:question.id %}
+                {% for answer in question.answer_set.all %}
+                    {# Div container for answer and its potential explanation #}
+                    <div> 
+                        <li class="answer-item 
+                            {% if answer.is_correct %}correct-answer{% else %}incorrect-answer{% endif %} 
+                            {% if user_selected_answer_id == answer.id %}user-selected{% endif %}"
+                        >
+                            {% if answer.is_correct %}
+                                <i class="fas fa-check-circle answer-icon"></i>
+                            {% elif user_selected_answer_id == answer.id %} 
+                                <i class="fas fa-times-circle answer-icon"></i>
+                            {% else %} 
+                                <i class="far fa-circle answer-icon"></i>
+                            {% endif %}
+                            <span>{{ answer.text|linebreaksbr }}</span>
+                        </li>
+                        {% if answer.is_correct and answer.explanation %}
+                        <div class="explanation-item">
+                            <i class="fas fa-info-circle explanation-icon"></i>
+                            <span class="explanation-text">{{ answer.explanation|linebreaksbr }}</span>
+                        </div>
+                        {% endif %}
+                    </div>
+                {% endfor %}
+                {% endwith %}
+                </ul>
+            </div>
+            {% endfor %}
+        </div>
+        
+        <div class="action-buttons">
+            {# Add primary and secondary classes to buttons #}
+            <a href="{% url 'start_quiz' subject.id %}" class="btn btn-action primary">
+                <i class="fas fa-redo"></i> Làm lại
+            </a>
+            <a href="{% url 'quiz-list' %}" class="btn btn-action secondary">
+                <i class="fas fa-list"></i> Chọn môn khác
+            </a>
+        </div>
+    </div> {# End of result-container #}
+
+    {# Navigation Panel #}
+    <div class="quiz-nav-panel">
+        <h4>Điều hướng</h4>
+        <ul class="quiz-nav-list">
+            {% for question in questions %}
+                {% with correct_answer_id=correct_answer_ids_map|get_item:question.id user_answer_id=user_answers|get_item:question.id %}
+                <li class="quiz-nav-item 
+                    {% if user_answer_id == correct_answer_id %}nav-correct{% else %}nav-incorrect{% endif %}"
+                >
+                    <a href="#q-{{ forloop.counter }}" title="Đến câu {{ forloop.counter }}">
+                        {{ forloop.counter }}
+                    </a>
+                </li>
+                {% endwith %}
+            {% endfor %}
+        </ul>
+    </div> {# End of quiz-nav-panel #}
+
+</div> {# End of result-layout-container #}
+{% endblock %}
+
+{% block scripts %}
+{{ block.super }}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const navLinks = document.querySelectorAll('.quiz-nav-list a');
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault(); // Ngăn hành vi nhảy mặc định
+            const targetId = this.getAttribute('href'); // Lấy ID đích (ví dụ: "#q-1")
+            const targetElement = document.querySelector(targetId);
+
+            if (targetElement) {
+                // Loại bỏ class active khỏi tất cả các link trước đó (tùy chọn)
+                // navLinks.forEach(l => l.classList.remove('active'));
+                // Thêm class active vào link vừa click (tùy chọn)
+                // this.classList.add('active');
+
+                // Cuộn mượt đến phần tử
+                targetElement.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start' // Căn lề trên của phần tử với lề trên của viewport
+                });
+            }
+        });
+    });
+});
+</script>
+{% endblock %} 

@@ -1,246 +1,508 @@
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang chủ - BambooLab</title>
-    <link rel="stylesheet" href="../static/css/home.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="navbar-container">
-            <div class="logo">
-                <a href="/">
-                    <img src="../static/images/logo.png" alt="BambooLab Logo">
-                    <span>BambooLab</span>
+{% extends 'base.html' %}
+
+{% block title %}Trang chủ - BambooLab{% endblock %}
+
+{% block styles %}
+<style>
+    /* Chỉ giữ lại các style riêng cho trang home */
+
+    /* Header Section */
+    .header-section {
+        text-align: center;
+        padding: 6rem 0 4rem;
+        position: relative;
+        overflow: hidden;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, transparent 100%);
+    }
+    
+    .header-section::before {
+        content: '';
+        position: absolute;
+        top: -150px;
+        left: -150px;
+        width: 300px;
+        height: 300px;
+        background-color: rgba(123, 178, 90, 0.08);
+        border-radius: 50%;
+        z-index: -1;
+        animation: pulseShape 15s infinite alternate ease-in-out;
+    }
+    
+    .header-section::after {
+        content: '';
+        position: absolute;
+        bottom: -150px;
+        right: -150px;
+        width: 300px;
+        height: 300px;
+        background-color: rgba(123, 178, 90, 0.08);
+        border-radius: 50%;
+        z-index: -1;
+        animation: pulseShape 17s infinite alternate ease-in-out;
+        animation-delay: 1s;
+    }
+    
+    @keyframes pulseShape {
+        0% { transform: scale(1); opacity: 1; }
+        100% { transform: scale(1.3); opacity: 0.7; }
+    }
+    
+    .header-section h1 {
+        font-size: 3.2rem;
+        margin-bottom: 1.5rem;
+        margin-top: 100px;
+        position: relative;
+        display: inline-block;
+    }
+    
+    .header-section h1::after {
+        content: '';
+        position: absolute;
+        width: 120px;
+        height: 5px;
+        bottom: -15px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: linear-gradient(to right, var(--primary-color), var(--primary-light));
+        border-radius: 5px;
+    }
+    
+    .header-section p {
+        font-size: 1.2rem;
+        max-width: 750px;
+        margin: 2rem auto 2.5rem;
+        color: var(--text-light);
+        line-height: 1.6;
+    }
+
+    .btn {
+        padding: 12px 30px;
+        border-radius: 50px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .btn-primary {
+        background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+        color: var(--white);
+        box-shadow: 0 5px 15px rgba(74, 122, 56, 0.2);
+    }
+    
+    .btn-primary:hover {
+        background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-color) 100%);
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(74, 122, 56, 0.3);
+        color: var(--white);
+    }
+    
+    .btn-outline-primary {
+        background-color: transparent;
+        color: var(--primary-color);
+        border: 2px solid var(--primary-color);
+    }
+    
+    .btn-outline-primary:hover {
+        background-color: var(--primary-color);
+        color: var(--white);
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(74, 122, 56, 0.2);
+    }
+
+    .container-custom {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    
+    /* Features Section */
+    .features-section {
+        padding: 5rem 0;
+    }
+    
+    .section-title {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+    
+    .section-title h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        position: relative;
+        display: inline-block;
+        color: var(--primary-dark);
+        font-weight: 700;
+    }
+    
+    .section-title h2::after {
+        content: '';
+        position: absolute;
+        width: 80px;
+        height: 4px;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: linear-gradient(to right, var(--primary-color), var(--primary-light));
+        border-radius: 4px;
+    }
+    
+    .section-title p {
+        max-width: 600px;
+        margin: 1rem auto 0;
+        color: var(--text-light);
+        font-size: 1.1rem;
+    }
+    
+    .features-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+    }
+    
+    .feature-card {
+        background-color: var(--white);
+        border-radius: 16px;
+        padding: 35px 30px;
+        text-align: center;
+        box-shadow: var(--card-shadow);
+        transition: all 0.4s ease;
+        border: 1px solid var(--border-color);
+        position: relative;
+        overflow: hidden;
+        height: 100%;
+    }
+    
+    .feature-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        border-color: var(--primary-light);
+    }
+    
+    .feature-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 5px;
+        background: linear-gradient(to right, var(--primary-color), var(--primary-light));
+        opacity: 0;
+        transition: opacity 0.4s ease;
+    }
+    
+    .feature-card:hover::before {
+        opacity: 1;
+    }
+    
+    .feature-icon {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, var(--primary-bg) 0%, var(--light-bg) 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 25px auto;
+        color: var(--primary-color);
+        font-size: 32px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        transition: all 0.4s ease;
+    }
+    
+    .feature-card:hover .feature-icon {
+        background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+        color: var(--white);
+        transform: scale(1.1);
+    }
+    
+    .feature-card h3 {
+        font-size: 1.4rem;
+        margin-bottom: 15px;
+        color: var(--primary-dark);
+        font-weight: 700;
+    }
+    
+    .feature-card p {
+        font-size: 0.95rem;
+        color: var(--gray-text);
+        line-height: 1.6;
+    }
+    
+    /* Call to Action Section */
+    .cta-section {
+        background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+        color: var(--white);
+        padding: 6rem 0;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .cta-section::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -20%;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.05);
+        transform: rotate(45deg);
+        border-radius: 50px;
+    }
+    
+    .cta-content {
+        position: relative;
+        z-index: 1;
+    }
+    
+    .cta-content h2 {
+        font-size: 2.8rem;
+        color: var(--white);
+        margin-bottom: 1.5rem;
+    }
+    
+    .cta-content p {
+        font-size: 1.2rem;
+        max-width: 650px;
+        margin: 0 auto 2.5rem auto;
+        opacity: 0.9;
+    }
+    
+    .cta-button {
+        padding: 15px 40px;
+        font-size: 1.1rem;
+        background-color: var(--white);
+        color: var(--primary-color);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+    
+    .cta-button:hover {
+        background-color: var(--light-bg);
+        color: var(--primary-dark);
+        transform: translateY(-3px);
+        box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+    }
+    
+    /* Footer */
+    .footer {
+        background-color: var(--dark-bg);
+        padding: 4rem 0 2rem;
+        color: var(--text-light);
+        font-size: 0.9rem;
+        /* margin-top: auto; /* Đảm bảo footer ở dưới cùng nếu dùng trong base */ */
+    }
+    
+    .footer-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 30px;
+        margin-bottom: 3rem;
+    }
+    
+    .footer-column h5 {
+        color: var(--primary-dark);
+        margin-bottom: 1.5rem;
+        font-size: 1.1rem;
+        position: relative;
+    }
+    
+    .footer-column h5::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -8px;
+        width: 40px;
+        height: 3px;
+        background-color: var(--primary-light);
+        border-radius: 3px;
+    }
+    
+    .footer-column ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .footer-column li {
+        margin-bottom: 10px;
+    }
+    
+    .footer-column a {
+        color: var(--text-light);
+        transition: color 0.3s ease;
+        text-decoration: none;
+    }
+    
+    .footer-column a:hover {
+        color: var(--primary-color);
+    }
+    
+    .footer-social {
+        margin-top: 1rem;
+    }
+    
+    .footer-social a {
+        color: var(--primary-color);
+        font-size: 1.4rem;
+        margin-right: 15px;
+        transition: color 0.3s ease;
+    }
+    
+    .footer-social a:hover {
+        color: var(--primary-dark);
+    }
+    
+    .footer-bottom {
+        border-top: 1px solid rgba(74, 122, 56, 0.2);
+        padding-top: 2rem;
+        text-align: center;
+        font-size: 0.85rem;
+    }
+    
+    @media (max-width: 768px) {
+        .header-section h1 {
+            font-size: 2.5rem;
+        }
+        .header-section p {
+            font-size: 1.1rem;
+        }
+        .section-title h2 {
+            font-size: 2rem;
+        }
+        .cta-content h2 {
+            font-size: 2.2rem;
+        }
+        .features-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    /* CSS mới để căn giữa nút bằng flexbox */
+    .header-button-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem; /* Thêm chút khoảng cách trên */
+    }
+
+</style>
+{% endblock %}
+
+{% block content %}
+    <section class="header-section">
+        <div class="container-custom text-center">
+            <h1>Làm bài kiểm tra trắc nghiệm dễ dàng</h1>
+            <p>
+                Thử thách kiến thức của bạn với các bài kiểm tra đa dạng từ tổng số {{ question_count|default:0 }} câu hỏi của chúng tôi.
+                Mỗi bài kiểm tra gồm 16 câu hỏi ngẫu nhiên, thời gian làm bài 30 phút và tính điểm trên thang 10.
+            </p>
+            <div class="header-button-container">
+                <a href="/quiz/" class="btn btn-primary">
+                    <i class="fas fa-play-circle me-2"></i> Tạo bài kiểm tra ngay
                 </a>
             </div>
-            
-            <div class="nav-links">
-                <a href="/" class="active">Trang chủ</a>
-                <a href="/services">Dịch vụ</a>
-                <a href="/about">Giới thiệu</a>
-                <a href="/contact">Liên hệ</a>
-                <a href="/blog">Blog</a>
-            </div>
-            
-            <div class="nav-buttons">
-                <a href="/login" class="login-btn">Đăng nhập</a>
-                <a href="/signup" class="signup-btn">Đăng ký</a>
-            </div>
-            
-            <div class="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="hero-section">
-        <div class="hero-content">
-            <h1>Chào mừng đến với BambooLab</h1>
-            <p>Nền tảng học tập và phát triển kỹ năng lập trình hàng đầu Việt Nam</p>
-            <div class="hero-buttons">
-                <a href="/courses" class="primary-btn">Khám phá khóa học</a>
-                <a href="/trial" class="secondary-btn">Dùng thử miễn phí</a>
-            </div>
-        </div>
-        <div class="hero-image">
-            <img src="../static/images/main.png" alt="BambooLab Hero">
         </div>
     </section>
-    
-    <!-- Features Section -->
+
     <section class="features-section">
-        <h2>Tính năng nổi bật</h2>
-        <div class="features-container">
-            <div class="feature-card">
-                <i class="fas fa-laptop-code"></i>
-                <h3>Học tập linh hoạt</h3>
-                <p>Truy cập khóa học mọi lúc, mọi nơi với nội dung được cập nhật liên tục</p>
+        <div class="container-custom">
+            <div class="section-title">
+                <h2>Tại sao chọn BambooLab?</h2>
+                <p>Chúng tôi cung cấp một nền tảng kiểm tra trắc nghiệm trực tuyến đơn giản, hiệu quả và thân thiện với người dùng.</p>
             </div>
-            <div class="feature-card">
-                <i class="fas fa-users"></i>
-                <h3>Cộng đồng hỗ trợ</h3>
-                <p>Tham gia cộng đồng học tập năng động với sự hỗ trợ từ chuyên gia</p>
-            </div>
-            <div class="feature-card">
-                <i class="fas fa-certificate"></i>
-                <h3>Chứng chỉ giá trị</h3>
-                <p>Nhận chứng chỉ được công nhận bởi các doanh nghiệp hàng đầu</p>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Courses Section -->
-    <section class="courses-section">
-        <h2>Khóa học phổ biến</h2>
-        <div class="courses-container">
-            <div class="course-card">
-                <div class="course-image">
-                    <img src="../static/images/course1.jpg" alt="Khóa học Python">
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-random"></i></div>
+                    <h3>Câu hỏi ngẫu nhiên</h3>
+                    <p>Mỗi bài kiểm tra được tạo từ 16 câu hỏi ngẫu nhiên, đảm bảo tính thử thách và công bằng.</p>
                 </div>
-                <div class="course-content">
-                    <span class="course-tag">Cơ bản</span>
-                    <h3>Lập trình Python từ cơ bản đến nâng cao</h3>
-                    <p>Học cách lập trình Python từ đầu và xây dựng các ứng dụng thực tế</p>
-                    <div class="course-info">
-                        <span><i class="fas fa-clock"></i> 40 giờ</span>
-                        <span><i class="fas fa-star"></i> 4.8/5</span>
-                    </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-clock"></i></div>
+                    <h3>Giới hạn thời gian</h3>
+                    <p>Rèn luyện kỹ năng quản lý thời gian với giới hạn 30 phút cho mỗi bài kiểm tra.</p>
                 </div>
-            </div>
-            <div class="course-card">
-                <div class="course-image">
-                    <img src="../static/images/course2.jpg" alt="Khóa học Web">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-star"></i></div>
+                    <h3>Thang điểm 10</h3>
+                    <p>Hệ thống chấm điểm rõ ràng trên thang điểm 10 giúp bạn dễ dàng theo dõi tiến độ.</p>
                 </div>
-                <div class="course-content">
-                    <span class="course-tag">Trung cấp</span>
-                    <h3>Phát triển Web với HTML, CSS và JavaScript</h3>
-                    <p>Xây dựng website đáp ứng từ đầu với các công nghệ web hiện đại</p>
-                    <div class="course-info">
-                        <span><i class="fas fa-clock"></i> 50 giờ</span>
-                        <span><i class="fas fa-star"></i> 4.9/5</span>
-                    </div>
+                 <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-book-open"></i></div>
+                    <h3>Đa dạng môn học</h3>
+                    <p>Cung cấp bài kiểm tra cho nhiều môn học phổ biến, phù hợp với nhu cầu học tập của bạn.</p>
                 </div>
-            </div>
-            <div class="course-card">
-                <div class="course-image">
-                    <img src="../static/images/course3.jpg" alt="Khóa học Data Science">
+                 <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>Truy cập mọi nơi</h3>
+                    <p>Làm bài kiểm tra mọi lúc, mọi nơi trên mọi thiết bị có kết nối internet.</p>
                 </div>
-                <div class="course-content">
-                    <span class="course-tag">Nâng cao</span>
-                    <h3>Khoa học dữ liệu và Machine Learning</h3>
-                    <p>Phân tích dữ liệu và xây dựng mô hình ML cho các vấn đề thực tế</p>
-                    <div class="course-info">
-                        <span><i class="fas fa-clock"></i> 60 giờ</span>
-                        <span><i class="fas fa-star"></i> 4.7/5</span>
-                    </div>
+                 <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Kết quả tức thì</h3>
+                    <p>Xem kết quả và phân tích chi tiết ngay sau khi hoàn thành bài kiểm tra.</p>
                 </div>
-            </div>
-        </div>
-        <div class="view-all">
-            <a href="/courses" class="view-all-btn">Xem tất cả khóa học <i class="fas fa-arrow-right"></i></a>
-        </div>
-    </section>
-    
-    <!-- Testimonials Section -->
-    <section class="testimonials-section">
-        <h2>Học viên nói gì về chúng tôi</h2>
-        <div class="testimonials-container">
-            <div class="testimonial-card">
-                <div class="testimonial-avatar">
-                    <img src="../static/images/avatar1.jpg" alt="Người dùng 1">
-                </div>
-                <p class="testimonial-content">"BambooLab đã giúp tôi từ một người không biết gì về lập trình trở thành một developer chuyên nghiệp chỉ trong 6 tháng."</p>
-                <h4>Nguyễn Văn A</h4>
-                <p class="testimonial-role">Frontend Developer</p>
-            </div>
-            <div class="testimonial-card">
-                <div class="testimonial-avatar">
-                    <img src="../static/images/avatar2.jpg" alt="Người dùng 2">
-                </div>
-                <p class="testimonial-content">"Nội dung khóa học rất thực tế và dễ hiểu. Tôi đặc biệt thích cách các bài tập được thiết kế để áp dụng vào dự án thực tế."</p>
-                <h4>Trần Thị B</h4>
-                <p class="testimonial-role">Data Scientist</p>
-            </div>
-            <div class="testimonial-card">
-                <div class="testimonial-avatar">
-                    <img src="../static/images/avatar3.jpg" alt="Người dùng 3">
-                </div>
-                <p class="testimonial-content">"Cộng đồng hỗ trợ tuyệt vời. Bất cứ khi nào tôi gặp khó khăn, luôn có người sẵn sàng giúp đỡ và hướng dẫn tôi."</p>
-                <h4>Lê Minh C</h4>
-                <p class="testimonial-role">Backend Developer</p>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
     <section class="cta-section">
-        <div class="cta-content">
-            <h2>Sẵn sàng bắt đầu hành trình học tập?</h2>
-            <p>Đăng ký ngay hôm nay để nhận ưu đãi 30% cho khóa học đầu tiên của bạn</p>
-            <a href="/signup" class="cta-btn">Đăng ký ngay</a>
+        <div class="container-custom">
+            <div class="cta-content">
+                <h2>Sẵn sàng thử sức?</h2>
+                <p>Bắt đầu làm bài kiểm tra ngay hôm nay để củng cố kiến thức và chinh phục các thử thách học tập!</p>
+                <a href="/quiz/" class="btn cta-button">
+                    <i class="fas fa-rocket me-2"></i> Bắt đầu kiểm tra
+                </a>
+            </div>
         </div>
     </section>
-    
-    <!-- Footer -->
+
     <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-column">
-                <div class="footer-logo">
-                    <img src="../static/images/logo.png" alt="BambooLab Logo">
-                    <span>BambooLab</span>
+        <div class="container-custom">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h5>BambooLab</h5>
+                    <p>Nền tảng tạo và làm bài kiểm tra trắc nghiệm trực tuyến.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
                 </div>
-                <p>Nền tảng học tập lập trình hàng đầu Việt Nam với sứ mệnh đào tạo thế hệ developer tài năng.</p>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
+                <div class="footer-column">
+                    <h5>Liên kết nhanh</h5>
+                    <ul>
+                        <li><a href="/">Trang chủ</a></li>
+                        <li><a href="/quiz/">Bài kiểm tra</a></li>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Điều khoản dịch vụ</a></li>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                    </ul>
                 </div>
-            </div>
-            
-            <div class="footer-column">
-                <h4>Khóa học</h4>
-                <ul>
-                    <li><a href="#">Python</a></li>
-                    <li><a href="#">JavaScript</a></li>
-                    <li><a href="#">Data Science</a></li>
-                    <li><a href="#">Machine Learning</a></li>
-                    <li><a href="#">Web Development</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-column">
-                <h4>Liên kết</h4>
-                <ul>
-                    <li><a href="#">Về chúng tôi</a></li>
-                    <li><a href="#">Đội ngũ giảng viên</a></li>
-                    <li><a href="#">Đối tác</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Tuyển dụng</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-column">
-                <h4>Liên hệ</h4>
-                <ul class="contact-info">
-                    <li><i class="fas fa-map-marker-alt"></i> 123 Đường ABC, Quận 1, TP.HCM</li>
-                    <li><i class="fas fa-phone"></i> (028) 1234 5678</li>
-                    <li><i class="fas fa-envelope"></i> info@bamboolab.vn</li>
-                </ul>
-                <div class="newsletter">
-                    <h4>Đăng ký nhận tin</h4>
-                    <form>
-                        <input type="email" placeholder="Email của bạn">
-                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
-                    </form>
+                <div class="footer-column">
+                    <h5>Hỗ trợ</h5>
+                    <ul>
+                        <li><a href="#">Câu hỏi thường gặp</a></li>
+                        <li><a href="#">Hướng dẫn sử dụng</a></li>
+                        <li><a href="#">Liên hệ chúng tôi</a></li>
+                    </ul>
+                </div>
+                 <div class="footer-column">
+                    <h5>Liên hệ</h5>
+                    <p><i class="fas fa-map-marker-alt me-2"></i>123 Đường ABC, Thành phố XYZ</p>
+                    <p><i class="fas fa-phone me-2"></i>+84 123 456 789</p>
+                    <p><i class="fas fa-envelope me-2"></i>iotran207@thptchuyenhatinh.edu.vn</p>
                 </div>
             </div>
-        </div>
-        
-        <div class="footer-bottom">
-            <div class="copyright">
-                <p>&copy; 2023 BambooLab. Tất cả các quyền được bảo lưu.</p>
-            </div>
-            <div class="footer-links">
-                <a href="/terms-of-service">Điều khoản dịch vụ</a>
-                <a href="/privacy-policy">Chính sách bảo mật</a>
-                <a href="/cookie-policy">Chính sách cookie</a>
+            <div class="footer-bottom">
+                &copy; 2025 BambooLab. Bảo lưu mọi quyền.
             </div>
         </div>
     </footer>
+{% endblock %}
 
-    <script>
-        // Toggle mobile menu
-        document.querySelector('.menu-toggle').addEventListener('click', function() {
-            document.querySelector('.nav-links').classList.toggle('active');
-            document.querySelector('.nav-buttons').classList.toggle('active');
-        });
-    </script>
-</body>
-</html> 
+{% block scripts %}
+{# Script riêng cho trang home (nếu có) #}
+{% endblock %} 

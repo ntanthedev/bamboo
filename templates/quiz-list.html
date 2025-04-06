@@ -1,0 +1,524 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Danh sách trắc nghiệm{% endblock %}
+
+{% block styles %}
+    <style>
+        :root {
+            --primary-color: #5a9145; /* Màu xanh lá nhạt hơn */
+            --primary-light: #7db25a; /* Xanh lá nhạt hơn */
+            --primary-dark: #4a7a38; /* Xanh lá đậm nhưng nhạt hơn trước */
+            --primary-bg: #edf5e7; /* Nền xanh lá rất nhạt */
+            --accent-color: #20a98a; /* Màu accent nhạt hơn */
+            --text-color: #3b5728; /* Màu text chính nhạt hơn */
+            --text-light: #6b8b54; /* Màu text nhạt hơn */
+            --white: #FFFFFF;
+            --light-bg: #f5f9f0;
+            --dark-bg: #ebf2e4;
+        /* Kế thừa từ base.html nếu cần */
+    }
+
+    /* Styles specific to quiz-list.html */
+        .header-section {
+            text-align: center;
+        padding: 2rem 0 1.5rem; /* Giảm padding top/bottom */
+            position: relative;
+            overflow: hidden;
+        background-color: var(--light-bg); /* Thêm màu nền nhẹ */
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .header-section::before, .header-section::after { display: none; } /* Loại bỏ các hình tròn trang trí */
+        
+        .header-section h1 {
+            color: var(--primary-dark);
+            font-weight: 700;
+        margin-bottom: 0.5rem; /* Giảm margin bottom */
+            position: relative;
+            display: inline-block;
+        }
+        
+        .header-section h1::after {
+            content: '';
+            position: absolute;
+        width: 80px; /* Thu nhỏ gạch chân */
+        height: 3px; /* Mỏng hơn */
+        bottom: -8px; /* Gần hơn */
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(to right, var(--primary-color), var(--primary-light));
+            border-radius: 4px;
+        }
+        
+        .header-section p {
+            color: var(--text-light);
+            max-width: 700px;
+        margin: 1rem auto 0; /* Giảm margin top */
+        font-size: 1rem; /* Giảm font size */
+        }
+        
+        .main-container {
+            max-width: 1200px;
+        margin: 2rem auto 0; /* Thêm margin top */
+            padding: 0 20px 4rem;
+        }
+        
+        .subjects-grid {
+            display: grid;
+        /* Mặc định 1 cột trên màn hình nhỏ nhất */
+        grid-template-columns: 1fr;
+            gap: 25px;
+            margin-bottom: 3rem;
+        }
+    
+    /* 2 cột trên màn hình vừa (md) */
+    @media (min-width: 768px) {
+        .subjects-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    
+    /* 3 cột trên màn hình lớn (lg) */
+    @media (min-width: 992px) {
+        .subjects-grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+        
+        .subject-card {
+            background-color: var(--white);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+            transition: all 0.4s ease;
+            position: relative;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid rgba(90, 145, 69, 0.1);
+        }
+        
+        .subject-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(90, 145, 69, 0.2);
+            border-color: var(--primary-light);
+        }
+        
+        .subject-icon-bg {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 5rem;
+            opacity: 0.05;
+            color: var(--primary-color);
+            transform: rotate(10deg);
+            transition: all 0.4s ease;
+        }
+        
+        .subject-card:hover .subject-icon-bg {
+            transform: rotate(0deg) scale(1.2);
+            opacity: 0.08;
+        }
+        
+        .subject-card-header {
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            position: relative;
+            z-index: 1;
+        }
+        
+        .subject-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary-color) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            color: white;
+            margin-right: 15px;
+            box-shadow: 0 5px 15px rgba(90, 145, 69, 0.2);
+            flex-shrink: 0;
+        }
+        
+        .subject-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--primary-dark);
+            margin: 0;
+            transition: all 0.3s ease;
+        }
+        
+        .subject-tag {
+            display: inline-block;
+            padding: 4px 10px;
+            background-color: var(--light-bg);
+            color: var(--primary-color);
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-top: 5px;
+        }
+        
+        .subject-card-body {
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .subject-stats {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        
+        .stat-item {
+            flex: 1;
+            text-align: center;
+            padding: 10px;
+        }
+        
+        .stat-value {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .stat-value i {
+            font-size: 1rem;
+            margin-right: 5px;
+            color: var(--primary-light);
+        }
+        
+        .stat-label {
+            font-size: 0.8rem;
+            color: var(--text-light);
+        }
+        
+        .subject-description {
+            color: #666;
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+        flex-grow: 1; /* Đảm bảo mô tả chiếm không gian còn lại */
+        line-height: 1.6;
+        }
+        
+        .btn-test {
+            width: 100%;
+            padding: 14px;
+            border-radius: 10px;
+            border: none;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+            color: white;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        margin-top: auto; /* Đẩy nút xuống dưới cùng */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 5px 15px rgba(74, 122, 56, 0.15);
+        }
+        
+        .btn-test i {
+            margin-right: 8px;
+            transition: transform 0.3s ease;
+        }
+        
+        .btn-test:hover {
+            background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-color) 100%);
+        box-shadow: 0 8px 20px rgba(74, 122, 56, 0.25);
+        }
+        .btn-test:hover i {
+            transform: translateX(3px);
+        }
+        
+    /* Toast notification styles */
+    .toast-container {
+        position: fixed;
+        top: 70px; /* Dưới navbar */
+        right: 20px;
+        z-index: 1090; /* Cao hơn modal */
+    }
+
+    /* --- Loại bỏ Leaderboard Styles --- */
+    /* .leaderboard-card { ... } */
+    /* .leaderboard-title { ... } */
+    /* .leaderboard-list { ... } */
+    /* .leaderboard-item { ... } */
+    /* ... (và các style leaderboard khác) ... */
+
+    /* Custom Modal Styles */
+    #confirmStartQuizModal .modal-content {
+        border-radius: 12px;
+        border: none;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        background-color: var(--white); /* Nền trắng */
+    }
+
+    #confirmStartQuizModal .modal-header {
+        background-color: var(--primary-bg); /* Nền xanh lá rất nhạt */
+        border-bottom: 1px solid rgba(90, 145, 69, 0.2); /* Viền dưới nhẹ */
+        color: var(--primary-dark); /* Chữ xanh lá đậm */
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        padding: 1rem 1.5rem;
+    }
+
+    #confirmStartQuizModal .modal-header .btn-close {
+        filter: invert(40%) sepia(11%) saturate(1352%) hue-rotate(64deg) brightness(94%) contrast(89%); /* Đổi màu nút close */
+    }
+    #confirmStartQuizModal .modal-header .btn-close:hover {
+        opacity: 0.8;
+    }
+
+    #confirmStartQuizModal .modal-title {
+        font-weight: 600;
+    }
+
+    #confirmStartQuizModal .modal-body {
+        color: var(--text-color); /* Màu text chính */
+        padding: 1.5rem;
+        line-height: 1.7;
+    }
+    #confirmStartQuizModal .modal-body ul {
+        padding-left: 20px; /* Thụt lề cho danh sách */
+        margin-top: 0.5rem;
+        color: var(--text-light); /* Màu text nhạt hơn cho list */
+    }
+     #confirmStartQuizModal .modal-body li {
+        margin-bottom: 0.5rem;
+    }
+
+    #confirmStartQuizModal .modal-footer {
+        border-top: 1px solid rgba(0, 0, 0, 0.05);
+        padding: 1rem 1.5rem;
+        background-color: var(--light-bg); /* Nền footer nhạt */
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+    }
+
+    /* Style nút Đồng ý giống .btn-test */
+    #confirmStartQuizBtn {
+        padding: 10px 20px; /* Kích thước nhỏ hơn btn-test */
+        border-radius: 8px; /* Bo góc nhỏ hơn */
+        border: none;
+        background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+        color: white;
+        font-weight: 600;
+        font-size: 0.95rem; /* Font nhỏ hơn */
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 10px rgba(74, 122, 56, 0.15);
+    }
+
+    #confirmStartQuizBtn:hover {
+        background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-color) 100%);
+        box-shadow: 0 6px 15px rgba(74, 122, 56, 0.25);
+        transform: translateY(-2px);
+    }
+
+    /* Style nút Hủy */
+    #confirmStartQuizModal .modal-footer .btn-secondary {
+        padding: 10px 20px;
+        border-radius: 8px;
+        font-weight: 500;
+        font-size: 0.95rem;
+        background-color: #e9ecef; /* Màu xám nhạt */
+        border-color: #ced4da;
+        color: #495057; /* Màu text đậm hơn */
+        transition: all 0.3s ease;
+    }
+     #confirmStartQuizModal .modal-footer .btn-secondary:hover {
+        background-color: #d6d8db;
+        border-color: #b1b5ba;
+        color: #343a40;
+    }
+
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="header-section">
+    <div class="container">
+        <h1>Chọn môn học để bắt đầu</h1>
+        <p>Khám phá các bài kiểm tra trắc nghiệm đa dạng theo các môn học dưới đây.</p>
+    </div>
+</div>
+
+<div class="main-container container"> 
+    <div class="row"> {# Loại bỏ gx-lg-5 #}
+        
+        {# Cột chính cho nội dung môn học - Dùng col-lg-12 #}
+        <div class="col-lg-12"> 
+             <!-- Nút thêm môn học đã bị xóa -->
+            {# <div class="add-subject-section"> ... </div> #}
+            <!-- Lưới hiển thị các môn học -->
+            <div class="subjects-grid">
+                {% for subject in subjects_data %}
+                <div class="subject-card">
+                    <i class="fas fa-book subject-icon-bg"></i> 
+                    <div class="subject-card-header">
+                        <div class="subject-icon">
+                            {% if subject.name == 'Toán' %} <i class="fas fa-calculator"></i> 
+                            {% elif subject.name == 'Lý' %} <i class="fas fa-atom"></i> 
+                            {% elif subject.name == 'Hóa' %} <i class="fas fa-flask"></i> 
+                            {% elif subject.name == 'Sinh' %} <i class="fas fa-dna"></i> 
+                            {% elif subject.name == 'Sử' %} <i class="fas fa-landmark"></i> 
+                            {% elif subject.name == 'Địa' %} <i class="fas fa-globe-asia"></i> 
+                            {% elif subject.name == 'GDCD' %} <i class="fas fa-balance-scale"></i> 
+                            {% elif subject.name == 'Anh' %} <i class="fas fa-language"></i> 
+                            {% elif subject.name == 'Tin học' %} <i class="fas fa-laptop-code"></i> 
+                            {% else %} <i class="fas fa-book-open"></i> {% endif %}
+        </div>
+                        <div>
+                            <h3 class="subject-title">{{ subject.name }}</h3>
+                            <span class="subject-tag">Trắc nghiệm</span>
+                        </div>
+                    </div>
+                    <div class="subject-card-body">
+                        <div class="subject-stats">
+                            <div class="stat-item">
+                                <span class="stat-value"><i class="fas fa-question-circle"></i>{{ subject.question_count|default:"0" }}</span>
+                                <span class="stat-label">Câu hỏi</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-value"><i class="fas fa-file-alt"></i>16</span>
+                                <span class="stat-label">Câu/Bài thi</span>
+                        </div>
+                            <div class="stat-item">
+                                <span class="stat-value"><i class="fas fa-clock"></i>30</span>
+                                <span class="stat-label">Phút</span>
+                            </div>
+                        </div>
+                        <p class="subject-description">
+                            Bài kiểm tra trắc nghiệm {{ subject.name }} sẽ giúp bạn đánh giá kiến thức và cải thiện kỹ năng của mình qua các câu hỏi đa dạng.
+                        </p>
+                        <a href="{% url 'start_quiz' subject.id %}" class="btn-test">
+                            <i class="fas fa-play-circle"></i> Làm bài ngay
+                        </a>
+                    </div>
+                </div>
+                {% empty %}
+                <div class="alert alert-info w-100 text-center" role="alert">
+                    Chưa có môn học nào.
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        {# --- Cột Bảng Xếp Hạng Đã Bị Xóa --- #}
+        {# <div class="col-lg-4"> ... </div> #}
+        
+    </div> {# Kết thúc hàng của Bootstrap #}
+</div> {# Kết thúc container chính #}
+
+<!-- Modal Xác nhận Làm bài -->
+<div class="modal fade" id="confirmStartQuizModal" tabindex="-1" aria-labelledby="confirmStartQuizModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="confirmStartQuizModalLabel">Xác nhận làm bài</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p><strong>Điều khoản và Quy định Làm bài:</strong></p>
+                <p>Vui lòng đọc kỹ và xác nhận đồng ý với các quy định dưới đây trước khi bắt đầu bài kiểm tra:</p>
+                <p>1. Thời gian làm bài được giới hạn trong <strong>30 phút</strong> và sẽ bắt đầu đếm ngược ngay khi bạn nhấn nút "Đồng ý & Bắt đầu".</p>
+                <p>2. Bài kiểm tra không thể tạm dừng. Hãy đảm bảo bạn có đủ thời gian và một môi trường tập trung.</p>
+                <p>3. Kết quả sẽ được hệ thống tự động ghi nhận khi hết giờ hoặc khi bạn chủ động nộp bài.</p>
+                <p>4. Duy trì kết nối Internet ổn định trong suốt quá trình làm bài là trách nhiệm của bạn.</p>
+                <p style="margin-top: 1rem;">Nhấn "Đồng ý & Bắt đầu" để xác nhận bạn đã hiểu và chấp nhận các điều khoản này.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                <button type="button" class="btn btn-primary" id="confirmStartQuizBtn">Đồng ý & Bắt đầu</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Toast Container (Giữ lại nếu vẫn dùng messages) -->
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <!-- Toasts sẽ được thêm vào đây bằng JavaScript -->
+                    </div>
+{% endblock %}
+
+{% block scripts %}
+{{ block.super }} {# Kế thừa script từ base.html #}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Hiển thị toast nếu có message từ Django
+    const djangoMessages = document.querySelectorAll('.alert'); 
+    const toastContainer = document.querySelector('.toast-container');
+
+    djangoMessages.forEach(messageElement => {
+        const messageText = messageElement.innerText.trim();
+        const cleanMessage = messageText.replace(/×\s*$/, '').trim(); 
+        const messageType = messageElement.classList.contains('alert-success') ? 'success' : 
+                           messageElement.classList.contains('alert-warning') ? 'warning' : 
+                           messageElement.classList.contains('alert-danger') ? 'danger' : 'info';
+        
+        const toastHTML = `
+        <div class="toast align-items-center text-white bg-${messageType} border-0" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="d-flex">
+            <div class="toast-body">
+              ${cleanMessage}
+            </div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+        `;
+        
+        if(toastContainer) {
+            const toastWrapper = document.createElement('div');
+            toastWrapper.innerHTML = toastHTML;
+            const toastElement = toastWrapper.firstChild;
+            toastContainer.appendChild(toastElement);
+            
+            const toast = new bootstrap.Toast(toastElement, { delay: 5000 });
+            toast.show();
+        }
+    });
+
+    // Xử lý Modal Xác nhận Làm Bài
+    const confirmModalElement = document.getElementById('confirmStartQuizModal');
+    const confirmModal = new bootstrap.Modal(confirmModalElement);
+    const confirmStartButton = document.getElementById('confirmStartQuizBtn');
+    let quizStartUrl = ''; // Biến để lưu URL
+
+    // Lấy tất cả các nút "Làm bài ngay"
+    const startQuizButtons = document.querySelectorAll('.btn-test');
+
+    startQuizButtons.forEach(button => {
+        button.addEventListener('click', function(event) {
+            event.preventDefault(); // Ngăn chuyển hướng mặc định
+            quizStartUrl = this.href; // Lấy URL từ nút được nhấn
+            // Không cần lưu vào data-* nữa nếu dùng biến ngoài scope
+            // confirmStartButton.dataset.startUrl = quizStartUrl; 
+            confirmModal.show(); // Hiển thị modal
+        });
+    });
+
+    // Xử lý khi nhấn nút "Đồng ý & Bắt đầu"
+    confirmStartButton.addEventListener('click', function() {
+        if (quizStartUrl) {
+            window.location.href = quizStartUrl; // Chuyển hướng đến URL đã lưu
+        }
+    });
+
+    // Xóa logic modal không cần thiết cũ
+    // var addSubjectModal = document.getElementById('addSubjectModal');
+    // if(addSubjectModal) { ... }
+});
+</script>
+{% endblock %} 

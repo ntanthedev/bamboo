@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký - BambooLab</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/register.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="signup-container">
+        <div class="signup-form">
+            <h1>Đăng ký</h1>
+            {% if form.errors %}
+            <div class="error-message" id="errorMessage">
+                {% for field in form %}
+                    {% for error in field.errors %}
+                        <div>{{ error }}</div>
+                    {% endfor %}
+                {% endfor %}
+                {% for error in form.non_field_errors %}
+                    <div>{{ error }}</div>
+                {% endfor %}
+            </div>
+            {% endif %}
+            <form id="signupForm" method="post">
+                {% csrf_token %}
+                <div class="input-group">
+                    <i class="fas fa-user input-icon"></i>
+                    {{ form.name }}
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-envelope input-icon"></i>
+                    {{ form.email }}
+                </div>
+                <!--
+                <div class="input-group verification-code" {% if not form.verification_code.value %}style="display: none;"{% endif %}>
+                    <i class="fas fa-key input-icon"></i>
+                    {{ form.verification_code }}
+                    <button type="button" id="resend-code" class="resend-btn" onclick="resendCode()">Gửi lại mã</button>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-phone input-icon"></i>
+                    {{ form.phone }}
+                </div>
+                -->
+                <div class="input-group">
+                    <i class="fas fa-lock input-icon"></i>
+                    {{ form.password1 }}
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-lock input-icon"></i>
+                    {{ form.password2 }}
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-ticket-alt input-icon"></i>
+                    {{ form.invite_code }}
+                </div>
+                <div class="option-group">
+                    <div class="checkbox-group">
+                        {{ form.accept_terms }}
+                        <label for="terms">Tôi đồng ý với <a href="#">Điều khoản dịch vụ</a></label>
+                    </div>
+                    <div class="checkbox-group">
+                        {{ form.remember_me }}
+                        <label for="remember">Lưu đăng nhập</label>
+                    </div>
+                </div>
+                <div class="button-group">
+                    <button type="submit" class="register-btn">Đăng ký</button>
+                </div>
+                
+                <div class="social-login">
+                    <p>Hoặc đăng ký bằng</p>
+                    <div class="social-buttons">
+                        <a href="#" class="social-btn google">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a href="#" class="social-btn github">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-btn facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-btn discord">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="login-link">
+                    <a href="{% url 'login_view' %}">Tôi đã có tài khoản</a>
+                </div>
+            </form>
+        </div>
+        <div class="image-section">
+            <img src="../static/images/main.png" alt="BambooLab Logo">
+        </div>
+    </div>
+
+    <script>
+        function showVerificationCode() {
+            const emailInput = document.getElementById('email');
+            const verificationCodeDiv = document.querySelector('.verification-code');
+            
+            if (emailInput.value.trim() !== '') {
+                verificationCodeDiv.style.display = 'flex';
+            } else {
+                verificationCodeDiv.style.display = 'none';
+            }
+        }
+
+        function resendCode() {
+            const resendBtn = document.getElementById('resend-code');
+            let countdown = 60;
+            
+            // Disable button and start countdown
+            resendBtn.disabled = true;
+            resendBtn.classList.add('disabled');
+            
+            // Update button text with countdown
+            resendBtn.textContent = `Đợi ${countdown}s`;
+            
+            // Send verification code here (placeholder)
+            console.log('Gửi lại mã xác minh...');
+            
+            // Start countdown interval
+            const interval = setInterval(() => {
+                countdown--;
+                resendBtn.textContent = `Đợi ${countdown}s`;
+                
+                if (countdown <= 0) {
+                    clearInterval(interval);
+                    resendBtn.textContent = 'Gửi lại mã';
+                    resendBtn.disabled = false;
+                    resendBtn.classList.remove('disabled');
+                }
+            }, 1000);
+        }
+
+        // Gắn sự kiện khi trang tải xong
+        document.addEventListener('DOMContentLoaded', function() {
+            const emailInput = document.getElementById('email');
+            if (emailInput) {
+                emailInput.addEventListener('blur', showVerificationCode);
+            }
+        });
+    </script>
+</body>
+</html> 

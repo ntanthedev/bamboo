@@ -1,0 +1,364 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Trang cá nhân - {{ user.username }}{% endblock %}
+
+{% block styles %}
+{{ block.super }}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<style>
+    :root {
+        --profile-bg: #f4f7f6;
+        --profile-card-bg: #ffffff;
+        --profile-text-dark: #2c3e50;
+        --profile-text-muted: #7f8c8d;
+        --profile-primary-color: #4a7a38; 
+        --profile-primary-light: #eaf3e7;
+        --profile-border-color: #e0e0e0;
+        --profile-hover-bg: #f8f9fa;
+        --card-shadow: 0 5px 20px rgba(0,0,0,0.06);
+        --card-hover-shadow: 0 8px 25px rgba(74, 122, 56, 0.15);
+    }
+    body {
+        background-color: var(--profile-bg);
+        font-family: 'Roboto', sans-serif; 
+    }
+    /* Main Layout - 2 Columns */
+    .profile-layout {
+        display: grid;
+        grid-template-columns: 280px 1fr; /* Sidebar | Main content */
+        gap: 2rem;
+        max-width: 1200px; /* Wider max width */
+        margin: 3rem auto;
+        padding: 0 1.5rem; /* Add horizontal padding */
+    }
+
+    /* Sidebar Styling */
+    .profile-sidebar {
+        background-color: var(--profile-card-bg);
+        padding: 2rem 1.5rem;
+        border-radius: 10px;
+        box-shadow: var(--card-shadow);
+        border: 1px solid var(--profile-border-color);
+        align-self: start; /* Align to top */
+        position: sticky; /* Make sidebar sticky */
+        top: 2rem; 
+    }
+    .sidebar-header {
+        display: flex;
+        flex-direction: column; /* Stack icon and text */
+        align-items: center;
+        text-align: center;
+        margin-bottom: 2rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid var(--profile-border-color);
+    }
+    .sidebar-header i.fas {
+        font-size: 3.5rem; /* Larger icon */
+        color: var(--profile-primary-color);
+        margin-bottom: 0.8rem;
+    }
+    .sidebar-header h2 {
+        color: var(--profile-text-dark);
+        font-weight: 600;
+        font-size: 1.3rem;
+        margin: 0;
+    }
+     .sidebar-header p {
+        color: var(--profile-text-muted);
+        font-size: 0.9rem;
+        margin-top: 0.2rem;
+    }
+    /* User Details in Sidebar */
+    .user-details dl {
+        margin-bottom: 0; /* Remove bottom margin */
+        display: grid;
+        grid-template-columns: 1fr; /* Single column */
+        gap: 0.8rem; 
+    }
+    .user-details dt {
+        font-weight: 500; /* Lighter weight */
+        color: var(--profile-text-muted); /* Muted label */
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        /* Remove grid settings */
+        /* grid-column: 1 / 2; */
+        /* text-align: right; */
+        text-align: left; /* Align left */
+        margin-bottom: -0.4rem; /* Pull value closer */
+    }
+    .user-details dd {
+        color: var(--profile-text-dark);
+        font-weight: 500;
+        font-size: 0.95rem;
+        /* Remove grid settings */
+        /* grid-column: 2 / 3; */
+        /* margin-bottom: 0; */ 
+        border-bottom: 1px dashed var(--profile-border-color); /* Add subtle separator */
+        padding-bottom: 0.8rem;
+    }
+    .user-details dd:last-of-type {
+        border-bottom: none; /* No border for last item */
+    }
+
+    /* History Content Area */
+    .history-content {
+        /* Takes the second grid column */
+    }
+    .content-header {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: var(--profile-primary-color);
+        margin-bottom: 1.5rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid var(--profile-primary-light);
+        display: inline-block;
+    }
+    /* History Card Styling (Similar to quiz-list.html) */
+    .history-card {
+        background-color: var(--profile-card-bg);
+        border-radius: 12px;
+        margin-bottom: 1.5rem;
+        box-shadow: var(--card-shadow);
+        transition: all 0.3s ease;
+        border: 1px solid var(--profile-border-color);
+        display: flex;
+        flex-direction: column;
+    }
+    .history-card:hover {
+        transform: translateY(-5px);
+        box-shadow: var(--card-hover-shadow);
+        border-color: var(--profile-primary-color);
+    }
+    .history-card-header {
+        padding: 1rem 1.5rem;
+        border-bottom: 1px solid #f0f0f0;
+        display: flex;
+        align-items: center;
+    }
+    .history-card-header i.fas { /* Optional icon */
+        font-size: 1.5rem;
+        color: var(--profile-primary-color);
+        margin-right: 0.8rem;
+    }
+    .history-card-header h3 {
+        font-size: 1.15rem;
+        font-weight: 600;
+        color: var(--profile-text-dark);
+        margin: 0;
+    }
+    .history-card-body {
+        padding: 1.5rem;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+    }
+    .history-stats {
+        display: flex;
+        justify-content: space-around; /* Distribute items */
+        margin-bottom: 1.5rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px dashed var(--profile-border-color);
+    }
+    .stat-item {
+        text-align: center;
+    }
+    .stat-value {
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: var(--profile-primary-color);
+        margin-bottom: 0.3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+     .stat-value.score {
+        color: #20a98a; /* Different color for score? */
+     }
+    .stat-value i {
+        font-size: 0.9rem;
+        margin-right: 6px;
+        color: var(--profile-text-muted);
+    }
+    .stat-label {
+        font-size: 0.8rem;
+        color: var(--profile-text-muted);
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+    .history-card-footer {
+        margin-top: auto; /* Push button to bottom */
+        padding-top: 1rem;
+    }
+    /* Style the button like 'Làm bài ngay' */
+    .btn-view-result {
+        display: block; /* Full width button */
+        width: 100%;
+        padding: 0.8rem 1rem;
+        border-radius: 8px;
+        border: none;
+        background: linear-gradient(135deg, var(--profile-primary-color) 0%, #3b612c 100%); /* Use darker green */
+        color: white;
+        font-weight: 600;
+        font-size: 0.95rem;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 10px rgba(74, 122, 56, 0.15);
+        text-decoration: none; /* Remove underline from link */
+    }
+    .btn-view-result i {
+        margin-right: 6px;
+        transition: transform 0.3s ease;
+    }
+    .btn-view-result:hover {
+        background: linear-gradient(135deg, #3b612c 0%, var(--profile-primary-color) 100%);
+        box-shadow: 0 6px 15px rgba(59, 97, 44, 0.25);
+        color: white;
+    }
+     .btn-view-result:hover i {
+         transform: translateX(3px);
+     }
+    .no-history {
+        text-align: center;
+        color: var(--profile-text-muted);
+        padding: 3rem 2rem;
+        border: 1px dashed var(--profile-border-color);
+        border-radius: 6px;
+        background-color: var(--profile-card-bg);
+        box-shadow: inset 0 0 10px rgba(0,0,0,0.03);
+    }
+
+    /* Responsive */
+    @media (max-width: 992px) {
+        .profile-layout {
+            grid-template-columns: 1fr; /* Stack columns */
+        }
+        .profile-sidebar {
+             position: static; /* Remove sticky on smaller screens */
+             margin-bottom: 2rem;
+        }
+    }
+    @media (max-width: 768px) {
+         .profile-layout {
+            margin: 1.5rem auto;
+            padding: 0 1rem;
+         }
+         .profile-sidebar {
+             padding: 1.5rem;
+         }
+         .history-card-body {
+             padding: 1.2rem;
+         }
+         .history-stats {
+             flex-direction: column; /* Stack stats vertically */
+             align-items: center;
+             gap: 1rem;
+             border-bottom: none;
+             padding-bottom: 0;
+             margin-bottom: 1rem;
+         }
+         .stat-item {
+             border-bottom: 1px dashed var(--profile-border-color);
+             padding-bottom: 1rem;
+             width: 100%;
+         }
+         .stat-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+         }
+         .btn-view-result {
+             padding: 0.7rem;
+             font-size: 0.9rem;
+         }
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="profile-layout">
+
+    {# Sidebar with User Info #}
+    <aside class="profile-sidebar">
+        <div class="sidebar-header">
+            <i class="fas fa-user-circle"></i>
+            <h2>{{ user.username }}</h2>
+            <p>{{ user.email|default:"Chưa cung cấp email" }}</p>
+        </div>
+        <div class="user-details">
+            <dl>
+                <dt>Họ và tên</dt>
+                <dd>{{ user.get_full_name|default:"Chưa cập nhật" }}</dd>
+                
+                <dt>Ngày tham gia</dt>
+                <dd>{{ user.date_joined|date:"d/m/Y" }}</dd>
+                
+                {# Add more details if needed #}
+                <dt>Số bài đã làm</dt>
+                <dd>{{ quiz_attempts.count }}</dd>
+                
+            </dl>
+            {# Optional: Edit Profile Button #}
+            {# <a href="#" class="btn btn-outline-secondary btn-sm w-100 mt-3">Chỉnh sửa</a> #}
+        </div>
+    </aside>
+
+    {# Main Content Area with History Cards #}
+    <main class="history-content">
+        <h1 class="content-header">Lịch sử làm bài</h1>
+        
+        {% if quiz_attempts %}
+            {% for attempt in quiz_attempts %}
+            <div class="history-card">
+                <div class="history-card-header">
+                    {# You can map icons based on subject name if desired #}
+                    <i class="fas fa-book-open"></i> 
+                    <h3>{{ attempt.subject.name }}</h3>
+                </div>
+                <div class="history-card-body">
+                    <div class="history-stats">
+                        <div class="stat-item">
+                            <span class="stat-value score">
+                                <i class="fas fa-star"></i> 
+                                {{ attempt.score|floatformat:1|default:"--" }}
+                            </span>
+                            <span class="stat-label">Điểm số</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">
+                                <i class="far fa-calendar-check"></i>
+                                {{ attempt.end_time|default:attempt.start_time|date:"d/m" }}
+                            </span>
+                            <span class="stat-label">Ngày làm</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">
+                                <i class="far fa-clock"></i>
+                                {{ attempt.end_time|default:attempt.start_time|date:"H:i" }}
+                            </span>
+                            <span class="stat-label">Thời gian</span>
+                        </div>
+                    </div>
+                    {# Optional: Add short description or other info here #}
+                    <div class="history-card-footer">
+                        <a href="{% url 'quiz_result' attempt.id %}" class="btn-view-result" title="Xem chi tiết kết quả">
+                             <i class="fas fa-eye"></i> Xem lại kết quả
+                        </a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        {% else %}
+        <div class="no-history">
+            <p><i class="fas fa-folder-open fa-2x mb-3"></i></p>
+            <p>Bạn chưa hoàn thành bài kiểm tra nào.</p>
+            {# Optional: Link to quiz list #}
+            <a href="{% url 'quiz-list' %}" class="btn btn-primary mt-3">Bắt đầu làm bài</a>
+        </div>
+        {% endif %}
+
+    </main>
+
+</div>
+{% endblock %} 

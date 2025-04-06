@@ -17,14 +17,62 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path, re_path
-from core.views import ScoreRanking, redirect_to_score_ranking, import_from_csv
+from django.conf import settings
+from django.conf.urls.static import static
+from core.views import (
+    ScoreRanking, 
+    redirect_to_score_ranking, 
+    import_from_csv,
+    quiz_list,
+    start_quiz,
+    take_quiz,
+    submit_quiz,
+    quiz_result,
+    upload_document,
+    document_status,
+    home_view,
+    document_status_api,
+    LoginView,
+    LogoutView,
+    RegisterView,
+    document_list,
+    document_questions,
+    user_profile
+)
 
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("score-ranking/", ScoreRanking, name="score-ranking"),
     path("import-csv/", import_from_csv, name="import-csv"),
-    #cho toàn bộ url khác admin và score-ranking chuyển hướng về /ScoreRanking
-    path("", redirect_to_score_ranking, name="redirect_to_score_ranking"),
-    # Bất kỳ URL nào khác ngoài admin và score-ranking đều chuyển hướng về score-ranking
-    re_path(r'^(?!admin/|score-ranking/|import-csv/).*$', redirect_to_score_ranking, name="catch_all"),
+    
+    # URL cho chức năng trắc nghiệm
+    path("quiz/", quiz_list, name="quiz-list"),
+    path("quiz/start/<int:subject_id>/", start_quiz, name="start_quiz"),
+    path("quiz/attempt/<uuid:attempt_id>/", take_quiz, name="take_quiz"),
+    path("quiz/submit/<uuid:attempt_id>/", submit_quiz, name="submit_quiz"),
+    path("quiz/result/<uuid:attempt_id>/", quiz_result, name="quiz_result"),
+    
+    # URL cho chức năng upload tài liệu và tạo câu hỏi tự động
+    path("upload-document/", upload_document, name="upload-document"),
+    path("document-status/<int:document_id>/", document_status, name="document-status"),
+    path("api/document-status/<int:document_id>/", document_status_api, name="document-status-api"),
+    
+    # URLs cho danh sách tài liệu
+    path("documents/", document_list, name="document-list"),
+    path("documents/<int:document_id>/questions/", document_questions, name="document-questions"),
+
+    
+    # Hệ thống kiểm soát người dùng
+    path("login/", LoginView, name="login_view"),
+    path("logout/", LogoutView, name="logout_view"),
+    path("register/", RegisterView, name="register_view"),
+    # Trang cá nhân
+    path("profile/", user_profile, name="user_profile"),
+    # Trang chủ
+    path("", home_view, name="home"),
+    
 ]
+
+# Thêm cấu hình để phục vụ các file media trong chế độ development
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

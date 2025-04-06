@@ -1,0 +1,688 @@
+{% extends 'base.html' %}
+{% load custom_tags %} {# Load tags #}
+
+{% block title %}Làm bài kiểm tra: {{ subject.name }}{% endblock %}
+
+{% block styles %}
+{{ block.super }}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap'); /* Import Roboto */
+
+    :root {
+        --result-bg: #f4f7f6; /* Light gray background */
+        --paper-bg: #ffffff;
+        --text-dark: #2c3e50; /* Dark blue-gray */
+        --text-muted: #7f8c8d; /* Gray */
+        --primary-color: #4a7a38; /* Green */
+        --primary-dark: #3b612c;
+        --primary-light: #eaf3e7; /* Lighter green for bg */
+        --border-color: #e0e0e0; /* Lighter border */
+        --border-light: #f5f5f5; 
+        --sans-serif-font: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        --answer-label-color: #34495e; /* Slightly darker answer text */
+        --nav-panel-width: 205px; /* Wider panel for ~5 items */
+        --main-content-gap: 2rem; /* Increase gap slightly */
+        --nav-answered-bg: #d4edda; /* Bootstrap success light */
+        --nav-answered-color: #155724; /* Bootstrap success dark */
+        --nav-answered-border: #c3e6cb; 
+        --nav-active-border: var(--primary-color); /* Active border color */
+        --nav-hover-bg: #e2e6ea; /* Gray hover */
+    }
+    body {
+        background-color: var(--result-bg);
+        font-family: var(--sans-serif-font);
+        color: var(--text-dark);
+        line-height: 1.6;
+    }
+
+    .quiz-layout-container {
+        display: grid;
+       grid-template-columns: 1fr auto;
+        gap: var(--main-content-gap);
+       max-width: calc(850px + 205px + var(--main-content-gap)); /* Update max-width with new panel width */
+       margin: 2rem auto 3rem auto; /* More bottom margin */
+       align-items: start;
+       padding: 0 1rem; 
+    }
+
+    .quiz-container {
+        background-color: var(--paper-bg);
+        margin: 0;
+        padding: 2.5rem 3.5rem; /* Adjust padding */
+        border-radius: 6px; /* Slightly more rounded */
+        box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+        border: 1px solid var(--border-color);
+        grid-column: 1 / 2; 
+    }
+    
+    /* Consolidated Header Styles */
+    .quiz-header {
+        background-color: var(--primary-light);
+        padding: 1rem 1.5rem;
+        margin: -2.5rem -3.5rem 2.5rem -3.5rem; 
+        border-bottom: 1px solid var(--border-color);
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        text-align: center; /* Center header content now */
+    }
+    .quiz-header-info {
+        /* No specific styles needed now */
+    }
+    .quiz-subject-title { /* h1 */
+        font-size: 1.4rem;
+        font-weight: 600; /* Slightly less bold */
+        color: var(--primary-dark);
+        margin: 0 0 0.2rem 0;
+    }
+    .user-name-display { /* p */
+        font-size: 0.85rem;
+        color: var(--text-muted);
+        margin: 0;
+    }
+
+    /* Timer Styles (when inside nav panel) */
+    .quiz-nav-panel .timer {
+        font-size: 1.1rem; 
+        font-weight: 700; 
+        color: var(--primary-dark);
+        background-color: rgba(255, 255, 255, 0.6); 
+        padding: 0.4rem 0.9rem;
+        border-radius: 4px;
+        text-align: center;
+        margin: 0.5rem auto 1rem auto; /* Center horizontally, add margins */
+        display: block; /* Ensure it takes block space */
+        width: fit-content; /* Adjust width to content */
+        border-top: 1px solid var(--profile-border-color); /* Separator */
+        padding-top: 1rem; /* Space above timer text */
+    }
+    .quiz-nav-panel .timer.ending {
+        color: #721c24; 
+        background-color: #f8d7da; 
+    }
+
+    /* Navigation Panel - Wider */
+    .quiz-nav-panel {
+        grid-column: 2 / 3;
+        width: var(--nav-panel-width);
+        background-color: var(--paper-bg);
+        padding: 1.5rem 1rem; /* Adjust horizontal padding */
+        border-radius: 6px; 
+        box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+        border: 1px solid var(--border-color);
+        position: sticky; 
+        top: 2rem; 
+        /* max-height: calc(100vh - 4rem); */ /* Keep removed */
+        overflow-y: auto; 
+    }
+    .quiz-nav-panel h4 {
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: var(--text-dark);
+        text-align: center;
+        margin: 0 0 1rem 0; 
+        padding-bottom: 0.75rem;
+        border-bottom: 1px solid var(--border-color);
+        margin-bottom: 0; /* Remove bottom margin as timer adds space below */
+    }
+    .quiz-nav-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        /* grid-template-columns: repeat(auto-fill, minmax(34px, 1fr)); */
+        grid-template-columns: repeat(auto-fit, minmax(28px, 1fr)); /* Allow ~5 items */
+        gap: 0.75rem; /* Adjust gap */
+        justify-content: center;
+        align-items: center; /* Vertically align items if they wrap differently */
+    }
+    .quiz-nav-item a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* width: 34px; */
+        /* height: 34px; */
+        width: 28px; /* Smaller items */
+        height: 28px; 
+        border-radius: 50%; 
+        text-decoration: none;
+        font-weight: 500; /* Medium weight */
+        /* font-size: 0.9rem; */
+        font-size: 0.8rem; /* Smaller font */
+        color: var(--text-muted);
+        background-color: #f8f9fa; /* Very light gray */
+        border: 1px solid var(--border-color);
+        transition: all 0.2s ease;
+    }
+    .quiz-nav-item a:hover {
+        background-color: var(--nav-hover-bg);
+        color: var(--text-dark);
+        border-color: #adb5bd;
+        transform: translateY(-1px);
+    }
+    /* Style for ANSWERED nav items */
+    .quiz-nav-item a.nav-answered {
+        background-color: var(--nav-answered-bg);
+        color: var(--nav-answered-color);
+        border: 1px solid var(--nav-answered-border);
+        font-weight: 600;
+    }
+    /* Style for ACTIVE (scrolled to) nav items - Clearer border */
+    .quiz-nav-item a.active {
+        border: 2px solid var(--nav-active-border); 
+        padding: 1px; /* Adjust padding because of border */
+        box-shadow: none; /* Remove previous shadow */
+    }
+     /* Ensure active border takes precedence on answered items */
+    .quiz-nav-item a.nav-answered.active {
+        border: 2px solid var(--nav-active-border);
+        padding: 1px;
+    }
+
+    /* Style for the scroll-to-submit button */
+    .quiz-nav-item-submit a {
+        background-color: var(--primary-color);
+        color: white;
+        border-radius: 4px; 
+        width: 100%; /* Ensure it fills the container still */
+        /* height: 28px; */ /* Remove fixed height */
+        padding: 0.3rem 0.5rem; /* Adjust padding for text */
+        font-size: 0.8rem; /* Adjust font size for text */
+        font-weight: 600; /* Make text bold */
+        text-align: center; /* Center the text */
+        line-height: 1.4; /* Adjust line height */
+        border: 1px solid var(--primary-dark);
+        display: block; /* Ensure it behaves as a block */
+    }
+    .quiz-nav-item-submit a:hover {
+        background-color: var(--primary-dark);
+        transform: translateY(-1px);
+        color: white;
+    }
+    /* Make submit button span full width */
+    .quiz-nav-item-submit {
+         grid-column: 1 / -1; 
+         margin-top: 0.75rem; 
+    }
+     /* .quiz-nav-item-submit a { */ /* Moved styles above */
+        /* width: 100%; */ 
+     /* } */
+
+    /* Question Block - Cleaner separation */
+    .question-block {
+        margin-bottom: 2.5rem; 
+        padding-bottom: 2.5rem;
+        border-bottom: 1px dashed var(--border-color); /* Use dashed border */
+        counter-reset: answer-counter; 
+    }
+    .question-block:last-of-type {
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .question-text {
+       margin-bottom: 1.5rem; 
+    }
+    .question-text label {
+        font-size: 1.15rem; /* Slightly adjust size */
+        font-weight: 400; 
+        line-height: 1.7;
+        color: var(--text-dark);
+        display: block; 
+    }
+    .question-number {
+        color: var(--primary-color); /* Green number */
+        margin-right: 0.6rem;
+        font-weight: 700;
+    }
+
+    /* Answer Styling */
+    .answers-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .answer-item {
+        margin-bottom: 0.8rem; 
+        position: relative; 
+    }
+    .answer-item input[type="radio"] {
+        /* Keep default radio button style */
+        opacity: 1; 
+        position: static; 
+        width: auto;
+        height: auto;
+        margin-right: 0.7rem; 
+        vertical-align: middle; 
+        accent-color: var(--primary-color); 
+    }
+    .answer-item label {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: var(--answer-label-color);
+        cursor: pointer;
+        display: inline; 
+        font-weight: 400; 
+        vertical-align: middle; 
+    }
+    .answer-item label::before {
+        counter-increment: answer-counter;
+        content: counter(answer-counter, upper-alpha) ". "; 
+        font-weight: 600; /* Bold A, B, C, D */
+        color: var(--text-dark);
+        margin-right: 0.4rem; 
+        display: inline-block; 
+        width: 1.6em; /* Adjust width for alignment */
+    }
+    .answer-item input[type="radio"]:checked + label {
+        color: var(--text-dark); 
+        font-weight: 500; 
+        /* Add a subtle background or keep it clean */
+        /* background-color: var(--primary-light); */
+        /* padding: 2px 4px; */
+        /* border-radius: 3px; */
+     }
+
+    /* Submit Button - Centered, prominent */
+    .submit-button-container {
+        text-align: center;
+        margin-top: 3rem;
+        padding-top: 2rem;
+        border-top: 1px solid var(--border-color); /* Lighter top border */
+    }
+    .btn-submit-quiz {
+        background-color: var(--primary-color);
+        color: white;
+        border: none;
+        padding: 0.9rem 2.8rem; /* Larger padding */
+        border-radius: 6px;
+        font-weight: 600;
+        font-size: 1.1rem;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.7rem;
+        box-shadow: 0 3px 8px rgba(74, 122, 56, 0.2);
+        text-transform: uppercase; 
+    }
+    .btn-submit-quiz:hover {
+        background-color: var(--primary-dark);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(59, 97, 44, 0.25);
+        color: white;
+    }
+    
+    /* Error messages - keep as is */
+    .errorlist {
+        color: #dc3545;
+        font-size: 0.9rem;
+        list-style: none;
+        padding: 0;
+        margin-top: 0.5rem; /* Gần hơn với câu hỏi */
+        margin-left: calc(1.5em + 0.6rem); /* Thụt lề giống đáp án */
+    }
+    .errorlist li {
+         margin-bottom: 0.3rem;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 992px) {
+        .quiz-layout-container {
+            grid-template-columns: 1fr; 
+            gap: 1.5rem;
+            max-width: 850px; /* Keep max-width for single column */
+            margin: 1.5rem auto 2rem auto; /* Adjust margins */
+        }
+        .quiz-container {
+            grid-column: 1 / -1; 
+            padding: 2rem 2.5rem; /* Adjust padding */
+        }
+         .quiz-header {
+            margin: -2rem -2.5rem 2rem -2.5rem; /* Adjust negative margins */
+            padding: 0.8rem 1.2rem;
+         }
+         .quiz-subject-title {
+            font-size: 1.25rem;
+         }
+         .timer {
+            font-size: 1rem;
+            padding: 0.3rem 0.7rem;
+        }
+        .quiz-nav-panel {
+            grid-column: 1 / -1; 
+            order: -1; 
+            width: auto; 
+            position: static; 
+            max-height: none; 
+            margin-bottom: 1.5rem;
+            padding: 1rem; 
+        }
+        .quiz-nav-list {
+            /* Keep larger items for touch on mobile */
+            grid-template-columns: repeat(auto-fill, minmax(36px, 1fr)); 
+             gap: 0.7rem;
+        }
+         .quiz-nav-item a {
+             /* Keep larger items for touch on mobile */
+            width: 36px; 
+            height: 36px;
+            font-size: 0.95rem;
+        }
+    }
+
+    @media (max-width: 768px) {
+         .quiz-container {
+            padding: 1.5rem 1rem; /* Further reduce padding */
+         }
+         .quiz-header {
+            margin: -1.5rem -1rem 1.5rem -1rem; 
+            padding: 0.6rem 1rem;
+         }
+          .quiz-subject-title {
+            font-size: 1.1rem;
+         }
+         .timer {
+            font-size: 0.9rem;
+            padding: 0.2rem 0.6rem;
+         }
+         .question-text label {
+             font-size: 1.05rem; 
+         }
+         .answer-item label {
+            font-size: 0.95rem; 
+         }
+         .answer-item label::before {
+            width: 1.5em;
+         }
+         .submit-button-container {
+             margin-top: 2rem;
+             padding-top: 1.5rem;
+         }
+         .btn-submit-quiz {
+            width: 100%;
+            justify-content: center;
+            font-size: 1rem;
+            padding: 0.8rem 1rem;
+         }
+    }
+
+</style>
+{% endblock %}
+
+{% block content %}
+{# Restore outer layout container #}
+<div class="quiz-layout-container">
+
+    {# Quiz form container styled as paper #}
+    <div class="quiz-container">
+        
+        {# Consolidated Quiz Header - Timer Removed #}
+        <div class="quiz-header">
+            <div class="quiz-header-info">
+                 <h1 class="quiz-subject-title">{{ subject.name }}</h1>
+                 {% if request.user.is_authenticated %}
+                 <p class="user-name-display">Thí sinh: {{ request.user.get_full_name|default:request.user.username }}</p>
+                 {% endif %}
+            </div>
+        </div>
+
+        <form method="post" action="{% url 'submit_quiz' attempt.id %}" id="quizForm">
+            {% csrf_token %}
+
+            {% for field in form %}
+            <div class="question-block" id="q-{{ forloop.counter }}">
+                <div class="question-text">
+                    {{ field.label_tag }} 
+                </div>
+                {% if field.question.document %} 
+                <div class="source-info-content" id="info-{{ forloop.counter }}">
+                    <p><strong>Nguồn:</strong> {{ field.question.document.file.name|filename }}</p>
+                    {% if field.question.document.uploaded_by %}
+                    <p><strong>Tải lên bởi:</strong> {{ field.question.document.uploaded_by.username }}</p>
+                    {% endif %}
+                </div>
+                {% endif %}
+                <div class="answers-list">
+                    {% for radio in field %}
+                    <div class="answer-item">
+                        {{ radio.tag }}
+                        <label for="{{ radio.id_for_label }}">{{ radio.choice_label }}</label>
+                    </div>
+                    {% endfor %}
+                </div>
+                {% if field.errors %}
+                 <ul class="errorlist">
+                    {% for error in field.errors %}
+                        <li><i class="fas fa-exclamation-circle me-1"></i>{{ error }}</li>
+                    {% endfor %}
+                    </ul>
+                {% endif %}
+            </div>
+            {% endfor %}
+
+            <div class="submit-button-container">
+                <button type="submit" class="btn btn-submit-quiz">
+                    <i class="fas fa-check-circle"></i> Nộp bài
+                </button>
+            </div>
+        </form>
+    </div> {# End quiz-container #}
+
+    {# Navigation Panel - Timer Added #}
+    <div class="quiz-nav-panel">
+        <h4>Câu hỏi</h4>
+        {# Timer moved here #}
+        <div id="timer" class="timer" data-seconds="{{ remaining_seconds }}">--:--</div>
+        <ul class="quiz-nav-list">
+            {% for field in form %}
+                <li class="quiz-nav-item">
+                    <a href="#q-{{ forloop.counter }}" title="Đến câu {{ forloop.counter }}">
+                        {{ forloop.counter }}
+                    </a>
+                </li>
+            {% endfor %}
+             {# Updated scroll-to-submit button with text #}
+             <li class="quiz-nav-item-submit">
+                <a href="#submit-section" id="scrollToSubmitBtn" title="Cuộn đến nút Nộp bài">
+                    Nộp bài {# Replace icon with text #}
+                 </a>
+            </li>
+        </ul>
+    </div> {# End quiz-nav-panel #}
+
+</div> {# End quiz-layout-container #}
+{% endblock %}
+
+{% block scripts %}
+{{ block.super }}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Timer Logic (Keep existing)
+    const timerElement = document.getElementById('timer');
+    let remainingSeconds = parseInt(timerElement.getAttribute('data-seconds'), 10);
+    const quizForm = document.getElementById('quizForm');
+    let timerInterval = null;
+
+    function updateTimer() {
+        if (isNaN(remainingSeconds) || remainingSeconds < 0) {
+            timerElement.textContent = "00:00";
+            clearInterval(timerInterval);
+            if (!quizForm.dataset.submitted) { 
+                quizForm.dataset.submitted = "true"; 
+                alert("Đã hết thời gian làm bài. Bài của bạn sẽ được tự động nộp.");
+                quizForm.submit(); // Auto-submit when time is up
+            }
+            return;
+        }
+
+        const minutes = Math.floor(remainingSeconds / 60);
+        const seconds = remainingSeconds % 60;
+        timerElement.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+
+        if (remainingSeconds <= 60 && !timerElement.classList.contains('ending')) { 
+             timerElement.classList.add('ending');
+        }
+        
+        remainingSeconds--;
+    }
+
+    if (!isNaN(remainingSeconds)) {
+        updateTimer(); 
+        timerInterval = setInterval(updateTimer, 1000);
+    } else {
+         timerElement.textContent = "Lỗi giờ";
+    }
+    
+    // Submit Confirmation (Keep existing, slight modification)
+    if(quizForm) {
+        quizForm.addEventListener('submit', function(event) {
+            // Prevent re-submission if already submitted (e.g., by timer)
+            if (quizForm.dataset.submitted === "true") {
+                 console.log("Form already submitted or time expired. Preventing re-submit.");
+                event.preventDefault();
+                return;
+            }
+            const confirmation = confirm("Bạn có chắc chắn muốn nộp bài không?");
+            if (!confirmation) {
+                event.preventDefault(); 
+            } else {
+                // Mark as submitted to prevent double submission
+                quizForm.dataset.submitted = "true";
+                // Optionally disable the submit button here
+                const submitButton = this.querySelector('.btn-submit-quiz');
+                if (submitButton) {
+                    submitButton.disabled = true;
+                    submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Đang nộp bài...'; // Add loading icon
+                }
+            }
+        });
+    }
+
+    // --- Restore Navigation Panel Logic --- 
+    const navLinks = document.querySelectorAll('.quiz-nav-list a:not(#scrollToSubmitBtn)'); // Exclude submit scroll button
+    const questionBlocks = document.querySelectorAll('.question-block');
+
+    // Scroll to question when clicking nav link
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault(); 
+            const targetId = this.getAttribute('href'); 
+            const targetElement = document.querySelector(targetId);
+
+            if (targetElement) {
+                // Highlight the clicked nav item immediately
+                navLinks.forEach(l => l.classList.remove('active'));
+                this.classList.add('active');
+
+                // Scroll smoothly to the question block
+                targetElement.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start' 
+                });
+            }
+        });
+    });
+    
+    // Highlight nav item based on scroll position
+    const observerOptions = {
+        root: null, 
+        rootMargin: '-40% 0px -60% 0px', // Adjust margins to define the "center" area
+        threshold: 0
+    };
+
+    const observerCallback = (entries, observer) => {
+        entries.forEach(entry => {
+            const intersectingId = entry.target.id;
+            const correspondingNavLink = document.querySelector(`.quiz-nav-list a[href="#${intersectingId}"]`);
+            if (entry.isIntersecting) {
+                navLinks.forEach(l => l.classList.remove('active'));
+                if (correspondingNavLink) {
+                    correspondingNavLink.classList.add('active');
+                }
+            } 
+            // Optional: remove active class if scrolling away, might be less jarring to keep it active
+            // else {
+            //     if (correspondingNavLink) {
+            //        correspondingNavLink.classList.remove('active');
+            //     }
+            // }
+        });
+    };
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+    questionBlocks.forEach(block => {
+        observer.observe(block);
+    });
+
+    // --- Restore Mark Nav Item as Answered Logic ---
+    const radioInputs = quizForm.querySelectorAll('input[type="radio"]');
+
+    // Function to mark/unmark nav item as answered
+    function updateNavAnsweredStatus(questionBlockId) {
+        const navLink = document.querySelector(`.quiz-nav-list a[href="#${questionBlockId}"]`);
+            if (navLink) {
+            // Check if ANY radio button in this block is checked
+            const isAnswered = quizForm.querySelector(`#${questionBlockId} input[type="radio"]:checked`);
+            if (isAnswered) {
+                navLink.classList.add('nav-answered');
+            } else {
+                navLink.classList.remove('nav-answered'); // Should not happen unless user can uncheck
+            }
+        }
+    }
+
+    // Add event listener to each radio button
+    radioInputs.forEach(radio => {
+        // Check initial state on page load
+        if (radio.checked) {
+            const questionBlock = radio.closest('.question-block');
+            if (questionBlock) {
+                updateNavAnsweredStatus(questionBlock.id);
+            }
+        }
+        // Listen for changes
+        radio.addEventListener('change', function() {
+            if (this.checked) {
+                const questionBlock = this.closest('.question-block');
+                if (questionBlock) {
+                    updateNavAnsweredStatus(questionBlock.id);
+                }
+            }
+            // Note: Radio buttons typically don't uncheck by clicking again,
+            // so removing the class might not be necessary unless the form structure changes.
+        });
+    });
+
+    // --- Ensure correct question number rendering (Keep existing) ---
+    const questionLabels = document.querySelectorAll('.question-text label');
+    questionLabels.forEach((label, index) => {
+        // Remove existing number first if it exists (e.g., from model/form) to avoid duplication
+        const existingNumber = label.querySelector('.question-number');
+        if (existingNumber) {
+            existingNumber.remove();
+        }
+        // Basic check: If label doesn't start with "Câu X: " pattern, add it.
+        if (!label.textContent.trim().match(/^Câu \d+:/)) {
+             const questionNumberSpan = document.createElement('span');
+            questionNumberSpan.className = 'question-number';
+            questionNumberSpan.textContent = `Câu ${index + 1}: `;
+            label.prepend(questionNumberSpan); // Add number before the question text
+        }
+    });
+
+    // --- NEW: Scroll to Submit Button Logic ---
+    const scrollToSubmitButton = document.getElementById('scrollToSubmitBtn');
+    const submitSection = document.querySelector('.submit-button-container');
+
+    if (scrollToSubmitButton && submitSection) {
+        scrollToSubmitButton.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent default anchor behavior
+            submitSection.scrollIntoView({ behavior: 'smooth', block: 'center' }); // Scroll to the submit container
+        });
+    }
+
+});
+</script>
+{% endblock %} 

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trắc nghiệm môn {{ subject }}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container py-5">
+        <h1 class="mb-4 text-center">Trắc nghiệm môn {{ subject }}</h1>
+        
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card shadow">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="mb-0">Danh sách câu hỏi</h5>
+                    </div>
+                    <div class="card-body">
+                        {% if questions %}
+                            <div class="list-group">
+                                {% for question in questions %}
+                                <a href="{% url 'take-quiz' question.id %}" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <h6 class="mb-1">{{ question.text|truncatechars:100 }}</h6>
+                                        <small class="text-muted">Độ khó: {{ question.get_difficulty_display }}</small>
+                                    </div>
+                                    <span class="badge bg-primary rounded-pill">Làm bài</span>
+                                </a>
+                                {% endfor %}
+                            </div>
+                        {% else %}
+                            <div class="alert alert-info">
+                                Chưa có câu hỏi nào cho môn học này.
+                            </div>
+                        {% endif %}
+                    </div>
+                </div>
+                
+                <div class="mt-4 text-center">
+                    <a href="{% url 'quiz-list' %}" class="btn btn-secondary">Quay lại danh sách môn học</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 

@@ -1,0 +1,66 @@
+version: '3.8'
+
+services:
+  # Service cho Redis (Celery Broker)
+  redis:
+    image: redis:7-alpine
+    hostname: redis
+    ports:
+      # Mở port 7812 của host ánh xạ vào port 6379 của container Redis
+      - "7812:6379"
+    volumes:
+      - redis_data:/data # Lưu dữ liệu Redis
+
+  # Service cho ứng dụng Web (Django development server)
+  web:
+    build: . # Build từ Dockerfile trong thư mục hiện tại
+    hostname: web
+    # Lệnh để chạy Django development server
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      # Ánh xạ code hiện tại vào container -> thay đổi code sẽ tự reload server
+      - .:/app
+      # Ánh xạ volume cho database SQLite để dữ liệu không mất khi container bị xóa
+      # Đảm bảo file db nằm ở thư mục gốc /app bên trong container
+      - sqlite_data:/app 
+    ports:
+      # Map port 8010 của host ra port 8000 của container web
+      - "8010:8000"
+    environment:
+      # Lấy biến môi trường từ file .env (hoặc định nghĩa trực tiếp ở đây)
+      - SECRET_KEY=${SECRET_KEY}
+      - DEBUG=${DEBUG}
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://redis:6379/0
+      # Thêm các biến môi trường khác nếu cần
+      # - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+      # ...
+    depends_on:
+      - redis # Đảm bảo Redis khởi động trước web
+
+  # Service cho Celery Worker
+  celeryworker:
+    build: . # Sử dụng cùng image với web
+    hostname: celeryworker
+    # Lệnh để chạy Celery worker
+    command: celery -A bamboolab worker --pool=eventlet --loglevel=info
+    volumes:
+      # Ánh xạ code giống như service 'web'
+      - .:/app
+      # Ánh xạ volume cho database SQLite giống như service 'web'
+      - sqlite_data:/app
+    environment:
+      # Cần các biến môi trường giống như 'web'
+      - SECRET_KEY=${SECRET_KEY}
+      - DEBUG=${DEBUG}
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://redis:6379/0
+      # - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+      # ...
+    depends_on:
+      - redis # Đảm bảo Redis khởi động trước worker
+
+# Định nghĩa volumes để lưu trữ dữ liệu persistent
+volumes:
+  redis_data:
+  sqlite_data: # Volume để lưu file SQLite 

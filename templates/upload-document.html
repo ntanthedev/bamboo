@@ -1,0 +1,385 @@
+{% extends 'base.html' %}
+
+{% block title %}Upload Tài Liệu - BambooLab{% endblock %}
+
+{% block styles %}
+<style>
+    /* Giữ lại các style riêng cho trang upload */
+    .upload-area {
+        border: 2px dashed var(--primary-color);
+        border-radius: .75rem; /* Match card border-radius */
+        padding: 40px 25px; /* Tăng padding */
+        text-align: center; /* Giữ lại text-align cho fallback hoặc các yếu tố không phải flex item */
+        cursor: pointer;
+        transition: all 0.3s ease;
+        background-color: #f8f9fa; /* Thêm màu nền nhẹ */
+        /* Thêm Flexbox để căn giữa */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 200px; /* Đảm bảo có chiều cao tối thiểu để căn giữa */
+    }
+    .upload-area:hover {
+        border-color: var(--primary-color);
+        background-color: #e9ecef; /* Sáng hơn khi hover */
+    }
+    .upload-icon {
+        font-size: 48px;
+        color: var(--primary-color); /* Sử dụng màu primary */
+        margin-bottom: 20px; /* Tăng khoảng cách */
+    }
+    .upload-area h5 {
+        color: var(--primary-dark); /* Sử dụng màu primary dark */
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    .upload-area p {
+        color: var(--text-light); /* Sử dụng màu text light */
+        font-size: 0.9rem;
+    }
+    .hidden-input {
+        display: none;
+    }
+    .file-info {
+        padding: 15px 20px; /* Tăng padding */
+        background-color: var(--light-bg); /* Sử dụng màu nền light */
+        border: 1px solid var(--border-color); /* Thêm border */
+        border-radius: .75rem; /* Match card border-radius */
+        margin-top: 15px;
+        display: none; /* Bắt đầu ẩn */
+    }
+    .file-info i.fa-file-alt {
+        color: var(--primary-color); /* Màu icon file */
+        font-size: 1.2rem;
+    }
+    .file-info span {
+        font-weight: 500;
+        color: var(--text-dark);
+    }
+    .file-info .btn-link {
+        padding: 0;
+        font-size: 1rem;
+        color: var(--danger); /* Sử dụng màu danger */
+    }
+    .file-info .btn-link:hover {
+        color: darkred;
+    }
+    /* Style cho select và input môn học mới */
+    .input-group .form-control#new-subject {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-left: 0; /* Tránh double border */
+    }
+    .input-group .form-select {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    /* Style cho card và container */
+    .content-container {
+        max-width: 700px; /* Giảm max-width một chút */
+        margin: 3rem auto; /* Tăng margin top/bottom */
+        padding: 0 15px;
+    }
+    .card {
+        margin-bottom: 1.5rem;
+        border: none;
+        border-radius: .75rem;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+        overflow: hidden; /* Đảm bảo border-radius áp dụng cho header */
+    }
+    .card-header {
+        background-color: var(--primary-color); /* Sử dụng màu primary làm nền */
+        color: white; /* Chữ trắng */
+        padding: 1rem 1.5rem;
+        border-bottom: none; /* Bỏ border dưới */
+        text-align: center;
+    }
+    .card-header h1 {
+        margin-bottom: 0.5rem; /* Giảm margin */
+        font-size: 1.75rem; /* Tăng cỡ chữ */
+        font-weight: 600;
+    }
+     .card-header p {
+        margin-bottom: 0;
+        color: rgba(255, 255, 255, 0.85); /* Màu chữ sáng hơn */
+        font-size: 1rem;
+    }
+    .card-body {
+        padding: 2rem; /* Tăng padding */
+    }
+    .form-label {
+        font-weight: 600;
+        color: var(--text-dark);
+        margin-bottom: 0.75rem; /* Tăng khoảng cách */
+    }
+    .form-control, .form-select {
+        border-radius: .5rem; /* Bo góc nhẹ cho input/select */
+        border: 1px solid var(--border-color);
+        padding: .75rem 1rem; /* Tăng padding */
+    }
+    .form-control:focus, .form-select:focus {
+        border-color: var(--primary-light);
+        box-shadow: 0 0 0 0.25rem rgba(123, 178, 90, 0.25); /* Shadow khi focus */
+    }
+    /* Nút bấm */
+    .btn {
+        border-radius: 50px;
+        padding: 12px 25px; /* Tăng padding nút */
+        font-weight: 600;
+        transition: all 0.3s ease;
+    }
+    .btn-primary {
+        background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+        border: none;
+    }
+    .btn-primary:hover {
+        background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-color) 100%);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .btn-outline-secondary {
+        border-color: #ccc;
+        color: #6c757d;
+    }
+    .btn-outline-secondary:hover {
+        background-color: #e9ecef;
+        border-color: #ccc;
+        color: #343a40;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    .messages .alert {
+        border-radius: .5rem;
+        padding: 1rem 1.25rem;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="content-container">
+    <div class="card shadow-sm">
+         <div class="card-header">
+             <h1><i class="fas fa-cloud-upload-alt me-2"></i>Upload Tài Liệu</h1>
+             <p>Tạo câu hỏi trắc nghiệm tự động bằng Gemini AI</p>
+         </div>
+        <div class="card-body">
+            <!-- Thông báo -->
+            {% if messages %}
+            <div class="messages mb-4">
+                {% for message in messages %}
+                <div class="alert alert-{{ message.tags }}">
+                    {{ message }}
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
+            
+            <form method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                
+                <div class="mb-4"> {# Tăng margin bottom #}
+                    <label for="title" class="form-label">Tiêu đề tài liệu</label>
+                    <input type="text" class="form-control" id="title" name="title" required placeholder="Ví dụ: Đề cương ôn tập Sinh học 12 Chương 1">
+                </div>
+                
+                <div class="mb-3">
+                    <label for="subject" class="form-label">Môn học <span class="text-danger">*</span></label>
+                    <select class="form-select" id="subject" name="subject" required>
+                        <option value="" disabled selected>-- Chọn môn học --</option>
+                        {% for subject in subjects %}
+                        <option value="{{ subject.id }}" {% if subject_id == subject.id %}selected{% endif %}>{{ subject.name }}</option>
+                        {% endfor %}
+                    </select>
+                    <div class="form-text">Chọn môn học phù hợp với tài liệu.</div>
+                </div>
+                
+                <div class="mb-4"> {# Tăng margin bottom #}
+                    <label class="form-label">Tệp tài liệu</label>
+                    <div class="upload-area" id="uploadArea">
+                        <i class="fas fa-file-upload upload-icon"></i>
+                        <input type="file" name="document_file" id="documentFile" class="hidden-input" accept="*" required multiple>
+                    </div>
+                    <div class="mt-3" id="fileListContainer" style="display: none;">
+                         <p class="form-label">Các tệp đã chọn:</p>
+                        <ul class="list-group" id="fileList">
+                            <!-- Danh sách file sẽ được thêm vào đây bằng JavaScript -->
+                        </ul>
+                    </div>
+                </div>
+
+                {# Thêm ô nhập yêu cầu bổ sung #}
+                <div class="mb-4">
+                    <label for="additional_requirements" class="form-label">Yêu cầu bổ sung (Tùy chọn)</label>
+                    <textarea class="form-control" id="additional_requirements" name="additional_requirements" rows="3" placeholder="Ví dụ: Tập trung vào các định nghĩa, tạo 3 câu hỏi khó, bỏ qua phần bài tập..."></textarea>
+                    <small class="form-text text-muted">Cung cấp thêm hướng dẫn cho AI để tạo câu hỏi theo ý muốn.</small>
+                </div>
+                
+                <div class="d-grid gap-2 mt-4"> {# Thêm class mt-4 #}
+                    <button type="submit" class="btn btn-primary btn-lg"> {# Thêm btn-lg #}
+                        <i class="fas fa-cogs me-2"></i>Upload & Xử lý
+                    </button>
+                    <a href="{% url 'quiz-list' %}" class="btn btn-outline-secondary">
+                        <i class="fas fa-arrow-left me-1"></i>Quay lại Danh sách
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const uploadArea = document.getElementById('uploadArea');
+        const documentFile = document.getElementById('documentFile');
+        const fileListContainer = document.getElementById('fileListContainer');
+        const fileList = document.getElementById('fileList');
+        const subjectSelect = document.getElementById('subject');
+        const newSubjectInput = document.getElementById('new-subject');
+        const form = document.querySelector('form'); // Lấy form
+
+        // Lưu trữ danh sách các file đã chọn
+        let selectedFiles = [];
+
+        // Hàm cập nhật giao diện danh sách file
+        function updateFileListUI() {
+            fileList.innerHTML = ''; // Xóa danh sách cũ
+            if (selectedFiles.length > 0) {
+                selectedFiles.forEach((file, index) => {
+                    const listItem = document.createElement('li');
+                    listItem.className = 'list-group-item d-flex justify-content-between align-items-center';
+                    listItem.innerHTML = `
+                        <span><i class="fas fa-file-alt me-2"></i>${file.name}</span>
+                        <button type="button" class="btn btn-sm btn-link text-danger remove-file-btn" data-index="${index}" title="Xóa tệp">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    `;
+                    fileList.appendChild(listItem);
+                });
+                uploadArea.style.display = 'none';
+                fileListContainer.style.display = 'block';
+                 documentFile.removeAttribute('required'); // Không cần required nữa nếu đã có file
+            } else {
+                uploadArea.style.display = 'block';
+                fileListContainer.style.display = 'none';
+                documentFile.setAttribute('required', ''); // Yêu cầu lại nếu chưa có file
+            }
+        }
+
+        // Hàm xử lý các file được chọn/thả
+        function handleFiles(files) {
+            selectedFiles = []; // Xóa danh sách cũ trước khi thêm mới
+             const allowedExtensions = /(\.pdf|\.txt|\.jpg|\.jpeg|\.png)$/i;
+            for (let i = 0; i < files.length; i++) {
+                /*if (!allowedExtensions.exec(files[i].name)) {
+                    alert(`Định dạng tệp không hợp lệ: ${files[i].name}. Chỉ hỗ trợ PDF, TXT, JPG, PNG.`);
+                    continue; // Bỏ qua file không hợp lệ
+                }*/
+                selectedFiles.push(files[i]);
+            }
+            // Cập nhật DataTransferItemList cho input (quan trọng!)
+            const dataTransfer = new DataTransfer();
+            selectedFiles.forEach(file => dataTransfer.items.add(file));
+            documentFile.files = dataTransfer.files;
+
+            updateFileListUI();
+        }
+
+        // Upload khi click vào khu vực upload
+        uploadArea.addEventListener('click', function() {
+            documentFile.click();
+        });
+        
+        // Hiển thị thông tin file khi chọn file
+        documentFile.addEventListener('change', function() {
+            handleFiles(this.files);
+        });
+        
+        // Xử lý kéo thả file
+        ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+            uploadArea.addEventListener(eventName, preventDefaults, false);
+        });
+
+        function preventDefaults (e) {
+            e.preventDefault();
+            e.stopPropagation();
+        }
+
+        ['dragenter', 'dragover'].forEach(eventName => {
+            uploadArea.addEventListener(eventName, highlight, false);
+        });
+
+        ['dragleave', 'drop'].forEach(eventName => {
+            uploadArea.addEventListener(eventName, unhighlight, false);
+        });
+
+        function highlight(e) {
+            uploadArea.style.borderColor = 'var(--primary-color)';
+            uploadArea.style.backgroundColor = '#e9ecef';
+        }
+
+        function unhighlight(e) {
+            uploadArea.style.borderColor = ''; // Reset inline style để dùng giá trị từ CSS
+            uploadArea.style.backgroundColor = '#f8f9fa';
+        }
+
+        uploadArea.addEventListener('drop', function(e) {
+            let dt = e.dataTransfer;
+            handleFiles(dt.files);
+        });
+        
+        // Xóa file từ danh sách
+        fileList.addEventListener('click', function(e) {
+            if (e.target.closest('.remove-file-btn')) {
+                const indexToRemove = parseInt(e.target.closest('.remove-file-btn').getAttribute('data-index'));
+                selectedFiles.splice(indexToRemove, 1); // Xóa file khỏi mảng
+                
+                // Cập nhật lại thuộc tính files của input
+                const dataTransfer = new DataTransfer();
+                selectedFiles.forEach(file => dataTransfer.items.add(file));
+                documentFile.files = dataTransfer.files;
+
+                updateFileListUI(); // Cập nhật lại giao diện
+            }
+        });
+        
+        // Xử lý khi chọn "Khác" trong danh sách môn học
+        subjectSelect.addEventListener('change', function() {
+            if (this.value === 'other') {
+                newSubjectInput.style.display = 'block';
+                newSubjectInput.setAttribute('required', ''); // Thêm yêu cầu bắt buộc nếu chọn 'Khác'
+                newSubjectInput.focus();
+                subjectSelect.removeAttribute('name'); // Bỏ name của select
+                 newSubjectInput.setAttribute('name', 'subject'); // Đặt name cho input mới
+            } else {
+                newSubjectInput.style.display = 'none';
+                newSubjectInput.removeAttribute('required');
+                 newSubjectInput.removeAttribute('name'); // Bỏ name của input mới
+                subjectSelect.setAttribute('name', 'subject'); // Đặt lại name cho select
+                newSubjectInput.value = ''; // Xóa giá trị trong ô nhập mới
+            }
+        });
+
+         // Kích hoạt kiểm tra môn học khi form submit (để đảm bảo input mới có name đúng)
+         form.addEventListener('submit', function() {
+            if (subjectSelect.value === 'other') {
+                 subjectSelect.removeAttribute('name');
+                 newSubjectInput.setAttribute('name', 'subject');
+            } else {
+                 newSubjectInput.removeAttribute('name');
+                 subjectSelect.setAttribute('name', 'subject');
+            }
+         });
+
+         // Trigger change event on load in case 'other' was selected previously (e.g., form error)
+         if (subjectSelect.value === 'other') {
+             subjectSelect.dispatchEvent(new Event('change'));
+         } else {
+              newSubjectInput.style.display = 'none'; // Ensure it's hidden initially
+         }
+
+    });
+</script>
+{% endblock %} 
