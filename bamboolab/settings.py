@@ -26,7 +26,7 @@ SECRET_KEY = "django-insecure-&j(j6s2(f02nvh4i-8v$)sm4sn-!j+_6(nvzy)w+b3u#s9ll54
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['bamboolab.thptchuyenhatinh.edu.vn','127.0.0.1']
+ALLOWED_HOSTS = ['bamboolab.thptchuyenhatinh.edu.vn','127.0.0.1','100.80.5.67']
 
 CSRF_TRUSTED_ORIGINS = ['https://bamboolab.thptchuyenhatinh.edu.vn','http://127.0.0.1:8000']
 
