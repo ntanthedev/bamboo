@@ -8,9 +8,9 @@ ENV PYTHONUNBUFFERED 1
 # Tạo thư mục làm việc
 WORKDIR /app
 
-# Cài đặt các gói hệ thống cần thiết (nếu cần cho SQLite hoặc các thư viện khác)
-# Thường thì không cần nhiều gói cho SQLite, nhưng giữ lại apt-get update/clean đề phòng
+# Cài đặt các gói hệ thống cần thiết
 RUN apt-get update && apt-get install -y --no-install-recommends \
+    mime-support \
     # build-essential gcc # Có thể cần nếu pip install cần biên dịch
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
