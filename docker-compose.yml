@@ -53,8 +53,8 @@ services:
       # Cần các biến môi trường giống như 'web'
       - SECRET_KEY=${SECRET_KEY}
       - DEBUG=${DEBUG}
-      - CELERY_BROKER_URL=redis://redis:6379/0
-      - CELERY_RESULT_BACKEND=redis://redis:6379/0
+      - CELERY_BROKER_URL=redis://default:oJilO3ifLG53y1xK1BmjIdBNdMPTEwMo@redis-18788.crce178.ap-east-1-1.ec2.redns.redis-cloud.com:18788
+      - CELERY_RESULT_BACKEND=redis://default:oJilO3ifLG53y1xK1BmjIdBNdMPTEwMo@redis-18788.crce178.ap-east-1-1.ec2.redns.redis-cloud.com:18788
       # - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
       # ...
     depends_on:
