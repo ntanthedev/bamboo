@@ -286,7 +286,6 @@ Phân loại độ khó của mỗi câu hỏi là 'easy', 'medium', hoặc 'har
         # Gọi API
         response = model.generate_content(
             request_content,
-            generation_config=generation_config,
             # Cân nhắc thêm safety_settings nếu cần
             # safety_settings=[...]
         )
