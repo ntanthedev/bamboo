@@ -68,17 +68,22 @@ def process_document(self, document_id, additional_requirements=""):
             try:
                 # Đoán MIME type từ tên file
                 mime_type, _ = mimetypes.guess_type(file_path)
-                if not mime_type:
-                    # Nếu không đoán được, thử đặt một giá trị mặc định
-                    mime_type = 'application/octet-stream' # Kiểu nhị phân chung
+                file_extension = os.path.splitext(file_path)[1].lower()
+
+                # Xử lý đặc biệt cho .jfif hoặc nếu không đoán được
+                if file_extension == '.jfif':
+                    mime_type = 'image/jpeg' # Ép kiểu thành image/jpeg
+                    logger.info(f"Detected .jfif extension, forcing mime_type to {mime_type}")
+                elif not mime_type:
+                    mime_type = 'application/octet-stream'
                     logger.warning(f"Could not guess mime type for {file_path}, using default: {mime_type}")
                 else:
                      logger.info(f"Guessed mime type for {file_path}: {mime_type}")
 
-                # Upload file với mime_type đã đoán được
+                # Upload file với mime_type đã xác định
                 google_file = genai.upload_file(
                     path=file_path,
-                    mime_type=mime_type  # Truyền mime_type vào đây
+                    mime_type=mime_type
                 )
                 google_file_objects.append(google_file) # Lưu lại để xóa sau
                 uploaded_google_files.append(google_file)

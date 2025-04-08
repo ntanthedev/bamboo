@@ -257,93 +257,6 @@
     /* .leaderboard-item { ... } */
     /* ... (và các style leaderboard khác) ... */
 
-    /* Custom Modal Styles */
-    #confirmStartQuizModal .modal-content {
-        border-radius: 12px;
-        border: none;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        background-color: var(--white); /* Nền trắng */
-    }
-
-    #confirmStartQuizModal .modal-header {
-        background-color: var(--primary-bg); /* Nền xanh lá rất nhạt */
-        border-bottom: 1px solid rgba(90, 145, 69, 0.2); /* Viền dưới nhẹ */
-        color: var(--primary-dark); /* Chữ xanh lá đậm */
-        border-top-left-radius: 12px;
-        border-top-right-radius: 12px;
-        padding: 1rem 1.5rem;
-    }
-
-    #confirmStartQuizModal .modal-header .btn-close {
-        filter: invert(40%) sepia(11%) saturate(1352%) hue-rotate(64deg) brightness(94%) contrast(89%); /* Đổi màu nút close */
-    }
-    #confirmStartQuizModal .modal-header .btn-close:hover {
-        opacity: 0.8;
-    }
-
-    #confirmStartQuizModal .modal-title {
-        font-weight: 600;
-    }
-
-    #confirmStartQuizModal .modal-body {
-        color: var(--text-color); /* Màu text chính */
-        padding: 1.5rem;
-        line-height: 1.7;
-    }
-    #confirmStartQuizModal .modal-body ul {
-        padding-left: 20px; /* Thụt lề cho danh sách */
-        margin-top: 0.5rem;
-        color: var(--text-light); /* Màu text nhạt hơn cho list */
-    }
-     #confirmStartQuizModal .modal-body li {
-        margin-bottom: 0.5rem;
-    }
-
-    #confirmStartQuizModal .modal-footer {
-        border-top: 1px solid rgba(0, 0, 0, 0.05);
-        padding: 1rem 1.5rem;
-        background-color: var(--light-bg); /* Nền footer nhạt */
-        border-bottom-left-radius: 12px;
-        border-bottom-right-radius: 12px;
-    }
-
-    /* Style nút Đồng ý giống .btn-test */
-    #confirmStartQuizBtn {
-        padding: 10px 20px; /* Kích thước nhỏ hơn btn-test */
-        border-radius: 8px; /* Bo góc nhỏ hơn */
-        border: none;
-        background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
-        color: white;
-        font-weight: 600;
-        font-size: 0.95rem; /* Font nhỏ hơn */
-        cursor: pointer;
-        transition: all 0.3s ease;
-        box-shadow: 0 4px 10px rgba(74, 122, 56, 0.15);
-    }
-
-    #confirmStartQuizBtn:hover {
-        background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-color) 100%);
-        box-shadow: 0 6px 15px rgba(74, 122, 56, 0.25);
-        transform: translateY(-2px);
-    }
-
-    /* Style nút Hủy */
-    #confirmStartQuizModal .modal-footer .btn-secondary {
-        padding: 10px 20px;
-        border-radius: 8px;
-        font-weight: 500;
-        font-size: 0.95rem;
-        background-color: #e9ecef; /* Màu xám nhạt */
-        border-color: #ced4da;
-        color: #495057; /* Màu text đậm hơn */
-        transition: all 0.3s ease;
-    }
-     #confirmStartQuizModal .modal-footer .btn-secondary:hover {
-        background-color: #d6d8db;
-        border-color: #b1b5ba;
-        color: #343a40;
-    }
-
 </style>
 {% endblock %}
 
@@ -422,30 +335,8 @@
     </div> {# Kết thúc hàng của Bootstrap #}
 </div> {# Kết thúc container chính #}
 
-<!-- Modal Xác nhận Làm bài -->
-<div class="modal fade" id="confirmStartQuizModal" tabindex="-1" aria-labelledby="confirmStartQuizModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="confirmStartQuizModalLabel">Xác nhận làm bài</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <p><strong>Điều khoản và Quy định Làm bài:</strong></p>
-                <p>Vui lòng đọc kỹ và xác nhận đồng ý với các quy định dưới đây trước khi bắt đầu bài kiểm tra:</p>
-                <p>1. Thời gian làm bài được giới hạn trong <strong>30 phút</strong> và sẽ bắt đầu đếm ngược ngay khi bạn nhấn nút "Đồng ý & Bắt đầu".</p>
-                <p>2. Bài kiểm tra không thể tạm dừng. Hãy đảm bảo bạn có đủ thời gian và một môi trường tập trung.</p>
-                <p>3. Kết quả sẽ được hệ thống tự động ghi nhận khi hết giờ hoặc khi bạn chủ động nộp bài.</p>
-                <p>4. Duy trì kết nối Internet ổn định trong suốt quá trình làm bài là trách nhiệm của bạn.</p>
-                <p style="margin-top: 1rem;">Nhấn "Đồng ý & Bắt đầu" để xác nhận bạn đã hiểu và chấp nhận các điều khoản này.</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
-                <button type="button" class="btn btn-primary" id="confirmStartQuizBtn">Đồng ý & Bắt đầu</button>
-            </div>
-        </div>
-    </div>
-</div>
+<!-- Modal Thêm môn học đã bị xóa -->
+{# <div class="modal fade" id="addSubjectModal" ...> ... </div> #}
 
 <!-- Toast Container (Giữ lại nếu vẫn dùng messages) -->
 <div class="toast-container position-fixed bottom-0 end-0 p-3">
@@ -490,33 +381,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Xử lý Modal Xác nhận Làm Bài
-    const confirmModalElement = document.getElementById('confirmStartQuizModal');
-    const confirmModal = new bootstrap.Modal(confirmModalElement);
-    const confirmStartButton = document.getElementById('confirmStartQuizBtn');
-    let quizStartUrl = ''; // Biến để lưu URL
-
-    // Lấy tất cả các nút "Làm bài ngay"
-    const startQuizButtons = document.querySelectorAll('.btn-test');
-
-    startQuizButtons.forEach(button => {
-        button.addEventListener('click', function(event) {
-            event.preventDefault(); // Ngăn chuyển hướng mặc định
-            quizStartUrl = this.href; // Lấy URL từ nút được nhấn
-            // Không cần lưu vào data-* nữa nếu dùng biến ngoài scope
-            // confirmStartButton.dataset.startUrl = quizStartUrl; 
-            confirmModal.show(); // Hiển thị modal
-        });
-    });
-
-    // Xử lý khi nhấn nút "Đồng ý & Bắt đầu"
-    confirmStartButton.addEventListener('click', function() {
-        if (quizStartUrl) {
-            window.location.href = quizStartUrl; // Chuyển hướng đến URL đã lưu
-        }
-    });
-
-    // Xóa logic modal không cần thiết cũ
+    // Xóa logic modal không cần thiết
     // var addSubjectModal = document.getElementById('addSubjectModal');
     // if(addSubjectModal) { ... }
 });
