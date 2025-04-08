@@ -33,7 +33,7 @@ def process_document(self, document_id, additional_requirements=""):
         genai.configure(api_key=api_key)
         
         # Tạo model Gemini
-        model_name = 'gemini-2.5-pro-exp-03-25' # Hoặc model khác phù hợp
+        model_name = 'gemini-2.0-flash-thinking-exp-01-21' # Hoặc model khác phù hợp
         model = genai.GenerativeModel(model_name)
         
         # 1. Lấy thông tin Document và các UploadedFile
@@ -253,7 +253,12 @@ Phân loại độ khó của mỗi câu hỏi là 'easy', 'medium', hoặc 'har
 
 {f'Yêu cầu bổ sung từ người dùng: {requirements}' if requirements else ''}
 
-        Hãy trả về kết quả dưới dạng một mảng JSON hợp lệ duy nhất theo cấu trúc ví dụ sau:
+    Tuyệt đối lưu ý:
+        - Chỉ trả về mảng JSON, không bao gồm bất kỳ văn bản giải thích nào khác.
+        - Không sử dụng markdown code block (```json ... ```).
+        - Đảm bảo trường 'explanation' chỉ có ở đáp án đúng (is_correct: true).
+
+    Hãy trả về kết quả dưới dạng một mảng JSON hợp lệ duy nhất theo cấu trúc ví dụ sau:
 [
     {{
         "question": "Nội dung câu hỏi ở đây...",
@@ -267,11 +272,6 @@ Phân loại độ khó của mỗi câu hỏi là 'easy', 'medium', hoặc 'har
             }},
             // ... các câu hỏi khác (cũng bao gồm explanation cho đáp án đúng) ...
         ]
-
-        Lưu ý:
-        - Chỉ trả về mảng JSON, không bao gồm bất kỳ văn bản giải thích nào khác.
-        - Không sử dụng markdown code block (```json ... ```).
-        - Đảm bảo trường 'explanation' chỉ có ở đáp án đúng (is_correct: true).
         """
 
         # Tạo nội dung yêu cầu (Kết hợp prompt và các file đã upload)
@@ -281,7 +281,7 @@ Phân loại độ khó của mỗi câu hỏi là 'easy', 'medium', hoặc 'har
 
         logger.info(f"Sending generation request to Gemini with {len(uploaded_files)} files.")
         # Cấu hình để trả về JSON
-        generation_config = genai.types.GenerationConfig(response_mime_type="application/json",max_output_tokens=8000)
+        generation_config = genai.types.GenerationConfig(response_mime_type="application/json",max_output_tokens=80000)
 
         # Gọi API
         response = model.generate_content(
