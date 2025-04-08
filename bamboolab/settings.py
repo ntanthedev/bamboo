@@ -28,7 +28,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['bamboolab.thptchuyenhatinh.edu.vn','127.0.0.1','100.80.5.67']
 
-CSRF_TRUSTED_ORIGINS = ['https://bamboolab.thptchuyenhatinh.edu.vn','http://127.0.0.1:8000']
+CSRF_TRUSTED_ORIGINS = ['https://bamboolab.thptchuyenhatinh.edu.vn','http://127.0.0.1:8000','http://100.80.5.67:8000']
 
 
 # Application definition
