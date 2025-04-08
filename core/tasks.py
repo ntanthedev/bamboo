@@ -2,6 +2,7 @@ import os
 # import PyPDF2 # Không còn sử dụng
 import logging
 import json
+import mimetypes # Import thư viện mimetypes
 from celery import shared_task
 from django.conf import settings
 from .models import Document, UploadedFile, Question, Answer, Subject
@@ -65,8 +66,20 @@ def process_document(self, document_id, additional_requirements=""):
             
             logger.info(f"Uploading file {uf.id} ({os.path.basename(file_path)}) to Google File API...")
             try:
-                # Upload file
-                google_file = genai.upload_file(path=file_path)
+                # Đoán MIME type từ tên file
+                mime_type, _ = mimetypes.guess_type(file_path)
+                if not mime_type:
+                    # Nếu không đoán được, thử đặt một giá trị mặc định
+                    mime_type = 'application/octet-stream' # Kiểu nhị phân chung
+                    logger.warning(f"Could not guess mime type for {file_path}, using default: {mime_type}")
+                else:
+                     logger.info(f"Guessed mime type for {file_path}: {mime_type}")
+
+                # Upload file với mime_type đã đoán được
+                google_file = genai.upload_file(
+                    path=file_path,
+                    mime_type=mime_type  # Truyền mime_type vào đây
+                )
                 google_file_objects.append(google_file) # Lưu lại để xóa sau
                 uploaded_google_files.append(google_file)
                 logger.info(f"Successfully uploaded {google_file.name} ({google_file.mime_type})")
