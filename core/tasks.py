@@ -281,7 +281,7 @@ Phân loại độ khó của mỗi câu hỏi là 'easy', 'medium', hoặc 'har
 
         logger.info(f"Sending generation request to Gemini with {len(uploaded_files)} files.")
         # Cấu hình để trả về JSON
-        generation_config = genai.types.GenerationConfig(response_mime_type="application/json")
+        generation_config = genai.types.GenerationConfig(response_mime_type="application/json",max_output_tokens=8000)
 
         # Gọi API
         response = model.generate_content(
