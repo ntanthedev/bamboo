@@ -3,3 +3,5 @@ eventlet==0.39.1
 redis==5.2.1
 celery==5.5.0
 google-generativeai==0.8.4
+psycopg2==2.9.10
+psycopg2-binary==2.9.10
