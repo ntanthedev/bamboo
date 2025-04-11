@@ -18,11 +18,9 @@ services:
     # Lệnh để chạy Django development server
     command: python manage.py runserver 0.0.0.0:8000
     volumes:
-      # Ánh xạ code hiện tại vào container -> thay đổi code sẽ tự reload server
-      - .:/app
-      # Ánh xạ volume cho database SQLite để dữ liệu không mất khi container bị xóa
-      # Đảm bảo file db nằm ở thư mục gốc /app bên trong container
-      - sqlite_data:/app 
+      - type: bind
+        source: ./bamboolab
+        target: /app/bamboolab
     ports:
       # Map port 8010 của host ra port 8000 của container web
       - "8010:8000"
@@ -45,10 +43,9 @@ services:
     # Lệnh để chạy Celery worker
     command: celery -A bamboolab worker --pool=eventlet --loglevel=info
     volumes:
-      # Ánh xạ code giống như service 'web'
-      - .:/app
-      # Ánh xạ volume cho database SQLite giống như service 'web'
-      - sqlite_data:/app
+      - type: bind
+        source: ./bamboolab
+        target: /app/bamboolab
     environment:
       # Cần các biến môi trường giống như 'web'
       - SECRET_KEY=${SECRET_KEY}
