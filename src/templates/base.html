@@ -296,14 +296,14 @@
                  <a href="{% url 'score-ranking' %}" class="{% if request.path == '/score-ranking/' %}active{% endif %}">Tra cứu điểm</a>
                  {% endif %}
                  <a href="#">Giới thiệu</a>
-                 <a href="#">Liên hệ</a>
+                 <a href="https://www.facebook.com/chtcoder?locale=vi_VN">Liên hệ</a>
             </div>
 
             <div class="nav-buttons">
                  {% if user.is_authenticated %}
                  <div class="nav-item dropdown">
                      <a class="login-btn dropdown-toggle d-flex align-items-center" href="#" id="userDropdownOld" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                         Xin chào {{ user.first_name|default:user.username|truncatechars:10 }}
+                         Xin chào {{ user.first_name|default:user.username|truncatechars:6 }}
                      </a>
                      <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdownOld">
                          {% if user.is_staff %}
