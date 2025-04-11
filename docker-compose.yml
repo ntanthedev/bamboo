@@ -21,7 +21,7 @@ services:
       - ./src:/app 
       # Ánh xạ file db.sqlite3 vào volume sqlite_data
       # (Giả định file DB tên là db.sqlite3 và nằm trong /app)
-      - sqlite_data:/app/db.sqlite3
+      - db.sqlite3:/app/db.sqlite3
     ports:
       # Map port 8010 của host ra port 8000 của container web
       - "8010:8000"
@@ -46,7 +46,7 @@ services:
       # Ánh xạ thư mục src từ host vào /app trong container
       - ./src:/app
       # Ánh xạ file db.sqlite3 vào volume sqlite_data
-      - sqlite_data:/app/db.sqlite3
+      - db.sqlite3:/app/db.sqlite3
     environment:
       # Cần các biến môi trường giống như 'web'
       - SECRET_KEY=${SECRET_KEY}
