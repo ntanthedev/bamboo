@@ -1,6 +1,21 @@
 version: '3.8'
 
 services:
+  # Service cho PostgreSQL Database
+  db:
+    image: postgres:15-alpine
+    hostname: db
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_DB=${POSTGRES_DB:-postgres} # Tên database, mặc định là 'postgres' nếu không có trong .env
+      - POSTGRES_USER=${POSTGRES_USER:-postgres} # User, mặc định là 'postgres'
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-changeme} # Password, mặc định là 'changeme' - ***NÊN THAY ĐỔI***
+    ports:
+      # Mở port 5452 của host ánh xạ vào port 5452 của container db (chỉ khi cần truy cập trực tiếp từ host)
+      - "5452:5452"
+    command: -p 5452 # Chỉ định PostgreSQL lắng nghe trên port 5452
+
   # Service cho Redis (Celery Broker)
   redis:
     image: redis:7-alpine
@@ -27,11 +42,18 @@ services:
       - DEBUG=${DEBUG}
       - CELERY_BROKER_URL=redis://default:oJilO3ifLG53y1xK1BmjIdBNdMPTEwMo@redis-18788.crce178.ap-east-1-1.ec2.redns.redis-cloud.com:18788
       - CELERY_RESULT_BACKEND=redis://default:oJilO3ifLG53y1xK1BmjIdBNdMPTEwMo@redis-18788.crce178.ap-east-1-1.ec2.redns.redis-cloud.com:18788
+      # Database connection (lấy từ service 'db' và .env)
+      - POSTGRES_DB=${POSTGRES_DB:-postgres}
+      - POSTGRES_USER=${POSTGRES_USER:-postgres}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-changeme}
+      - POSTGRES_HOST=db # Tên service 'db' trong docker-compose
+      - POSTGRES_PORT=5452 # Port PostgreSQL đã đổi
       # Thêm các biến môi trường khác nếu cần
       # - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
       # ...
     depends_on:
       - redis # Đảm bảo Redis khởi động trước web
+      - db    # Đảm bảo DB khởi động trước web
 
   # Service cho Celery Worker
   celeryworker:
@@ -47,13 +69,21 @@ services:
       - DEBUG=${DEBUG}
       - CELERY_BROKER_URL=redis://default:oJilO3ifLG53y1xK1BmjIdBNdMPTEwMo@redis-18788.crce178.ap-east-1-1.ec2.redns.redis-cloud.com:18788
       - CELERY_RESULT_BACKEND=redis://default:oJilO3ifLG53y1xK1BmjIdBNdMPTEwMo@redis-18788.crce178.ap-east-1-1.ec2.redns.redis-cloud.com:18788
+      # Database connection (lấy từ service 'db' và .env)
+      - POSTGRES_DB=${POSTGRES_DB:-postgres}
+      - POSTGRES_USER=${POSTGRES_USER:-postgres}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-changeme}
+      - POSTGRES_HOST=db
+      - POSTGRES_PORT=5452 # Port PostgreSQL đã đổi
       # - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
       # ...
     depends_on:
       - redis # Đảm bảo Redis khởi động trước worker
+      - db    # Đảm bảo DB khởi động trước worker
 
 # Định nghĩa volumes để lưu trữ dữ liệu persistent
 volumes:
+  postgres_data: # Volume cho dữ liệu PostgreSQL
   redis_data:
-  # Volume để lưu file SQLite
-  sqlite_data: 
+  # Volume để lưu file SQLite (không cần nữa)
+  # sqlite_data: 
