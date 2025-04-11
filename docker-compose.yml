@@ -40,8 +40,8 @@ services:
       # Lấy biến môi trường từ file .env (hoặc định nghĩa trực tiếp ở đây)
       - SECRET_KEY=${SECRET_KEY}
       - DEBUG=${DEBUG}
-      - CELERY_BROKER_URL=redis://default:oJilO3ifLG53y1xK1BmjIdBNdMPTEwMo@redis-18788.crce178.ap-east-1-1.ec2.redns.redis-cloud.com:18788
-      - CELERY_RESULT_BACKEND=redis://default:oJilO3ifLG53y1xK1BmjIdBNdMPTEwMo@redis-18788.crce178.ap-east-1-1.ec2.redns.redis-cloud.com:18788
+      - CELERY_BROKER_URL=redis://redis:6379/0  # Sử dụng service Redis cục bộ
+      - CELERY_RESULT_BACKEND=redis://redis:6379/0 # Sử dụng service Redis cục bộ
       # Database connection (lấy từ service 'db' và .env)
       - POSTGRES_DB=${POSTGRES_DB:-postgres}
       - POSTGRES_USER=${POSTGRES_USER:-postgres}
@@ -57,18 +57,18 @@ services:
 
   # Service cho Celery Worker
   celeryworker:
-    build: .
-    hostname: celeryworker
-    command: celery -A bamboolab worker --pool=eventlet --loglevel=info
+    build: ./src
+    # restart: always
+    # entrypoint: celery -A bamboolab worker -l info
+    command: celery -A bamboolab worker --loglevel=info
     volumes:
-      # Ánh xạ thư mục src từ host vào /app trong container
       - ./src:/app
     environment:
       # Cần các biến môi trường giống như 'web'
       - SECRET_KEY=${SECRET_KEY}
       - DEBUG=${DEBUG}
-      - CELERY_BROKER_URL=redis://default:oJilO3ifLG53y1xK1BmjIdBNdMPTEwMo@redis-18788.crce178.ap-east-1-1.ec2.redns.redis-cloud.com:18788
-      - CELERY_RESULT_BACKEND=redis://default:oJilO3ifLG53y1xK1BmjIdBNdMPTEwMo@redis-18788.crce178.ap-east-1-1.ec2.redns.redis-cloud.com:18788
+      - CELERY_BROKER_URL=redis://redis:6379/0  # Sử dụng service Redis cục bộ
+      - CELERY_RESULT_BACKEND=redis://redis:6379/0 # Sử dụng service Redis cục bộ
       # Database connection (lấy từ service 'db' và .env)
       - POSTGRES_DB=${POSTGRES_DB:-postgres}
       - POSTGRES_USER=${POSTGRES_USER:-postgres}
