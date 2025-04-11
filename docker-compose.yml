@@ -13,14 +13,15 @@ services:
 
   # Service cho ứng dụng Web (Django development server)
   web:
-    build: . # Build từ Dockerfile trong thư mục hiện tại
+    build: .
     hostname: web
-    # Lệnh để chạy Django development server
     command: python manage.py runserver 0.0.0.0:8000
     volumes:
-      - type: bind
-        source: ./bamboolab
-        target: /app/bamboolab
+      # Ánh xạ thư mục src từ host vào /app trong container
+      - ./src:/app 
+      # Ánh xạ file db.sqlite3 vào volume sqlite_data
+      # (Giả định file DB tên là db.sqlite3 và nằm trong /app)
+      - sqlite_data:/app/db.sqlite3
     ports:
       # Map port 8010 của host ra port 8000 của container web
       - "8010:8000"
@@ -38,14 +39,14 @@ services:
 
   # Service cho Celery Worker
   celeryworker:
-    build: . # Sử dụng cùng image với web
+    build: .
     hostname: celeryworker
-    # Lệnh để chạy Celery worker
     command: celery -A bamboolab worker --pool=eventlet --loglevel=info
     volumes:
-      - type: bind
-        source: ./bamboolab
-        target: /app/bamboolab
+      # Ánh xạ thư mục src từ host vào /app trong container
+      - ./src:/app
+      # Ánh xạ file db.sqlite3 vào volume sqlite_data
+      - sqlite_data:/app/db.sqlite3
     environment:
       # Cần các biến môi trường giống như 'web'
       - SECRET_KEY=${SECRET_KEY}
@@ -60,4 +61,5 @@ services:
 # Định nghĩa volumes để lưu trữ dữ liệu persistent
 volumes:
   redis_data:
-  sqlite_data: # Volume để lưu file SQLite 
+  # Volume để lưu file SQLite
+  sqlite_data: 
