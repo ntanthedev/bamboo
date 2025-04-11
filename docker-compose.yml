@@ -57,7 +57,7 @@ services:
 
   # Service cho Celery Worker
   celeryworker:
-    build: ./src
+    build: .
     # restart: always
     # entrypoint: celery -A bamboolab worker -l info
     command: celery -A bamboolab worker --loglevel=info
