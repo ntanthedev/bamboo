@@ -304,6 +304,10 @@ Phân loại độ khó của mỗi câu hỏi là 'easy', 'medium', hoặc 'har
 
         # Parse JSON
         logger.debug(f"Raw response from Gemini: {response_text[:500]}...") # Log một phần response để debug
+        if "```json" in response_text:
+            response_text = response_text.split("```json")[1]
+            response_text = response_text.split("```")[0]
+            response_text = response_text.strip()
         questions_data = json.loads(response_text)
         
         # Kiểm tra kiểu dữ liệu trả về
