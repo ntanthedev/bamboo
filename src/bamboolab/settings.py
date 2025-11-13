@@ -139,4 +139,4 @@ CELERY_RESULT_SERIALIZER = 'json'
 CELERY_TIMEZONE = TIME_ZONE
 
 # Google Generative AI API (Gemini)
-GEMINI_API_KEY = 'AIzaSyDvrbX8pZ0dDNCYyRYWycQu20bzKW9wZhM'  # Thay bằng API key thực của bạn
+GEMINI_API_KEY = 'AIzaSyDvrbX8pZ0dDNCYyRYWycQu20bzKW9wZhM'  
