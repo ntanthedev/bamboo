@@ -15,5 +15,4 @@ def save_user_profile(sender, instance, **kwargs):
     if hasattr(instance, 'profile'):
         instance.profile.save()
     else:
-        # Nếu đã có User nhưng chưa có profile, tạo mới
         UserProfile.objects.create(user=instance) 

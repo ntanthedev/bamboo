@@ -58,23 +58,18 @@ class CustomUserCreationForm(UserCreationForm):
     def save(self, commit=True):
         user = super().save(commit=False)
         user.email = self.cleaned_data["email"]
-        # Lưu name vào first_name của User
         user.first_name = self.cleaned_data["name"]
-        # Set username từ email để phù hợp với model User của Django
         user.username = self.cleaned_data["email"].split('@')[0]
         
         if commit:
             user.save()
             
-            # Xử lý mã giới thiệu
             invite_code = self.cleaned_data.get('invite_code')
             if invite_code:
-                # Lấy profile được tạo từ signal
                 profile = user.profile
                 profile.invite_code = invite_code
                 profile.save()
                 
-                # Giảm số lượt sử dụng của mã
                 invite_code.use_code()
                 
         return user 
@@ -82,7 +77,7 @@ class CustomUserCreationForm(UserCreationForm):
 class QuizForm(forms.Form):
     def __init__(self, *args, questions=None, **kwargs):
         super(QuizForm, self).__init__(*args, **kwargs)
-        self.questions = questions # Lưu lại queryset
+        self.questions = questions
         if questions:
             for i, question in enumerate(questions):
                 field_name = f'question_{question.id}'
@@ -93,14 +88,8 @@ class QuizForm(forms.Form):
                     choices=choices,
                     widget=forms.RadioSelect
                 )
-                # Gắn đối tượng question vào field để truy cập trong template
                 self.fields[field_name].question = question
 
     def clean(self):
         cleaned_data = super().clean()
-        # Kiểm tra xem tất cả các câu hỏi đã được trả lời chưa
-        # (Có thể không cần thiết nếu `required=True` đã đủ)
-        # for field_name in self.fields:
-        #     if not cleaned_data.get(field_name):
-        #         self.add_error(field_name, "Bạn phải trả lời câu hỏi này.")
         return cleaned_data 

@@ -1,19 +1,14 @@
 import os
-# import PyPDF2 # Không còn sử dụng
 import logging
 import json
-import mimetypes # Import thư viện mimetypes
+import mimetypes
 from celery import shared_task
 from django.conf import settings
 from .models import Document, UploadedFile, Question, Answer, Subject
 import google.generativeai as genai
 from google.generativeai import types
 
-# Cấu hình logging
 logger = logging.getLogger(__name__)
-
-# Cấu hình Client Gemini (nên dùng Client thay vì configure toàn cục)
-# api_key nên được lấy từ settings hoặc biến môi trường khi khởi tạo client
 
 @shared_task(bind=True)
 def process_document(self, document_id, additional_requirements=""):
@@ -22,38 +17,33 @@ def process_document(self, document_id, additional_requirements=""):
     sử dụng Gemini API qua File API.
     """
     document = None
-    google_file_objects = [] # Lưu các đối tượng file từ Google để xóa sau
+    google_file_objects = [] 
     model = None
 
     try:
-        # Khởi tạo Client với API Key
         api_key = os.environ.get("GEMINI_API_KEY") or settings.GEMINI_API_KEY
         if not api_key:
             raise ValueError("GEMINI_API_KEY is not set.")
         genai.configure(api_key=api_key)
         
-        # Tạo model Gemini
-        model_name = 'gemini-2.0-flash-thinking-exp-01-21' # Hoặc model khác phù hợp
+        model_name = 'gemini-2.0-flash-thinking-exp-01-21'
         model = genai.GenerativeModel(model_name)
         
-        # 1. Lấy thông tin Document và các UploadedFile
         document = Document.objects.get(id=document_id)
         document.status = 'processing'
         document.progress = 10
         document.progress_message = "Đang chuẩn bị xử lý tài liệu..."
         document.save()
 
-        uploaded_files = list(document.uploaded_files.all()) # Lấy danh sách file từ model mới
+        uploaded_files = list(document.uploaded_files.all())
         if not uploaded_files:
             raise ValueError("No files found associated with this document.")
 
         logger.info(f"Processing document ID {document_id} ({document.title}) with {len(uploaded_files)} files.")
 
-        # 2. Upload các file lên Google File API
         uploaded_google_files = []
         total_files = len(uploaded_files)
         
-        # Cập nhật tiến trình
         document.progress = 20
         document.progress_message = f"Đang tải lên {total_files} tệp tài liệu..."
         document.save()
@@ -66,13 +56,11 @@ def process_document(self, document_id, additional_requirements=""):
             
             logger.info(f"Uploading file {uf.id} ({os.path.basename(file_path)}) to Google File API...")
             try:
-                # Đoán MIME type từ tên file
                 mime_type, _ = mimetypes.guess_type(file_path)
                 file_extension = os.path.splitext(file_path)[1].lower()
 
-                # Xử lý đặc biệt cho .jfif hoặc nếu không đoán được
                 if file_extension == '.jfif':
-                    mime_type = 'image/jpeg' # Ép kiểu thành image/jpeg
+                    mime_type = 'image/jpeg'
                     logger.info(f"Detected .jfif extension, forcing mime_type to {mime_type}")
                 elif not mime_type:
                     mime_type = 'application/octet-stream'
@@ -80,36 +68,30 @@ def process_document(self, document_id, additional_requirements=""):
                 else:
                      logger.info(f"Guessed mime type for {file_path}: {mime_type}")
 
-                # Upload file với mime_type đã xác định
                 google_file = genai.upload_file(
                     path=file_path,
                     mime_type=mime_type
                 )
-                google_file_objects.append(google_file) # Lưu lại để xóa sau
+                google_file_objects.append(google_file)
                 uploaded_google_files.append(google_file)
                 logger.info(f"Successfully uploaded {google_file.name} ({google_file.mime_type})")
                 
-                # Cập nhật tiến trình upload
-                progress = 20 + int(30 * (i + 1) / total_files)  # Từ 20% đến 50%
+                progress = 20 + int(30 * (i + 1) / total_files)
                 document.progress = progress
                 document.progress_message = f"Đã tải lên {i+1}/{total_files} tệp tài liệu..."
                 document.save()
                 
             except Exception as upload_error:
                 logger.error(f"Failed to upload file {file_path}: {upload_error}")
-                # Bỏ qua và tiếp tục với các file khác
                 document.error_message = f"Không thể tải lên tệp: {os.path.basename(file_path)}"
                 document.save()
         
-        # Nếu không upload được file nào lên google thì dừng
         if not uploaded_google_files:
              raise ValueError("No files could be successfully uploaded to Google File API.")
 
-        # 3. Gọi Gemini API để tạo câu hỏi
         subject_name = document.subject.name if document.subject else document.subject_text
         logger.info(f"Generating questions for document {document_id} using {len(uploaded_google_files)} files.")
         
-        # Cập nhật tiến trình
         document.progress = 50
         document.progress_message = "Đang tạo câu hỏi từ tài liệu sử dụng AI..."
         document.save()
@@ -122,23 +104,19 @@ def process_document(self, document_id, additional_requirements=""):
         )
         
         if not questions_data:
-            # Lỗi đã được log bên trong hàm con
             raise ValueError("Failed to generate questions from the provided files.")
 
-        # Cập nhật tiến trình
         document.progress = 80
         document.progress_message = f"Đã tạo {len(questions_data)} câu hỏi. Đang lưu vào cơ sở dữ liệu..."
         document.save()
 
-        # 4. Lưu câu hỏi và đáp án
         logger.info(f"Saving {len(questions_data)} questions to database for document {document_id}.")
-        Question.objects.filter(document=document).delete() # Xóa câu hỏi cũ nếu chạy lại task
+        Question.objects.filter(document=document).delete()
         
         questions_saved = 0
         total_questions = len(questions_data)
         
         for i, q_data in enumerate(questions_data):
-            # Validate cấu trúc dữ liệu q_data cơ bản
             if not all(k in q_data for k in ('question', 'answers')) or not isinstance(q_data['answers'], list):
                  logger.warning(f"Skipping invalid question data structure: {q_data}")
                  continue
@@ -146,9 +124,8 @@ def process_document(self, document_id, additional_requirements=""):
             question_text = q_data['question']
             difficulty = q_data.get('difficulty', 'medium').lower()
             if difficulty not in ['easy', 'medium', 'hard']:
-                 difficulty = 'medium' # Default nếu giá trị không hợp lệ
+                 difficulty = 'medium'
             
-            # Đảm bảo có đối tượng Subject hợp lệ
             if document.subject:
                 subject = document.subject
             else:
@@ -169,7 +146,7 @@ def process_document(self, document_id, additional_requirements=""):
                     continue
                 
                 is_correct = ans_data['is_correct']
-                explanation = ans_data.get('explanation') if is_correct else None # Lấy explanation nếu là đáp án đúng
+                explanation = ans_data.get('explanation') if is_correct else None
                 
                 if is_correct:
                     has_correct_answer = True
@@ -178,46 +155,41 @@ def process_document(self, document_id, additional_requirements=""):
                     question=question,
                     text=ans_data['text'],
                     is_correct=is_correct,
-                    explanation=explanation, # Lưu explanation
+                    explanation=explanation,
                     position=j
                 )
                 answers_saved_count += 1
             
-            # Kiểm tra xem có lưu được đáp án và có ít nhất 1 đáp án đúng không
             if answers_saved_count == 0 or not has_correct_answer:
                 logger.warning(f"Question '{question_text[:50]}...' saved without valid answers or no correct answer marked. Deleting question.")
-                question.delete() # Xóa câu hỏi nếu không có đáp án hợp lệ
+                question.delete()
             else:
                 questions_saved += 1
                 
-            # Cập nhật tiến trình lưu câu hỏi
-            if i % 5 == 0 or i == total_questions - 1:  # Cập nhật sau mỗi 5 câu hỏi để tránh quá nhiều thao tác DB
-                progress = 80 + int(15 * (i + 1) / total_questions)  # Từ 80% đến 95%
+            if i % 5 == 0 or i == total_questions - 1:
+                progress = 80 + int(15 * (i + 1) / total_questions) 
                 document.progress = progress
                 document.progress_message = f"Đang lưu câu hỏi {i+1}/{total_questions}..."
                 document.save()
 
-        # 5. Cập nhật trạng thái thành công
         document.status = 'completed'
         document.progress = 100
         document.progress_message = f"Hoàn thành! Đã tạo {questions_saved} câu hỏi."
-        document.error_message = None # Xóa lỗi cũ nếu thành công
+        document.error_message = None
         document.save()
         logger.info(f"Successfully processed document {document_id}.")
         
     except Document.DoesNotExist:
         logger.error(f'Document with id {document_id} does not exist')
     except Exception as e:
-        logger.exception(f'Error processing document {document_id}: {str(e)}') # Dùng exception để log cả traceback
-        if document: # Cập nhật trạng thái lỗi nếu lấy được document
+        logger.exception(f'Error processing document {document_id}: {str(e)}')
+        if document:
             document.status = 'failed'
             document.progress = 0
-            # Ưu tiên giữ lỗi cụ thể nếu có, nếu không ghi lỗi chung
             if not document.error_message or isinstance(e, ValueError):
                  document.error_message = f"Lỗi xử lý: {str(e)}"
             document.save()
     finally:
-        # 6. Xóa các file đã tải lên Google File API
         if google_file_objects:
             if document and document.status != 'failed':
                 document.progress = 95
@@ -230,7 +202,6 @@ def process_document(self, document_id, additional_requirements=""):
                     logger.debug(f"Deleting file: {google_file.name}")
                     genai.delete_file(name=google_file.name)
                 except Exception as delete_error:
-                    # Chỉ log lỗi, không nên dừng cả task
                     logger.error(f"Failed to delete Google File API file {google_file.name}: {delete_error}")
 
             if document and document.status == 'completed':
@@ -243,7 +214,6 @@ def generate_questions_from_files(model, uploaded_files, subject, requirements):
     Trả về list các dictionaries câu hỏi hoặc None nếu lỗi.
     """
     try:
-        # Xây dựng prompt
         prompt_text = f"""
         Dựa vào nội dung các tài liệu được cung cấp, hãy lấy toàn bộ câu hỏi trắc nghiệm về môn học '{subject}'.
 
@@ -274,23 +244,17 @@ Phân loại độ khó của mỗi câu hỏi là 'easy', 'medium', hoặc 'har
         ]
         """
 
-        # Tạo nội dung yêu cầu (Kết hợp prompt và các file đã upload)
         request_content = [prompt_text]
         for f in uploaded_files:
-            request_content.append(f) # Thêm các đối tượng file đã upload
+            request_content.append(f)
 
         logger.info(f"Sending generation request to Gemini with {len(uploaded_files)} files.")
-        # Cấu hình để trả về JSON
         generation_config = genai.types.GenerationConfig(response_mime_type="application/json",max_output_tokens=80000)
 
-        # Gọi API
         response = model.generate_content(
             request_content,
-            # Cân nhắc thêm safety_settings nếu cần
-            # safety_settings=[...]
         )
 
-        # Kiểm tra xem response có chứa text không
         if not response.parts:
              logger.error("Gemini response did not contain any parts.")
              try:
@@ -299,18 +263,15 @@ Phân loại độ khó của mỗi câu hỏi là 'easy', 'medium', hoặc 'har
                  pass
              return None
         
-        # Lấy phần text từ response (đối với JSON response)
         response_text = response.text
 
-        # Parse JSON
-        logger.debug(f"Raw response from Gemini: {response_text[:500]}...") # Log một phần response để debug
+        logger.debug(f"Raw response from Gemini: {response_text[:500]}...")
         if "```json" in response_text:
             response_text = response_text.split("```json")[1]
             response_text = response_text.split("```")[0]
             response_text = response_text.strip()
         questions_data = json.loads(response_text)
         
-        # Kiểm tra kiểu dữ liệu trả về
         if not isinstance(questions_data, list):
             logger.error(f"Parsed JSON is not a list: {type(questions_data)}")
             return None
@@ -320,17 +281,16 @@ Phân loại độ khó của mỗi câu hỏi là 'easy', 'medium', hoặc 'har
 
     except types.BlockedPromptException as bpe:
         logger.error(f"Prompt blocked by API safety settings: {bpe}")
-        # Có thể lưu thông tin lỗi này vào Document.error_message
         return None
     except types.StopCandidateException as sce:
         logger.error(f"Generation stopped unexpectedly: {sce}")
         return None
     except json.JSONDecodeError as jde:
         logger.error(f"Failed to decode JSON response: {jde}")
-        logger.error(f"Invalid JSON received: {response_text[:1000]}...") # Log nhiều hơn để xem lỗi JSON
+        logger.error(f"Invalid JSON received: {response_text[:1000]}...")
         return None
     except Exception as e:
-        logger.exception(f"An unexpected error occurred during question generation: {e}") # Log cả traceback
+        logger.exception(f"An unexpected error occurred during question generation: {e}")
         return None
 
 # --- Xóa hàm cũ không còn sử dụng --- 

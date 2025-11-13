@@ -25,7 +25,6 @@ class Subject(models.Model):
         """Trả về số lượng câu hỏi của môn học này"""
         return self.questions.count()
 
-# Create your models here.
 class Candidate(models.Model):
     sbd = models.CharField(max_length=200)
     name = models.CharField(max_length=200)
@@ -115,7 +114,6 @@ class Document(models.Model):
     def __str__(self):
         return self.title
 
-# Model mới để lưu từng file upload
 class UploadedFile(models.Model):
     document = models.ForeignKey(Document, related_name='uploaded_files', on_delete=models.CASCADE)
     file = models.FileField(upload_to='document_files/') # Lưu file vào thư mục riêng
@@ -129,7 +127,6 @@ class UploadedFile(models.Model):
     def __str__(self):
         return f"File for {self.document.title} - {self.file.name}"
 
-# Model lưu thông tin profile của user
 class UserProfile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='profile')
     invite_code = models.ForeignKey('InviteCode', on_delete=models.SET_NULL, null=True, blank=True, related_name='referred_users')
@@ -140,7 +137,6 @@ class UserProfile(models.Model):
     def __str__(self):
         return f"Profile của {self.user.username}"
 
-# Model cho mã giới thiệu
 class InviteCode(models.Model):
     code = models.CharField(max_length=20, unique=True, verbose_name="Mã giới thiệu")
     created_by = models.ForeignKey(User, on_delete=models.CASCADE, related_name='created_referral_codes', verbose_name="Người tạo")
@@ -155,7 +151,6 @@ class InviteCode(models.Model):
         """Sử dụng mã giới thiệu và giảm số lần sử dụng đi 1"""
         if self.remaining_uses > 0 and self.is_active:
             self.remaining_uses -= 1
-            # Nếu hết lượt, đánh dấu là không còn hiệu lực
             if self.remaining_uses == 0:
                 self.is_active = False
             self.save()
@@ -176,7 +171,6 @@ class QuizAttempt(models.Model):
     questions = models.ManyToManyField(Question, related_name='attempts')
     score = models.FloatField(null=True, blank=True, help_text="Điểm số trên thang 10")
     completed = models.BooleanField(default=False)
-    # Có thể thêm trường lưu tổng thời gian làm bài nếu muốn
 
     def __str__(self):
         return f"Bài kiểm tra {self.subject.name} của {self.user.username} ({self.start_time.strftime('%d/%m/%Y %H:%M')})"
@@ -199,7 +193,6 @@ class QuizAttempt(models.Model):
             if ua.selected_answer_id in correct_answer_ids:
                 correct_count += 1
                 
-        # Tính điểm thang 10
         self.score = round((correct_count / total_questions) * 10, 2)
         self.save()
         return self.score
@@ -220,6 +213,6 @@ class UserAnswer(models.Model):
         return f"Đáp án của {self.quiz_attempt.user.username} cho câu hỏi {self.question.id} trong lần làm bài {self.quiz_attempt.id}"
 
     class Meta:
-        unique_together = ('quiz_attempt', 'question') # Đảm bảo mỗi câu hỏi chỉ có 1 đáp án được lưu cho mỗi lần làm bài
+        unique_together = ('quiz_attempt', 'question')
         verbose_name = "Câu trả lời của người dùng"
         verbose_name_plural = "Các câu trả lời của người dùng"

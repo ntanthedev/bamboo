@@ -24,13 +24,11 @@ def get_item(dictionary, key):
     """Cho phép truy cập giá trị của dictionary bằng key trong template.
     Sử dụng: {{ my_dictionary|get_item:my_key }}
     """
-    # Chuyển đổi key sang kiểu int nếu có thể, vì ID câu hỏi thường là int
     try:
         key = int(key)
     except (ValueError, TypeError):
-        pass # Giữ nguyên key nếu không phải số
+        pass
         
-    # Thử truy cập bằng key đã chuyển đổi hoặc key gốc
     return dictionary.get(key)
 
 @register.filter(name='mul')
@@ -47,7 +45,7 @@ def div(value, arg):
     try:
         divisor = float(arg)
         if divisor == 0:
-            return '' # Tránh lỗi chia cho 0
+            return ''
         return float(value) / divisor
     except (ValueError, TypeError):
         return ''
@@ -57,7 +55,6 @@ def filename(value):
     """Trả về tên file từ đường dẫn đầy đủ."""
     if isinstance(value, str):
         return os.path.basename(value)
-    # Nếu value là FieldFile (Django file field)
     elif hasattr(value, 'name') and value.name:
          return os.path.basename(value.name)
     return "" 

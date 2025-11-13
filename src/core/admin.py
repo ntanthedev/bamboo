@@ -4,7 +4,6 @@ from .models import (
     UserProfile, InviteCode, QuizAttempt, UserAnswer
 )
 
-# Register your models here.
 @admin.register(Candidate)
 class CandidateAdmin(admin.ModelAdmin):
     list_display = ('name', 'sbd', 'subject', 'score', 'rank', 'prize', 'exam_type')
@@ -73,9 +72,9 @@ admin.site.register(InviteCode, InviteCodeAdmin)
 
 class UserAnswerInline(admin.TabularInline):
     model = UserAnswer
-    extra = 0 # Không hiển thị thêm dòng trống
+    extra = 0
     readonly_fields = ('question', 'selected_answer', 'submitted_at')
-    can_delete = False # Không cho xóa câu trả lời qua admin
+    can_delete = False
 
 @admin.register(QuizAttempt)
 class QuizAttemptAdmin(admin.ModelAdmin):
@@ -86,7 +85,6 @@ class QuizAttemptAdmin(admin.ModelAdmin):
     inlines = [UserAnswerInline]
     
     def get_readonly_fields(self, request, obj=None):
-        # Chỉ cho phép sửa điểm và trạng thái hoàn thành nếu cần
         if obj:
             return self.readonly_fields + ('score', 'completed') 
         return self.readonly_fields
