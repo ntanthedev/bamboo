@@ -26,7 +26,7 @@ def process_document(self, document_id, additional_requirements=""):
             raise ValueError("GEMINI_API_KEY is not set.")
         genai.configure(api_key=api_key)
         
-        model_name = 'gemini-2.0-flash-thinking-exp-01-21'
+        model_name = 'gemini-3-pro-preview'
         model = genai.GenerativeModel(model_name)
         
         document = Document.objects.get(id=document_id)
