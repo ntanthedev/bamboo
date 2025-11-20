@@ -2,7 +2,7 @@
 
 **Nền tảng tạo đề thi online thông minh sử dụng AI**
 
-BambooLab là một nền tảng giáo dục sử dụng trí tuệ nhân tạo (Google Gemini AI) để tự động hóa quá trình tạo và quản lý đề thi. Giáo viên có thể tải lên tài liệu và hệ thống sẽ tự động tạo câu hỏi trắc nghiệm với đáp án chi tiết.
+BambooLab là một nền tảng giáo dục sử dụng trí tuệ nhân tạo tạo sinh để tự động hóa quá trình tạo và quản lý đề thi. Giáo viên có thể tải lên tài liệu và hệ thống sẽ tự động tạo câu hỏi trắc nghiệm với đáp án chi tiết.
 
 ---
 
