@@ -1,89 +1,330 @@
-# BambooLab - Nền tảng tạo đề thi online thông minh
+# BambooLab
 
-BambooLab là một nền tảng giáo dục đột phá, sử dụng trí tuệ nhân tạo (AI) để tự động hóa quá trình tạo và quản lý đề thi. Với BambooLab, giáo viên và các tổ chức giáo dục có thể dễ dàng chuyển đổi các đề thi giấy truyền thống thành các bài kiểm tra online, tạo đáp án chi tiết và sinh ra các bộ đề ngẫu nhiên một cách nhanh chóng và hiệu quả.
+**Nền tảng tạo đề thi online thông minh sử dụng AI**
 
-## Tính năng nổi bật
+BambooLab là một nền tảng giáo dục sử dụng trí tuệ nhân tạo tạo sinh để tự động hóa quá trình tạo và quản lý đề thi. Giáo viên có thể tải lên tài liệu và hệ thống sẽ tự động tạo câu hỏi trắc nghiệm với đáp án chi tiết.
 
-- **Tạo đề thi từ file**: Tải lên các file đề thi (định dạng PDF, DOCX, hoặc ảnh) và hệ thống AI sẽ tự động phân tích, bóc tách câu hỏi và các lựa chọn để tạo thành một bài kiểm tra online hoàn chỉnh.
-- **Tạo đáp án tự động**: AI sẽ phân tích nội dung câu hỏi và đưa ra đáp án chính xác, giúp tiết kiệm thời gian và công sức cho giáo viên.
-- **Sinh đề ngẫu nhiên**: Từ một ngân hàng câu hỏi có sẵn, hệ thống có thể tạo ra vô số các bộ đề thi khác nhau, đảm bảo tính khách quan và công bằng trong kiểm tra.
-- **Quản lý ngân hàng câu hỏi**: Dễ dàng quản lý, chỉnh sửa và phân loại các câu hỏi theo chủ đề, độ khó.
-- **Giao diện thân thiện**: Giao diện người dùng được thiết kế đơn giản, trực quan, giúp người dùng dễ dàng thao tác và sử dụng.
-- **Thống kê và báo cáo**: Cung cấp các báo cáo chi tiết về kết quả của học sinh, giúp giáo viên nắm bắt được tình hình học tập và đưa ra các phương pháp giảng dạy phù hợp.
+---
+
+## Mục lục
+
+- [Tính năng](#tính-năng)
+- [Công nghệ sử dụng](#công-nghệ-sử-dụng)
+- [Yêu cầu hệ thống](#yêu-cầu-hệ-thống)
+- [Cài đặt](#cài-đặt)
+  - [Cài đặt thủ công](#cài-đặt-thủ-công)
+  - [Cài đặt với Docker](#cài-đặt-với-docker)
+- [Cấu hình](#cấu-hình)
+- [Sử dụng](#sử-dụng)
+- [Cấu trúc dự án](#cấu-trúc-dự-án)
+- [API Endpoints](#api-endpoints)
+- [Đóng góp](#đóng-góp)
+- [Giấy phép](#giấy-phép)
+
+---
+
+## Tính năng
+
+### Tạo đề thi tự động với AI
+- Tải lên file PDF, DOCX, hoặc hình ảnh
+- AI tự động phân tích và tạo câu hỏi trắc nghiệm
+- Mỗi câu hỏi có 4 đáp án với giải thích chi tiết
+- Phân loại độ khó: Dễ, Trung bình, Khó
+- Theo dõi tiến trình xử lý theo thời gian thực
+
+### Hệ thống làm bài kiểm tra
+- Làm bài trắc nghiệm theo môn học
+- Giới hạn thời gian 30 phút/bài
+- 16 câu hỏi ngẫu nhiên mỗi lần thi
+- Xem kết quả và giải thích sau khi nộp bài
+- Lưu lịch sử làm bài
+
+### Tra cứu điểm thi
+- Tra cứu điểm thi học sinh giỏi tỉnh
+- Thống kê xếp hạng theo môn học
+- So sánh với điểm trung bình
+- Thông tin về giải thưởng
+
+### Quản lý người dùng
+- Đăng ký tài khoản với mã mời
+- Đăng nhập với tùy chọn ghi nhớ
+- Trang cá nhân với lịch sử làm bài
+- Phân quyền admin/staff
+
+---
 
 ## Công nghệ sử dụng
 
-- **Backend**: Django, Django REST Framework
-- **Frontend**: HTML, CSS, JavaScript
-- **Cơ sở dữ liệu**: PostgreSQL (production), SQLite (development)
-- **Xử lý bất đồng bộ**: Celery, Redis
-- **AI & Machine Learning**: Google Generative AI
-- **Deployment**: Docker
+| Thành phần | Công nghệ |
+|------------|-----------|
+| Backend | Django 5.2.0 |
+| Database | SQLite (dev) / PostgreSQL (prod) |
+| Task Queue | Celery 5.5.0 |
+| Message Broker | Redis 7 |
+| AI | Google Generative AI (Gemini 2.0 Flash) |
+| Frontend | HTML, CSS, JavaScript |
+| Containerization | Docker, Docker Compose |
 
-## Cài đặt và triển khai
+---
 
-### Yêu cầu hệ thống
+## Yêu cầu hệ thống
 
 - Python 3.10+
-- Docker và Docker Compose
+- Redis Server
+- Docker và Docker Compose (tùy chọn)
+- Google AI API Key
 
-### Hướng dẫn cài đặt
+---
 
-1.  **Clone repository:**
+## Cài đặt
 
-    ```bash
-    git clone https://github.com/ntanthedev/bamboo.git
-    cd bamboolab
-    ```
+### Cài đặt thủ công
 
-2.  **Tạo và kích hoạt môi trường ảo:**
+1. **Clone repository**
 
-    ```bash
-    python -m venv venv
-    source venv/bin/activate  # Trên Windows dùng `venv\Scripts\activate`
-    ```
+```bash
+git clone https://github.com/ntanthedev/bamboo.git
+cd bamboo
+```
 
-3.  **Cài đặt các thư viện cần thiết:**
+2. **Tạo môi trường ảo**
 
-    ```bash
-    pip install -r requirements.txt
-    ```
+```bash
+python -m venv venv
 
-4.  **Cấu hình biến môi trường:**
+# Linux/macOS
+source venv/bin/activate
 
-    Tạo file `.env` ở thư mục gốc và thêm các biến môi trường cần thiết (ví dụ: `SECRET_KEY`, `DATABASE_URL`, `GOOGLE_API_KEY`).
+# Windows
+venv\Scripts\activate
+```
 
-5.  **Chạy migrate cơ sở dữ liệu:**
+3. **Cài đặt dependencies**
 
-    ```bash
-    python src/manage.py migrate
-    ```
+```bash
+pip install -r requirements.txt
+```
 
-6.  **Khởi chạy server:**
+4. **Cấu hình biến môi trường**
 
-    ```bash
-    python src/manage.py runserver
-    ```
+Tạo file `.env` tại thư mục gốc:
 
-### Triển khai với Docker
+```env
+SECRET_KEY=your-secret-key-here
+DEBUG=True
+GEMINI_API_KEY=your-google-ai-api-key
+```
 
-1.  **Build và khởi chạy các container:**
+5. **Chạy migrations**
 
-    ```bash
-    docker-compose up --build
-    ```
+```bash
+python src/manage.py migrate
+```
 
-## Hướng dẫn sử dụng
+6. **Tạo tài khoản admin**
 
-1.  Truy cập vào trang chủ.
-2.  Đăng ký/Đăng nhập vào tài khoản.
-3.  Vào mục "Tạo đề thi" và tải lên file đề thi của bạn.
-4.  Hệ thống sẽ xử lý và tạo ra một bài kiểm tra online.
-5.  Bạn có thể xem lại, chỉnh sửa và chia sẻ bài kiểm tra cho học sinh.
+```bash
+python src/manage.py createsuperuser
+```
+
+7. **Khởi chạy server**
+
+```bash
+# Terminal 1: Django server
+python src/manage.py runserver
+
+# Terminal 2: Celery worker
+cd src
+celery -A bamboolab worker --loglevel=info
+```
+
+Truy cập ứng dụng tại: http://localhost:8000
+
+### Cài đặt với Docker
+
+1. **Clone repository**
+
+```bash
+git clone https://github.com/ntanthedev/bamboo.git
+cd bamboo
+```
+
+2. **Cấu hình biến môi trường**
+
+Tạo file `.env`:
+
+```env
+SECRET_KEY=your-secret-key-here
+DEBUG=True
+GEMINI_API_KEY=your-google-ai-api-key
+POSTGRES_DB=bamboolab
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=your-secure-password
+```
+
+3. **Build và khởi chạy**
+
+```bash
+docker-compose up --build
+```
+
+4. **Chạy migrations (trong container)**
+
+```bash
+docker-compose exec web python manage.py migrate
+docker-compose exec web python manage.py createsuperuser
+```
+
+Truy cập ứng dụng tại: http://localhost:8010
+
+---
+
+## Cấu hình
+
+### Biến môi trường
+
+| Biến | Mô tả | Bắt buộc |
+|------|-------|----------|
+| `SECRET_KEY` | Django secret key | Có |
+| `DEBUG` | Chế độ debug (True/False) | Có |
+| `GEMINI_API_KEY` | Google AI API key | Có |
+| `POSTGRES_DB` | Tên database PostgreSQL | Docker |
+| `POSTGRES_USER` | User PostgreSQL | Docker |
+| `POSTGRES_PASSWORD` | Password PostgreSQL | Docker |
+
+### Ports
+
+| Service | Port nội bộ | Port host |
+|---------|------------|-----------|
+| Django | 8000 | 8010 |
+| PostgreSQL | 5452 | 5452 |
+| Redis | 6379 | 7812 |
+
+---
+
+## Sử dụng
+
+### Đối với giáo viên (Staff)
+
+1. Đăng nhập với tài khoản staff
+2. Vào **Upload Document** để tải lên tài liệu
+3. Chọn môn học và điền các thông tin cần thiết
+4. Chờ hệ thống xử lý và tạo câu hỏi tự động
+5. Xem và quản lý câu hỏi trong **Documents**
+
+### Đối với học sinh
+
+1. Đăng ký tài khoản với mã mời
+2. Vào **Quiz** để chọn môn học
+3. Bắt đầu làm bài và hoàn thành trong 30 phút
+4. Xem kết quả và giải thích chi tiết
+5. Theo dõi lịch sử làm bài trong **Profile**
+
+### Tra cứu điểm
+
+1. Vào **Tra điểm**
+2. Nhập số báo danh
+3. Chọn kỳ thi (Lớp 10 hoặc Lớp 11)
+4. Xem kết quả và thống kê
+
+---
+
+## Cấu trúc dự án
+
+```
+bamboo/
+├── src/
+│   ├── bamboolab/          # Django project config
+│   │   ├── settings.py     # Cấu hình Django
+│   │   ├── urls.py         # URL routing
+│   │   ├── celery.py       # Cấu hình Celery
+│   │   └── wsgi.py         # WSGI entry
+│   ├── core/               # Ứng dụng chính
+│   │   ├── models.py       # Database models
+│   │   ├── views.py        # View functions
+│   │   ├── forms.py        # Django forms
+│   │   ├── tasks.py        # Celery tasks
+│   │   └── migrations/     # Database migrations
+│   ├── templates/          # HTML templates
+│   ├── static/             # CSS, JS, images
+│   ├── data/               # CSV data files
+│   └── manage.py           # Django CLI
+├── requirements.txt        # Python packages
+├── Dockerfile              # Docker config
+├── docker-compose.yml      # Docker Compose
+└── README.md
+```
+
+---
+
+## API Endpoints
+
+### Trang chính
+
+| Method | Endpoint | Mô tả |
+|--------|----------|-------|
+| GET | `/` | Trang chủ |
+| GET | `/admin/` | Django Admin |
+
+### Xác thực
+
+| Method | Endpoint | Mô tả |
+|--------|----------|-------|
+| GET/POST | `/login/` | Đăng nhập |
+| GET | `/logout/` | Đăng xuất |
+| GET/POST | `/register/` | Đăng ký |
+| GET | `/profile/` | Trang cá nhân |
+
+### Quiz
+
+| Method | Endpoint | Mô tả |
+|--------|----------|-------|
+| GET | `/quiz/` | Danh sách môn học |
+| GET | `/quiz/start/<subject_id>/` | Bắt đầu làm bài |
+| GET | `/quiz/attempt/<attempt_id>/` | Làm bài |
+| POST | `/quiz/submit/<attempt_id>/` | Nộp bài |
+| GET | `/quiz/result/<attempt_id>/` | Xem kết quả |
+
+### Tài liệu
+
+| Method | Endpoint | Mô tả |
+|--------|----------|-------|
+| GET/POST | `/upload-document/` | Upload tài liệu |
+| GET | `/documents/` | Danh sách tài liệu |
+| GET | `/document-status/<id>/` | Trạng thái xử lý |
+| GET | `/api/document-status/<id>/` | API trạng thái |
+
+### Tra điểm
+
+| Method | Endpoint | Mô tả |
+|--------|----------|-------|
+| GET/POST | `/score-ranking/` | Tra cứu điểm |
+| GET | `/import-csv/` | Import dữ liệu CSV |
+
+---
 
 ## Đóng góp
 
-Chúng tôi luôn chào đón các đóng góp từ cộng đồng. Nếu bạn có bất kỳ ý tưởng, đề xuất hoặc muốn báo lỗi, vui lòng tạo một "Issue" hoặc "Pull Request" trên repository này.
+Chúng tôi chào đón mọi đóng góp từ cộng đồng!
+
+### Quy trình đóng góp
+
+1. Fork repository
+2. Tạo branch mới (`git checkout -b feature/AmazingFeature`)
+3. Commit changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to branch (`git push origin feature/AmazingFeature`)
+5. Tạo Pull Request
+
+### Báo lỗi
+
+Nếu phát hiện lỗi, vui lòng tạo issue với các thông tin:
+
+- Mô tả lỗi chi tiết
+- Các bước tái tạo lỗi
+- Screenshots (nếu có)
+- Môi trường (OS, Python version, etc.)
+
+---
 
 ## Giấy phép
 
